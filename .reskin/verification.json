@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-19T19:05:47.582Z",
+  "project": {
+    "root": "E:/workspace/chuangye/solana/703/website",
+    "name": "attesio-web",
+    "baseUrl": "http://127.0.0.1:4319/"
+  },
+  "passed": true,
+  "thresholds": {
+    "maxStructureSimilarity": 0.5,
+    "maxLandmarkSimilarity": 0.68,
+    "maxClassOverlap": 0.1,
+    "minAccentDistance": 30,
+    "maxContrastFailures": 0,
+    "maxAxeSerious": 0
+  },
+  "gates": {
+    "sourceContract": {
+      "passed": true,
+      "issues": [],
+      "warnings": [
+        "bindings: added \"attr:'#' + tab.id\"",
+        "bindings: added \"attr:'#home'\"",
+        "bindings: added \"link:'#' + tab.id\"",
+        "bindings: added \"link:'#home'\""
+      ],
+      "hash": "652f1c8d5c371e12d65295dd7b3a060da9681f50dc5f88b001dc0ee46f312dd1"
+    },
+    "skeleton": {
+      "passed": true,
+      "original": {
+        "id": "dashboard-shell",
+        "family": "shell",
+        "traits": {
+          "sidebar": true,
+          "topbar": true,
+          "cards": true,
+          "hero": true,
+          "table": false,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
+      "current": {
+        "id": "terminal-console",
+        "family": "linear",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": false,
+          "hero": true,
+          "table": false,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
+      "accent": {
+        "original": "#b1741a",
+        "current": "#ff0000",
+        "deltaE": 64.32,
+        "min": 30
+      }
+    },
+    "pages": [
+      {
+        "route": "/",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=Open menu",
+          "link target added: #governance",
+          "link target added: #home",
+          "link target added: #learn",
+          "link target added: #quests",
+          "link target added: #stake",
+          "link target added: #treasury"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.449,
+          "landmarkSimilarity": 0.455,
+          "classOverlap": 0
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 4,
+              "total": 8
+            },
+            "current": {
+              "tokens": 4,
+              "total": 8
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/home-desktop.png",
+          "mobile": "current/home-mobile.png"
+        }
+      }
+    ]
+  },
+  "failures": [],
+  "warnings": [
+    "bindings: added \"attr:'#' + tab.id\"",
+    "bindings: added \"attr:'#home'\"",
+    "bindings: added \"link:'#' + tab.id\"",
+    "bindings: added \"link:'#home'\"",
+    "/: aria attribute added: aria-label=Open menu",
+    "/: link target added: #governance",
+    "/: link target added: #home",
+    "/: link target added: #learn",
+    "/: link target added: #quests",
+    "/: link target added: #stake",
+    "/: link target added: #treasury"
+  ],
+  "baseline": {
+    "generatedAt": "2026-10-19T18:49:19.256Z",
+    "routes": [
+      "/"
+    ]
+  }
+}
