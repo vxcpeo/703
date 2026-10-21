@@ -1,270 +1,301 @@
 {
   "schemaVersion": 1,
-  "selectedAt": "2026-10-20T15:40:20.090Z",
-  "seed": "bb33d9a2a378694d6d0e596cbd6731a090117474a060bde73b8c8ffe1052cf3b",
+  "selectedAt": "2026-10-21T12:54:03.828Z",
+  "seed": "4ae7e645db31797674a7c2230a0e549bbd6ae910388f61c25de4216d31013567",
   "style": {
-    "id": "uniswap-bubblegum",
-    "name": "Bubblegum Exchange",
-    "family": "clean-fintech",
+    "id": "solana-spectrum",
+    "name": "Spectrum Terminal",
+    "family": "performance-brutalist",
     "sources": [
-      "https://uniswap.org"
+      "https://solana.com"
     ],
     "keywords": [
-      "exchange",
-      "clean",
-      "pink",
-      "friendly",
-      "precise"
+      "speed",
+      "gradient",
+      "terminal",
+      "condensed",
+      "high-contrast"
     ],
     "palette": {
-      "bg": "#ffffff",
-      "surface": "#F9F8FA",
-      "surfaceAlt": "#F2EEF3",
-      "ink": "#0D0D0D",
-      "muted": "#6D6A70",
-      "accent": "#E6006F",
-      "accentSafe": "#C2005D",
-      "accent2": "#FF4DA6",
-      "line": "#E9E4EB",
-      "success": "#0F7B4D",
-      "danger": "#C42B2B",
-      "warning": "#8A5A00"
+      "bg": "#000000",
+      "surface": "#0B0B0C",
+      "surfaceAlt": "#161618",
+      "ink": "#FFFFFF",
+      "muted": "#9B9B9F",
+      "accent": "#9945ff",
+      "accentSafe": "#9945ff",
+      "accent2": "#14F195",
+      "line": "#29292D",
+      "success": "#14F195",
+      "danger": "#FF5C7A",
+      "warning": "#FFD166"
     },
     "typography": {
-      "display": "\"Avenir Next\", \"Segoe UI\", system-ui, sans-serif",
-      "body": "\"Avenir Next\", \"Segoe UI\", system-ui, sans-serif",
-      "mono": "\"SFMono-Regular\", \"Cascadia Mono\", ui-monospace, monospace",
-      "displayWeight": 600,
-      "displayTracking": "-0.03em",
-      "labelTracking": "0.04em",
-      "scale": "clamp(2.5rem, 5vw, 5.4rem) / 1.55rem / 1.02rem / 0.8rem"
+      "display": "\"Arial Narrow\", \"Helvetica Neue\", \"Segoe UI\", sans-serif",
+      "body": "\"Helvetica Neue\", \"Segoe UI\", sans-serif",
+      "mono": "\"IBM Plex Mono\", \"Cascadia Mono\", ui-monospace, monospace",
+      "displayWeight": 800,
+      "displayTracking": "-0.055em",
+      "labelTracking": "0.2em",
+      "scale": "clamp(3rem, 8vw, 8.5rem) / 1.5rem / 0.98rem / 0.68rem"
     },
     "shape": {
-      "radiusSm": "12px",
-      "radiusMd": "22px",
-      "radiusLg": "32px",
+      "radiusSm": "0px",
+      "radiusMd": "2px",
+      "radiusLg": "4px",
       "border": "1px solid var(--line)",
-      "shadow": "0 18px 40px rgba(20, 10, 25, 0.06)"
+      "shadow": "0 0 40px rgba(153, 69, 255, 0.24)"
     },
     "texture": [
-      "soft bubbles",
-      "gradient orbs",
-      "fine dividers",
-      "compact trade widgets"
+      "spectrum gradient shards",
+      "scanline grain",
+      "status LEDs",
+      "ticker strips"
     ],
     "motion": {
-      "feel": "smooth",
-      "duration": "200ms",
-      "easing": "cubic-bezier(.2,.7,.2,1)"
+      "feel": "fast",
+      "duration": "120ms",
+      "easing": "cubic-bezier(.2,.9,.1,1)"
     },
-    "density": "comfortable",
+    "density": "dense",
     "live": {
       "sampled": true,
-      "url": "https://uniswap.org",
-      "elapsedMs": 6701,
+      "url": "https://solana.com",
+      "elapsedMs": 3145,
       "sampledColors": [
         {
-          "hex": "#ffffff",
-          "count": 2
+          "hex": "#000000",
+          "count": 102
         },
         {
-          "hex": "#131313",
-          "count": 2
+          "hex": "#ffffff",
+          "count": 52
+        },
+        {
+          "hex": "#14f195",
+          "count": 46
+        },
+        {
+          "hex": "#9945ff",
+          "count": 45
+        },
+        {
+          "hex": "#ece4fd",
+          "count": 25
+        },
+        {
+          "hex": "#0d0c11",
+          "count": 11
         }
       ],
       "sampledFonts": [
         {
-          "value": "'Basel', sans-serif",
-          "count": 2
+          "value": "Diatype",
+          "count": 10
         },
         {
-          "value": "'Basel'",
-          "count": 2
+          "value": "DSemi",
+          "count": 10
         },
         {
-          "value": "'Inter'",
-          "count": 1
+          "value": "Diatype,monotype",
+          "count": 9
+        },
+        {
+          "value": "Diatype,sans-serif",
+          "count": 8
+        },
+        {
+          "value": "inherit",
+          "count": 3
+        },
+        {
+          "value": "Monument",
+          "count": 3
         }
       ],
       "applied": [
-        "bg #FFFFFF -> #ffffff"
+        "accent #9945FF -> #9945ff",
+        "bg #000000 -> #000000"
       ]
     }
   },
   "layout": {
-    "id": "split-stage",
-    "name": "Split Stage",
-    "family": "spatial",
+    "id": "ticker-stage",
+    "name": "Ticker Stage",
+    "family": "linear",
     "signature": [
-      "asymmetric 5/7 or 4/8 split with a sticky narrative column",
-      "one side scrolls independently",
-      "no top navigation bar; a vertical index sits in the sticky column",
-      "headline and primary action share the left stage",
-      "data is presented as an annotated ledger, not a card grid"
+      "horizontal ticker band as primary navigation and status",
+      "full-width horizontal sections stacked like a broadcast",
+      "oversized figures with hard rules",
+      "no sidebar and no conventional top app bar",
+      "content reveals in horizontal beats"
     ],
-    "navigation": "Vertical index in the sticky column; on mobile it becomes a horizontally scrollable index strip above the content.",
+    "navigation": "A ticker strip under the wordmark; route names repeat as short labels; active route is marked by a moving underline. Keyboard arrows move the ticker.",
     "structure": [
-      "sticky 42% narrative column with brand, route index and page thesis",
-      "scrolling 58% data stage",
-      "full-width proof band below the split",
-      "footer set inside the narrative column"
+      "wordmark + ticker strip",
+      "full-bleed statement band",
+      "three horizontal data beats",
+      "ledger band",
+      "status footer"
     ],
-    "content_mapping": "The sticky column carries brand, route index, page title and the primary action. The scrolling stage carries the table/list/form. Secondary metrics become annotated rows rather than cards.",
-    "css_recipe": ".split{display:grid;grid-template-columns:minmax(300px,42fr) minmax(0,58fr);min-height:100vh}.narrative{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,4vw,64px)}.stage{min-height:100vh;padding:clamp(24px,5vw,80px) clamp(20px,5vw,90px)}",
+    "content_mapping": "Each metric becomes a horizontal beat with a huge figure and a small caption. Tables become full-width ledger bands. Forms become a single horizontal strip with inline labels.",
+    "css_recipe": ".ticker{display:flex;gap:0;overflow:auto;border-block:1px solid var(--line);white-space:nowrap}.ticker a{padding:14px 22px;border-right:1px solid var(--line)}.beat{display:grid;grid-template-columns:minmax(140px,.6fr) minmax(0,2fr);gap:24px;padding:clamp(24px,4vw,56px) 0;border-bottom:1px solid var(--line)}.figure{font-size:clamp(2.4rem,6vw,6rem);line-height:.9}",
     "risks": [
-      "sticky column must not hide content on short screens",
-      "mobile must not preserve the split"
+      "horizontal overflow must be intentional and keyboard reachable",
+      "ticker must not trap focus"
     ],
     "not_interchangeable_with": [
       "dashboard-shell",
-      "topnav-page"
+      "sidebar-workspace"
     ]
   },
   "selection": {
-    "reason": "The selector sampled 9/10 blockchain references, scored every direction for perceptual distance from the original accent (#ff0000) and background (#000000), added a deterministic seed jitter, and chose Bubblegum Exchange because it is 64 ΔE away from the original accent and pairs with Split Stage, a spatial skeleton rather than the original terminal-console.",
+    "reason": "The selector sampled 9/10 blockchain references, scored every direction for perceptual distance from the original accent (#e6006f) and background (#ffffff), added a deterministic seed jitter, and chose Spectrum Terminal because it is 85 ΔE away from the original accent and pairs with Ticker Stage, a linear skeleton rather than the original sidebar-workspace.",
     "ranking": [
       {
-        "id": "uniswap-bubblegum",
-        "name": "Bubblegum Exchange",
-        "score": 0.9908,
-        "accentDistance": 64.4,
+        "id": "solana-spectrum",
+        "name": "Spectrum Terminal",
+        "score": 0.9477,
+        "accentDistance": 85,
         "bgDistance": 100,
         "familyNovelty": 1,
-        "jitter": 0.977,
-        "archetype": "split-stage",
-        "archetypeFamily": "spatial",
+        "jitter": 0.762,
+        "archetype": "ticker-stage",
+        "archetypeFamily": "linear",
         "live": true,
-        "accent": "#E6006F"
-      },
-      {
-        "id": "base-cobalt",
-        "name": "Cobalt Blueprint",
-        "score": 0.9445,
-        "accentDistance": 176.3,
-        "bgDistance": 90,
-        "familyNovelty": 1,
-        "jitter": 0.748,
-        "archetype": "bento-canvas",
-        "archetypeFamily": "spatial",
-        "live": true,
-        "accent": "#0000ff"
-      },
-      {
-        "id": "sui-tidal",
-        "name": "Tidal Sui",
-        "score": 0.9362,
-        "accentDistance": 146.2,
-        "bgDistance": 100,
-        "familyNovelty": 1,
-        "jitter": 0.71,
-        "archetype": "gallery-scroll",
-        "archetypeFamily": "spatial",
-        "live": true,
-        "accent": "#298dff"
-      },
-      {
-        "id": "ethereum-paper",
-        "name": "Paper Protocol",
-        "score": 0.9201,
-        "accentDistance": 130.1,
-        "bgDistance": 100,
-        "familyNovelty": 1,
-        "jitter": 0.637,
-        "archetype": "split-stage",
-        "archetypeFamily": "spatial",
-        "live": true,
-        "accent": "#0c5681"
+        "accent": "#9945ff"
       },
       {
         "id": "polygon-agora",
         "name": "Agora Violet",
-        "score": 0.8921,
-        "accentDistance": 145,
-        "bgDistance": 0,
+        "score": 0.9268,
+        "accentDistance": 83.7,
+        "bgDistance": 100,
         "familyNovelty": 1,
-        "jitter": 0.919,
-        "archetype": "documentary",
-        "archetypeFamily": "editorial",
+        "jitter": 0.667,
+        "archetype": "orbital",
+        "archetypeFamily": "spatial",
         "live": true,
         "accent": "#670de5"
       },
       {
         "id": "cosmos-orbit",
         "name": "Cosmos Orbit",
-        "score": 0.87,
-        "accentDistance": 144.6,
-        "bgDistance": 0,
+        "score": 0.9198,
+        "accentDistance": 102.3,
+        "bgDistance": 100,
         "familyNovelty": 1,
-        "jitter": 0.818,
-        "archetype": "gallery-scroll",
-        "archetypeFamily": "spatial",
+        "jitter": 0.636,
+        "archetype": "documentary",
+        "archetypeFamily": "editorial",
         "live": true,
         "accent": "#40b3ff"
       },
       {
-        "id": "solana-spectrum",
-        "name": "Spectrum Terminal",
-        "score": 0.8449,
-        "accentDistance": 146.3,
+        "id": "ethereum-paper",
+        "name": "Paper Protocol",
+        "score": 0.8404,
+        "accentDistance": 91,
         "bgDistance": 0,
         "familyNovelty": 1,
-        "jitter": 0.704,
-        "archetype": "gallery-scroll",
+        "jitter": 0.683,
+        "archetype": "split-stage",
         "archetypeFamily": "spatial",
         "live": true,
-        "accent": "#9945ff"
+        "accent": "#0c5681"
       },
       {
         "id": "arbitrum-signal",
         "name": "Signal Navy",
-        "score": 0.82,
-        "accentDistance": 136.8,
-        "bgDistance": 21.1,
+        "score": 0.8247,
+        "accentDistance": 98.2,
+        "bgDistance": 92.8,
         "familyNovelty": 1,
-        "jitter": 0.581,
-        "archetype": "bento-canvas",
-        "archetypeFamily": "spatial",
+        "jitter": 0.385,
+        "archetype": "terminal-console",
+        "archetypeFamily": "linear",
         "live": false,
         "accent": "#28A0F0"
       },
       {
-        "id": "optimism-poster",
-        "name": "Poster Optimism",
-        "score": 0.6583,
-        "accentDistance": 11.4,
-        "bgDistance": 98.2,
+        "id": "base-cobalt",
+        "name": "Cobalt Blueprint",
+        "score": 0.8043,
+        "accentDistance": 115.1,
+        "bgDistance": 10.7,
         "familyNovelty": 1,
-        "jitter": 0.984,
-        "archetype": "gallery-scroll",
+        "jitter": 0.422,
+        "archetype": "split-stage",
         "archetypeFamily": "spatial",
         "live": true,
-        "accent": "#ff0421"
+        "accent": "#0000ff"
       },
       {
         "id": "aave-abyss",
         "name": "Abyss Liquidity",
-        "score": 0.3029,
-        "accentDistance": 0,
-        "bgDistance": 0,
+        "score": 0.7789,
+        "accentDistance": 61.4,
+        "bgDistance": 100,
         "familyNovelty": 1,
-        "jitter": 0.104,
+        "jitter": 0.097,
         "archetype": "orbital",
         "archetypeFamily": "spatial",
         "live": true,
         "accent": "#ff0000"
+      },
+      {
+        "id": "sui-tidal",
+        "name": "Tidal Sui",
+        "score": 0.7713,
+        "accentDistance": 93,
+        "bgDistance": 0,
+        "familyNovelty": 1,
+        "jitter": 0.37,
+        "archetype": "bento-canvas",
+        "archetypeFamily": "spatial",
+        "live": true,
+        "accent": "#298dff"
+      },
+      {
+        "id": "optimism-poster",
+        "name": "Poster Optimism",
+        "score": 0.7234,
+        "accentDistance": 54.4,
+        "bgDistance": 1.8,
+        "familyNovelty": 1,
+        "jitter": 0.44,
+        "archetype": "documentary",
+        "archetypeFamily": "editorial",
+        "live": true,
+        "accent": "#ff0421"
+      },
+      {
+        "id": "uniswap-bubblegum",
+        "name": "Bubblegum Exchange",
+        "score": 0.4988,
+        "accentDistance": 12.2,
+        "bgDistance": 0,
+        "familyNovelty": 1,
+        "jitter": 0.645,
+        "archetype": "bento-canvas",
+        "archetypeFamily": "spatial",
+        "live": true,
+        "accent": "#E6006F"
       }
     ],
     "liveApplied": [
-      "bg #FFFFFF -> #ffffff"
+      "accent #9945FF -> #9945ff",
+      "bg #000000 -> #000000"
     ]
   },
   "originality": {
     "originalTheme": "light",
-    "anchorAccent": "#ff0000",
-    "background": "#000000",
-    "originalArchetype": "terminal-console",
-    "originalFamily": "linear",
-    "accentDistance": 64.4,
+    "anchorAccent": "#e6006f",
+    "background": "#ffffff",
+    "originalArchetype": "sidebar-workspace",
+    "originalFamily": "shell",
+    "accentDistance": 85,
     "bgDistance": 100,
     "thresholds": {
       "minAccentDistance": 30,
@@ -275,89 +306,11 @@
   },
   "liveSampling": [
     {
-      "styleId": "polygon-agora",
-      "url": "https://polygon.technology",
-      "ok": true,
-      "status": 200,
-      "elapsedMs": 2996,
-      "cssFiles": 3,
-      "colors": [
-        {
-          "hex": "#ffffff",
-          "count": 186
-        },
-        {
-          "hex": "#f2f1f5",
-          "count": 137
-        },
-        {
-          "hex": "#2d2b36",
-          "count": 124
-        },
-        {
-          "hex": "#e4e4e7",
-          "count": 121
-        },
-        {
-          "hex": "#000000",
-          "count": 72
-        },
-        {
-          "hex": "#670de5",
-          "count": 57
-        },
-        {
-          "hex": "#07060d",
-          "count": 36
-        },
-        {
-          "hex": "#9856f5",
-          "count": 33
-        },
-        {
-          "hex": "#686d73",
-          "count": 17
-        },
-        {
-          "hex": "#ccaafa",
-          "count": 16
-        }
-      ],
-      "fonts": [
-        {
-          "value": "PolySans, -apple-system, BlinkMacSystemFont, &quot",
-          "count": 24
-        },
-        {
-          "value": "Inter, -apple-system, BlinkMacSystemFont, &quot",
-          "count": 4
-        },
-        {
-          "value": "PolySans",
-          "count": 2
-        },
-        {
-          "value": "PolySans Mono",
-          "count": 2
-        },
-        {
-          "value": "Inter, system-ui, sans-serif",
-          "count": 1
-        },
-        {
-          "value": "PolySans Slimwide",
-          "count": 1
-        }
-      ],
-      "bg": "#000000",
-      "accent": "#670de5"
-    },
-    {
       "styleId": "base-cobalt",
       "url": "https://www.base.org",
       "ok": true,
       "status": 200,
-      "elapsedMs": 4322,
+      "elapsedMs": 2353,
       "cssFiles": 3,
       "colors": [
         {
@@ -431,89 +384,89 @@
       "accent": "#0000ff"
     },
     {
-      "styleId": "ethereum-paper",
-      "url": "https://ethereum.org",
+      "styleId": "polygon-agora",
+      "url": "https://polygon.technology",
       "ok": true,
       "status": 200,
-      "elapsedMs": 4571,
-      "cssFiles": 2,
+      "elapsedMs": 2691,
+      "cssFiles": 3,
       "colors": [
         {
-          "hex": "#000000",
-          "count": 126
-        },
-        {
           "hex": "#ffffff",
-          "count": 56
+          "count": 186
         },
         {
-          "hex": "#0c5681",
-          "count": 14
+          "hex": "#f2f1f5",
+          "count": 137
         },
         {
-          "hex": "#74acdf",
-          "count": 14
+          "hex": "#2d2b36",
+          "count": 124
         },
         {
-          "hex": "#667bbc",
-          "count": 14
+          "hex": "#e4e4e7",
+          "count": 121
         },
         {
-          "hex": "#673076",
-          "count": 14
+          "hex": "#000000",
+          "count": 72
         },
         {
-          "hex": "#af4796",
-          "count": 14
+          "hex": "#670de5",
+          "count": 57
         },
         {
-          "hex": "#1616b4",
-          "count": 12
+          "hex": "#07060d",
+          "count": 36
         },
         {
-          "hex": "#83aafa",
-          "count": 8
+          "hex": "#9856f5",
+          "count": 33
         },
         {
-          "hex": "#cfc4fa",
-          "count": 8
+          "hex": "#686d73",
+          "count": 17
+        },
+        {
+          "hex": "#ccaafa",
+          "count": 16
         }
       ],
       "fonts": [
         {
-          "value": "Inter",
-          "count": 7
+          "value": "PolySans, -apple-system, BlinkMacSystemFont, &quot",
+          "count": 24
         },
         {
-          "value": "IBM Plex Mono",
-          "count": 5
+          "value": "Inter, -apple-system, BlinkMacSystemFont, &quot",
+          "count": 4
         },
         {
-          "value": "Inter Fallback",
+          "value": "PolySans",
+          "count": 2
+        },
+        {
+          "value": "PolySans Mono",
+          "count": 2
+        },
+        {
+          "value": "Inter, system-ui, sans-serif",
           "count": 1
         },
         {
-          "value": "Inter,Inter Fallback",
-          "count": 1
-        },
-        {
-          "value": "IBM Plex Mono Fallback",
-          "count": 1
-        },
-        {
-          "value": "IBM Plex Mono,IBM Plex Mono Fallback",
+          "value": "PolySans Slimwide",
           "count": 1
         }
       ],
-      "bg": "#ffffff",
-      "accent": "#0c5681"
+      "bg": "#000000",
+      "accent": "#670de5"
     },
     {
       "styleId": "solana-spectrum",
       "url": "https://solana.com",
       "ok": true,
       "status": 200,
-      "elapsedMs": 7231,
+      "elapsedMs": 3145,
       "cssFiles": 3,
       "colors": [
         {
@@ -587,11 +540,130 @@
       "accent": "#9945ff"
     },
     {
+      "styleId": "ethereum-paper",
+      "url": "https://ethereum.org",
+      "ok": true,
+      "status": 200,
+      "elapsedMs": 3930,
+      "cssFiles": 2,
+      "colors": [
+        {
+          "hex": "#000000",
+          "count": 128
+        },
+        {
+          "hex": "#ffffff",
+          "count": 56
+        },
+        {
+          "hex": "#0c5681",
+          "count": 14
+        },
+        {
+          "hex": "#74acdf",
+          "count": 14
+        },
+        {
+          "hex": "#667bbc",
+          "count": 14
+        },
+        {
+          "hex": "#673076",
+          "count": 14
+        },
+        {
+          "hex": "#af4796",
+          "count": 14
+        },
+        {
+          "hex": "#1616b4",
+          "count": 12
+        },
+        {
+          "hex": "#83aafa",
+          "count": 8
+        },
+        {
+          "hex": "#cfc4fa",
+          "count": 8
+        }
+      ],
+      "fonts": [
+        {
+          "value": "Inter",
+          "count": 7
+        },
+        {
+          "value": "IBM Plex Mono",
+          "count": 5
+        },
+        {
+          "value": "Inter Fallback",
+          "count": 1
+        },
+        {
+          "value": "Inter,Inter Fallback",
+          "count": 1
+        },
+        {
+          "value": "IBM Plex Mono Fallback",
+          "count": 1
+        },
+        {
+          "value": "IBM Plex Mono,IBM Plex Mono Fallback",
+          "count": 1
+        }
+      ],
+      "bg": "#ffffff",
+      "accent": "#0c5681"
+    },
+    {
+      "styleId": "arbitrum-signal",
+      "url": "https://arbitrum.io",
+      "ok": false,
+      "elapsedMs": 1508,
+      "error": "HTTP 403"
+    },
+    {
+      "styleId": "uniswap-bubblegum",
+      "url": "https://uniswap.org",
+      "ok": true,
+      "status": 200,
+      "elapsedMs": 5031,
+      "cssFiles": 3,
+      "colors": [
+        {
+          "hex": "#ffffff",
+          "count": 2
+        },
+        {
+          "hex": "#131313",
+          "count": 2
+        }
+      ],
+      "fonts": [
+        {
+          "value": "'Basel', sans-serif",
+          "count": 2
+        },
+        {
+          "value": "'Basel'",
+          "count": 2
+        },
+        {
+          "value": "'Inter'",
+          "count": 1
+        }
+      ],
+      "bg": "#ffffff",
+      "accent": null
+    },
+    {
       "styleId": "aave-abyss",
       "url": "https://aave.com",
       "ok": true,
       "status": 200,
-      "elapsedMs": 3008,
+      "elapsedMs": 4874,
       "cssFiles": 3,
       "colors": [
         {
@@ -665,18 +737,11 @@
       "accent": "#ff0000"
     },
     {
-      "styleId": "arbitrum-signal",
-      "url": "https://arbitrum.io",
-      "ok": false,
-      "elapsedMs": 1117,
-      "error": "HTTP 403"
-    },
-    {
       "styleId": "optimism-poster",
       "url": "https://www.optimism.io",
       "ok": true,
       "status": 200,
-      "elapsedMs": 7426,
+      "elapsedMs": 8080,
       "cssFiles": 3,
       "colors": [
         {
@@ -684,12 +749,12 @@
           "count": 183
         },
         {
-          "hex": "#000000",
-          "count": 36
+          "hex": "#fafaf9",
+          "count": 68
         },
         {
-          "hex": "#fafaf9",
-          "count": 14
+          "hex": "#000000",
+          "count": 36
         },
         {
           "hex": "#282827",
@@ -750,45 +815,11 @@
       "accent": "#ff0421"
     },
     {
-      "styleId": "uniswap-bubblegum",
-      "url": "https://uniswap.org",
-      "ok": true,
-      "status": 200,
-      "elapsedMs": 6701,
-      "cssFiles": 3,
-      "colors": [
-        {
-          "hex": "#ffffff",
-          "count": 2
-        },
-        {
-          "hex": "#131313",
-          "count": 2
-        }
-      ],
-      "fonts": [
-        {
-          "value": "'Basel', sans-serif",
-          "count": 2
-        },
-        {
-          "value": "'Basel'",
-          "count": 2
-        },
-        {
-          "value": "'Inter'",
-          "count": 1
-        }
-      ],
-      "bg": "#ffffff",
-      "accent": null
-    },
-    {
       "styleId": "cosmos-orbit",
       "url": "https://cosmos.network",
       "ok": true,
       "status": 200,
-      "elapsedMs": 3829,
+      "elapsedMs": 5959,
       "cssFiles": 2,
       "colors": [
         {
@@ -850,7 +881,7 @@
       "url": "https://sui.io",
       "ok": true,
       "status": 200,
-      "elapsedMs": 4602,
+      "elapsedMs": 5666,
       "cssFiles": 1,
       "colors": [
         {
@@ -924,5 +955,5 @@
       "accent": "#298dff"
     }
   ],
-  "css": ":root {\n  --bg: #ffffff;\n  --surface: #F9F8FA;\n  --surface-alt: #F2EEF3;\n  --ink: #0D0D0D;\n  --muted: #6D6A70;\n  --accent: #E6006F;\n  --accent-safe: #C2005D;\n  --accent-2: #FF4DA6;\n  --line: #E9E4EB;\n  --success: #0F7B4D;\n  --danger: #C42B2B;\n  --warning: #8A5A00;\n\n  --font-display: \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif;\n  --font-body: \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif;\n  --font-mono: \"SFMono-Regular\", \"Cascadia Mono\", ui-monospace, monospace;\n  --display-weight: 600;\n  --display-tracking: -0.03em;\n  --label-tracking: 0.04em;\n\n  --radius-sm: 12px;\n  --radius-md: 22px;\n  --radius-lg: 32px;\n  --border: 1px solid var(--line);\n  --shadow: 0 18px 40px rgba(20, 10, 25, 0.06);\n\n  --motion-duration: 200ms;\n  --motion-ease: cubic-bezier(.2,.7,.2,1);\n  --space-1: clamp(4px, .35vw, 6px);\n  --space-2: clamp(8px, .7vw, 12px);\n  --space-3: clamp(14px, 1.2vw, 20px);\n  --space-4: clamp(22px, 2vw, 32px);\n  --space-5: clamp(36px, 3.4vw, 56px);\n  --space-6: clamp(56px, 5vw, 88px);\n  --page-pad: clamp(18px, 4vw, 64px);\n  --max-width: 1440px;\n}"
+  "css": ":root {\n  --bg: #000000;\n  --surface: #0B0B0C;\n  --surface-alt: #161618;\n  --ink: #FFFFFF;\n  --muted: #9B9B9F;\n  --accent: #9945ff;\n  --accent-safe: #9945ff;\n  --accent-2: #14F195;\n  --line: #29292D;\n  --success: #14F195;\n  --danger: #FF5C7A;\n  --warning: #FFD166;\n\n  --font-display: \"Arial Narrow\", \"Helvetica Neue\", \"Segoe UI\", sans-serif;\n  --font-body: \"Helvetica Neue\", \"Segoe UI\", sans-serif;\n  --font-mono: \"IBM Plex Mono\", \"Cascadia Mono\", ui-monospace, monospace;\n  --display-weight: 800;\n  --display-tracking: -0.055em;\n  --label-tracking: 0.2em;\n\n  --radius-sm: 0px;\n  --radius-md: 2px;\n  --radius-lg: 4px;\n  --border: 1px solid var(--line);\n  --shadow: 0 0 40px rgba(153, 69, 255, 0.24);\n\n  --motion-duration: 120ms;\n  --motion-ease: cubic-bezier(.2,.9,.1,1);\n  --space-1: clamp(4px, .35vw, 6px);\n  --space-2: clamp(8px, .7vw, 12px);\n  --space-3: clamp(14px, 1.2vw, 20px);\n  --space-4: clamp(22px, 2vw, 32px);\n  --space-5: clamp(36px, 3.4vw, 56px);\n  --space-6: clamp(56px, 5vw, 88px);\n  --page-pad: clamp(18px, 4vw, 64px);\n  --max-width: 1440px;\n}"
 }

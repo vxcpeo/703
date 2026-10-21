@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "current",
-  "generatedAt": "2026-10-20T15:56:13.591Z",
+  "generatedAt": "2026-10-21T13:51:50.872Z",
   "baseUrl": "http://127.0.0.1:4317/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
@@ -15,25 +15,29 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Clepsyra — Time on the record.",
+          "title": "Actoria — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2088,
+          "bodyTextLength": 2418,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 26
+          "focusableCount": 30
         },
         "words": [
           {
             "word": "0",
-            "count": 5
+            "count": 2
           },
           {
-            "word": "11:56:15",
+            "word": "01",
+            "count": 2
+          },
+          {
+            "word": "02",
             "count": 1
           },
           {
-            "word": "20",
+            "word": "03",
             "count": 1
           },
           {
@@ -41,11 +45,35 @@
             "count": 1
           },
           {
+            "word": "21",
+            "count": 1
+          },
+          {
+            "word": "3",
+            "count": 1
+          },
+          {
             "word": "a",
-            "count": 12
+            "count": 13
           },
           {
             "word": "A",
+            "count": 1
+          },
+          {
+            "word": "Act",
+            "count": 3
+          },
+          {
+            "word": "actions",
+            "count": 1
+          },
+          {
+            "word": "Actoria",
+            "count": 2
+          },
+          {
+            "word": "actoria.xyz",
             "count": 1
           },
           {
@@ -61,6 +89,10 @@
             "count": 1
           },
           {
+            "word": "Against",
+            "count": 1
+          },
+          {
             "word": "All",
             "count": 2
           },
@@ -70,7 +102,7 @@
           },
           {
             "word": "and",
-            "count": 7
+            "count": 8
           },
           {
             "word": "answer",
@@ -81,12 +113,8 @@
             "count": 2
           },
           {
-            "word": "appear",
-            "count": 1
-          },
-          {
             "word": "are",
-            "count": 3
+            "count": 4
           },
           {
             "word": "be",
@@ -101,7 +129,15 @@
             "count": 1
           },
           {
+            "word": "bounties",
+            "count": 1
+          },
+          {
             "word": "Browse",
+            "count": 1
+          },
+          {
+            "word": "budget",
             "count": 1
           },
           {
@@ -117,19 +153,11 @@
             "count": 2
           },
           {
-            "word": "check",
+            "word": "charter",
             "count": 1
           },
           {
-            "word": "Cleps",
-            "count": 3
-          },
-          {
-            "word": "Clepsyra",
-            "count": 2
-          },
-          {
-            "word": "clepsyra.xyz",
+            "word": "check",
             "count": 1
           },
           {
@@ -138,11 +166,11 @@
           },
           {
             "word": "community",
-            "count": 4
+            "count": 5
           },
           {
             "word": "configured",
-            "count": 2
+            "count": 3
           },
           {
             "word": "connect",
@@ -154,7 +182,7 @@
           },
           {
             "word": "connected",
-            "count": 2
+            "count": 3
           },
           {
             "word": "connection",
@@ -166,10 +194,6 @@
           },
           {
             "word": "days",
-            "count": 1
-          },
-          {
-            "word": "decision",
             "count": 1
           },
           {
@@ -197,23 +221,23 @@
             "count": 1
           },
           {
-            "word": "first",
-            "count": 1
-          },
-          {
             "word": "fix",
             "count": 1
           },
           {
             "word": "floor",
-            "count": 3
+            "count": 2
           },
           {
-            "word": "Foundation",
+            "word": "for",
             "count": 1
           },
           {
-            "word": "from",
+            "word": "For",
+            "count": 1
+          },
+          {
+            "word": "Foundation",
             "count": 1
           },
           {
@@ -225,12 +249,8 @@
             "count": 2
           },
           {
-            "word": "has",
-            "count": 1
-          },
-          {
             "word": "here",
-            "count": 2
+            "count": 1
           },
           {
             "word": "hold",
@@ -246,6 +266,10 @@
           },
           {
             "word": "how",
+            "count": 1
+          },
+          {
+            "word": "How",
             "count": 1
           },
           {
@@ -270,7 +294,11 @@
           },
           {
             "word": "is",
-            "count": 2
+            "count": 4
+          },
+          {
+            "word": "it",
+            "count": 1
           },
           {
             "word": "It",
@@ -289,6 +317,10 @@
             "count": 1
           },
           {
+            "word": "leading",
+            "count": 1
+          },
+          {
             "word": "leave",
             "count": 1
           },
@@ -298,15 +330,15 @@
           },
           {
             "word": "live",
-            "count": 2
+            "count": 1
           },
           {
-            "word": "make",
+            "word": "Map",
             "count": 1
           },
           {
             "word": "mint",
-            "count": 3
+            "count": 4
           },
           {
             "word": "minted",
@@ -318,6 +350,10 @@
           },
           {
             "word": "minutes",
+            "count": 1
+          },
+          {
+            "word": "mode",
             "count": 1
           },
           {
@@ -346,7 +382,7 @@
           },
           {
             "word": "no",
-            "count": 2
+            "count": 3
           },
           {
             "word": "No",
@@ -362,11 +398,15 @@
           },
           {
             "word": "not",
-            "count": 5
+            "count": 7
+          },
+          {
+            "word": "Not",
+            "count": 1
           },
           {
             "word": "nothing",
-            "count": 1
+            "count": 3
           },
           {
             "word": "Oct",
@@ -374,19 +414,15 @@
           },
           {
             "word": "on",
-            "count": 5
+            "count": 6
           },
           {
             "word": "On",
             "count": 1
           },
           {
-            "word": "once",
-            "count": 1
-          },
-          {
             "word": "one",
-            "count": 2
+            "count": 3
           },
           {
             "word": "One",
@@ -394,11 +430,11 @@
           },
           {
             "word": "only",
-            "count": 1
+            "count": 4
           },
           {
             "word": "open",
-            "count": 3
+            "count": 2
           },
           {
             "word": "Open",
@@ -407,6 +443,10 @@
           {
             "word": "or",
             "count": 4
+          },
+          {
+            "word": "oria",
+            "count": 3
           },
           {
             "word": "out",
@@ -445,12 +485,12 @@
             "count": 1
           },
           {
-            "word": "PM",
-            "count": 1
+            "word": "preview",
+            "count": 4
           },
           {
-            "word": "preview",
-            "count": 1
+            "word": "Preview",
+            "count": 2
           },
           {
             "word": "private",
@@ -462,7 +502,7 @@
           },
           {
             "word": "Program",
-            "count": 2
+            "count": 1
           },
           {
             "word": "project",
@@ -474,15 +514,11 @@
           },
           {
             "word": "proposal",
-            "count": 2
+            "count": 3
           },
           {
             "word": "public",
             "count": 2
-          },
-          {
-            "word": "publishes",
-            "count": 1
           },
           {
             "word": "quest",
@@ -494,11 +530,15 @@
           },
           {
             "word": "Quests",
-            "count": 4
+            "count": 3
           },
           {
             "word": "read",
-            "count": 3
+            "count": 2
+          },
+          {
+            "word": "Read",
+            "count": 1
           },
           {
             "word": "reading",
@@ -537,11 +577,19 @@
             "count": 1
           },
           {
-            "word": "reports",
+            "word": "research",
+            "count": 1
+          },
+          {
+            "word": "Reserve",
             "count": 1
           },
           {
             "word": "Results",
+            "count": 1
+          },
+          {
+            "word": "Review",
             "count": 1
           },
           {
@@ -553,15 +601,31 @@
             "count": 1
           },
           {
-            "word": "row",
-            "count": 3
-          },
-          {
-            "word": "rows",
+            "word": "route",
             "count": 1
           },
           {
+            "word": "row",
+            "count": 6
+          },
+          {
+            "word": "rows",
+            "count": 3
+          },
+          {
             "word": "Rows",
+            "count": 1
+          },
+          {
+            "word": "sample",
+            "count": 1
+          },
+          {
+            "word": "Sample",
+            "count": 9
+          },
+          {
+            "word": "season",
             "count": 1
           },
           {
@@ -582,14 +646,22 @@
           },
           {
             "word": "set",
-            "count": 1
+            "count": 2
           },
           {
             "word": "share",
             "count": 1
           },
           {
+            "word": "shown",
+            "count": 2
+          },
+          {
             "word": "sign",
+            "count": 1
+          },
+          {
+            "word": "signal",
             "count": 1
           },
           {
@@ -621,16 +693,24 @@
             "count": 1
           },
           {
-            "word": "Start",
-            "count": 1
-          },
-          {
             "word": "State",
             "count": 1
           },
           {
             "word": "status",
             "count": 1
+          },
+          {
+            "word": "submit",
+            "count": 1
+          },
+          {
+            "word": "submitted",
+            "count": 1
+          },
+          {
+            "word": "Support",
+            "count": 2
           },
           {
             "word": "Take",
@@ -650,14 +730,10 @@
           },
           {
             "word": "the",
-            "count": 13
+            "count": 12
           },
           {
             "word": "The",
-            "count": 2
-          },
-          {
-            "word": "them",
             "count": 1
           },
           {
@@ -674,7 +750,7 @@
           },
           {
             "word": "to",
-            "count": 6
+            "count": 5
           },
           {
             "word": "today",
@@ -682,7 +758,7 @@
           },
           {
             "word": "token",
-            "count": 5
+            "count": 6
           },
           {
             "word": "Token",
@@ -697,15 +773,19 @@
             "count": 1
           },
           {
+            "word": "treasury",
+            "count": 1
+          },
+          {
             "word": "Treasury",
             "count": 2
           },
           {
-            "word": "Tue",
+            "word": "unlisted",
             "count": 1
           },
           {
-            "word": "unlisted",
+            "word": "useful",
             "count": 1
           },
           {
@@ -718,7 +798,7 @@
           },
           {
             "word": "votes",
-            "count": 4
+            "count": 5
           },
           {
             "word": "Votes",
@@ -737,11 +817,11 @@
             "count": 1
           },
           {
-            "word": "Weigh",
+            "word": "Wed",
             "count": 1
           },
           {
-            "word": "when",
+            "word": "Weigh",
             "count": 1
           },
           {
@@ -762,6 +842,10 @@
           },
           {
             "word": "with",
+            "count": 1
+          },
+          {
+            "word": "works",
             "count": 1
           },
           {
@@ -791,15 +875,11 @@
           {
             "word": "Your",
             "count": 3
-          },
-          {
-            "word": "yra",
-            "count": 3
           }
         ],
         "attrs": [
           {
-            "key": "aria-label=Clepsyra home",
+            "key": "aria-label=Actoria home",
             "count": 1
           },
           {
@@ -815,6 +895,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Marginal notes",
+            "count": 1
+          },
+          {
             "key": "aria-label=Open menu",
             "count": 1
           },
@@ -824,6 +908,10 @@
           },
           {
             "key": "aria-label=Re-read testnet data",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Record bands",
             "count": 1
           },
           {
@@ -866,170 +954,203 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "bg-actions",
-          "bg-board",
-          "bg-board-body",
-          "bg-board-head",
-          "bg-board-title",
-          "bg-brandline",
-          "bg-brandline-accent",
-          "bg-brandline-mark",
-          "bg-brandline-tag",
-          "bg-brandline-text",
-          "bg-brandline-word",
-          "bg-btn",
-          "bg-btn--fill",
-          "bg-btn--lg",
-          "bg-btn--line",
-          "bg-btn--sm",
-          "bg-btn--wide",
-          "bg-colophon",
-          "bg-colophon-accent",
-          "bg-colophon-brand",
-          "bg-colophon-col",
-          "bg-colophon-cols",
-          "bg-colophon-facts",
-          "bg-colophon-fine",
-          "bg-colophon-links",
-          "bg-colophon-mark",
-          "bg-colophon-name",
-          "bg-colophon-note",
-          "bg-colophon-tag",
-          "bg-colophon-word",
-          "bg-colophon-word-accent",
-          "bg-console",
-          "bg-console-chip",
-          "bg-console-icon",
-          "bg-console-pulse",
-          "bg-console-rule",
-          "bg-console-tools",
-          "bg-console-top",
-          "bg-current",
-          "bg-display",
-          "bg-empty",
-          "bg-empty-glyph",
-          "bg-empty-text",
-          "bg-empty-title",
-          "bg-fact",
-          "bg-fact--muted",
-          "bg-factlist",
-          "bg-facts",
-          "bg-fork",
-          "bg-fork--ballot",
-          "bg-fork-foot",
-          "bg-fork-glyph",
-          "bg-forks",
-          "bg-frame",
-          "bg-index",
-          "bg-index-badge",
-          "bg-index-glyph",
-          "bg-index-label",
-          "bg-index-link",
-          "bg-index-list",
-          "bg-index-rule",
-          "bg-kicker",
-          "bg-kicker-dot",
-          "bg-lede",
-          "bg-link",
-          "bg-live-dot",
-          "bg-margin",
-          "bg-narrative",
-          "bg-note",
-          "bg-pill",
-          "bg-readout",
-          "bg-readout-cell",
-          "bg-readout-date",
-          "bg-readout-foot",
-          "bg-readout-grid",
-          "bg-readout-head",
-          "bg-readout-label",
-          "bg-readout-note",
-          "bg-readout-title",
-          "bg-readout-value",
-          "bg-readout-value--text",
-          "bg-runhead",
-          "bg-sheet",
-          "bg-sheet-body",
-          "bg-sheet-body--flush",
-          "bg-sheet-foot",
-          "bg-sheet-head",
-          "bg-sheet-note",
-          "bg-sheet-title",
-          "bg-skip",
-          "bg-stage",
-          "bg-view",
-          "bg-wide"
+          "sp-actions",
+          "sp-band",
+          "sp-band-body",
+          "sp-band-head",
+          "sp-band-inner",
+          "sp-band-title",
+          "sp-bands",
+          "sp-beat",
+          "sp-beats",
+          "sp-brand",
+          "sp-brand-accent",
+          "sp-brand-link",
+          "sp-brand-mark",
+          "sp-brand-tag",
+          "sp-brand-text",
+          "sp-brand-word",
+          "sp-btn",
+          "sp-btn--ghost",
+          "sp-btn--lg",
+          "sp-btn--line",
+          "sp-btn--sm",
+          "sp-btn--solid",
+          "sp-btn--wide",
+          "sp-deck",
+          "sp-dial-date",
+          "sp-dial-foot",
+          "sp-dial-head",
+          "sp-dial-label",
+          "sp-dial-note",
+          "sp-dial-title",
+          "sp-dial-value",
+          "sp-dial-value--text",
+          "sp-dials",
+          "sp-door",
+          "sp-door--ballot",
+          "sp-door-foot",
+          "sp-door-glyph",
+          "sp-doors",
+          "sp-eyebrow",
+          "sp-eyebrow-dot",
+          "sp-fact",
+          "sp-fact--muted",
+          "sp-factlist",
+          "sp-facts",
+          "sp-flow",
+          "sp-headline",
+          "sp-icon-btn",
+          "sp-ledger",
+          "sp-ledger-go",
+          "sp-ledger-index",
+          "sp-ledger-main",
+          "sp-ledger-note",
+          "sp-ledger-row",
+          "sp-ledger-title",
+          "sp-link",
+          "sp-live-dot",
+          "sp-live-dot--idle",
+          "sp-main",
+          "sp-masthead",
+          "sp-note",
+          "sp-notice",
+          "sp-notice-action",
+          "sp-notice-copy",
+          "sp-notice-glyph",
+          "sp-notices",
+          "sp-pill",
+          "sp-route",
+          "sp-shell",
+          "sp-skip",
+          "sp-slab",
+          "sp-slab-body",
+          "sp-slab-body--flush",
+          "sp-slab-foot",
+          "sp-slab-head",
+          "sp-slab-inner",
+          "sp-slab-note",
+          "sp-slab-title",
+          "sp-spin",
+          "sp-statement",
+          "sp-statement-inner",
+          "sp-status",
+          "sp-status-accent",
+          "sp-status-brand",
+          "sp-status-col",
+          "sp-status-cols",
+          "sp-status-facts",
+          "sp-status-fine",
+          "sp-status-links",
+          "sp-status-mark",
+          "sp-status-name",
+          "sp-status-note",
+          "sp-status-tag",
+          "sp-status-top",
+          "sp-status-word",
+          "sp-status-word-accent",
+          "sp-tail",
+          "sp-tally",
+          "sp-tally-key",
+          "sp-tally-key--against",
+          "sp-tally-keys",
+          "sp-ticker",
+          "sp-ticker-glyph",
+          "sp-ticker-item",
+          "sp-ticker-label",
+          "sp-ticker-link",
+          "sp-ticker-list",
+          "sp-utility",
+          "sp-utility-chip",
+          "sp-utility-pulse"
         ],
         "fingerprint": [
           "a@5:0",
           "a@7:2",
-          "a@9:2",
-          "a@9:3",
+          "a@8:2",
           "article@10:4+",
-          "aside@5:3",
+          "article@9:1",
           "b@10:0",
-          "b@11:0",
-          "button@10:0",
+          "b@14:0",
+          "b@15:0",
+          "button@10:1",
           "button@11:1",
           "button@12:1",
-          "button@9:1",
-          "button@9:2",
-          "dd@13:0",
-          "div@10:1",
+          "button@13:4+",
+          "button@7:1",
+          "button@7:2",
+          "button@8:1",
+          "button@9:0",
+          "dd@14:0",
           "div@10:2",
           "div@10:3",
           "div@10:4+",
           "div@11:1",
           "div@11:3",
           "div@12:2",
+          "div@12:3",
+          "div@13:2",
           "div@3:1",
-          "div@4:3",
+          "div@4:4+",
           "div@6:1",
-          "div@7:1",
+          "div@6:2",
+          "div@6:3",
+          "div@6:4+",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:2",
-          "div@8:3",
           "div@8:4+",
           "div@9:2",
-          "div@9:4+",
-          "dl@11:4+",
-          "dt@13:0",
-          "em@9:0",
-          "footer@6:4+",
-          "h1@8:2",
+          "dl@12:4+",
+          "dt@14:0",
+          "em@10:0",
+          "footer@5:4+",
+          "h1@9:2",
           "h2@11:0",
-          "h3@12:0",
-          "h3@9:0",
-          "i@9:0",
+          "h2@12:0",
+          "h3@8:0",
+          "header@11:2",
+          "header@5:2",
+          "header@7:1",
+          "i@8:0",
           "img@9:0",
-          "li@8:1",
-          "li@9:2",
+          "li@10:2",
+          "li@12:1",
+          "li@7:1",
           "main@5:2",
-          "nav@6:3",
-          "nav@9:4+",
-          "ol@7:4+",
+          "nav@5:1",
+          "nav@8:4+",
+          "ol@6:4+",
           "p@11:0",
           "p@12:0",
           "p@7:0",
           "p@8:0",
-          "p@8:1",
           "p@9:0",
+          "p@9:1",
+          "path@10:0",
           "path@11:0",
           "path@12:0",
           "path@13:0",
           "path@14:0",
+          "path@16:0",
+          "path@9:0",
           "section@6:2",
+          "section@7:2",
+          "section@8:3",
+          "section@9:1",
           "section@9:2",
           "section@9:3",
+          "small@15:0",
           "span@10:0",
-          "span@10:1",
           "span@11:0",
           "span@11:1",
           "span@12:0",
-          "span@12:1",
+          "span@13:1",
+          "span@14:0",
+          "span@14:1",
+          "span@14:2",
           "span@7:0",
+          "span@7:1",
           "span@8:0",
           "span@8:1",
           "span@8:2",
@@ -1037,134 +1158,156 @@
           "span@9:1",
           "strong@11:0",
           "strong@12:0",
+          "strong@9:0",
           "svg@10:1",
           "svg@11:1",
           "svg@12:1",
           "svg@13:1",
-          "ul@8:3"
+          "svg@15:1",
+          "svg@8:1",
+          "svg@9:1",
+          "ul@11:1",
+          "ul@11:3",
+          "ul@9:3"
         ],
         "landmarks": [
           {
-            "tag": "aside",
+            "tag": "header",
             "role": "",
-            "top": 0,
+            "top": -16,
             "left": 0,
-            "width": 547,
-            "height": 900
+            "width": 1440,
+            "height": 81
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 34,
-            "left": 34,
-            "width": 478,
-            "height": 346
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 501,
-            "left": 34,
-            "width": 478,
-            "height": 365
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 606,
-            "left": 34,
-            "width": 231,
-            "height": 43
+            "top": 65,
+            "left": 0,
+            "width": 1440,
+            "height": 48
           },
           {
             "tag": "main",
             "role": "",
-            "top": -12,
-            "left": 547,
-            "width": 893,
-            "height": 1813
+            "top": 113,
+            "left": 0,
+            "width": 1440,
+            "height": 2431
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 182,
+            "left": 0,
+            "width": 1440,
+            "height": 634
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1112,
+            "left": 58,
+            "width": 1325,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1468,
+            "left": 58,
+            "width": 1325,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2064,
+            "left": 58,
+            "width": 920,
+            "height": 17
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2333,
+            "left": 58,
+            "width": 920,
+            "height": 26
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 2544,
+            "left": 0,
+            "width": 1440,
+            "height": 519
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 2723,
+            "left": 58,
+            "width": 426,
+            "height": 17
           }
         ],
         "colors": [
           {
-            "hex": "#0d0d0d",
-            "count": 120
-          },
-          {
-            "hex": "#6d6a70",
-            "count": 81
-          },
-          {
-            "hex": "#c2005d",
-            "count": 45
-          },
-          {
             "hex": "#ffffff",
-            "count": 22
+            "count": 142
           },
           {
-            "hex": "#f2eef3",
-            "count": 6
+            "hex": "#a6a6aa",
+            "count": 129
           },
           {
-            "hex": "#f9f8fa",
-            "count": 6
+            "hex": "#14f195",
+            "count": 32
           },
           {
-            "hex": "#e6006f",
-            "count": 5
+            "hex": "#9945ff",
+            "count": 9
           },
           {
-            "hex": "#ff4da6",
-            "count": 4
+            "hex": "#000000",
+            "count": 8
           },
           {
-            "hex": "#0f7b4d",
+            "hex": "#0b0b0c",
+            "count": 2
+          },
+          {
+            "hex": "#161618",
             "count": 1
           },
           {
-            "hex": "#e9e4eb",
+            "hex": "#29292d",
+            "count": 1
+          },
+          {
+            "hex": "#ff6b86",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 97,
+        "contrastChecked": 114,
         "headings": [
-          {
-            "tag": "h3",
-            "text": "EXPLORE"
-          },
-          {
-            "tag": "h3",
-            "text": "NETWORK"
-          },
-          {
-            "tag": "h3",
-            "text": "SESSION"
-          },
           {
             "tag": "h1",
             "text": "Time on the record."
           },
           {
             "tag": "h2",
-            "text": "On the record today"
+            "text": "ON THE RECORD TODAY"
           },
           {
             "tag": "h2",
             "text": "NEWEST QUESTS"
           },
           {
-            "tag": "h3",
-            "text": "No rows yet"
-          },
-          {
             "tag": "h2",
             "text": "VOTES ON THE FLOOR"
-          },
-          {
-            "tag": "h3",
-            "text": "The floor is open"
           },
           {
             "tag": "h2",
@@ -1181,6 +1324,18 @@
           {
             "tag": "h2",
             "text": "TOKEN"
+          },
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
           }
         ],
         "navTargets": [
@@ -1205,25 +1360,29 @@
       },
       "mobile": {
         "meta": {
-          "title": "Clepsyra — Time on the record.",
+          "title": "Actoria — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2079,
+          "bodyTextLength": 2393,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 26
+          "focusableCount": 30
         },
         "words": [
           {
             "word": "0",
-            "count": 5
+            "count": 2
           },
           {
-            "word": "11:56:15",
+            "word": "01",
+            "count": 2
+          },
+          {
+            "word": "02",
             "count": 1
           },
           {
-            "word": "20",
+            "word": "03",
             "count": 1
           },
           {
@@ -1231,11 +1390,39 @@
             "count": 1
           },
           {
+            "word": "21",
+            "count": 1
+          },
+          {
+            "word": "3",
+            "count": 1
+          },
+          {
+            "word": "9:51:54",
+            "count": 1
+          },
+          {
             "word": "a",
-            "count": 12
+            "count": 13
           },
           {
             "word": "A",
+            "count": 1
+          },
+          {
+            "word": "Act",
+            "count": 3
+          },
+          {
+            "word": "actions",
+            "count": 1
+          },
+          {
+            "word": "Actoria",
+            "count": 2
+          },
+          {
+            "word": "actoria.xyz",
             "count": 1
           },
           {
@@ -1251,6 +1438,10 @@
             "count": 1
           },
           {
+            "word": "Against",
+            "count": 1
+          },
+          {
             "word": "All",
             "count": 2
           },
@@ -1260,7 +1451,7 @@
           },
           {
             "word": "and",
-            "count": 7
+            "count": 8
           },
           {
             "word": "answer",
@@ -1271,12 +1462,8 @@
             "count": 2
           },
           {
-            "word": "appear",
-            "count": 1
-          },
-          {
             "word": "are",
-            "count": 3
+            "count": 4
           },
           {
             "word": "be",
@@ -1291,7 +1478,15 @@
             "count": 1
           },
           {
+            "word": "bounties",
+            "count": 1
+          },
+          {
             "word": "Browse",
+            "count": 1
+          },
+          {
+            "word": "budget",
             "count": 1
           },
           {
@@ -1307,19 +1502,11 @@
             "count": 2
           },
           {
-            "word": "check",
+            "word": "charter",
             "count": 1
           },
           {
-            "word": "Cleps",
-            "count": 2
-          },
-          {
-            "word": "Clepsyra",
-            "count": 2
-          },
-          {
-            "word": "clepsyra.xyz",
+            "word": "check",
             "count": 1
           },
           {
@@ -1328,11 +1515,11 @@
           },
           {
             "word": "community",
-            "count": 4
+            "count": 5
           },
           {
             "word": "configured",
-            "count": 2
+            "count": 3
           },
           {
             "word": "connect",
@@ -1344,7 +1531,7 @@
           },
           {
             "word": "connected",
-            "count": 2
+            "count": 3
           },
           {
             "word": "connection",
@@ -1356,10 +1543,6 @@
           },
           {
             "word": "days",
-            "count": 1
-          },
-          {
-            "word": "decision",
             "count": 1
           },
           {
@@ -1387,23 +1570,23 @@
             "count": 1
           },
           {
-            "word": "first",
-            "count": 1
-          },
-          {
             "word": "fix",
             "count": 1
           },
           {
             "word": "floor",
-            "count": 3
+            "count": 2
           },
           {
-            "word": "Foundation",
+            "word": "for",
             "count": 1
           },
           {
-            "word": "from",
+            "word": "For",
+            "count": 1
+          },
+          {
+            "word": "Foundation",
             "count": 1
           },
           {
@@ -1415,12 +1598,8 @@
             "count": 2
           },
           {
-            "word": "has",
-            "count": 1
-          },
-          {
             "word": "here",
-            "count": 2
+            "count": 1
           },
           {
             "word": "hold",
@@ -1436,6 +1615,10 @@
           },
           {
             "word": "how",
+            "count": 1
+          },
+          {
+            "word": "How",
             "count": 1
           },
           {
@@ -1460,7 +1643,11 @@
           },
           {
             "word": "is",
-            "count": 2
+            "count": 4
+          },
+          {
+            "word": "it",
+            "count": 1
           },
           {
             "word": "It",
@@ -1479,6 +1666,10 @@
             "count": 1
           },
           {
+            "word": "leading",
+            "count": 1
+          },
+          {
             "word": "leave",
             "count": 1
           },
@@ -1488,15 +1679,15 @@
           },
           {
             "word": "live",
-            "count": 2
+            "count": 1
           },
           {
-            "word": "make",
+            "word": "Map",
             "count": 1
           },
           {
             "word": "mint",
-            "count": 3
+            "count": 4
           },
           {
             "word": "minted",
@@ -1508,6 +1699,10 @@
           },
           {
             "word": "minutes",
+            "count": 1
+          },
+          {
+            "word": "mode",
             "count": 1
           },
           {
@@ -1536,7 +1731,7 @@
           },
           {
             "word": "no",
-            "count": 2
+            "count": 3
           },
           {
             "word": "No",
@@ -1552,11 +1747,11 @@
           },
           {
             "word": "not",
-            "count": 5
+            "count": 7
           },
           {
             "word": "nothing",
-            "count": 1
+            "count": 3
           },
           {
             "word": "Oct",
@@ -1564,19 +1759,15 @@
           },
           {
             "word": "on",
-            "count": 5
+            "count": 6
           },
           {
             "word": "On",
             "count": 1
           },
           {
-            "word": "once",
-            "count": 1
-          },
-          {
             "word": "one",
-            "count": 2
+            "count": 3
           },
           {
             "word": "One",
@@ -1584,11 +1775,11 @@
           },
           {
             "word": "only",
-            "count": 1
+            "count": 4
           },
           {
             "word": "open",
-            "count": 3
+            "count": 2
           },
           {
             "word": "Open",
@@ -1597,6 +1788,10 @@
           {
             "word": "or",
             "count": 4
+          },
+          {
+            "word": "oria",
+            "count": 3
           },
           {
             "word": "out",
@@ -1640,7 +1835,11 @@
           },
           {
             "word": "preview",
-            "count": 1
+            "count": 4
+          },
+          {
+            "word": "Preview",
+            "count": 2
           },
           {
             "word": "private",
@@ -1652,7 +1851,7 @@
           },
           {
             "word": "Program",
-            "count": 2
+            "count": 1
           },
           {
             "word": "project",
@@ -1664,15 +1863,11 @@
           },
           {
             "word": "proposal",
-            "count": 2
+            "count": 3
           },
           {
             "word": "public",
             "count": 2
-          },
-          {
-            "word": "publishes",
-            "count": 1
           },
           {
             "word": "quest",
@@ -1684,11 +1879,15 @@
           },
           {
             "word": "Quests",
-            "count": 4
+            "count": 3
           },
           {
             "word": "read",
-            "count": 3
+            "count": 2
+          },
+          {
+            "word": "Read",
+            "count": 1
           },
           {
             "word": "reading",
@@ -1727,11 +1926,19 @@
             "count": 1
           },
           {
-            "word": "reports",
+            "word": "research",
+            "count": 1
+          },
+          {
+            "word": "Reserve",
             "count": 1
           },
           {
             "word": "Results",
+            "count": 1
+          },
+          {
+            "word": "Review",
             "count": 1
           },
           {
@@ -1743,15 +1950,31 @@
             "count": 1
           },
           {
-            "word": "row",
-            "count": 3
-          },
-          {
-            "word": "rows",
+            "word": "route",
             "count": 1
           },
           {
+            "word": "row",
+            "count": 6
+          },
+          {
+            "word": "rows",
+            "count": 3
+          },
+          {
             "word": "Rows",
+            "count": 1
+          },
+          {
+            "word": "sample",
+            "count": 1
+          },
+          {
+            "word": "Sample",
+            "count": 5
+          },
+          {
+            "word": "season",
             "count": 1
           },
           {
@@ -1772,14 +1995,22 @@
           },
           {
             "word": "set",
-            "count": 1
+            "count": 2
           },
           {
             "word": "share",
             "count": 1
           },
           {
+            "word": "shown",
+            "count": 2
+          },
+          {
             "word": "sign",
+            "count": 1
+          },
+          {
+            "word": "signal",
             "count": 1
           },
           {
@@ -1811,16 +2042,24 @@
             "count": 1
           },
           {
-            "word": "Start",
-            "count": 1
-          },
-          {
             "word": "State",
             "count": 1
           },
           {
             "word": "status",
             "count": 1
+          },
+          {
+            "word": "submit",
+            "count": 1
+          },
+          {
+            "word": "submitted",
+            "count": 1
+          },
+          {
+            "word": "Support",
+            "count": 2
           },
           {
             "word": "Take",
@@ -1840,14 +2079,10 @@
           },
           {
             "word": "the",
-            "count": 13
+            "count": 12
           },
           {
             "word": "The",
-            "count": 2
-          },
-          {
-            "word": "them",
             "count": 1
           },
           {
@@ -1864,7 +2099,7 @@
           },
           {
             "word": "to",
-            "count": 6
+            "count": 5
           },
           {
             "word": "today",
@@ -1872,7 +2107,7 @@
           },
           {
             "word": "token",
-            "count": 5
+            "count": 6
           },
           {
             "word": "Token",
@@ -1887,15 +2122,19 @@
             "count": 1
           },
           {
+            "word": "treasury",
+            "count": 1
+          },
+          {
             "word": "Treasury",
             "count": 2
           },
           {
-            "word": "Tue",
+            "word": "unlisted",
             "count": 1
           },
           {
-            "word": "unlisted",
+            "word": "useful",
             "count": 1
           },
           {
@@ -1908,7 +2147,7 @@
           },
           {
             "word": "votes",
-            "count": 4
+            "count": 5
           },
           {
             "word": "Votes",
@@ -1927,11 +2166,11 @@
             "count": 1
           },
           {
-            "word": "Weigh",
+            "word": "Wed",
             "count": 1
           },
           {
-            "word": "when",
+            "word": "Weigh",
             "count": 1
           },
           {
@@ -1955,6 +2194,10 @@
             "count": 1
           },
           {
+            "word": "works",
+            "count": 1
+          },
+          {
             "word": "Write",
             "count": 1
           },
@@ -1968,7 +2211,7 @@
           },
           {
             "word": "yet",
-            "count": 3
+            "count": 2
           },
           {
             "word": "you",
@@ -1981,15 +2224,11 @@
           {
             "word": "Your",
             "count": 3
-          },
-          {
-            "word": "yra",
-            "count": 2
           }
         ],
         "attrs": [
           {
-            "key": "aria-label=Clepsyra home",
+            "key": "aria-label=Actoria home",
             "count": 1
           },
           {
@@ -2005,6 +2244,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Marginal notes",
+            "count": 1
+          },
+          {
             "key": "aria-label=Open menu",
             "count": 1
           },
@@ -2014,6 +2257,10 @@
           },
           {
             "key": "aria-label=Re-read testnet data",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Record bands",
             "count": 1
           },
           {
@@ -2056,167 +2303,203 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "bg-actions",
-          "bg-board",
-          "bg-board-body",
-          "bg-board-head",
-          "bg-board-title",
-          "bg-brandline",
-          "bg-brandline-accent",
-          "bg-brandline-mark",
-          "bg-brandline-tag",
-          "bg-brandline-text",
-          "bg-brandline-word",
-          "bg-btn",
-          "bg-btn--fill",
-          "bg-btn--lg",
-          "bg-btn--line",
-          "bg-btn--sm",
-          "bg-btn--wide",
-          "bg-colophon",
-          "bg-colophon-accent",
-          "bg-colophon-brand",
-          "bg-colophon-col",
-          "bg-colophon-cols",
-          "bg-colophon-facts",
-          "bg-colophon-fine",
-          "bg-colophon-links",
-          "bg-colophon-mark",
-          "bg-colophon-name",
-          "bg-colophon-note",
-          "bg-colophon-tag",
-          "bg-console",
-          "bg-console-chip",
-          "bg-console-icon",
-          "bg-console-pulse",
-          "bg-console-rule",
-          "bg-console-tools",
-          "bg-console-top",
-          "bg-current",
-          "bg-display",
-          "bg-empty",
-          "bg-empty-glyph",
-          "bg-empty-text",
-          "bg-empty-title",
-          "bg-fact",
-          "bg-fact--muted",
-          "bg-factlist",
-          "bg-facts",
-          "bg-fork",
-          "bg-fork--ballot",
-          "bg-fork-foot",
-          "bg-fork-glyph",
-          "bg-forks",
-          "bg-frame",
-          "bg-index",
-          "bg-index-badge",
-          "bg-index-glyph",
-          "bg-index-label",
-          "bg-index-link",
-          "bg-index-list",
-          "bg-index-rule",
-          "bg-kicker",
-          "bg-kicker-dot",
-          "bg-lede",
-          "bg-link",
-          "bg-live-dot",
-          "bg-margin",
-          "bg-narrative",
-          "bg-note",
-          "bg-pill",
-          "bg-readout",
-          "bg-readout-cell",
-          "bg-readout-date",
-          "bg-readout-foot",
-          "bg-readout-grid",
-          "bg-readout-head",
-          "bg-readout-label",
-          "bg-readout-note",
-          "bg-readout-title",
-          "bg-readout-value",
-          "bg-readout-value--text",
-          "bg-runhead",
-          "bg-sheet",
-          "bg-sheet-body",
-          "bg-sheet-body--flush",
-          "bg-sheet-foot",
-          "bg-sheet-head",
-          "bg-sheet-note",
-          "bg-sheet-title",
-          "bg-skip",
-          "bg-stage",
-          "bg-view",
-          "bg-wide"
+          "sp-actions",
+          "sp-band",
+          "sp-band-body",
+          "sp-band-head",
+          "sp-band-inner",
+          "sp-band-title",
+          "sp-bands",
+          "sp-beat",
+          "sp-beats",
+          "sp-brand",
+          "sp-brand-accent",
+          "sp-brand-link",
+          "sp-brand-mark",
+          "sp-brand-tag",
+          "sp-brand-text",
+          "sp-brand-word",
+          "sp-btn",
+          "sp-btn--ghost",
+          "sp-btn--lg",
+          "sp-btn--line",
+          "sp-btn--sm",
+          "sp-btn--solid",
+          "sp-btn--wide",
+          "sp-deck",
+          "sp-dial-date",
+          "sp-dial-foot",
+          "sp-dial-head",
+          "sp-dial-label",
+          "sp-dial-note",
+          "sp-dial-title",
+          "sp-dial-value",
+          "sp-dial-value--text",
+          "sp-dials",
+          "sp-door",
+          "sp-door--ballot",
+          "sp-door-foot",
+          "sp-door-glyph",
+          "sp-doors",
+          "sp-eyebrow",
+          "sp-eyebrow-dot",
+          "sp-fact",
+          "sp-fact--muted",
+          "sp-factlist",
+          "sp-facts",
+          "sp-flow",
+          "sp-headline",
+          "sp-icon-btn",
+          "sp-ledger",
+          "sp-ledger-go",
+          "sp-ledger-index",
+          "sp-ledger-main",
+          "sp-ledger-note",
+          "sp-ledger-row",
+          "sp-ledger-title",
+          "sp-link",
+          "sp-live-dot",
+          "sp-live-dot--idle",
+          "sp-main",
+          "sp-masthead",
+          "sp-note",
+          "sp-notice",
+          "sp-notice-action",
+          "sp-notice-copy",
+          "sp-notice-glyph",
+          "sp-notices",
+          "sp-pill",
+          "sp-route",
+          "sp-shell",
+          "sp-skip",
+          "sp-slab",
+          "sp-slab-body",
+          "sp-slab-body--flush",
+          "sp-slab-foot",
+          "sp-slab-head",
+          "sp-slab-inner",
+          "sp-slab-note",
+          "sp-slab-title",
+          "sp-spin",
+          "sp-statement",
+          "sp-statement-inner",
+          "sp-status",
+          "sp-status-accent",
+          "sp-status-brand",
+          "sp-status-col",
+          "sp-status-cols",
+          "sp-status-facts",
+          "sp-status-fine",
+          "sp-status-links",
+          "sp-status-mark",
+          "sp-status-name",
+          "sp-status-note",
+          "sp-status-tag",
+          "sp-status-top",
+          "sp-status-word",
+          "sp-status-word-accent",
+          "sp-tail",
+          "sp-tally",
+          "sp-tally-key",
+          "sp-tally-key--against",
+          "sp-tally-keys",
+          "sp-ticker",
+          "sp-ticker-glyph",
+          "sp-ticker-item",
+          "sp-ticker-label",
+          "sp-ticker-link",
+          "sp-ticker-list",
+          "sp-utility",
+          "sp-utility-chip",
+          "sp-utility-pulse"
         ],
         "fingerprint": [
           "a@5:0",
           "a@7:2",
-          "a@9:2",
-          "a@9:3",
+          "a@8:2",
           "article@10:4+",
-          "aside@5:3",
+          "article@9:1",
           "b@10:0",
-          "b@11:0",
-          "button@10:0",
+          "b@14:0",
+          "b@15:0",
+          "button@10:1",
           "button@11:1",
           "button@12:1",
-          "button@9:1",
-          "button@9:2",
-          "dd@13:0",
-          "div@10:1",
+          "button@13:4+",
+          "button@7:1",
+          "button@7:2",
+          "button@8:1",
+          "button@9:0",
+          "dd@14:0",
           "div@10:2",
           "div@10:3",
           "div@10:4+",
           "div@11:1",
           "div@11:3",
           "div@12:2",
+          "div@12:3",
+          "div@13:2",
           "div@3:1",
-          "div@4:3",
+          "div@4:4+",
           "div@6:1",
+          "div@6:2",
+          "div@6:3",
+          "div@6:4+",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:2",
-          "div@8:3",
           "div@8:4+",
           "div@9:2",
-          "div@9:4+",
-          "dl@11:4+",
-          "dt@13:0",
-          "em@9:0",
-          "footer@6:4+",
-          "h1@8:2",
+          "dl@12:4+",
+          "dt@14:0",
+          "em@10:0",
+          "footer@5:4+",
+          "h1@9:2",
           "h2@11:0",
-          "h3@12:0",
-          "h3@9:0",
-          "i@9:0",
+          "h2@12:0",
+          "h3@8:0",
+          "header@11:2",
+          "header@5:2",
+          "header@7:1",
+          "i@8:0",
           "img@9:0",
-          "li@8:1",
-          "li@9:2",
+          "li@10:2",
+          "li@12:1",
+          "li@7:1",
           "main@5:2",
-          "nav@6:3",
-          "nav@9:4+",
-          "ol@7:4+",
+          "nav@5:1",
+          "nav@8:4+",
+          "ol@6:4+",
           "p@11:0",
           "p@12:0",
           "p@7:0",
           "p@8:0",
-          "p@8:1",
           "p@9:0",
+          "p@9:1",
+          "path@10:0",
           "path@11:0",
           "path@12:0",
           "path@13:0",
           "path@14:0",
+          "path@16:0",
+          "path@9:0",
           "section@6:2",
+          "section@7:2",
+          "section@8:3",
+          "section@9:1",
           "section@9:2",
           "section@9:3",
+          "small@15:0",
           "span@10:0",
-          "span@10:1",
           "span@11:0",
           "span@11:1",
           "span@12:0",
-          "span@12:1",
+          "span@13:1",
+          "span@14:0",
+          "span@14:1",
+          "span@14:2",
           "span@7:0",
+          "span@7:1",
           "span@8:0",
           "span@8:1",
           "span@8:2",
@@ -2224,134 +2507,156 @@
           "span@9:1",
           "strong@11:0",
           "strong@12:0",
+          "strong@9:0",
           "svg@10:1",
           "svg@11:1",
           "svg@12:1",
           "svg@13:1",
-          "ul@8:3"
+          "svg@15:1",
+          "svg@8:1",
+          "svg@9:1",
+          "ul@11:1",
+          "ul@11:3",
+          "ul@9:3"
         ],
         "landmarks": [
           {
-            "tag": "aside",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 611
+            "height": 123
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 20,
-            "left": 18,
-            "width": 354,
-            "height": 130
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 239,
-            "left": 18,
-            "width": 354,
-            "height": 351
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 361,
-            "left": 18,
-            "width": 169,
-            "height": 43
+            "top": 123,
+            "left": 0,
+            "width": 390,
+            "height": 48
           },
           {
             "tag": "main",
             "role": "",
-            "top": 611,
+            "top": 171,
             "left": 0,
             "width": 390,
-            "height": 2652
+            "height": 2868
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 330,
+            "left": 0,
+            "width": 390,
+            "height": 466
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1375,
+            "left": 18,
+            "width": 354,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1691,
+            "left": 18,
+            "width": 354,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2500,
+            "left": 18,
+            "width": 354,
+            "height": 17
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2756,
+            "left": 18,
+            "width": 354,
+            "height": 26
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 3038,
+            "left": 0,
+            "width": 390,
+            "height": 667
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 3250,
+            "left": 18,
+            "width": 354,
+            "height": 17
           }
         ],
         "colors": [
           {
-            "hex": "#0d0d0d",
-            "count": 120
-          },
-          {
-            "hex": "#6d6a70",
-            "count": 81
-          },
-          {
-            "hex": "#c2005d",
-            "count": 45
-          },
-          {
             "hex": "#ffffff",
-            "count": 27
+            "count": 142
           },
           {
-            "hex": "#f9f8fa",
-            "count": 6
+            "hex": "#a6a6aa",
+            "count": 125
           },
           {
-            "hex": "#f2eef3",
-            "count": 5
+            "hex": "#14f195",
+            "count": 32
           },
           {
-            "hex": "#e6006f",
-            "count": 4
+            "hex": "#9945ff",
+            "count": 9
           },
           {
-            "hex": "#ff4da6",
-            "count": 4
+            "hex": "#000000",
+            "count": 8
           },
           {
-            "hex": "#0f7b4d",
+            "hex": "#0b0b0c",
+            "count": 2
+          },
+          {
+            "hex": "#161618",
             "count": 1
           },
           {
-            "hex": "#e9e4eb",
+            "hex": "#29292d",
+            "count": 1
+          },
+          {
+            "hex": "#ff6b86",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 97,
+        "contrastChecked": 110,
         "headings": [
-          {
-            "tag": "h3",
-            "text": "EXPLORE"
-          },
-          {
-            "tag": "h3",
-            "text": "NETWORK"
-          },
-          {
-            "tag": "h3",
-            "text": "SESSION"
-          },
           {
             "tag": "h1",
             "text": "Time on the record."
           },
           {
             "tag": "h2",
-            "text": "On the record today"
+            "text": "ON THE RECORD TODAY"
           },
           {
             "tag": "h2",
             "text": "NEWEST QUESTS"
           },
           {
-            "tag": "h3",
-            "text": "No rows yet"
-          },
-          {
             "tag": "h2",
             "text": "VOTES ON THE FLOOR"
-          },
-          {
-            "tag": "h3",
-            "text": "The floor is open"
           },
           {
             "tag": "h2",
@@ -2368,6 +2673,18 @@
           {
             "tag": "h2",
             "text": "TOKEN"
+          },
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
           }
         ],
         "navTargets": [
@@ -2377,44 +2694,44 @@
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "nav.bg-index > ol.bg-index-list > li",
-              "right": 430,
-              "width": 132
+              "selector": "div.sp-shell > nav.sp-ticker > ol.sp-ticker-list",
+              "right": 806,
+              "width": 806
             },
             {
-              "selector": "ol.bg-index-list > li > a.bg-index-link",
-              "right": 430,
-              "width": 132
+              "selector": "nav.sp-ticker > ol.sp-ticker-list > li.sp-ticker-item",
+              "right": 407,
+              "width": 125
             },
             {
-              "selector": "li > a.bg-index-link > b.bg-index-badge",
-              "right": 421,
-              "width": 22
+              "selector": "ol.sp-ticker-list > li.sp-ticker-item > a.sp-ticker-link",
+              "right": 407,
+              "width": 125
             },
             {
-              "selector": "nav.bg-index > ol.bg-index-list > li",
-              "right": 570,
-              "width": 132
+              "selector": "nav.sp-ticker > ol.sp-ticker-list > li.sp-ticker-item",
+              "right": 556,
+              "width": 149
             },
             {
-              "selector": "ol.bg-index-list > li > a.bg-index-link",
-              "right": 570,
-              "width": 132
+              "selector": "ol.sp-ticker-list > li.sp-ticker-item > a.sp-ticker-link",
+              "right": 556,
+              "width": 149
             },
             {
-              "selector": "li > a.bg-index-link > span.bg-index-glyph",
-              "right": 493,
-              "width": 18
+              "selector": "li.sp-ticker-item > a.sp-ticker-link > span.sp-ticker-glyph",
+              "right": 463,
+              "width": 15
             },
             {
-              "selector": "a.bg-index-link > span.bg-index-glyph > svg",
-              "right": 493,
-              "width": 17
+              "selector": "a.sp-ticker-link > span.sp-ticker-glyph > svg",
+              "right": 463,
+              "width": 15
             },
             {
-              "selector": "span.bg-index-glyph > svg > path",
-              "right": 490,
-              "width": 11
+              "selector": "span.sp-ticker-glyph > svg > path",
+              "right": 461,
+              "width": 10
             }
           ]
         }
@@ -2433,80 +2750,80 @@
             "text": "SKIP TO CONTENT",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 13, 13)",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(0, 0, 0)",
+            "backgroundColor": "rgb(20, 241, 149)"
+          },
+          {
+            "tag": "a",
+            "text": "Actoria home",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
             "boxShadow": "none",
             "borderColor": "rgb(255, 255, 255)",
-            "backgroundColor": "rgb(13, 13, 13)"
+            "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
-            "tag": "a",
-            "text": "Clepsyra home",
+            "tag": "button",
+            "text": "Re-read testnet data",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(20, 241, 149)",
             "boxShadow": "none",
-            "borderColor": "rgb(13, 13, 13)",
+            "borderColor": "rgb(41, 41, 45)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "button",
+            "text": "Connect a Solana wallet",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(153, 69, 255)",
+            "backgroundColor": "rgb(153, 69, 255)"
+          },
+          {
+            "tag": "button",
+            "text": "Open menu",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(41, 41, 45)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "Overview",
+            "text": "OVERVIEW",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "rgba(230, 0, 111, 0.1) 0px 8px 22px 0px",
-            "borderColor": "rgb(230, 0, 111)",
-            "backgroundColor": "rgb(255, 255, 255)"
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(255, 255, 255) rgb(41, 41, 45) rgb(255, 255, 255) rgb(255, 255, 255)",
+            "backgroundColor": "rgba(11, 11, 12, 0.953)"
           },
           {
             "tag": "a",
-            "text": "Quests 0",
+            "text": "QUESTS 0",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(20, 241, 149)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgb(251, 251, 251) rgb(41, 41, 45) rgb(251, 251, 251) rgb(251, 251, 251)",
+            "backgroundColor": "rgba(11, 11, 12, 0.953)"
           },
           {
             "tag": "a",
-            "text": "Votes 0",
+            "text": "VOTES 0",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(20, 241, 149)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Treasury",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Token",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Guide",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgb(251, 251, 251) rgb(41, 41, 45) rgb(251, 251, 251) rgb(251, 251, 251)",
+            "backgroundColor": "rgba(11, 11, 12, 0.953)"
           }
         ],
         "visibleCount": 8,

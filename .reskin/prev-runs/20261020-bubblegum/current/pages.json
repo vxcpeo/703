@@ -1,0 +1,2517 @@
+{
+  "schemaVersion": 1,
+  "label": "current",
+  "generatedAt": "2026-10-20T15:56:13.591Z",
+  "baseUrl": "http://127.0.0.1:4317/",
+  "browser": {
+    "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
+    "playwrightSource": "reskin-tools",
+    "axe": true
+  },
+  "pages": {
+    "/": {
+      "route": "/",
+      "url": "http://127.0.0.1:4317/",
+      "status": 200,
+      "desktop": {
+        "meta": {
+          "title": "Clepsyra — Time on the record.",
+          "lang": "en",
+          "h1Count": 1,
+          "bodyTextLength": 2088,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "focusableCount": 26
+        },
+        "words": [
+          {
+            "word": "0",
+            "count": 5
+          },
+          {
+            "word": "11:56:15",
+            "count": 1
+          },
+          {
+            "word": "20",
+            "count": 1
+          },
+          {
+            "word": "2026",
+            "count": 1
+          },
+          {
+            "word": "a",
+            "count": 12
+          },
+          {
+            "word": "A",
+            "count": 1
+          },
+          {
+            "word": "Address",
+            "count": 1
+          },
+          {
+            "word": "advisory",
+            "count": 4
+          },
+          {
+            "word": "affiliated",
+            "count": 1
+          },
+          {
+            "word": "All",
+            "count": 2
+          },
+          {
+            "word": "An",
+            "count": 1
+          },
+          {
+            "word": "and",
+            "count": 7
+          },
+          {
+            "word": "answer",
+            "count": 1
+          },
+          {
+            "word": "anyone",
+            "count": 2
+          },
+          {
+            "word": "appear",
+            "count": 1
+          },
+          {
+            "word": "are",
+            "count": 3
+          },
+          {
+            "word": "be",
+            "count": 1
+          },
+          {
+            "word": "Before",
+            "count": 1
+          },
+          {
+            "word": "between",
+            "count": 1
+          },
+          {
+            "word": "Browse",
+            "count": 1
+          },
+          {
+            "word": "buy",
+            "count": 1
+          },
+          {
+            "word": "by",
+            "count": 2
+          },
+          {
+            "word": "can",
+            "count": 2
+          },
+          {
+            "word": "check",
+            "count": 1
+          },
+          {
+            "word": "Cleps",
+            "count": 3
+          },
+          {
+            "word": "Clepsyra",
+            "count": 2
+          },
+          {
+            "word": "clepsyra.xyz",
+            "count": 1
+          },
+          {
+            "word": "Cluster",
+            "count": 1
+          },
+          {
+            "word": "community",
+            "count": 4
+          },
+          {
+            "word": "configured",
+            "count": 2
+          },
+          {
+            "word": "connect",
+            "count": 1
+          },
+          {
+            "word": "Connect",
+            "count": 3
+          },
+          {
+            "word": "connected",
+            "count": 2
+          },
+          {
+            "word": "connection",
+            "count": 1
+          },
+          {
+            "word": "content",
+            "count": 1
+          },
+          {
+            "word": "days",
+            "count": 1
+          },
+          {
+            "word": "decision",
+            "count": 1
+          },
+          {
+            "word": "demand",
+            "count": 1
+          },
+          {
+            "word": "do",
+            "count": 1
+          },
+          {
+            "word": "down",
+            "count": 1
+          },
+          {
+            "word": "every",
+            "count": 1
+          },
+          {
+            "word": "exists",
+            "count": 1
+          },
+          {
+            "word": "Explore",
+            "count": 1
+          },
+          {
+            "word": "first",
+            "count": 1
+          },
+          {
+            "word": "fix",
+            "count": 1
+          },
+          {
+            "word": "floor",
+            "count": 3
+          },
+          {
+            "word": "Foundation",
+            "count": 1
+          },
+          {
+            "word": "from",
+            "count": 1
+          },
+          {
+            "word": "funds",
+            "count": 1
+          },
+          {
+            "word": "Guide",
+            "count": 2
+          },
+          {
+            "word": "has",
+            "count": 1
+          },
+          {
+            "word": "here",
+            "count": 2
+          },
+          {
+            "word": "hold",
+            "count": 1
+          },
+          {
+            "word": "holds",
+            "count": 1
+          },
+          {
+            "word": "hour",
+            "count": 2
+          },
+          {
+            "word": "how",
+            "count": 1
+          },
+          {
+            "word": "idle",
+            "count": 1
+          },
+          {
+            "word": "in",
+            "count": 1
+          },
+          {
+            "word": "independent",
+            "count": 1
+          },
+          {
+            "word": "Independent",
+            "count": 1
+          },
+          {
+            "word": "instruction",
+            "count": 1
+          },
+          {
+            "word": "is",
+            "count": 2
+          },
+          {
+            "word": "It",
+            "count": 1
+          },
+          {
+            "word": "key",
+            "count": 1
+          },
+          {
+            "word": "Last",
+            "count": 1
+          },
+          {
+            "word": "later",
+            "count": 1
+          },
+          {
+            "word": "leave",
+            "count": 1
+          },
+          {
+            "word": "let",
+            "count": 1
+          },
+          {
+            "word": "live",
+            "count": 2
+          },
+          {
+            "word": "make",
+            "count": 1
+          },
+          {
+            "word": "mint",
+            "count": 3
+          },
+          {
+            "word": "minted",
+            "count": 1
+          },
+          {
+            "word": "mints",
+            "count": 1
+          },
+          {
+            "word": "minutes",
+            "count": 1
+          },
+          {
+            "word": "money",
+            "count": 1
+          },
+          {
+            "word": "move",
+            "count": 1
+          },
+          {
+            "word": "Network",
+            "count": 2
+          },
+          {
+            "word": "never",
+            "count": 3
+          },
+          {
+            "word": "Never",
+            "count": 1
+          },
+          {
+            "word": "Newest",
+            "count": 1
+          },
+          {
+            "word": "no",
+            "count": 2
+          },
+          {
+            "word": "No",
+            "count": 4
+          },
+          {
+            "word": "none",
+            "count": 2
+          },
+          {
+            "word": "None",
+            "count": 1
+          },
+          {
+            "word": "not",
+            "count": 5
+          },
+          {
+            "word": "nothing",
+            "count": 1
+          },
+          {
+            "word": "Oct",
+            "count": 1
+          },
+          {
+            "word": "on",
+            "count": 5
+          },
+          {
+            "word": "On",
+            "count": 1
+          },
+          {
+            "word": "once",
+            "count": 1
+          },
+          {
+            "word": "one",
+            "count": 2
+          },
+          {
+            "word": "One",
+            "count": 1
+          },
+          {
+            "word": "only",
+            "count": 1
+          },
+          {
+            "word": "open",
+            "count": 3
+          },
+          {
+            "word": "Open",
+            "count": 3
+          },
+          {
+            "word": "or",
+            "count": 4
+          },
+          {
+            "word": "out",
+            "count": 1
+          },
+          {
+            "word": "Overview",
+            "count": 2
+          },
+          {
+            "word": "part",
+            "count": 2
+          },
+          {
+            "word": "participation",
+            "count": 3
+          },
+          {
+            "word": "pay",
+            "count": 1
+          },
+          {
+            "word": "pays",
+            "count": 1
+          },
+          {
+            "word": "per",
+            "count": 2
+          },
+          {
+            "word": "phrase",
+            "count": 1
+          },
+          {
+            "word": "Pick",
+            "count": 1
+          },
+          {
+            "word": "PM",
+            "count": 1
+          },
+          {
+            "word": "preview",
+            "count": 1
+          },
+          {
+            "word": "private",
+            "count": 2
+          },
+          {
+            "word": "program",
+            "count": 3
+          },
+          {
+            "word": "Program",
+            "count": 2
+          },
+          {
+            "word": "project",
+            "count": 2
+          },
+          {
+            "word": "promised",
+            "count": 1
+          },
+          {
+            "word": "proposal",
+            "count": 2
+          },
+          {
+            "word": "public",
+            "count": 2
+          },
+          {
+            "word": "publishes",
+            "count": 1
+          },
+          {
+            "word": "quest",
+            "count": 1
+          },
+          {
+            "word": "quests",
+            "count": 5
+          },
+          {
+            "word": "Quests",
+            "count": 4
+          },
+          {
+            "word": "read",
+            "count": 3
+          },
+          {
+            "word": "reading",
+            "count": 1
+          },
+          {
+            "word": "Reads",
+            "count": 1
+          },
+          {
+            "word": "record",
+            "count": 6
+          },
+          {
+            "word": "recorded",
+            "count": 1
+          },
+          {
+            "word": "records",
+            "count": 1
+          },
+          {
+            "word": "refresh",
+            "count": 1
+          },
+          {
+            "word": "register",
+            "count": 1
+          },
+          {
+            "word": "reopen",
+            "count": 1
+          },
+          {
+            "word": "reopened",
+            "count": 1
+          },
+          {
+            "word": "reports",
+            "count": 1
+          },
+          {
+            "word": "Results",
+            "count": 1
+          },
+          {
+            "word": "reviews",
+            "count": 1
+          },
+          {
+            "word": "room",
+            "count": 1
+          },
+          {
+            "word": "row",
+            "count": 3
+          },
+          {
+            "word": "rows",
+            "count": 1
+          },
+          {
+            "word": "Rows",
+            "count": 1
+          },
+          {
+            "word": "See",
+            "count": 1
+          },
+          {
+            "word": "seed",
+            "count": 1
+          },
+          {
+            "word": "sends",
+            "count": 1
+          },
+          {
+            "word": "Session",
+            "count": 1
+          },
+          {
+            "word": "set",
+            "count": 1
+          },
+          {
+            "word": "share",
+            "count": 1
+          },
+          {
+            "word": "sign",
+            "count": 1
+          },
+          {
+            "word": "sits",
+            "count": 1
+          },
+          {
+            "word": "Skip",
+            "count": 1
+          },
+          {
+            "word": "SOL",
+            "count": 1
+          },
+          {
+            "word": "Solana",
+            "count": 5
+          },
+          {
+            "word": "sold",
+            "count": 1
+          },
+          {
+            "word": "spreadsheet",
+            "count": 1
+          },
+          {
+            "word": "stamped",
+            "count": 1
+          },
+          {
+            "word": "Start",
+            "count": 1
+          },
+          {
+            "word": "State",
+            "count": 1
+          },
+          {
+            "word": "status",
+            "count": 1
+          },
+          {
+            "word": "Take",
+            "count": 1
+          },
+          {
+            "word": "testnet",
+            "count": 2
+          },
+          {
+            "word": "Testnet",
+            "count": 3
+          },
+          {
+            "word": "that",
+            "count": 1
+          },
+          {
+            "word": "the",
+            "count": 13
+          },
+          {
+            "word": "The",
+            "count": 2
+          },
+          {
+            "word": "them",
+            "count": 1
+          },
+          {
+            "word": "they",
+            "count": 1
+          },
+          {
+            "word": "thirty",
+            "count": 1
+          },
+          {
+            "word": "Time",
+            "count": 3
+          },
+          {
+            "word": "to",
+            "count": 6
+          },
+          {
+            "word": "today",
+            "count": 1
+          },
+          {
+            "word": "token",
+            "count": 5
+          },
+          {
+            "word": "Token",
+            "count": 7
+          },
+          {
+            "word": "took",
+            "count": 1
+          },
+          {
+            "word": "transaction",
+            "count": 1
+          },
+          {
+            "word": "Treasury",
+            "count": 2
+          },
+          {
+            "word": "Tue",
+            "count": 1
+          },
+          {
+            "word": "unlisted",
+            "count": 1
+          },
+          {
+            "word": "vote",
+            "count": 1
+          },
+          {
+            "word": "voted",
+            "count": 1
+          },
+          {
+            "word": "votes",
+            "count": 4
+          },
+          {
+            "word": "Votes",
+            "count": 4
+          },
+          {
+            "word": "wallet",
+            "count": 8
+          },
+          {
+            "word": "Wallet",
+            "count": 1
+          },
+          {
+            "word": "wallets",
+            "count": 1
+          },
+          {
+            "word": "Weigh",
+            "count": 1
+          },
+          {
+            "word": "when",
+            "count": 1
+          },
+          {
+            "word": "where",
+            "count": 1
+          },
+          {
+            "word": "who",
+            "count": 1
+          },
+          {
+            "word": "Why",
+            "count": 1
+          },
+          {
+            "word": "window",
+            "count": 1
+          },
+          {
+            "word": "with",
+            "count": 1
+          },
+          {
+            "word": "Write",
+            "count": 1
+          },
+          {
+            "word": "writes",
+            "count": 1
+          },
+          {
+            "word": "Written",
+            "count": 1
+          },
+          {
+            "word": "yet",
+            "count": 3
+          },
+          {
+            "word": "you",
+            "count": 1
+          },
+          {
+            "word": "your",
+            "count": 1
+          },
+          {
+            "word": "Your",
+            "count": 3
+          },
+          {
+            "word": "yra",
+            "count": 3
+          }
+        ],
+        "attrs": [
+          {
+            "key": "aria-label=Clepsyra home",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Connect a Solana wallet",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Footer",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Live readouts",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Open menu",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Re-read testnet data",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Ways to take part",
+            "count": 1
+          }
+        ],
+        "links": [
+          {
+            "href": "#governance",
+            "count": 1
+          },
+          {
+            "href": "#home",
+            "count": 2
+          },
+          {
+            "href": "#learn",
+            "count": 1
+          },
+          {
+            "href": "#main",
+            "count": 1
+          },
+          {
+            "href": "#quests",
+            "count": 1
+          },
+          {
+            "href": "#stake",
+            "count": 1
+          },
+          {
+            "href": "#treasury",
+            "count": 1
+          }
+        ],
+        "forms": [],
+        "fieldIssues": [],
+        "imageIssues": [],
+        "interactiveIssues": [],
+        "classTokens": [
+          "bg-actions",
+          "bg-board",
+          "bg-board-body",
+          "bg-board-head",
+          "bg-board-title",
+          "bg-brandline",
+          "bg-brandline-accent",
+          "bg-brandline-mark",
+          "bg-brandline-tag",
+          "bg-brandline-text",
+          "bg-brandline-word",
+          "bg-btn",
+          "bg-btn--fill",
+          "bg-btn--lg",
+          "bg-btn--line",
+          "bg-btn--sm",
+          "bg-btn--wide",
+          "bg-colophon",
+          "bg-colophon-accent",
+          "bg-colophon-brand",
+          "bg-colophon-col",
+          "bg-colophon-cols",
+          "bg-colophon-facts",
+          "bg-colophon-fine",
+          "bg-colophon-links",
+          "bg-colophon-mark",
+          "bg-colophon-name",
+          "bg-colophon-note",
+          "bg-colophon-tag",
+          "bg-colophon-word",
+          "bg-colophon-word-accent",
+          "bg-console",
+          "bg-console-chip",
+          "bg-console-icon",
+          "bg-console-pulse",
+          "bg-console-rule",
+          "bg-console-tools",
+          "bg-console-top",
+          "bg-current",
+          "bg-display",
+          "bg-empty",
+          "bg-empty-glyph",
+          "bg-empty-text",
+          "bg-empty-title",
+          "bg-fact",
+          "bg-fact--muted",
+          "bg-factlist",
+          "bg-facts",
+          "bg-fork",
+          "bg-fork--ballot",
+          "bg-fork-foot",
+          "bg-fork-glyph",
+          "bg-forks",
+          "bg-frame",
+          "bg-index",
+          "bg-index-badge",
+          "bg-index-glyph",
+          "bg-index-label",
+          "bg-index-link",
+          "bg-index-list",
+          "bg-index-rule",
+          "bg-kicker",
+          "bg-kicker-dot",
+          "bg-lede",
+          "bg-link",
+          "bg-live-dot",
+          "bg-margin",
+          "bg-narrative",
+          "bg-note",
+          "bg-pill",
+          "bg-readout",
+          "bg-readout-cell",
+          "bg-readout-date",
+          "bg-readout-foot",
+          "bg-readout-grid",
+          "bg-readout-head",
+          "bg-readout-label",
+          "bg-readout-note",
+          "bg-readout-title",
+          "bg-readout-value",
+          "bg-readout-value--text",
+          "bg-runhead",
+          "bg-sheet",
+          "bg-sheet-body",
+          "bg-sheet-body--flush",
+          "bg-sheet-foot",
+          "bg-sheet-head",
+          "bg-sheet-note",
+          "bg-sheet-title",
+          "bg-skip",
+          "bg-stage",
+          "bg-view",
+          "bg-wide"
+        ],
+        "fingerprint": [
+          "a@5:0",
+          "a@7:2",
+          "a@9:2",
+          "a@9:3",
+          "article@10:4+",
+          "aside@5:3",
+          "b@10:0",
+          "b@11:0",
+          "button@10:0",
+          "button@11:1",
+          "button@12:1",
+          "button@9:1",
+          "button@9:2",
+          "dd@13:0",
+          "div@10:1",
+          "div@10:2",
+          "div@10:3",
+          "div@10:4+",
+          "div@11:1",
+          "div@11:3",
+          "div@12:2",
+          "div@3:1",
+          "div@4:3",
+          "div@6:1",
+          "div@7:1",
+          "div@7:2",
+          "div@7:3",
+          "div@7:4+",
+          "div@8:2",
+          "div@8:3",
+          "div@8:4+",
+          "div@9:2",
+          "div@9:4+",
+          "dl@11:4+",
+          "dt@13:0",
+          "em@9:0",
+          "footer@6:4+",
+          "h1@8:2",
+          "h2@11:0",
+          "h3@12:0",
+          "h3@9:0",
+          "i@9:0",
+          "img@9:0",
+          "li@8:1",
+          "li@9:2",
+          "main@5:2",
+          "nav@6:3",
+          "nav@9:4+",
+          "ol@7:4+",
+          "p@11:0",
+          "p@12:0",
+          "p@7:0",
+          "p@8:0",
+          "p@8:1",
+          "p@9:0",
+          "path@11:0",
+          "path@12:0",
+          "path@13:0",
+          "path@14:0",
+          "section@6:2",
+          "section@9:2",
+          "section@9:3",
+          "span@10:0",
+          "span@10:1",
+          "span@11:0",
+          "span@11:1",
+          "span@12:0",
+          "span@12:1",
+          "span@7:0",
+          "span@8:0",
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
+          "span@9:1",
+          "strong@11:0",
+          "strong@12:0",
+          "svg@10:1",
+          "svg@11:1",
+          "svg@12:1",
+          "svg@13:1",
+          "ul@8:3"
+        ],
+        "landmarks": [
+          {
+            "tag": "aside",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 547,
+            "height": 900
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 34,
+            "left": 34,
+            "width": 478,
+            "height": 346
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 501,
+            "left": 34,
+            "width": 478,
+            "height": 365
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 606,
+            "left": 34,
+            "width": 231,
+            "height": 43
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": -12,
+            "left": 547,
+            "width": 893,
+            "height": 1813
+          }
+        ],
+        "colors": [
+          {
+            "hex": "#0d0d0d",
+            "count": 120
+          },
+          {
+            "hex": "#6d6a70",
+            "count": 81
+          },
+          {
+            "hex": "#c2005d",
+            "count": 45
+          },
+          {
+            "hex": "#ffffff",
+            "count": 22
+          },
+          {
+            "hex": "#f2eef3",
+            "count": 6
+          },
+          {
+            "hex": "#f9f8fa",
+            "count": 6
+          },
+          {
+            "hex": "#e6006f",
+            "count": 5
+          },
+          {
+            "hex": "#ff4da6",
+            "count": 4
+          },
+          {
+            "hex": "#0f7b4d",
+            "count": 1
+          },
+          {
+            "hex": "#e9e4eb",
+            "count": 1
+          }
+        ],
+        "contrast": [],
+        "contrastChecked": 97,
+        "headings": [
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
+          },
+          {
+            "tag": "h1",
+            "text": "Time on the record."
+          },
+          {
+            "tag": "h2",
+            "text": "On the record today"
+          },
+          {
+            "tag": "h2",
+            "text": "NEWEST QUESTS"
+          },
+          {
+            "tag": "h3",
+            "text": "No rows yet"
+          },
+          {
+            "tag": "h2",
+            "text": "VOTES ON THE FLOOR"
+          },
+          {
+            "tag": "h3",
+            "text": "The floor is open"
+          },
+          {
+            "tag": "h2",
+            "text": "Take part"
+          },
+          {
+            "tag": "h2",
+            "text": "Weigh in"
+          },
+          {
+            "tag": "h2",
+            "text": "YOUR WALLET"
+          },
+          {
+            "tag": "h2",
+            "text": "TOKEN"
+          }
+        ],
+        "navTargets": [
+          ""
+        ],
+        "overflow": {
+          "documentOverflow": false,
+          "offenders": []
+        }
+      },
+      "axe": {
+        "skipped": true,
+        "violations": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "failedResponses": [],
+      "screenshots": {
+        "desktop": "current/home-desktop.png",
+        "mobile": "current/home-mobile.png"
+      },
+      "mobile": {
+        "meta": {
+          "title": "Clepsyra — Time on the record.",
+          "lang": "en",
+          "h1Count": 1,
+          "bodyTextLength": 2079,
+          "scrollWidth": 390,
+          "clientWidth": 390,
+          "focusableCount": 26
+        },
+        "words": [
+          {
+            "word": "0",
+            "count": 5
+          },
+          {
+            "word": "11:56:15",
+            "count": 1
+          },
+          {
+            "word": "20",
+            "count": 1
+          },
+          {
+            "word": "2026",
+            "count": 1
+          },
+          {
+            "word": "a",
+            "count": 12
+          },
+          {
+            "word": "A",
+            "count": 1
+          },
+          {
+            "word": "Address",
+            "count": 1
+          },
+          {
+            "word": "advisory",
+            "count": 4
+          },
+          {
+            "word": "affiliated",
+            "count": 1
+          },
+          {
+            "word": "All",
+            "count": 2
+          },
+          {
+            "word": "An",
+            "count": 1
+          },
+          {
+            "word": "and",
+            "count": 7
+          },
+          {
+            "word": "answer",
+            "count": 1
+          },
+          {
+            "word": "anyone",
+            "count": 2
+          },
+          {
+            "word": "appear",
+            "count": 1
+          },
+          {
+            "word": "are",
+            "count": 3
+          },
+          {
+            "word": "be",
+            "count": 1
+          },
+          {
+            "word": "Before",
+            "count": 1
+          },
+          {
+            "word": "between",
+            "count": 1
+          },
+          {
+            "word": "Browse",
+            "count": 1
+          },
+          {
+            "word": "buy",
+            "count": 1
+          },
+          {
+            "word": "by",
+            "count": 2
+          },
+          {
+            "word": "can",
+            "count": 2
+          },
+          {
+            "word": "check",
+            "count": 1
+          },
+          {
+            "word": "Cleps",
+            "count": 2
+          },
+          {
+            "word": "Clepsyra",
+            "count": 2
+          },
+          {
+            "word": "clepsyra.xyz",
+            "count": 1
+          },
+          {
+            "word": "Cluster",
+            "count": 1
+          },
+          {
+            "word": "community",
+            "count": 4
+          },
+          {
+            "word": "configured",
+            "count": 2
+          },
+          {
+            "word": "connect",
+            "count": 1
+          },
+          {
+            "word": "Connect",
+            "count": 3
+          },
+          {
+            "word": "connected",
+            "count": 2
+          },
+          {
+            "word": "connection",
+            "count": 1
+          },
+          {
+            "word": "content",
+            "count": 1
+          },
+          {
+            "word": "days",
+            "count": 1
+          },
+          {
+            "word": "decision",
+            "count": 1
+          },
+          {
+            "word": "demand",
+            "count": 1
+          },
+          {
+            "word": "do",
+            "count": 1
+          },
+          {
+            "word": "down",
+            "count": 1
+          },
+          {
+            "word": "every",
+            "count": 1
+          },
+          {
+            "word": "exists",
+            "count": 1
+          },
+          {
+            "word": "Explore",
+            "count": 1
+          },
+          {
+            "word": "first",
+            "count": 1
+          },
+          {
+            "word": "fix",
+            "count": 1
+          },
+          {
+            "word": "floor",
+            "count": 3
+          },
+          {
+            "word": "Foundation",
+            "count": 1
+          },
+          {
+            "word": "from",
+            "count": 1
+          },
+          {
+            "word": "funds",
+            "count": 1
+          },
+          {
+            "word": "Guide",
+            "count": 2
+          },
+          {
+            "word": "has",
+            "count": 1
+          },
+          {
+            "word": "here",
+            "count": 2
+          },
+          {
+            "word": "hold",
+            "count": 1
+          },
+          {
+            "word": "holds",
+            "count": 1
+          },
+          {
+            "word": "hour",
+            "count": 2
+          },
+          {
+            "word": "how",
+            "count": 1
+          },
+          {
+            "word": "idle",
+            "count": 1
+          },
+          {
+            "word": "in",
+            "count": 1
+          },
+          {
+            "word": "independent",
+            "count": 1
+          },
+          {
+            "word": "Independent",
+            "count": 1
+          },
+          {
+            "word": "instruction",
+            "count": 1
+          },
+          {
+            "word": "is",
+            "count": 2
+          },
+          {
+            "word": "It",
+            "count": 1
+          },
+          {
+            "word": "key",
+            "count": 1
+          },
+          {
+            "word": "Last",
+            "count": 1
+          },
+          {
+            "word": "later",
+            "count": 1
+          },
+          {
+            "word": "leave",
+            "count": 1
+          },
+          {
+            "word": "let",
+            "count": 1
+          },
+          {
+            "word": "live",
+            "count": 2
+          },
+          {
+            "word": "make",
+            "count": 1
+          },
+          {
+            "word": "mint",
+            "count": 3
+          },
+          {
+            "word": "minted",
+            "count": 1
+          },
+          {
+            "word": "mints",
+            "count": 1
+          },
+          {
+            "word": "minutes",
+            "count": 1
+          },
+          {
+            "word": "money",
+            "count": 1
+          },
+          {
+            "word": "move",
+            "count": 1
+          },
+          {
+            "word": "Network",
+            "count": 2
+          },
+          {
+            "word": "never",
+            "count": 3
+          },
+          {
+            "word": "Never",
+            "count": 1
+          },
+          {
+            "word": "Newest",
+            "count": 1
+          },
+          {
+            "word": "no",
+            "count": 2
+          },
+          {
+            "word": "No",
+            "count": 4
+          },
+          {
+            "word": "none",
+            "count": 2
+          },
+          {
+            "word": "None",
+            "count": 1
+          },
+          {
+            "word": "not",
+            "count": 5
+          },
+          {
+            "word": "nothing",
+            "count": 1
+          },
+          {
+            "word": "Oct",
+            "count": 1
+          },
+          {
+            "word": "on",
+            "count": 5
+          },
+          {
+            "word": "On",
+            "count": 1
+          },
+          {
+            "word": "once",
+            "count": 1
+          },
+          {
+            "word": "one",
+            "count": 2
+          },
+          {
+            "word": "One",
+            "count": 1
+          },
+          {
+            "word": "only",
+            "count": 1
+          },
+          {
+            "word": "open",
+            "count": 3
+          },
+          {
+            "word": "Open",
+            "count": 3
+          },
+          {
+            "word": "or",
+            "count": 4
+          },
+          {
+            "word": "out",
+            "count": 1
+          },
+          {
+            "word": "Overview",
+            "count": 2
+          },
+          {
+            "word": "part",
+            "count": 2
+          },
+          {
+            "word": "participation",
+            "count": 3
+          },
+          {
+            "word": "pay",
+            "count": 1
+          },
+          {
+            "word": "pays",
+            "count": 1
+          },
+          {
+            "word": "per",
+            "count": 2
+          },
+          {
+            "word": "phrase",
+            "count": 1
+          },
+          {
+            "word": "Pick",
+            "count": 1
+          },
+          {
+            "word": "PM",
+            "count": 1
+          },
+          {
+            "word": "preview",
+            "count": 1
+          },
+          {
+            "word": "private",
+            "count": 2
+          },
+          {
+            "word": "program",
+            "count": 3
+          },
+          {
+            "word": "Program",
+            "count": 2
+          },
+          {
+            "word": "project",
+            "count": 2
+          },
+          {
+            "word": "promised",
+            "count": 1
+          },
+          {
+            "word": "proposal",
+            "count": 2
+          },
+          {
+            "word": "public",
+            "count": 2
+          },
+          {
+            "word": "publishes",
+            "count": 1
+          },
+          {
+            "word": "quest",
+            "count": 1
+          },
+          {
+            "word": "quests",
+            "count": 5
+          },
+          {
+            "word": "Quests",
+            "count": 4
+          },
+          {
+            "word": "read",
+            "count": 3
+          },
+          {
+            "word": "reading",
+            "count": 1
+          },
+          {
+            "word": "Reads",
+            "count": 1
+          },
+          {
+            "word": "record",
+            "count": 6
+          },
+          {
+            "word": "recorded",
+            "count": 1
+          },
+          {
+            "word": "records",
+            "count": 1
+          },
+          {
+            "word": "refresh",
+            "count": 1
+          },
+          {
+            "word": "register",
+            "count": 1
+          },
+          {
+            "word": "reopen",
+            "count": 1
+          },
+          {
+            "word": "reopened",
+            "count": 1
+          },
+          {
+            "word": "reports",
+            "count": 1
+          },
+          {
+            "word": "Results",
+            "count": 1
+          },
+          {
+            "word": "reviews",
+            "count": 1
+          },
+          {
+            "word": "room",
+            "count": 1
+          },
+          {
+            "word": "row",
+            "count": 3
+          },
+          {
+            "word": "rows",
+            "count": 1
+          },
+          {
+            "word": "Rows",
+            "count": 1
+          },
+          {
+            "word": "See",
+            "count": 1
+          },
+          {
+            "word": "seed",
+            "count": 1
+          },
+          {
+            "word": "sends",
+            "count": 1
+          },
+          {
+            "word": "Session",
+            "count": 1
+          },
+          {
+            "word": "set",
+            "count": 1
+          },
+          {
+            "word": "share",
+            "count": 1
+          },
+          {
+            "word": "sign",
+            "count": 1
+          },
+          {
+            "word": "sits",
+            "count": 1
+          },
+          {
+            "word": "Skip",
+            "count": 1
+          },
+          {
+            "word": "SOL",
+            "count": 1
+          },
+          {
+            "word": "Solana",
+            "count": 5
+          },
+          {
+            "word": "sold",
+            "count": 1
+          },
+          {
+            "word": "spreadsheet",
+            "count": 1
+          },
+          {
+            "word": "stamped",
+            "count": 1
+          },
+          {
+            "word": "Start",
+            "count": 1
+          },
+          {
+            "word": "State",
+            "count": 1
+          },
+          {
+            "word": "status",
+            "count": 1
+          },
+          {
+            "word": "Take",
+            "count": 1
+          },
+          {
+            "word": "testnet",
+            "count": 2
+          },
+          {
+            "word": "Testnet",
+            "count": 3
+          },
+          {
+            "word": "that",
+            "count": 1
+          },
+          {
+            "word": "the",
+            "count": 13
+          },
+          {
+            "word": "The",
+            "count": 2
+          },
+          {
+            "word": "them",
+            "count": 1
+          },
+          {
+            "word": "they",
+            "count": 1
+          },
+          {
+            "word": "thirty",
+            "count": 1
+          },
+          {
+            "word": "Time",
+            "count": 3
+          },
+          {
+            "word": "to",
+            "count": 6
+          },
+          {
+            "word": "today",
+            "count": 1
+          },
+          {
+            "word": "token",
+            "count": 5
+          },
+          {
+            "word": "Token",
+            "count": 7
+          },
+          {
+            "word": "took",
+            "count": 1
+          },
+          {
+            "word": "transaction",
+            "count": 1
+          },
+          {
+            "word": "Treasury",
+            "count": 2
+          },
+          {
+            "word": "Tue",
+            "count": 1
+          },
+          {
+            "word": "unlisted",
+            "count": 1
+          },
+          {
+            "word": "vote",
+            "count": 1
+          },
+          {
+            "word": "voted",
+            "count": 1
+          },
+          {
+            "word": "votes",
+            "count": 4
+          },
+          {
+            "word": "Votes",
+            "count": 4
+          },
+          {
+            "word": "wallet",
+            "count": 8
+          },
+          {
+            "word": "Wallet",
+            "count": 1
+          },
+          {
+            "word": "wallets",
+            "count": 1
+          },
+          {
+            "word": "Weigh",
+            "count": 1
+          },
+          {
+            "word": "when",
+            "count": 1
+          },
+          {
+            "word": "where",
+            "count": 1
+          },
+          {
+            "word": "who",
+            "count": 1
+          },
+          {
+            "word": "Why",
+            "count": 1
+          },
+          {
+            "word": "window",
+            "count": 1
+          },
+          {
+            "word": "with",
+            "count": 1
+          },
+          {
+            "word": "Write",
+            "count": 1
+          },
+          {
+            "word": "writes",
+            "count": 1
+          },
+          {
+            "word": "Written",
+            "count": 1
+          },
+          {
+            "word": "yet",
+            "count": 3
+          },
+          {
+            "word": "you",
+            "count": 1
+          },
+          {
+            "word": "your",
+            "count": 1
+          },
+          {
+            "word": "Your",
+            "count": 3
+          },
+          {
+            "word": "yra",
+            "count": 2
+          }
+        ],
+        "attrs": [
+          {
+            "key": "aria-label=Clepsyra home",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Connect a Solana wallet",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Footer",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Live readouts",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Open menu",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Re-read testnet data",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Ways to take part",
+            "count": 1
+          }
+        ],
+        "links": [
+          {
+            "href": "#governance",
+            "count": 1
+          },
+          {
+            "href": "#home",
+            "count": 2
+          },
+          {
+            "href": "#learn",
+            "count": 1
+          },
+          {
+            "href": "#main",
+            "count": 1
+          },
+          {
+            "href": "#quests",
+            "count": 1
+          },
+          {
+            "href": "#stake",
+            "count": 1
+          },
+          {
+            "href": "#treasury",
+            "count": 1
+          }
+        ],
+        "forms": [],
+        "fieldIssues": [],
+        "imageIssues": [],
+        "interactiveIssues": [],
+        "classTokens": [
+          "bg-actions",
+          "bg-board",
+          "bg-board-body",
+          "bg-board-head",
+          "bg-board-title",
+          "bg-brandline",
+          "bg-brandline-accent",
+          "bg-brandline-mark",
+          "bg-brandline-tag",
+          "bg-brandline-text",
+          "bg-brandline-word",
+          "bg-btn",
+          "bg-btn--fill",
+          "bg-btn--lg",
+          "bg-btn--line",
+          "bg-btn--sm",
+          "bg-btn--wide",
+          "bg-colophon",
+          "bg-colophon-accent",
+          "bg-colophon-brand",
+          "bg-colophon-col",
+          "bg-colophon-cols",
+          "bg-colophon-facts",
+          "bg-colophon-fine",
+          "bg-colophon-links",
+          "bg-colophon-mark",
+          "bg-colophon-name",
+          "bg-colophon-note",
+          "bg-colophon-tag",
+          "bg-console",
+          "bg-console-chip",
+          "bg-console-icon",
+          "bg-console-pulse",
+          "bg-console-rule",
+          "bg-console-tools",
+          "bg-console-top",
+          "bg-current",
+          "bg-display",
+          "bg-empty",
+          "bg-empty-glyph",
+          "bg-empty-text",
+          "bg-empty-title",
+          "bg-fact",
+          "bg-fact--muted",
+          "bg-factlist",
+          "bg-facts",
+          "bg-fork",
+          "bg-fork--ballot",
+          "bg-fork-foot",
+          "bg-fork-glyph",
+          "bg-forks",
+          "bg-frame",
+          "bg-index",
+          "bg-index-badge",
+          "bg-index-glyph",
+          "bg-index-label",
+          "bg-index-link",
+          "bg-index-list",
+          "bg-index-rule",
+          "bg-kicker",
+          "bg-kicker-dot",
+          "bg-lede",
+          "bg-link",
+          "bg-live-dot",
+          "bg-margin",
+          "bg-narrative",
+          "bg-note",
+          "bg-pill",
+          "bg-readout",
+          "bg-readout-cell",
+          "bg-readout-date",
+          "bg-readout-foot",
+          "bg-readout-grid",
+          "bg-readout-head",
+          "bg-readout-label",
+          "bg-readout-note",
+          "bg-readout-title",
+          "bg-readout-value",
+          "bg-readout-value--text",
+          "bg-runhead",
+          "bg-sheet",
+          "bg-sheet-body",
+          "bg-sheet-body--flush",
+          "bg-sheet-foot",
+          "bg-sheet-head",
+          "bg-sheet-note",
+          "bg-sheet-title",
+          "bg-skip",
+          "bg-stage",
+          "bg-view",
+          "bg-wide"
+        ],
+        "fingerprint": [
+          "a@5:0",
+          "a@7:2",
+          "a@9:2",
+          "a@9:3",
+          "article@10:4+",
+          "aside@5:3",
+          "b@10:0",
+          "b@11:0",
+          "button@10:0",
+          "button@11:1",
+          "button@12:1",
+          "button@9:1",
+          "button@9:2",
+          "dd@13:0",
+          "div@10:1",
+          "div@10:2",
+          "div@10:3",
+          "div@10:4+",
+          "div@11:1",
+          "div@11:3",
+          "div@12:2",
+          "div@3:1",
+          "div@4:3",
+          "div@6:1",
+          "div@7:2",
+          "div@7:3",
+          "div@7:4+",
+          "div@8:2",
+          "div@8:3",
+          "div@8:4+",
+          "div@9:2",
+          "div@9:4+",
+          "dl@11:4+",
+          "dt@13:0",
+          "em@9:0",
+          "footer@6:4+",
+          "h1@8:2",
+          "h2@11:0",
+          "h3@12:0",
+          "h3@9:0",
+          "i@9:0",
+          "img@9:0",
+          "li@8:1",
+          "li@9:2",
+          "main@5:2",
+          "nav@6:3",
+          "nav@9:4+",
+          "ol@7:4+",
+          "p@11:0",
+          "p@12:0",
+          "p@7:0",
+          "p@8:0",
+          "p@8:1",
+          "p@9:0",
+          "path@11:0",
+          "path@12:0",
+          "path@13:0",
+          "path@14:0",
+          "section@6:2",
+          "section@9:2",
+          "section@9:3",
+          "span@10:0",
+          "span@10:1",
+          "span@11:0",
+          "span@11:1",
+          "span@12:0",
+          "span@12:1",
+          "span@7:0",
+          "span@8:0",
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
+          "span@9:1",
+          "strong@11:0",
+          "strong@12:0",
+          "svg@10:1",
+          "svg@11:1",
+          "svg@12:1",
+          "svg@13:1",
+          "ul@8:3"
+        ],
+        "landmarks": [
+          {
+            "tag": "aside",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 390,
+            "height": 611
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 20,
+            "left": 18,
+            "width": 354,
+            "height": 130
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 239,
+            "left": 18,
+            "width": 354,
+            "height": 351
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 361,
+            "left": 18,
+            "width": 169,
+            "height": 43
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 611,
+            "left": 0,
+            "width": 390,
+            "height": 2652
+          }
+        ],
+        "colors": [
+          {
+            "hex": "#0d0d0d",
+            "count": 120
+          },
+          {
+            "hex": "#6d6a70",
+            "count": 81
+          },
+          {
+            "hex": "#c2005d",
+            "count": 45
+          },
+          {
+            "hex": "#ffffff",
+            "count": 27
+          },
+          {
+            "hex": "#f9f8fa",
+            "count": 6
+          },
+          {
+            "hex": "#f2eef3",
+            "count": 5
+          },
+          {
+            "hex": "#e6006f",
+            "count": 4
+          },
+          {
+            "hex": "#ff4da6",
+            "count": 4
+          },
+          {
+            "hex": "#0f7b4d",
+            "count": 1
+          },
+          {
+            "hex": "#e9e4eb",
+            "count": 1
+          }
+        ],
+        "contrast": [],
+        "contrastChecked": 97,
+        "headings": [
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
+          },
+          {
+            "tag": "h1",
+            "text": "Time on the record."
+          },
+          {
+            "tag": "h2",
+            "text": "On the record today"
+          },
+          {
+            "tag": "h2",
+            "text": "NEWEST QUESTS"
+          },
+          {
+            "tag": "h3",
+            "text": "No rows yet"
+          },
+          {
+            "tag": "h2",
+            "text": "VOTES ON THE FLOOR"
+          },
+          {
+            "tag": "h3",
+            "text": "The floor is open"
+          },
+          {
+            "tag": "h2",
+            "text": "Take part"
+          },
+          {
+            "tag": "h2",
+            "text": "Weigh in"
+          },
+          {
+            "tag": "h2",
+            "text": "YOUR WALLET"
+          },
+          {
+            "tag": "h2",
+            "text": "TOKEN"
+          }
+        ],
+        "navTargets": [
+          ""
+        ],
+        "overflow": {
+          "documentOverflow": false,
+          "offenders": [
+            {
+              "selector": "nav.bg-index > ol.bg-index-list > li",
+              "right": 430,
+              "width": 132
+            },
+            {
+              "selector": "ol.bg-index-list > li > a.bg-index-link",
+              "right": 430,
+              "width": 132
+            },
+            {
+              "selector": "li > a.bg-index-link > b.bg-index-badge",
+              "right": 421,
+              "width": 22
+            },
+            {
+              "selector": "nav.bg-index > ol.bg-index-list > li",
+              "right": 570,
+              "width": 132
+            },
+            {
+              "selector": "ol.bg-index-list > li > a.bg-index-link",
+              "right": 570,
+              "width": 132
+            },
+            {
+              "selector": "li > a.bg-index-link > span.bg-index-glyph",
+              "right": 493,
+              "width": 18
+            },
+            {
+              "selector": "a.bg-index-link > span.bg-index-glyph > svg",
+              "right": 493,
+              "width": 17
+            },
+            {
+              "selector": "span.bg-index-glyph > svg > path",
+              "right": 490,
+              "width": 11
+            }
+          ]
+        }
+      },
+      "mobileNav": {
+        "opened": false,
+        "targets": [
+          ""
+        ],
+        "reachable": true
+      },
+      "focus": {
+        "samples": [
+          {
+            "tag": "a",
+            "text": "SKIP TO CONTENT",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(13, 13, 13)",
+            "boxShadow": "none",
+            "borderColor": "rgb(255, 255, 255)",
+            "backgroundColor": "rgb(13, 13, 13)"
+          },
+          {
+            "tag": "a",
+            "text": "Clepsyra home",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "none",
+            "borderColor": "rgb(13, 13, 13)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "a",
+            "text": "Overview",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "rgba(230, 0, 111, 0.1) 0px 8px 22px 0px",
+            "borderColor": "rgb(230, 0, 111)",
+            "backgroundColor": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "a",
+            "text": "Quests 0",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "none",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "a",
+            "text": "Votes 0",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "none",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "a",
+            "text": "Treasury",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "none",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "a",
+            "text": "Token",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "none",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "a",
+            "text": "Guide",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "none",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        ],
+        "visibleCount": 8,
+        "passed": true
+      }
+    }
+  }
+}

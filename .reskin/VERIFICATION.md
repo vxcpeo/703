@@ -1,17 +1,17 @@
 # Reskin verification — PASS
 
-Generated: 2026-10-20T15:56:20.466Z
+Generated: 2026-10-21T13:51:58.042Z
 
-- Project: **clepsyra-web**
+- Project: **actoria-web**
 - URL: http://127.0.0.1:4317/
-- Original skeleton: `terminal-console` (linear)
-- New skeleton: `sidebar-workspace` (shell)
-- Accent: #ff0000 -> #e6006f (61.43 ΔE; min 30)
-- Source contract: intact (`87df55a4fd45`)
+- Original skeleton: `sidebar-workspace` (shell)
+- New skeleton: `terminal-console` (linear)
+- Accent: #e6006f -> #9945ff (85.01 ΔE; min 30)
+- Source contract: intact (`2cd00ec31667`)
 
 | Route | Result | DOM similarity | Landmark similarity | Axe serious | Screenshot |
 |---|---|---:|---:|---:|---|
-| `/` | PASS | 0.275 | 0.6 | 0 | [desktop](current/home-desktop.png) |
+| `/` | PASS | 0.375 | 0.3 | 0 | [desktop](current/home-desktop.png) |
 
 ## Blocking issues
 
@@ -19,7 +19,8 @@ Generated: 2026-10-20T15:56:20.466Z
 
 ## Warnings
 
-- None.
+- /: aria attribute added: aria-label=Marginal notes
+- /: aria attribute added: aria-label=Record bands
 
 ## Thresholds
 

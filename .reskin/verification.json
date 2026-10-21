@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T15:56:20.466Z",
+  "generatedAt": "2026-10-21T13:51:58.042Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/703/website",
-    "name": "clepsyra-web",
+    "name": "actoria-web",
     "baseUrl": "http://127.0.0.1:4317/"
   },
   "passed": true,
@@ -20,32 +20,11 @@
       "passed": true,
       "issues": [],
       "warnings": [],
-      "hash": "87df55a4fd458048fee4007ca6ab08175339b2d0c3d47b67a74e909b4ffd75f0"
+      "hash": "2cd00ec31667df958c64f010a822864c4aa97ac816e8a9ae39910dee437f7dbb"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "terminal-console",
-        "family": "linear",
-        "traits": {
-          "sidebar": false,
-          "topbar": false,
-          "cards": false,
-          "hero": true,
-          "table": false,
-          "grid": true,
-          "tabs": true,
-          "modal": true,
-          "charts": true,
-          "sticky": true,
-          "orbital": false,
-          "terminal": true,
-          "bento": false,
-          "ticker": false,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "sidebar-workspace",
         "family": "shell",
         "traits": {
@@ -66,10 +45,31 @@
           "gallery": false
         }
       },
+      "current": {
+        "id": "terminal-console",
+        "family": "linear",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": false,
+          "hero": true,
+          "table": false,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": true,
+          "gallery": false
+        }
+      },
       "accent": {
-        "original": "#ff0000",
-        "current": "#e6006f",
-        "deltaE": 61.43,
+        "original": "#e6006f",
+        "current": "#9945ff",
+        "deltaE": 85.01,
         "min": 30
       }
     },
@@ -79,10 +79,13 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [],
+        "warnings": [
+          "aria attribute added: aria-label=Marginal notes",
+          "aria attribute added: aria-label=Record bands"
+        ],
         "structure": {
-          "fingerprintSimilarity": 0.275,
-          "landmarkSimilarity": 0.6,
+          "fingerprintSimilarity": 0.375,
+          "landmarkSimilarity": 0.3,
           "classOverlap": 0
         },
         "content": {
@@ -90,12 +93,12 @@
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 4,
-              "total": 8
+              "tokens": 7,
+              "total": 9
             },
             "current": {
-              "tokens": 4,
-              "total": 8
+              "tokens": 7,
+              "total": 9
             }
           }
         },
@@ -116,9 +119,12 @@
     ]
   },
   "failures": [],
-  "warnings": [],
+  "warnings": [
+    "/: aria attribute added: aria-label=Marginal notes",
+    "/: aria attribute added: aria-label=Record bands"
+  ],
   "baseline": {
-    "generatedAt": "2026-10-20T15:43:23.806Z",
+    "generatedAt": "2026-10-21T13:44:53.744Z",
     "routes": [
       "/"
     ]

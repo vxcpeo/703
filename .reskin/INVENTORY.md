@@ -1,6 +1,6 @@
-# Reskin inventory — clepsyra-web
+# Reskin inventory — actoria-web
 
-Generated: 2026-10-20T15:40:00.563Z
+Generated: 2026-10-21T13:44:48.944Z
 
 ## Project
 
@@ -15,12 +15,12 @@ Generated: 2026-10-20T15:40:00.563Z
 
 ## Original skeleton
 
-- Archetype: **terminal-console** (linear)
-- Traits: hero, grid, tabs, modal, charts, sticky, terminal
-- Max template depth: 15
-- Top-level tags: div, svg, header, nav, footer, div
+- Archetype: **sidebar-workspace** (shell)
+- Traits: sidebar, hero, grid, tabs, modal, charts, sticky, terminal
+- Max template depth: 14
+- Top-level tags: div, svg, div, nav, footer, div
 
-The replacement skeleton must not be `terminal-console` and must not be in the same family (`linear`).
+The replacement skeleton must not be `sidebar-workspace` and must not be in the same family (`shell`).
 
 ## Routes
 
@@ -28,14 +28,14 @@ The replacement skeleton must not be `terminal-console` and must not be in the s
 
 ## Palette (most used first)
 
-`#ff0000` (29) · `#000000` (19) · `#8fa3b5` (19) · `#182533` (12) · `#111a24` (9) · `#05080c` (5) · `#5ce1a0` (5) · `#0c131c` (4) · `#f2c94c` (4) · `#ff00ff` (4)
+`#e6006f` (27) · `#f9f8fa` (25) · `#6d6a70` (18) · `#ffffff` (16) · `#f2eef3` (12) · `#5ce1a0` (4) · `#ff4da6` (4) · `#140a19` (3) · `#8a5a00` (3) · `#000000` (2)
 
 ## Content lock
 
 - Static visible text tokens: **246**
 - Binding expressions: **152**
 - Event handlers: **50**
-- Contract hash: `87df55a4fd458048fee4007ca6ab08175339b2d0c3d47b67a74e909b4ffd75f0`
+- Contract hash: `2cd00ec31667df958c64f010a822864c4aa97ac816e8a9ae39910dee437f7dbb`
 
 Everything in `.reskin/content-contract.json` is immutable: visible copy, placeholders, labels, routes, link targets, asset sources, bindings, handlers, API endpoints and i18n values. A reskin may move these tokens to new markup but may not rewrite, remove or hide them.
 

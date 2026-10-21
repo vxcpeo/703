@@ -1,21 +1,22 @@
-CLEPSYRA / IDENTITY AND WEBSITE REFERENCE
+ACTORIA / IDENTITY AND WEBSITE REFERENCE
 
-Name: Clepsyra
-Meaning: a clepsydra is the Greek water clock, time made visible by something
-that actually runs; the product is the public register that keeps that time.
+Name: Actoria
+Meaning: acta is the Latin public record of things done and -oria is the place
+that keeps it; the product is the room where an act becomes a row.
 Tagline: Time on the record.
-Slug: clepsyra
-Domain: clepsyra.xyz (RDAP 404 at check time; not registered by this work)
-X handle: @clepsyra (no profile at check time; not created by this work)
+Slug: actoria
+Domain: actoria.xyz (RDAP 404 and registrar price at check time; not registered by this work)
+X handle: @actoria (no profile at check time; not created by this work)
 Token label: none chosen and none issued
 
-Identity check: read-only CentralNic RDAP for the domain and the live X profile
-page for the handle, driven through the installed Chrome. No account or domain
-was registered or acquired by this work. Evidence is in `.rebrand/availability.json`
-with screenshots under `.rebrand/availability/`; availability is a snapshot.
+Identity check: read-only CentralNic RDAP plus the registrar result page for the
+domain, and the live X profile page for the handle, driven through the installed
+Chrome. No account or domain was registered or acquired by this work. Evidence is
+in `.rebrand/availability.json` with screenshots under `.rebrand/availability/`;
+availability is a snapshot.
 
 PRODUCT
-Clepsyra is an independent Solana community application presented as a public
+Actoria is an independent Solana community application presented as a public
 register. It supports an overview, quests, token status, advisory governance,
 treasury reads, and a field guide. Routes remain
 #home / #quests / #stake / #governance / #treasury / #learn.
@@ -32,23 +33,23 @@ Program address and account interface are preserved. The deployed Anchor
 module name `kivoraft` is a technical compatibility identifier.
 
 VISUAL
-The site is a light fintech surface: white ground (#ffffff), soft panel tint
-(#f9f8fa), ink text (#0d0d0d), muted #6d6a70, hairline rules (#e9e4eb) and one
-magenta signal (#e6006f, #c2005d for text-bearing fills). Display type is a
-geometric sans (Avenir Next / Segoe UI stack) with tight tracking; numerals and
-micro-labels are mono and tracked. Corners are soft (12/22/32px), elevation is a
-low cool shadow, and the ground carries faint magenta radial washes.
+Spectrum Terminal: black ground (#000000), ink text (#ffffff), muted #a6a6aa,
+one violet signal (#9945ff) and one mint accent (#14f195) with hairline rules
+(#29292d). Display type is a condensed grotesque (Arial Narrow / Helvetica Neue
+stack) at weight 800 with -0.055em tracking; numerals and micro-labels are mono
+and tracked. Corners are 0-4px, there is no elevation shadow, and the ground
+carries faint violet/mint spectrum slivers and a fine scanline grain.
 INTERFACE STRUCTURE
-A two-column split: a sticky 38% narrative column (brand line with the brass mark,
-a numbered vertical index of the six sections, a console with cluster, re-read,
-wallet and menu, and the colophon footer) beside a 62% scrolling evidence stage.
-The stage opens every section with a large running head and meta chips, then
-composes from ruled ledger sections: a four-cell readout panel, quest rows,
-ballot rows with split tally bars, receipt-style statement rows, numbered steps
-and an accordion. Cards are flat records with a top rule, not floating panels.
-On small screens the narrative stacks above the stage and the index becomes a
-horizontal scroll strip. The retired fixed left spine, floating command bar, dark
-canvas and page-bottom footer are not used.
+A single linear broadcast: a masthead (mark, wordmark, cluster chip, re-read,
+wallet, menu), a sticky ticker strip that carries the six numbered sections,
+then full-width bands. Every section opens with a statement band (eyebrow,
+oversized headline, deck, actions, proof list) and continues in ruled bands:
+a four-beat readout with huge figures, ledger rows with mono indices, ballot
+rows with split tally bars, receipt-style statement rows, numbered steps and an
+accordion. Section bands carry a ghost index number and hairline rules; nothing
+floats as a card. The footer is a status strip with network/session facts and a
+large outlined wordmark. On small screens the ticker scrolls horizontally, beats
+stack one per row and the drawer carries the section list.
 Twitter launch material consists of five posts: one brand statement, one
 participation post, one advisory-vote post, one register read, and one guide
 note. No post carries a contract address; no token mint exists.

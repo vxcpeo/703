@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted, nextTick, watch } from "vue";
+import TickerNav from "./components/TickerNav.vue";
 import { useCommunityApp } from "./useCommunityApp";
 import {
   SOLANA_CLUSTER,
@@ -385,7 +386,7 @@ watch(proposalText, (text) => {
   if (text) clearedDraft.value = null;
 });
 
-const draftKey = "clepsyra-proposal-draft";
+const draftKey = "actoria-proposal-draft";
 const legacyDraftKeys = [
   "tabulora-proposal-draft",
   "konvoxa-proposal-draft",
@@ -492,10 +493,10 @@ async function vote(p, support) {
 </script>
 
 <template>
-  <div class="bg-frame">
-    <a class="bg-skip" href="#main" @click.prevent="focusMain">Skip to content</a>
+  <div class="sp-shell">
+    <a class="sp-skip" href="#main" @click.prevent="focusMain">Skip to content</a>
 
-    <aside class="bg-narrative">
+    <header class="sp-masthead">
       <RailNav :tabs="navTabs" :active="route" @navigate="navigate" />
 
       <CommandBar
@@ -510,167 +511,120 @@ async function vote(p, support) {
         @wallet="connected ? disconnectWallet() : connect()"
         @menu="toggleMenu"
       />
+    </header>
 
-      <StatusStrip
-        :tabs="navTabs"
-        :network-name="SOLANA_NETWORK_NAME"
-        :cluster="SOLANA_CLUSTER"
-        :program-state="programState"
-        :mint-state="mintState"
-        :wallet-label="walletLabel"
-        :last-read="lastRead || 'Not yet'"
-        @navigate="navigate"
-      />
-    </aside>
+    <TickerNav :tabs="navTabs" :active="route" @navigate="navigate" />
 
-    <template v-if="menuOpen">
-      <div class="bg-veil" @click="menuOpen = false"></div>
-      <div id="ax-drawer" class="bg-drawer" aria-label="Sections and wallet" role="complementary">
-        <header class="bg-drawer-head">
-          <span class="bg-drawer-title">Clepsyra</span>
-          <button class="bg-command-icon" type="button" aria-label="Close menu" @click="menuOpen = false">
-            <Icon name="close" :size="18" />
-          </button>
-        </header>
-        <nav class="bg-drawer-nav" aria-label="Sections">
-          <button
-            v-for="tab in navTabs"
-            :key="tab.id"
-            class="bg-drawer-link"
-            type="button"
-            :aria-current="route === tab.id ? 'page' : undefined"
-            @click="navigate(tab.id)"
-          >
-            <Icon :name="tab.icon" :size="18" />
-            <span>{{ tab.label }}</span>
-            <b v-if="tab.badge !== null && tab.badge !== undefined">{{ tab.badge }}</b>
-          </button>
-        </nav>
-        <div class="bg-drawer-foot">
-          <button
-            class="bg-btn bg-btn--fill bg-btn--wide"
-            type="button"
-            :disabled="connecting || busy"
-            @click="connected ? disconnectWallet() : connect()"
-          >
-            <Icon name="wallet" :size="16" />
-            {{ connected ? "Disconnect wallet" : "Connect wallet" }}
-          </button>
-          <div class="bg-drawer-facts">
-            <span>Cluster <b>{{ SOLANA_CLUSTER }}</b></span>
-            <span>Program <b>{{ programState }}</b></span>
-            <span>Wallet <b>{{ walletLabel }}</b></span>
-          </div>
-        </div>
-      </div>
-    </template>
+    
 
-    <main id="main" class="bg-current" tabindex="-1">
-        <div class="bg-alerts">
-          <div v-if="!programReady" class="bg-alert">
-            <span class="bg-alert-glyph"><Icon name="info" :size="18" /></span>
-            <div class="bg-alert-copy">
+    <main id="main" class="sp-main" tabindex="-1">
+        <div class="sp-notices">
+          <div v-if="!programReady" class="sp-notice">
+            <span class="sp-notice-glyph"><Icon name="info" :size="18" /></span>
+            <div class="sp-notice-copy">
               <strong>Preview rows</strong>
               <p>{{ previewNote }}</p>
             </div>
-            <button class="bg-btn bg-btn--ghost bg-btn--sm bg-alert-action" type="button" @click="go('learn')">
+            <button class="sp-btn sp-btn--ghost sp-btn--sm sp-notice-action" type="button" @click="go('learn')">
               How it works <Icon name="arrow-right" :size="14" />
             </button>
           </div>
 
-          <div v-if="paused" class="bg-alert" role="status">
-            <span class="bg-alert-glyph"><Icon name="alert" :size="18" /></span>
-            <div class="bg-alert-copy">
+          <div v-if="paused" class="sp-notice" role="status">
+            <span class="sp-notice-glyph"><Icon name="alert" :size="18" /></span>
+            <div class="sp-notice-copy">
               <strong>Writes are paused</strong>
               <p>The program is paused. Reads continue; transactions are unavailable.</p>
             </div>
           </div>
 
-          <div v-if="readError" class="bg-alert" data-tone="danger" role="alert">
-            <span class="bg-alert-glyph"><Icon name="alert" :size="18" /></span>
-            <div class="bg-alert-copy">
+          <div v-if="readError" class="sp-notice" data-tone="danger" role="alert">
+            <span class="sp-notice-glyph"><Icon name="alert" :size="18" /></span>
+            <div class="sp-notice-copy">
               <strong>Sync failed</strong>
               <p>{{ readError }}</p>
             </div>
-            <button class="bg-btn bg-btn--ghost bg-btn--sm bg-alert-action" type="button" :disabled="reading || busy" @click="refresh">
+            <button class="sp-btn sp-btn--ghost sp-btn--sm sp-notice-action" type="button" :disabled="reading || busy" @click="refresh">
               Try again
             </button>
           </div>
 
-          <div v-if="accountError" class="bg-alert" data-tone="danger" role="alert">
-            <span class="bg-alert-glyph"><Icon name="alert" :size="18" /></span>
-            <div class="bg-alert-copy">
+          <div v-if="accountError" class="sp-notice" data-tone="danger" role="alert">
+            <span class="sp-notice-glyph"><Icon name="alert" :size="18" /></span>
+            <div class="sp-notice-copy">
               <strong>Wallet read failed</strong>
               <p>{{ accountError }}</p>
             </div>
           </div>
 
-          <div v-if="accountReading" class="bg-alert" data-tone="info" role="status">
-            <span class="bg-alert-glyph"><Icon name="clock" :size="18" /></span>
-            <div class="bg-alert-copy">
+          <div v-if="accountReading" class="sp-notice" data-tone="info" role="status">
+            <span class="sp-notice-glyph"><Icon name="clock" :size="18" /></span>
+            <div class="sp-notice-copy">
               <strong>Reading wallet balances…</strong>
             </div>
           </div>
         </div>
 
       <Transition name="page" mode="out-in">
-          <section :key="route" class="bg-view">
+          <section :key="route" class="sp-route">
             <!-- ============================================ OVERVIEW ==== -->
             <template v-if="route === 'home'">
-              <div class="bg-runhead">
-                <p class="bg-kicker">
-                  <span class="bg-kicker-dot" aria-hidden="true"></span>
+              <header class="sp-statement">
+        <div class="sp-statement-inner">
+                <p class="sp-eyebrow">
+                  <span class="sp-eyebrow-dot" aria-hidden="true"></span>
                   {{ SOLANA_NETWORK_NAME }} · open record
                 </p>
-                <h1 id="hero-title" class="bg-display">
+                <h1 id="hero-title" class="sp-headline">
                   Time on the<br /><em>record.</em>
                 </h1>
-                <p class="bg-lede">
-                  Clepsyra writes down who took part, how the room voted and where
+                <p class="sp-deck">
+                  Actoria writes down who took part, how the room voted and where
                   the money sits — a public register, stamped hour by hour, that
                   anyone can reopen. No private minutes, no unlisted spreadsheet.
                 </p>
-                <div class="bg-actions">
-                  <button class="bg-btn bg-btn--fill bg-btn--lg" type="button" @click="go('quests')">
+                <div class="sp-actions">
+                  <button class="sp-btn sp-btn--solid sp-btn--lg" type="button" @click="go('quests')">
                     Browse quests <Icon name="arrow-right" :size="16" />
                   </button>
-                  <button class="bg-btn bg-btn--line bg-btn--lg" type="button" @click="go('governance')">
+                  <button class="sp-btn sp-btn--line sp-btn--lg" type="button" @click="go('governance')">
                     <Icon name="ballot" :size="16" /> Open votes
                   </button>
                 </div>
-                <ul class="bg-facts">
+                <ul class="sp-facts">
                   <li><Icon name="shield" :size="15" /><span>No token mint exists</span></li>
                   <li><Icon name="users" :size="15" /><span>One row per wallet</span></li>
                   <li><Icon name="clock" :size="15" /><span>Reads refresh on demand</span></li>
                 </ul>
-              </div>
+              
+        </div></header>
 
-              <div class="bg-stage">
-                <div class="bg-wide">
-                  <section class="bg-readout" aria-label="Live readouts">
-                    <div class="bg-readout-head">
-                      <h2 class="bg-readout-title">On the record today</h2>
-                      <span class="bg-readout-date">{{ todayLabel }}</span>
+              <section class="sp-bands" aria-label="Record bands">
+                <div class="sp-flow">
+                  <section class="sp-dials" aria-label="Live readouts">
+                    <div class="sp-dial-head">
+                      <h2 class="sp-dial-title">On the record today</h2>
+                      <span class="sp-dial-date">{{ todayLabel }}</span>
                     </div>
-                    <div class="bg-readout-grid">
-                      <div class="bg-readout-cell">
-                        <span class="bg-readout-label">Open quests</span>
-                        <strong class="bg-readout-value">{{ metricsAvailable ? openQuests : "—" }}</strong>
-                        <span class="bg-readout-note">
+                    <div class="sp-beats">
+                      <div class="sp-beat">
+                        <span class="sp-dial-label">Open quests</span>
+                        <strong class="sp-dial-value">{{ metricsAvailable ? openQuests : "—" }}</strong>
+                        <span class="sp-dial-note">
                           {{ metricsAvailable ? "read from the program" : "sample rows shown" }}
                         </span>
                       </div>
-                      <div class="bg-readout-cell">
-                        <span class="bg-readout-label">Votes open</span>
-                        <strong class="bg-readout-value">{{ metricsAvailable ? openProposals : "—" }}</strong>
-                        <span class="bg-readout-note">advisory · one vote per wallet</span>
+                      <div class="sp-beat">
+                        <span class="sp-dial-label">Votes open</span>
+                        <strong class="sp-dial-value">{{ metricsAvailable ? openProposals : "—" }}</strong>
+                        <span class="sp-dial-note">advisory · one vote per wallet</span>
                       </div>
-                      <div class="bg-readout-cell">
-                        <span class="bg-readout-label">Your wallet</span>
-                        <strong class="bg-readout-value bg-readout-value--text">
+                      <div class="sp-beat">
+                        <span class="sp-dial-label">Your wallet</span>
+                        <strong class="sp-dial-value sp-dial-value--text">
                           {{ connected ? short(wallet) : "—" }}
                         </strong>
-                        <span class="bg-readout-note">
+                        <span class="sp-dial-note">
                           {{
                             connected && accountReady
                               ? solUnits(native, 4) + " SOL"
@@ -680,39 +634,40 @@ async function vote(p, support) {
                           }}
                         </span>
                       </div>
-                      <div class="bg-readout-cell">
-                        <span class="bg-readout-label">Token</span>
-                        <strong class="bg-readout-value bg-readout-value--text">
+                      <div class="sp-beat">
+                        <span class="sp-dial-label">Token</span>
+                        <strong class="sp-dial-value sp-dial-value--text">
                           {{ mintConfigured ? tokenSymbol || "mint set" : "None yet" }}
                         </strong>
-                        <span class="bg-readout-note">
+                        <span class="sp-dial-note">
                           {{ mintConfigured ? short(TOKEN_MINT_ADDRESS) : "nothing to buy or hold" }}
                         </span>
                       </div>
                     </div>
-                    <div class="bg-readout-foot">
-                      <span class="bg-live-dot" :class="{ 'bg-live-dot--idle': !programReady }" aria-hidden="true"></span>
+                    <div class="sp-dial-foot">
+                      <span class="sp-live-dot" :class="{ 'sp-live-dot--idle': !programReady }" aria-hidden="true"></span>
                       <span>{{ programReady ? "Program reports live" : "Preview mode · nothing is submitted" }}</span>
-                      <button class="bg-link" type="button" @click="go('learn')">
+                      <button class="sp-link" type="button" @click="go('learn')">
                         Why? <Icon name="arrow-right" :size="14" />
                       </button>
                     </div>
                   </section>
 
-                  <section class="bg-board">
-                    <div class="bg-board-head">
-                      <h2 class="bg-board-title">Newest quests</h2>
-                      <button class="bg-link" type="button" @click="go('quests')">
+                  <article class="sp-band">
+        <div class="sp-band-inner">
+                    <header class="sp-band-head">
+                      <h2 class="sp-band-title">Newest quests</h2>
+                      <button class="sp-link" type="button" @click="go('quests')">
                         All quests <Icon name="arrow-right" :size="14" />
                       </button>
-                    </div>
-                    <ul v-if="registerQuests.length" class="bg-ledger">
+                    </header>
+                    <ul v-if="registerQuests.length" class="sp-ledger">
                       <li v-for="(q, index) in registerQuests" :key="q.id">
-                        <button class="bg-ledger-row" type="button" @click="openQuest(q)">
-                          <span class="bg-ledger-index">{{ String(index + 1).padStart(2, "0") }}</span>
-                          <span class="bg-ledger-main">
-                            <b class="bg-ledger-title">{{ q.title }}</b>
-                            <small class="bg-ledger-note">
+                        <button class="sp-ledger-row" type="button" @click="openQuest(q)">
+                          <span class="sp-ledger-index">{{ String(index + 1).padStart(2, "0") }}</span>
+                          <span class="sp-ledger-main">
+                            <b class="sp-ledger-title">{{ q.title }}</b>
+                            <small class="sp-ledger-note">
                               {{
                                 q.sample
                                   ? "Sample row · preview only"
@@ -720,60 +675,62 @@ async function vote(p, support) {
                               }}
                             </small>
                           </span>
-                          <span class="bg-pill" :data-tone="pillTone(questStatus(q))">{{ questStatus(q) }}</span>
-                          <span class="bg-ledger-go" aria-hidden="true"><Icon name="arrow-right" :size="16" /></span>
+                          <span class="sp-pill" :data-tone="pillTone(questStatus(q))">{{ questStatus(q) }}</span>
+                          <span class="sp-ledger-go" aria-hidden="true"><Icon name="arrow-right" :size="16" /></span>
                         </button>
                       </li>
                     </ul>
-                    <div v-else class="bg-board-body">
-                      <div class="bg-empty">
-                        <span class="bg-empty-glyph"><Icon name="flag" :size="20" /></span>
-                        <h3 class="bg-empty-title">No rows yet</h3>
-                        <p class="bg-empty-text">Quests appear here once the community publishes them.</p>
+                    <div v-else class="sp-band-body">
+                      <div class="sp-empty">
+                        <span class="sp-empty-glyph"><Icon name="flag" :size="20" /></span>
+                        <h3 class="sp-empty-title">No rows yet</h3>
+                        <p class="sp-empty-text">Quests appear here once the community publishes them.</p>
                       </div>
                     </div>
-                  </section>
+                  
+        </div></article>
 
-                  <section class="bg-board">
-                    <div class="bg-board-head">
-                      <h2 class="bg-board-title">Votes on the floor</h2>
-                      <button class="bg-link" type="button" @click="go('governance')">
+                  <article class="sp-band">
+        <div class="sp-band-inner">
+                    <header class="sp-band-head">
+                      <h2 class="sp-band-title">Votes on the floor</h2>
+                      <button class="sp-link" type="button" @click="go('governance')">
                         All votes <Icon name="arrow-right" :size="14" />
                       </button>
-                    </div>
-                    <ul v-if="registerProposals.length" class="bg-ledger">
+                    </header>
+                    <ul v-if="registerProposals.length" class="sp-ledger">
                       <li v-for="(p, index) in registerProposals" :key="p.id">
-                        <button class="bg-ledger-row" type="button" @click="go('governance')">
-                          <span class="bg-ledger-index">{{ String(index + 1).padStart(2, "0") }}</span>
-                          <span class="bg-ledger-main">
-                            <b class="bg-ledger-title">{{ p.description }}</b>
-                            <small class="bg-ledger-note">
+                        <button class="sp-ledger-row" type="button" @click="go('governance')">
+                          <span class="sp-ledger-index">{{ String(index + 1).padStart(2, "0") }}</span>
+                          <span class="sp-ledger-main">
+                            <b class="sp-ledger-title">{{ p.description }}</b>
+                            <small class="sp-ledger-note">
                               {{ p.sample ? "Sample proposal · no live votes" : "Closes " + date(p.endsAt) }}
                             </small>
                           </span>
-                          <span class="bg-pill" :data-tone="pillTone(proposalStatus(p))">{{ proposalStatus(p) }}</span>
-                          <span class="bg-ledger-go" aria-hidden="true"><Icon name="arrow-right" :size="16" /></span>
+                          <span class="sp-pill" :data-tone="pillTone(proposalStatus(p))">{{ proposalStatus(p) }}</span>
+                          <span class="sp-ledger-go" aria-hidden="true"><Icon name="arrow-right" :size="16" /></span>
                         </button>
                       </li>
                     </ul>
-                    <div v-else class="bg-board-body">
-                      <div class="bg-empty">
-                        <span class="bg-empty-glyph"><Icon name="ballot" :size="20" /></span>
-                        <h3 class="bg-empty-title">The floor is open</h3>
-                        <p class="bg-empty-text">Start the first proposal when the community has a decision to make.</p>
+                    <div v-else class="sp-band-body">
+                      <div class="sp-empty">
+                        <span class="sp-empty-glyph"><Icon name="ballot" :size="20" /></span>
+                        <h3 class="sp-empty-title">The floor is open</h3>
+                        <p class="sp-empty-text">Start the first proposal when the community has a decision to make.</p>
                       </div>
                     </div>
-                    <div v-if="registerProposals.length" class="bg-board-body">
-                      <span class="bg-sheet-note">Support on the leading proposal</span>
-                      <div class="bg-tally">
-                        <i class="bg-tally-for" :style="{ width: leadBreakdown.forPct + '%' }"></i>
-                        <i class="bg-tally-against" :style="{ width: leadBreakdown.againstPct + '%' }"></i>
+                    <div v-if="registerProposals.length" class="sp-band-body">
+                      <span class="sp-slab-note">Support on the leading proposal</span>
+                      <div class="sp-tally">
+                        <i class="sp-tally-for" :style="{ width: leadBreakdown.forPct + '%' }"></i>
+                        <i class="sp-tally-against" :style="{ width: leadBreakdown.againstPct + '%' }"></i>
                       </div>
-                      <div class="bg-tally-keys">
-                        <span class="bg-tally-key">
+                      <div class="sp-tally-keys">
+                        <span class="sp-tally-key">
                           For <b>{{ units(leadProposal?.forVotes || 0n) }}</b>
                         </span>
-                        <span class="bg-tally-key bg-tally-key--against">
+                        <span class="sp-tally-key sp-tally-key--against">
                           Against <b>{{ units(leadProposal?.againstVotes || 0n) }}</b>
                         </span>
                         <span>
@@ -781,31 +738,32 @@ async function vote(p, support) {
                         </span>
                       </div>
                     </div>
-                  </section>
+                  
+        </div></article>
 
-                  <section class="bg-forks" aria-label="Ways to take part">
-                    <article class="bg-fork">
-                      <span class="bg-fork-glyph"><Icon name="flag" :size="22" /></span>
+                  <section class="sp-doors" aria-label="Ways to take part">
+                    <article class="sp-door">
+                      <span class="sp-door-glyph"><Icon name="flag" :size="22" /></span>
                       <h2>Take part</h2>
                       <p>
                         Pick a quest, record your participation and leave a row anyone can
                         check later. Rows are participation only — they do not pay a token.
                       </p>
-                      <div class="bg-fork-foot">
-                        <button class="bg-btn bg-btn--line" type="button" @click="go('quests')">
+                      <div class="sp-door-foot">
+                        <button class="sp-btn sp-btn--line" type="button" @click="go('quests')">
                           See {{ allQuests.length }} quests <Icon name="arrow-right" :size="15" />
                         </button>
                       </div>
                     </article>
-                    <article class="bg-fork bg-fork--ballot">
-                      <span class="bg-fork-glyph"><Icon name="ballot" :size="22" /></span>
+                    <article class="sp-door sp-door--ballot">
+                      <span class="sp-door-glyph"><Icon name="ballot" :size="22" /></span>
                       <h2>Weigh in</h2>
                       <p>
                         Write a proposal, set a window between one and thirty days, and let
                         wallets answer. Results are advisory and never move funds.
                       </p>
-                      <div class="bg-fork-foot">
-                        <button class="bg-btn bg-btn--fill" type="button" @click="go('governance')">
+                      <div class="sp-door-foot">
+                        <button class="sp-btn sp-btn--solid" type="button" @click="go('governance')">
                           Open the floor <Icon name="arrow-right" :size="15" />
                         </button>
                       </div>
@@ -813,29 +771,30 @@ async function vote(p, support) {
                   </section>
                 </div>
 
-                <div class="bg-margin">
-                  <section class="bg-sheet">
-                    <div class="bg-sheet-head">
-                      <h2 class="bg-sheet-title">Your wallet</h2>
-                      <span class="bg-sheet-note">{{ connected ? "connected" : "idle" }}</span>
-                    </div>
-                    <div class="bg-sheet-body bg-sheet-body--flush">
-                      <dl class="bg-factlist">
-                        <div class="bg-fact">
+                <section class="sp-tail" aria-label="Marginal notes">
+                  <section class="sp-slab">
+        <div class="sp-slab-inner">
+                    <header class="sp-slab-head">
+                      <h2 class="sp-slab-title">Your wallet</h2>
+                      <span class="sp-slab-note">{{ connected ? "connected" : "idle" }}</span>
+                    </header>
+                    <div class="sp-slab-body sp-slab-body--flush">
+                      <dl class="sp-factlist">
+                        <div class="sp-fact">
                           <dt>Address</dt>
                           <dd>{{ connected ? short(wallet) : "not connected" }}</dd>
                         </div>
-                        <div class="bg-fact">
+                        <div class="sp-fact">
                           <dt>SOL</dt>
                           <dd>{{ connected && accountReady ? solUnits(native, 4) : "—" }}</dd>
                         </div>
-                        <div class="bg-fact bg-fact--muted">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>{{ mintConfigured ? tokenSymbol : "Token" }}</dt>
                           <dd>
                             {{ mintConfigured && connected && accountReady ? units(token) : "not configured" }}
                           </dd>
                         </div>
-                        <div class="bg-fact">
+                        <div class="sp-fact">
                           <dt>State</dt>
                           <dd>
                             {{ connected ? (accountReady ? "synced" : "reading") : "connect to read" }}
@@ -843,9 +802,9 @@ async function vote(p, support) {
                         </div>
                       </dl>
                     </div>
-                    <div class="bg-sheet-foot">
+                    <div class="sp-slab-foot">
                       <button
-                        class="bg-btn bg-btn--fill bg-btn--wide"
+                        class="sp-btn sp-btn--solid sp-btn--wide"
                         type="button"
                         :disabled="connecting || busy"
                         @click="connected ? disconnectWallet() : connect()"
@@ -854,67 +813,72 @@ async function vote(p, support) {
                         {{ connected ? "Disconnect wallet" : "Connect wallet" }}
                       </button>
                     </div>
-                  </section>
+                  
+        </div></section>
 
-                  <section class="bg-sheet">
-                    <div class="bg-sheet-head">
-                      <h2 class="bg-sheet-title">Token</h2>
-                      <span class="bg-pill" data-tone="is-neutral">{{ mintConfigured ? "configured" : "none yet" }}</span>
-                    </div>
-                    <div class="bg-sheet-body">
+                  <section class="sp-slab">
+        <div class="sp-slab-inner">
+                    <header class="sp-slab-head">
+                      <h2 class="sp-slab-title">Token</h2>
+                      <span class="sp-pill" data-tone="is-neutral">{{ mintConfigured ? "configured" : "none yet" }}</span>
+                    </header>
+                    <div class="sp-slab-body">
                       <p>{{ tokenIdentity }}</p>
                       <p>
                         The community program records participation and advisory votes.
                         It never mints, holds or pays out a token.
                       </p>
-                      <button class="bg-btn bg-btn--line bg-btn--wide" type="button" @click="go('stake')">
+                      <button class="sp-btn sp-btn--line sp-btn--wide" type="button" @click="go('stake')">
                         Token status <Icon name="arrow-right" :size="14" />
                       </button>
                     </div>
-                  </section>
+                  
+        </div></section>
 
-                  <div class="bg-note">
+                  <div class="sp-note">
                     <Icon name="shield" :size="18" />
                     <div>
                       <strong>Before you sign</strong>
                       <p>Your wallet reviews every instruction. A preview row never sends a transaction.</p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </section>
+              </section>
             </template>
 
             <!-- ============================================== QUESTS ==== -->
             <template v-if="route === 'quests'">
-              <div class="bg-runhead">
-                <p class="bg-kicker">
-                  <span class="bg-kicker-dot" aria-hidden="true"></span>Participation
+              <header class="sp-statement">
+        <div class="sp-statement-inner">
+                <p class="sp-eyebrow">
+                  <span class="sp-eyebrow-dot" aria-hidden="true"></span>Participation
                 </p>
-                <h1 class="bg-display">Find your <em>part in it.</em></h1>
-                <p class="bg-lede">
+                <h1 class="sp-headline">Find your <em>part in it.</em></h1>
+                <p class="sp-deck">
                   Each quest is an open invitation to take part. Recording one writes a
                   single row for your wallet — it does not verify off-chain work, prove
                   a unique person or pay a token.
                 </p>
-                <div class="bg-tags">
-                  <span class="bg-tag bg-tag--strong">{{ allQuests.length }} rows</span>
-                  <span class="bg-tag">{{ programReady ? "program live" : "preview" }}</span>
+                <div class="sp-filterstrip">
+                  <span class="sp-filtertab sp-filtertab--strong">{{ allQuests.length }} rows</span>
+                  <span class="sp-filtertab">{{ programReady ? "program live" : "preview" }}</span>
                 </div>
-              </div>
+              
+        </div></header>
 
-              <div class="bg-stage">
-                <div class="bg-wide">
-                  <div class="bg-console-line">
-                    <label class="bg-search">
+              <section class="sp-bands" aria-label="Record bands">
+                <div class="sp-flow">
+                  <div class="sp-console-line">
+                    <label class="sp-search">
                       <Icon name="search" :size="17" />
                       <span class="visually-hidden">Search quests</span>
-                      <input class="bg-search-input" v-model="search" type="search" placeholder="Search quests…" autocomplete="off" />
+                      <input class="sp-search-input" v-model="search" type="search" placeholder="Search quests…" autocomplete="off" />
                     </label>
-                    <div class="bg-chips" role="group" aria-label="Filter quests">
+                    <div class="sp-chips" role="group" aria-label="Filter quests">
                       <button
                         v-for="f in questFilters"
                         :key="f"
-                        class="bg-chip"
+                        class="sp-chip"
                         :aria-pressed="questFilter === f"
                         type="button"
                         @click="questFilter = f"
@@ -922,23 +886,23 @@ async function vote(p, support) {
                         {{ f }}
                       </button>
                     </div>
-                    <span class="bg-count" role="status">
+                    <span class="sp-count" role="status">
                       {{ visibleQuests.length }} {{ visibleQuests.length === 1 ? "quest" : "quests" }}
                     </span>
                   </div>
 
                   <div
                     v-if="reading && !allQuests.length"
-                    class="bg-board bg-board--loading"
+                    class="sp-band sp-band--loading"
                     role="status"
                     aria-label="Loading quests"
                   >
-                    <div v-for="i in 3" :key="i" class="bg-loading"></div>
+                    <div v-for="i in 3" :key="i" class="sp-loading"></div>
                   </div>
 
-                  <div v-else-if="!visibleQuests.length" class="bg-empty">
-                    <span class="bg-empty-glyph"><Icon name="flag" :size="20" /></span>
-                    <h3 class="bg-empty-title">
+                  <div v-else-if="!visibleQuests.length" class="sp-empty">
+                    <span class="sp-empty-glyph"><Icon name="flag" :size="20" /></span>
+                    <h3 class="sp-empty-title">
                       {{
                         readError
                           ? "Rows unavailable"
@@ -947,7 +911,7 @@ async function vote(p, support) {
                             : "Room for the first row"
                       }}
                     </h3>
-                    <p class="bg-empty-text">
+                    <p class="sp-empty-text">
                       {{
                         readError
                           ? "Refresh the connection to read the latest quests."
@@ -958,7 +922,7 @@ async function vote(p, support) {
                     </p>
                     <button
                       v-if="search || questFilter !== 'all'"
-                      class="bg-btn bg-btn--line"
+                      class="sp-btn sp-btn--line"
                       type="button"
                       @click="resetFilters"
                     >
@@ -966,7 +930,7 @@ async function vote(p, support) {
                     </button>
                     <button
                       v-else-if="readError"
-                      class="bg-btn bg-btn--fill"
+                      class="sp-btn sp-btn--solid"
                       type="button"
                       :disabled="reading"
                       @click="refresh"
@@ -975,36 +939,36 @@ async function vote(p, support) {
                     </button>
                   </div>
 
-                  <div v-else class="bg-board">
+                  <div v-else class="sp-band">
                     <article
                       v-for="(q, index) in visibleQuests"
                       :id="'quest-row-' + q.id"
                       :key="q.id"
-                      class="bg-entry"
+                      class="sp-entry"
                       tabindex="-1"
                     >
-                      <div class="bg-entry-head">
-                        <span class="bg-pill" :data-tone="pillTone(questStatus(q))">{{ questStatus(q) }}</span>
-                        <span class="bg-entry-id">
+                      <div class="sp-entry-head">
+                        <span class="sp-pill" :data-tone="pillTone(questStatus(q))">{{ questStatus(q) }}</span>
+                        <span class="sp-entry-id">
                           {{ q.sample ? "sample" : "quest " + String(index + 1).padStart(2, "0") }}
                         </span>
                       </div>
-                      <h3 class="bg-entry-title">{{ q.title }}</h3>
-                      <p class="bg-entry-text">{{ q.detail || "Community participation record." }}</p>
-                      <div class="bg-entry-meter">
-                        <div class="bg-entry-meter-row">
+                      <h3 class="sp-entry-title">{{ q.title }}</h3>
+                      <p class="sp-entry-text">{{ q.detail || "Community participation record." }}</p>
+                      <div class="sp-entry-meter">
+                        <div class="sp-entry-meter-row">
                           <span>Capacity</span>
                           <b>{{ q.sample ? "preview only" : q.claims + " / " + q.maxClaims }}</b>
                         </div>
-                        <div class="bg-gauge"><i class="bg-gauge-fill" :style="{ width: questProgress(q) + '%' }"></i></div>
-                        <div class="bg-entry-meter-row">
+                        <div class="sp-gauge"><i class="sp-gauge-fill" :style="{ width: questProgress(q) + '%' }"></i></div>
+                        <div class="sp-entry-meter-row">
                           <span>Expires</span>
                           <b>{{ q.sample ? "—" : date(q.expiresAt) }}</b>
                         </div>
                       </div>
-                      <div class="bg-entry-foot">
+                      <div class="sp-entry-foot">
                         <button
-                          class="bg-btn bg-btn--fill bg-btn--sm"
+                          class="sp-btn sp-btn--solid sp-btn--sm"
                           type="button"
                           :disabled="actionDisabled || (!q.sample && questStatus(q) !== 'Open')"
                           @click="claim(q)"
@@ -1023,7 +987,7 @@ async function vote(p, support) {
                         </button>
                         <button
                           v-if="isOwner && !q.sample"
-                          class="bg-btn bg-btn--line bg-btn--sm"
+                          class="sp-btn sp-btn--line sp-btn--sm"
                           type="button"
                           :disabled="busy"
                           @click="setQuest(q)"
@@ -1035,90 +999,93 @@ async function vote(p, support) {
                   </div>
                 </div>
 
-                <div class="bg-margin">
-                  <form v-if="isOwner" class="bg-sheet bg-form" @submit.prevent="createQuest">
-                    <div class="bg-sheet-head">
-                      <h2 class="bg-sheet-title">Publish a quest</h2>
-                      <span class="bg-tag">authority wallet</span>
-                    </div>
-                    <div class="bg-sheet-body">
-                      <label class="bg-field">
-                        <span class="bg-field-label">Quest title</span>
-                        <input class="bg-input" v-model="adminTitle" maxlength="80" required placeholder="Welcome to the community" />
+                <section class="sp-tail" aria-label="Marginal notes">
+                  <form v-if="isOwner" class="sp-slab sp-form" @submit.prevent="createQuest">
+                    <header class="sp-slab-head">
+                      <h2 class="sp-slab-title">Publish a quest</h2>
+                      <span class="sp-filtertab">authority wallet</span>
+                    </header>
+                    <div class="sp-slab-body">
+                      <label class="sp-field">
+                        <span class="sp-field-label">Quest title</span>
+                        <input class="sp-input" v-model="adminTitle" maxlength="80" required placeholder="Welcome to the community" />
                       </label>
-                      <label class="bg-field">
-                        <span class="bg-field-label">Details</span>
-                        <input class="bg-input" v-model="adminDetails" maxlength="240" placeholder="What should participants review?" />
+                      <label class="sp-field">
+                        <span class="sp-field-label">Details</span>
+                        <input class="sp-input" v-model="adminDetails" maxlength="240" placeholder="What should participants review?" />
                       </label>
-                      <label class="bg-field">
-                        <span class="bg-field-label">Maximum rows</span>
-                        <input class="bg-input" v-model="adminMax" type="number" min="1" max="1000000" required />
+                      <label class="sp-field">
+                        <span class="sp-field-label">Maximum rows</span>
+                        <input class="sp-input" v-model="adminMax" type="number" min="1" max="1000000" required />
                       </label>
-                      <label class="bg-field">
-                        <span class="bg-field-label">Open for (days)</span>
-                        <input class="bg-input" v-model="adminDays" type="number" min="1" max="365" required />
+                      <label class="sp-field">
+                        <span class="sp-field-label">Open for (days)</span>
+                        <input class="sp-input" v-model="adminDays" type="number" min="1" max="365" required />
                       </label>
-                      <p class="bg-form-note">Rows record participation only. No token reward is attached.</p>
-                      <button class="bg-btn bg-btn--fill" type="submit" :disabled="actionDisabled">
+                      <p class="sp-form-note">Rows record participation only. No token reward is attached.</p>
+                      <button class="sp-btn sp-btn--solid" type="submit" :disabled="actionDisabled">
                         <Icon name="plus" :size="15" /> Publish quest
                       </button>
                     </div>
                   </form>
 
-                  <div class="bg-note">
+                  <div class="sp-note">
                     <Icon name="shield" :size="18" />
                     <div>
                       <strong>Your wallet, your decision</strong>
                       <p>Review the quest and the network before confirming. A preview never sends a transaction.</p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </section>
+              </section>
             </template>
 
             <!-- =============================================== VOTES ==== -->
             <template v-if="route === 'governance'">
-              <div class="bg-runhead">
-                <p class="bg-kicker">
-                  <span class="bg-kicker-dot" aria-hidden="true"></span>Advisory votes
+              <header class="sp-statement">
+        <div class="sp-statement-inner">
+                <p class="sp-eyebrow">
+                  <span class="sp-eyebrow-dot" aria-hidden="true"></span>Advisory votes
                 </p>
-                <h1 class="bg-display">Put it <em>to the room.</em></h1>
-                <p class="bg-lede">
+                <h1 class="sp-headline">Put it <em>to the room.</em></h1>
+                <p class="sp-deck">
                   Write a proposal, choose a window of one to thirty days, and let
                   wallets answer. One vote per wallet; results are advisory and never
                   move funds.
                 </p>
-                <div class="bg-tags">
-                  <span class="bg-tag bg-tag--strong">{{ visibleProposals.length }} proposals</span>
-                  <span class="bg-tag">{{ programReady ? "on chain" : "sample rows" }}</span>
+                <div class="sp-filterstrip">
+                  <span class="sp-filtertab sp-filtertab--strong">{{ visibleProposals.length }} proposals</span>
+                  <span class="sp-filtertab">{{ programReady ? "on chain" : "sample rows" }}</span>
                 </div>
-              </div>
+              
+        </div></header>
 
-              <div class="bg-stage">
-                <div class="bg-wide">
-                  <section class="bg-board">
+              <section class="sp-bands" aria-label="Record bands">
+                <div class="sp-flow">
+                  <article class="sp-band">
+        <div class="sp-band-inner">
                     <template v-if="visibleProposals.length">
-                      <article v-for="p in visibleProposals" :key="p.id" class="bg-ballot">
-                        <div class="bg-ballot-head">
-                          <span class="bg-ballot-id">
+                      <article v-for="p in visibleProposals" :key="p.id" class="sp-ballot">
+                        <div class="sp-ballot-head">
+                          <span class="sp-ballot-id">
                             {{ p.sample ? "sample proposal" : "proposal " + String(p.id).padStart(3, "0") }}
                           </span>
-                          <span class="bg-pill" :data-tone="pillTone(proposalStatus(p))">{{ proposalStatus(p) }}</span>
+                          <span class="sp-pill" :data-tone="pillTone(proposalStatus(p))">{{ proposalStatus(p) }}</span>
                         </div>
-                        <h3 class="bg-ballot-title">{{ p.description }}</h3>
-                        <div class="bg-tally">
-                          <i class="bg-tally-for" :style="{ width: voteBreakdown(p).forPct + '%' }"></i>
-                          <i class="bg-tally-against" :style="{ width: voteBreakdown(p).againstPct + '%' }"></i>
+                        <h3 class="sp-ballot-title">{{ p.description }}</h3>
+                        <div class="sp-tally">
+                          <i class="sp-tally-for" :style="{ width: voteBreakdown(p).forPct + '%' }"></i>
+                          <i class="sp-tally-against" :style="{ width: voteBreakdown(p).againstPct + '%' }"></i>
                         </div>
-                        <div class="bg-tally-keys">
-                          <span class="bg-tally-key">For <b>{{ units(p.forVotes) }}</b></span>
-                          <span class="bg-tally-key bg-tally-key--against">Against <b>{{ units(p.againstVotes) }}</b></span>
+                        <div class="sp-tally-keys">
+                          <span class="sp-tally-key">For <b>{{ units(p.forVotes) }}</b></span>
+                          <span class="sp-tally-key sp-tally-key--against">Against <b>{{ units(p.againstVotes) }}</b></span>
                           <span>
                             {{ voteBreakdown(p).empty ? "No votes yet" : votePercent(p) + "% support" }}
                           </span>
                           <span v-if="!p.sample">Closes {{ date(p.endsAt) }}</span>
                         </div>
-                        <div class="bg-ballot-foot">
+                        <div class="sp-ballot-foot">
                           <p>
                             {{
                               p.voted
@@ -1129,7 +1096,7 @@ async function vote(p, support) {
                             }}
                           </p>
                           <button
-                            class="bg-btn bg-btn--fill bg-btn--sm"
+                            class="sp-btn sp-btn--solid sp-btn--sm"
                             type="button"
                             :disabled="actionDisabled || (!p.sample && proposalStatus(p) !== 'Open')"
                             @click="vote(p, true)"
@@ -1137,7 +1104,7 @@ async function vote(p, support) {
                             <Icon name="check" :size="14" /> Vote for
                           </button>
                           <button
-                            class="bg-btn bg-btn--line bg-btn--sm"
+                            class="sp-btn sp-btn--line sp-btn--sm"
                             type="button"
                             :disabled="actionDisabled || (!p.sample && proposalStatus(p) !== 'Open')"
                             @click="vote(p, false)"
@@ -1148,15 +1115,15 @@ async function vote(p, support) {
                       </article>
                     </template>
 
-                    <div v-else-if="programReady && reading" class="bg-board-body" role="status">
+                    <div v-else-if="programReady && reading" class="sp-band-body" role="status">
                       <span class="visually-hidden">Loading proposals</span>
                     </div>
 
-                    <div v-else class="bg-board-body">
-                      <div class="bg-empty">
-                        <span class="bg-empty-glyph"><Icon name="ballot" :size="20" /></span>
-                        <h3 class="bg-empty-title">{{ readError ? "Proposals unavailable" : "The floor is open" }}</h3>
-                        <p class="bg-empty-text">
+                    <div v-else class="sp-band-body">
+                      <div class="sp-empty">
+                        <span class="sp-empty-glyph"><Icon name="ballot" :size="20" /></span>
+                        <h3 class="sp-empty-title">{{ readError ? "Proposals unavailable" : "The floor is open" }}</h3>
+                        <p class="sp-empty-text">
                           {{
                             readError
                               ? "Refresh the connection to reconnect."
@@ -1165,7 +1132,7 @@ async function vote(p, support) {
                         </p>
                         <button
                           v-if="!readError && !composeOpen"
-                          class="bg-btn bg-btn--fill"
+                          class="sp-btn sp-btn--solid"
                           type="button"
                           @click="toggleCompose"
                         >
@@ -1173,9 +1140,10 @@ async function vote(p, support) {
                         </button>
                       </div>
                     </div>
-                  </section>
+                  
+        </div></article>
 
-                  <div class="bg-note">
+                  <div class="sp-note">
                     <Icon name="info" :size="18" />
                     <div>
                       <strong>Advisory, not binding</strong>
@@ -1184,18 +1152,19 @@ async function vote(p, support) {
                   </div>
                 </div>
 
-                <div class="bg-margin">
-                  <section class="bg-sheet">
-                    <div class="bg-sheet-head">
-                      <h2 class="bg-sheet-title">Start a proposal</h2>
-                      <span class="bg-sheet-note">
+                <section class="sp-tail" aria-label="Marginal notes">
+                  <section class="sp-slab">
+        <div class="sp-slab-inner">
+                    <header class="sp-slab-head">
+                      <h2 class="sp-slab-title">Start a proposal</h2>
+                      <span class="sp-slab-note">
                         {{ draftSaved && !composeOpen ? "draft saved" : "10–2,000 chars" }}
                       </span>
-                    </div>
-                    <div class="bg-sheet-body">
+                    </header>
+                    <div class="sp-slab-body">
                       <button
                         id="compose-toggle"
-                        class="bg-btn bg-btn--line bg-btn--wide"
+                        class="sp-btn sp-btn--line sp-btn--wide"
                         type="button"
                         :aria-expanded="composeOpen"
                         aria-controls="compose-editor"
@@ -1214,15 +1183,15 @@ async function vote(p, support) {
                     <form
                       v-if="composeOpen"
                       id="compose-editor"
-                      class="bg-sheet-body bg-form"
+                      class="sp-slab-body sp-form"
                       @submit.prevent="createProposal"
                       @keydown.esc.prevent="toggleCompose"
                     >
-                      <label class="bg-field">
-                        <span class="bg-field-label">Proposal</span>
+                      <label class="sp-field">
+                        <span class="sp-field-label">Proposal</span>
                         <textarea
                           id="proposal-description"
-                          class="bg-textarea"
+                          class="sp-textarea"
                           v-model="proposalText"
                           minlength="10"
                           maxlength="2000"
@@ -1230,27 +1199,27 @@ async function vote(p, support) {
                           placeholder="One decision, its purpose, any budget, and the outcome you expect."
                         ></textarea>
                       </label>
-                      <label class="bg-field">
-                        <span class="bg-field-label">Voting window (days)</span>
-                        <input class="bg-input" v-model="proposalDays" type="number" min="1" max="30" required />
+                      <label class="sp-field">
+                        <span class="sp-field-label">Voting window (days)</span>
+                        <input class="sp-input" v-model="proposalDays" type="number" min="1" max="30" required />
                       </label>
-                      <div class="bg-form-foot">
-                        <span class="bg-form-note">{{ proposalText.length }} / 2,000</span>
+                      <div class="sp-form-foot">
+                        <span class="sp-form-note">{{ proposalText.length }} / 2,000</span>
                         <button
-                          class="bg-btn bg-btn--fill"
+                          class="sp-btn sp-btn--solid"
                           type="submit"
                           :disabled="actionDisabled || proposalText.trim().length < 10"
                         >
                           {{ programReady ? "Publish" : "Preview" }}
                         </button>
                       </div>
-                      <div class="bg-form-actions">
-                        <button class="bg-btn bg-btn--ghost bg-btn--sm" type="button" @click="toggleCompose">
+                      <div class="sp-form-actions">
+                        <button class="sp-btn sp-btn--ghost sp-btn--sm" type="button" @click="toggleCompose">
                           Keep draft
                         </button>
                         <button
                           v-if="proposalText"
-                          class="bg-btn bg-btn--ghost bg-btn--sm"
+                          class="sp-btn sp-btn--ghost sp-btn--sm"
                           type="button"
                           @click="clearDraft"
                         >
@@ -1258,7 +1227,7 @@ async function vote(p, support) {
                         </button>
                         <button
                           v-else-if="clearedDraft"
-                          class="bg-btn bg-btn--ghost bg-btn--sm"
+                          class="sp-btn sp-btn--ghost sp-btn--sm"
                           type="button"
                           @click="undoClearDraft"
                         >
@@ -1266,125 +1235,132 @@ async function vote(p, support) {
                         </button>
                       </div>
                     </form>
-                  </section>
+                  
+        </div></section>
 
-                  <section class="bg-sheet">
-                    <div class="bg-sheet-head">
-                      <h2 class="bg-sheet-title">What lands</h2>
-                      <span class="bg-sheet-note">three moves</span>
-                    </div>
-                    <div class="bg-sheet-body bg-sheet-body--flush">
-                      <ol class="bg-steps">
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">1</span>
-                          <div class="bg-step-body">
+                  <section class="sp-slab">
+        <div class="sp-slab-inner">
+                    <header class="sp-slab-head">
+                      <h2 class="sp-slab-title">What lands</h2>
+                      <span class="sp-slab-note">three moves</span>
+                    </header>
+                    <div class="sp-slab-body sp-slab-body--flush">
+                      <ol class="sp-steps">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">1</span>
+                          <div class="sp-step-body">
                             <h3>One decision</h3>
                             <p>State a single decision and why it matters now.</p>
                           </div>
                         </li>
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">2</span>
-                          <div class="bg-step-body">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">2</span>
+                          <div class="sp-step-body">
                             <h3>Context and cost</h3>
                             <p>Name the outcome and any budget the room should expect.</p>
                           </div>
                         </li>
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">3</span>
-                          <div class="bg-step-body">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">3</span>
+                          <div class="sp-step-body">
                             <h3>Time to answer</h3>
                             <p>Give wallets 1–30 days so the vote is not a reflex.</p>
                           </div>
                         </li>
                       </ol>
                     </div>
-                  </section>
-                </div>
-              </div>
+                  
+        </div></section>
+                </section>
+              </section>
             </template>
 
             <!-- ============================================ TREASURY ==== -->
             <template v-if="route === 'treasury'">
-              <div class="bg-runhead">
-                <p class="bg-kicker">
-                  <span class="bg-kicker-dot" aria-hidden="true"></span>Public reads
+              <header class="sp-statement">
+        <div class="sp-statement-inner">
+                <p class="sp-eyebrow">
+                  <span class="sp-eyebrow-dot" aria-hidden="true"></span>Public reads
                 </p>
-                <h1 class="bg-display">Nothing hidden <em>in the books.</em></h1>
-                <p class="bg-lede">
+                <h1 class="sp-headline">Nothing hidden <em>in the books.</em></h1>
+                <p class="sp-deck">
                   Treasury balances and account rows are read straight from Solana.
                   When a read is unavailable, this page says so instead of guessing.
                 </p>
-                <div class="bg-tags">
-                  <span class="bg-tag bg-tag--strong">{{ SOLANA_NETWORK_NAME }}</span>
+                <div class="sp-filterstrip">
+                  <span class="sp-filtertab sp-filtertab--strong">{{ SOLANA_NETWORK_NAME }}</span>
                 </div>
-              </div>
+              
+        </div></header>
 
-              <div class="bg-stage">
-                <div class="bg-wide">
-                  <section class="bg-meters" aria-label="Treasury reads">
-                    <div class="bg-meter">
-                      <span class="bg-meter-label">Treasury token</span>
-                      <b class="bg-meter-value">{{ ready && treasuryTokenKnown ? units(treasuryBalance) : "—" }}</b>
-                      <span class="bg-meter-note">{{ tokenIdentity }}</span>
+              <section class="sp-bands" aria-label="Record bands">
+                <div class="sp-flow">
+                  <section class="sp-meters" aria-label="Treasury reads">
+                    <div class="sp-meter">
+                      <span class="sp-meter-label">Treasury token</span>
+                      <b class="sp-meter-value">{{ ready && treasuryTokenKnown ? units(treasuryBalance) : "—" }}</b>
+                      <span class="sp-meter-note">{{ tokenIdentity }}</span>
                     </div>
-                    <div class="bg-meter">
-                      <span class="bg-meter-label">Treasury SOL</span>
-                      <b class="bg-meter-value">
+                    <div class="sp-meter">
+                      <span class="sp-meter-label">Treasury SOL</span>
+                      <b class="sp-meter-value">
                         {{ ready && treasuryNativeKnown ? solUnits(treasuryNative, 4) : "—" }}
                       </b>
-                      <span class="bg-meter-note">native balance for fees</span>
+                      <span class="sp-meter-note">native balance for fees</span>
                     </div>
-                    <div class="bg-meter">
-                      <span class="bg-meter-label">Issued supply</span>
-                      <b class="bg-meter-value">{{ mintConfigured && ready ? units(totalSupply) : "—" }}</b>
-                      <span class="bg-meter-note">read from the mint</span>
+                    <div class="sp-meter">
+                      <span class="sp-meter-label">Issued supply</span>
+                      <b class="sp-meter-value">{{ mintConfigured && ready ? units(totalSupply) : "—" }}</b>
+                      <span class="sp-meter-note">read from the mint</span>
                     </div>
-                    <div class="bg-meter">
-                      <span class="bg-meter-label">Activity index</span>
-                      <b class="bg-meter-value">None</b>
-                      <span class="bg-meter-note">no indexer connected yet</span>
+                    <div class="sp-meter">
+                      <span class="sp-meter-label">Activity index</span>
+                      <b class="sp-meter-value">None</b>
+                      <span class="sp-meter-note">no indexer connected yet</span>
                     </div>
                   </section>
 
                   <p
                     v-if="treasuryError || (mintConfigured && ready && (!treasuryKnown || !treasuryTokenKnown))"
-                    class="bg-form-note"
+                    class="sp-form-note"
                     role="status"
                   >
                     {{ treasuryError || "Treasury token or SOL balances are not fully available yet." }}
                   </p>
 
-                  <section class="bg-board">
-                    <div class="bg-board-head">
-                      <h2 class="bg-board-title">Account statement</h2>
-                      <span class="bg-sheet-note">{{ ready ? "read at " + lastRead : "awaiting read" }}</span>
-                    </div>
-                    <div class="bg-statement">
-                      <div class="bg-statement-row">
-                        <span class="bg-statement-key">On-chain token</span>
-                        <span class="bg-statement-leader" aria-hidden="true"></span>
-                        <span class="bg-statement-val bg-statement-val--muted">{{ tokenIdentity }}</span>
+                  <article class="sp-band">
+        <div class="sp-band-inner">
+                    <header class="sp-band-head">
+                      <h2 class="sp-band-title">Account statement</h2>
+                      <span class="sp-slab-note">{{ ready ? "read at " + lastRead : "awaiting read" }}</span>
+                    </header>
+                    <header class="sp-statement">
+        <div class="sp-statement-inner">
+                      <div class="sp-statement-row">
+                        <span class="sp-statement-key">On-chain token</span>
+                        <span class="sp-statement-leader" aria-hidden="true"></span>
+                        <span class="sp-statement-val sp-statement-val--muted">{{ tokenIdentity }}</span>
                       </div>
-                      <div class="bg-statement-row">
-                        <span class="bg-statement-key">
+                      <div class="sp-statement-row">
+                        <span class="sp-statement-key">
                           {{ mintConfigured ? "Total issued " + tokenSymbol : "Issued supply" }}
                         </span>
-                        <span class="bg-statement-leader" aria-hidden="true"></span>
-                        <span class="bg-statement-val">
+                        <span class="sp-statement-leader" aria-hidden="true"></span>
+                        <span class="sp-statement-val">
                           {{ mintConfigured && ready ? units(totalSupply) : "—" }}
                         </span>
                       </div>
-                      <div class="bg-statement-row">
-                        <span class="bg-statement-key">Token staking</span>
-                        <span class="bg-statement-leader" aria-hidden="true"></span>
-                        <span class="bg-statement-val bg-statement-val--muted">not implemented</span>
+                      <div class="sp-statement-row">
+                        <span class="sp-statement-key">Token staking</span>
+                        <span class="sp-statement-leader" aria-hidden="true"></span>
+                        <span class="sp-statement-val sp-statement-val--muted">not implemented</span>
                       </div>
-                      <div class="bg-statement-row">
-                        <span class="bg-statement-key">
+                      <div class="sp-statement-row">
+                        <span class="sp-statement-key">
                           {{ mintConfigured ? "Your " + tokenSymbol : "Your token balance" }}
                         </span>
-                        <span class="bg-statement-leader" aria-hidden="true"></span>
-                        <span class="bg-statement-val">
+                        <span class="sp-statement-leader" aria-hidden="true"></span>
+                        <span class="sp-statement-val">
                           {{
                             connected && accountReady
                               ? units(token)
@@ -1394,23 +1370,26 @@ async function vote(p, support) {
                           }}
                         </span>
                       </div>
-                      <div class="bg-statement-row">
-                        <span class="bg-statement-key">Decimals</span>
-                        <span class="bg-statement-leader" aria-hidden="true"></span>
-                        <span class="bg-statement-val bg-statement-val--muted">{{ mintConfigured ? tokenDecimals : "—" }}</span>
+                      <div class="sp-statement-row">
+                        <span class="sp-statement-key">Decimals</span>
+                        <span class="sp-statement-leader" aria-hidden="true"></span>
+                        <span class="sp-statement-val sp-statement-val--muted">{{ mintConfigured ? tokenDecimals : "—" }}</span>
                       </div>
-                    </div>
-                  </section>
+                    
+        </div></header>
+                  
+        </div></article>
 
-                  <section class="bg-board">
-                    <div class="bg-board-head">
-                      <h2 class="bg-board-title">Activity</h2>
-                      <span class="bg-sheet-note">not connected</span>
-                    </div>
-                    <div class="bg-board-body">
-                      <div class="bg-empty">
-                        <span class="bg-empty-glyph"><Icon name="clock" :size="20" /></span>
-                        <h3 class="bg-empty-title">
+                  <article class="sp-band">
+        <div class="sp-band-inner">
+                    <header class="sp-band-head">
+                      <h2 class="sp-band-title">Activity</h2>
+                      <span class="sp-slab-note">not connected</span>
+                    </header>
+                    <div class="sp-band-body">
+                      <div class="sp-empty">
+                        <span class="sp-empty-glyph"><Icon name="clock" :size="20" /></span>
+                        <h3 class="sp-empty-title">
                           {{
                             reading
                               ? "Reading the chain…"
@@ -1419,23 +1398,25 @@ async function vote(p, support) {
                                 : "No indexer yet"
                           }}
                         </h3>
-                        <p class="bg-empty-text">
+                        <p class="sp-empty-text">
                           A Solana activity index will be connected after the program is
                           deployed for production use.
                         </p>
                       </div>
                     </div>
-                  </section>
+                  
+        </div></article>
                 </div>
 
-                <div class="bg-margin">
-                  <section class="bg-sheet">
-                    <div class="bg-sheet-head">
-                      <h2 class="bg-sheet-title">Addresses</h2>
-                    </div>
-                    <div class="bg-sheet-body bg-sheet-body--flush">
-                      <dl class="bg-factlist">
-                        <div class="bg-fact">
+                <section class="sp-tail" aria-label="Marginal notes">
+                  <section class="sp-slab">
+        <div class="sp-slab-inner">
+                    <header class="sp-slab-head">
+                      <h2 class="sp-slab-title">Addresses</h2>
+                    </header>
+                    <div class="sp-slab-body sp-slab-body--flush">
+                      <dl class="sp-factlist">
+                        <div class="sp-fact">
                           <dt>Treasury wallet</dt>
                           <dd>
                             <a
@@ -1444,10 +1425,10 @@ async function vote(p, support) {
                               target="_blank"
                               rel="noopener noreferrer"
                             >{{ short(treasury) }} <Icon name="arrow-up-right" :size="13" /></a>
-                            <span v-else class="bg-fact-quiet">not available</span>
+                            <span v-else class="sp-fact-quiet">not available</span>
                           </dd>
                         </div>
-                        <div class="bg-fact">
+                        <div class="sp-fact">
                           <dt>Token mint</dt>
                           <dd>
                             <a
@@ -1456,20 +1437,20 @@ async function vote(p, support) {
                               target="_blank"
                               rel="noopener noreferrer"
                             >{{ short(TOKEN_MINT_ADDRESS) }} <Icon name="arrow-up-right" :size="13" /></a>
-                            <span v-else class="bg-fact-quiet">not configured</span>
+                            <span v-else class="sp-fact-quiet">not configured</span>
                           </dd>
                         </div>
-                        <div class="bg-fact">
+                        <div class="sp-fact">
                           <dt>Cluster</dt>
                           <dd>{{ SOLANA_CLUSTER }}</dd>
                         </div>
-                        <div class="bg-fact bg-fact--muted">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>Network</dt>
                           <dd>{{ SOLANA_NETWORK_NAME }}</dd>
                         </div>
                       </dl>
                     </div>
-                    <div class="bg-sheet-body">
+                    <div class="sp-slab-body">
                       <p>
                         {{
                           mintConfigured
@@ -1478,85 +1459,91 @@ async function vote(p, support) {
                         }}
                       </p>
                     </div>
-                  </section>
+                  
+        </div></section>
 
-                  <div class="bg-note bg-note--warn">
+                  <div class="sp-note sp-note--warn">
                     <Icon name="alert" :size="18" />
                     <div>
                       <strong>An open record cuts both ways</strong>
                       <p>Anyone can reopen these reads, including people who disagree with the last decision.</p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </section>
+              </section>
             </template>
 
             <!-- =============================================== TOKEN ==== -->
             <template v-if="route === 'stake'">
-              <div class="bg-runhead">
-                <p class="bg-kicker">
-                  <span class="bg-kicker-dot" aria-hidden="true"></span>Token details
+              <header class="sp-statement">
+        <div class="sp-statement-inner">
+                <p class="sp-eyebrow">
+                  <span class="sp-eyebrow-dot" aria-hidden="true"></span>Token details
                 </p>
-                <h1 class="bg-display">No token is <em>wired up.</em></h1>
-                <p class="bg-lede">
+                <h1 class="sp-headline">No token is <em>wired up.</em></h1>
+                <p class="sp-deck">
                   Quests and advisory votes run through the Solana program. Staking,
                   locking and rewards stay switched off until a mint and its custody
                   rules exist.
                 </p>
-                <div class="bg-tags">
-                  <span class="bg-tag bg-tag--strong">not configured</span>
+                <div class="sp-filterstrip">
+                  <span class="sp-filtertab sp-filtertab--strong">not configured</span>
                 </div>
-              </div>
+              
+        </div></header>
 
-              <div class="bg-stage">
-                <div class="bg-wide">
-                  <section class="bg-board">
-                    <div class="bg-board-head">
-                      <h2 class="bg-board-title">Token status</h2>
-                      <span class="bg-pill" data-tone="is-neutral">not configured</span>
-                    </div>
-                    <div class="bg-board-body bg-board-body--flush">
-                      <dl class="bg-factlist">
-                        <div class="bg-fact bg-fact--muted">
+              <section class="sp-bands" aria-label="Record bands">
+                <div class="sp-flow">
+                  <article class="sp-band">
+        <div class="sp-band-inner">
+                    <header class="sp-band-head">
+                      <h2 class="sp-band-title">Token status</h2>
+                      <span class="sp-pill" data-tone="is-neutral">not configured</span>
+                    </header>
+                    <div class="sp-band-body sp-band-body--flush">
+                      <dl class="sp-factlist">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>On-chain token</dt>
                           <dd>{{ tokenIdentity }}</dd>
                         </div>
-                        <div class="bg-fact bg-fact--muted">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>Token staking</dt>
                           <dd>not implemented</dd>
                         </div>
-                        <div class="bg-fact bg-fact--muted">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>Locking</dt>
                           <dd>not implemented</dd>
                         </div>
-                        <div class="bg-fact bg-fact--muted">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>Reward source</dt>
                           <dd>undefined</dd>
                         </div>
-                        <div class="bg-fact bg-fact--muted">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>Decimals</dt>
                           <dd>{{ mintConfigured ? tokenDecimals : "—" }}</dd>
                         </div>
                       </dl>
                     </div>
-                    <div class="bg-board-body">
+                    <div class="sp-band-body">
                       <p>
                         The program records participation rows and advisory votes. It does
                         not custody tokens, mint rewards or track staking positions.
                       </p>
                     </div>
-                  </section>
+                  
+        </div></article>
 
-                  <section class="bg-board">
-                    <div class="bg-board-head">
-                      <h2 class="bg-board-title">What has to exist first</h2>
-                      <span class="bg-sheet-note">in order</span>
-                    </div>
-                    <div class="bg-board-body bg-board-body--flush">
-                      <ol class="bg-steps">
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">1</span>
-                          <div class="bg-step-body">
+                  <article class="sp-band">
+        <div class="sp-band-inner">
+                    <header class="sp-band-head">
+                      <h2 class="sp-band-title">What has to exist first</h2>
+                      <span class="sp-slab-note">in order</span>
+                    </header>
+                    <div class="sp-band-body sp-band-body--flush">
+                      <ol class="sp-steps">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">1</span>
+                          <div class="sp-step-body">
                             <h3>A verified SPL mint</h3>
                             <p>
                               The mint address, decimals and metadata would be read from
@@ -1564,9 +1551,9 @@ async function vote(p, support) {
                             </p>
                           </div>
                         </li>
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">2</span>
-                          <div class="bg-step-body">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">2</span>
+                          <div class="sp-step-body">
                             <h3>Written custody rules</h3>
                             <p>
                               Who can move locked balances, how a holder exits, and what
@@ -1574,9 +1561,9 @@ async function vote(p, support) {
                             </p>
                           </div>
                         </li>
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">3</span>
-                          <div class="bg-step-body">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">3</span>
+                          <div class="sp-step-body">
                             <h3>A funded reward source</h3>
                             <p>
                               Rewards need money behind them. Until that exists, no reward
@@ -1586,119 +1573,125 @@ async function vote(p, support) {
                         </li>
                       </ol>
                     </div>
-                  </section>
+                  
+        </div></article>
                 </div>
 
-                <div class="bg-margin">
-                  <section class="bg-sheet">
-                    <div class="bg-sheet-head">
-                      <h2 class="bg-sheet-title">Wiring</h2>
-                    </div>
-                    <div class="bg-sheet-body bg-sheet-body--flush">
-                      <dl class="bg-factlist">
-                        <div class="bg-fact">
+                <section class="sp-tail" aria-label="Marginal notes">
+                  <section class="sp-slab">
+        <div class="sp-slab-inner">
+                    <header class="sp-slab-head">
+                      <h2 class="sp-slab-title">Wiring</h2>
+                    </header>
+                    <div class="sp-slab-body sp-slab-body--flush">
+                      <dl class="sp-factlist">
+                        <div class="sp-fact">
                           <dt>Cluster</dt>
                           <dd>{{ SOLANA_CLUSTER }}</dd>
                         </div>
-                        <div class="bg-fact bg-fact--muted">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>Network</dt>
                           <dd>{{ SOLANA_NETWORK_NAME }}</dd>
                         </div>
-                        <div class="bg-fact">
+                        <div class="sp-fact">
                           <dt>Program</dt>
                           <dd>{{ programState }}</dd>
                         </div>
-                        <div class="bg-fact bg-fact--muted">
+                        <div class="sp-fact sp-fact--muted">
                           <dt>Mint</dt>
                           <dd>{{ mintState }}</dd>
                         </div>
                       </dl>
                     </div>
-                    <div class="bg-sheet-foot">
-                      <button class="bg-btn bg-btn--line bg-btn--wide" type="button" @click="go('learn')">
+                    <div class="sp-slab-foot">
+                      <button class="sp-btn sp-btn--line sp-btn--wide" type="button" @click="go('learn')">
                         Read the guide <Icon name="arrow-right" :size="14" />
                       </button>
                     </div>
-                  </section>
+                  
+        </div></section>
 
-                  <div class="bg-note bg-note--warn">
+                  <div class="sp-note sp-note--warn">
                     <Icon name="alert" :size="18" />
                     <div>
                       <strong>No mint has been issued</strong>
-                      <p>Anything claiming a Clepsyra token right now is not from this project.</p>
+                      <p>Anything claiming a Actoria token right now is not from this project.</p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </section>
+              </section>
             </template>
 
             <!-- =============================================== GUIDE ==== -->
             <template v-if="route === 'learn'">
-              <div class="bg-runhead">
-                <p class="bg-kicker">
-                  <span class="bg-kicker-dot" aria-hidden="true"></span>The field guide
+              <header class="sp-statement">
+        <div class="sp-statement-inner">
+                <p class="sp-eyebrow">
+                  <span class="sp-eyebrow-dot" aria-hidden="true"></span>The field guide
                 </p>
-                <h1 class="bg-display">A way in. <em>A way to check.</em></h1>
-                <p class="bg-lede">
+                <h1 class="sp-headline">A way in. <em>A way to check.</em></h1>
+                <p class="sp-deck">
                   What each row means, what your wallet will ask you to confirm, and
                   what this project deliberately does not do yet.
                 </p>
-                <div class="bg-tags">
-                  <span class="bg-tag bg-tag--strong">{{ SOLANA_NETWORK_NAME }}</span>
+                <div class="sp-filterstrip">
+                  <span class="sp-filtertab sp-filtertab--strong">{{ SOLANA_NETWORK_NAME }}</span>
                 </div>
-              </div>
+              
+        </div></header>
 
-              <div class="bg-stage">
-                <div class="bg-wide">
-                  <section class="bg-board">
-                    <div class="bg-board-head">
-                      <h2 class="bg-board-title">Three ways through</h2>
-                      <span class="bg-sheet-note">start anywhere</span>
-                    </div>
-                    <div class="bg-board-body bg-board-body--flush">
-                      <ol class="bg-steps">
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">1</span>
-                          <div class="bg-step-body">
+              <section class="sp-bands" aria-label="Record bands">
+                <div class="sp-flow">
+                  <article class="sp-band">
+        <div class="sp-band-inner">
+                    <header class="sp-band-head">
+                      <h2 class="sp-band-title">Three ways through</h2>
+                      <span class="sp-slab-note">start anywhere</span>
+                    </header>
+                    <div class="sp-band-body sp-band-body--flush">
+                      <ol class="sp-steps">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">1</span>
+                          <div class="sp-step-body">
                             <h3>Record a participation row</h3>
                             <p>
                               Quests carry an expiry and a row cap. Each wallet records
                               once. Rows do not verify off-chain work, prove a unique
                               person, or pay a token.
                             </p>
-                            <div class="bg-step-foot">
-                              <button class="bg-btn bg-btn--line bg-btn--sm" type="button" @click="go('quests')">
+                            <div class="sp-step-foot">
+                              <button class="sp-btn sp-btn--line sp-btn--sm" type="button" @click="go('quests')">
                                 See quests <Icon name="arrow-right" :size="14" />
                               </button>
                             </div>
                           </div>
                         </li>
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">2</span>
-                          <div class="bg-step-body">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">2</span>
+                          <div class="sp-step-body">
                             <h3>Wait for real token details</h3>
                             <p>
                               Locking and rewards need a verified mint, custody rules and a
                               funded reward source. None are enabled by the community
                               program.
                             </p>
-                            <div class="bg-step-foot">
-                              <button class="bg-btn bg-btn--line bg-btn--sm" type="button" @click="go('stake')">
+                            <div class="sp-step-foot">
+                              <button class="sp-btn sp-btn--line sp-btn--sm" type="button" @click="go('stake')">
                                 Token status <Icon name="arrow-right" :size="14" />
                               </button>
                             </div>
                           </div>
                         </li>
-                        <li class="bg-step">
-                          <span class="bg-step-num" aria-hidden="true">3</span>
-                          <div class="bg-step-body">
+                        <li class="sp-step">
+                          <span class="sp-step-num" aria-hidden="true">3</span>
+                          <div class="sp-step-body">
                             <h3>Answer the next question</h3>
                             <p>
                               Create a proposal with a 1–30 day window, or vote on an open
                               one. One vote per wallet. Results are advisory.
                             </p>
-                            <div class="bg-step-foot">
-                              <button class="bg-btn bg-btn--line bg-btn--sm" type="button" @click="go('governance')">
+                            <div class="sp-step-foot">
+                              <button class="sp-btn sp-btn--line sp-btn--sm" type="button" @click="go('governance')">
                                 Open votes <Icon name="arrow-right" :size="14" />
                               </button>
                             </div>
@@ -1706,55 +1699,57 @@ async function vote(p, support) {
                         </li>
                       </ol>
                     </div>
-                  </section>
+                  
+        </div></article>
 
-                  <section class="bg-board">
-                    <div class="bg-board-head">
-                      <h2 class="bg-board-title">Good to know</h2>
-                    </div>
-                    <div class="bg-board-body bg-board-body--flush">
-                      <div class="bg-faq">
-                        <details class="bg-faq-item" open>
-                          <summary class="bg-faq-q">What does a wallet confirmation do?</summary>
-                          <p class="bg-faq-a">
+                  <article class="sp-band">
+        <div class="sp-band-inner">
+                    <header class="sp-band-head">
+                      <h2 class="sp-band-title">Good to know</h2>
+                    </header>
+                    <div class="sp-band-body sp-band-body--flush">
+                      <div class="sp-faq">
+                        <details class="sp-faq-item" open>
+                          <summary class="sp-faq-q">What does a wallet confirmation do?</summary>
+                          <p class="sp-faq-a">
                             Recording a quest row, publishing a proposal and casting a vote
                             use the initialised program on {{ SOLANA_NETWORK_NAME }}. Your
                             wallet shows every instruction before you sign.
                           </p>
                         </details>
-                        <details class="bg-faq-item">
-                          <summary class="bg-faq-q">Who controls the protocol?</summary>
-                          <p class="bg-faq-a">
+                        <details class="sp-faq-item">
+                          <summary class="sp-faq-q">Who controls the protocol?</summary>
+                          <p class="sp-faq-a">
                             The program authority can publish quests and pause community
                             actions. Advisory votes do not execute treasury spending.
                           </p>
                         </details>
-                        <details class="bg-faq-item">
-                          <summary class="bg-faq-q">Why is the token name separate from Clepsyra?</summary>
-                          <p class="bg-faq-a">
+                        <details class="sp-faq-item">
+                          <summary class="sp-faq-q">Why is the token name separate from Actoria?</summary>
+                          <p class="sp-faq-a">
                             A future mint defines its own name, symbol and decimals.
-                            Clepsyra is the application brand. Current status:
+                            Actoria is the application brand. Current status:
                             {{ tokenIdentity }}.
                           </p>
                         </details>
-                        <details class="bg-faq-item">
-                          <summary class="bg-faq-q">Is a Clepsyra token deployed?</summary>
-                          <p class="bg-faq-a">
-                            No Clepsyra token mint is configured. The community program
+                        <details class="sp-faq-item">
+                          <summary class="sp-faq-q">Is a Actoria token deployed?</summary>
+                          <p class="sp-faq-a">
+                            No Actoria token mint is configured. The community program
                             does not create or distribute a token.
                           </p>
                         </details>
-                        <details class="bg-faq-item">
-                          <summary class="bg-faq-q">Is Clepsyra an official Solana product?</summary>
-                          <p class="bg-faq-a">
-                            No. Clepsyra is an independent community project currently
+                        <details class="sp-faq-item">
+                          <summary class="sp-faq-q">Is Actoria an official Solana product?</summary>
+                          <p class="sp-faq-a">
+                            No. Actoria is an independent community project currently
                             reading {{ SOLANA_NETWORK_NAME }}. It is not affiliated with the
                             Solana Foundation.
                           </p>
                         </details>
-                        <details class="bg-faq-item">
-                          <summary class="bg-faq-q">Why do I see preview rows or a connection error?</summary>
-                          <p class="bg-faq-a">
+                        <details class="sp-faq-item">
+                          <summary class="sp-faq-q">Why do I see preview rows or a connection error?</summary>
+                          <p class="sp-faq-a">
                             Preview means sample rows are shown and nothing is submitted. A
                             connection error means configured Solana data could not be read
                             — use the refresh button to retry. Never share a seed phrase or
@@ -1763,43 +1758,45 @@ async function vote(p, support) {
                         </details>
                       </div>
                     </div>
-                  </section>
+                  
+        </div></article>
                 </div>
 
-                <div class="bg-margin">
-                  <section class="bg-sheet">
-                    <div class="bg-sheet-head">
-                      <h2 class="bg-sheet-title">Checklist</h2>
-                    </div>
-                    <div class="bg-sheet-body bg-sheet-body--flush">
-                      <ul class="bg-checklist">
-                        <li class="bg-check" :class="{ 'bg-check--done': connected }">
-                          <span class="bg-check-mark">{{ connected ? "✓" : "1" }}</span>
+                <section class="sp-tail" aria-label="Marginal notes">
+                  <section class="sp-slab">
+        <div class="sp-slab-inner">
+                    <header class="sp-slab-head">
+                      <h2 class="sp-slab-title">Checklist</h2>
+                    </header>
+                    <div class="sp-slab-body sp-slab-body--flush">
+                      <ol class="sp-checklist">
+                        <li class="sp-check" :class="{ 'sp-check--done': connected }">
+                          <span class="sp-check-mark">{{ connected ? "✓" : "1" }}</span>
                           <div>
                             <b>Bring a Solana wallet</b>
                             <small>{{ connected ? "connected" : "connect to read balances" }}</small>
                           </div>
                         </li>
-                        <li class="bg-check">
-                          <span class="bg-check-mark">2</span>
+                        <li class="sp-check">
+                          <span class="sp-check-mark">2</span>
                           <div>
                             <b>Match the cluster</b>
                             <small>set your wallet to {{ SOLANA_NETWORK_NAME }}</small>
                           </div>
                         </li>
-                        <li class="bg-check">
-                          <span class="bg-check-mark">3</span>
+                        <li class="sp-check">
+                          <span class="sp-check-mark">3</span>
                           <div>
                             <b>Keep a little SOL</b>
                             <small>{{ SOLANA_CLUSTER }} fees are paid in SOL</small>
                           </div>
                         </li>
-                      </ul>
+                      </ol>
                     </div>
-                    <div class="bg-sheet-foot">
+                    <div class="sp-slab-foot">
                       <a
                         v-if="SOLANA_CLUSTER === 'devnet'"
-                        class="bg-btn bg-btn--fill bg-btn--wide"
+                        class="sp-btn sp-btn--solid sp-btn--wide"
                         href="https://faucet.solana.com/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -1808,7 +1805,7 @@ async function vote(p, support) {
                       </a>
                       <button
                         v-else
-                        class="bg-btn bg-btn--fill bg-btn--wide"
+                        class="sp-btn sp-btn--solid sp-btn--wide"
                         type="button"
                         :disabled="connecting || busy"
                         @click="connected ? disconnectWallet() : connect()"
@@ -1817,9 +1814,10 @@ async function vote(p, support) {
                         {{ connected ? "Disconnect wallet" : "Connect wallet" }}
                       </button>
                     </div>
-                  </section>
+                  
+        </div></section>
 
-                  <div class="bg-note">
+                  <div class="sp-note">
                     <Icon name="info" :size="18" />
                     <div>
                       <strong>Sample rows</strong>
@@ -1829,23 +1827,76 @@ async function vote(p, support) {
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </section>
+              </section>
             </template>
           </section>
         </Transition>
     </main>
 
+    <StatusStrip
+      :tabs="navTabs"
+      :network-name="SOLANA_NETWORK_NAME"
+      :cluster="SOLANA_CLUSTER"
+      :program-state="programState"
+      :mint-state="mintState"
+      :wallet-label="walletLabel"
+      :last-read="lastRead || 'Not yet'"
+      @navigate="navigate"
+    />
+
+    <template v-if="menuOpen">
+      <div class="sp-veil" @click="menuOpen = false"></div>
+      <div id="ax-drawer" class="sp-drawer" aria-label="Sections and wallet" role="complementary">
+        <header class="sp-drawer-head">
+          <span class="sp-drawer-title">Actoria</span>
+          <button class="sp-icon-btn" type="button" aria-label="Close menu" @click="menuOpen = false">
+            <Icon name="close" :size="18" />
+          </button>
+        </header>
+        <nav class="sp-drawer-nav" aria-label="Sections">
+          <button
+            v-for="tab in navTabs"
+            :key="tab.id"
+            class="sp-drawer-link"
+            type="button"
+            :aria-current="route === tab.id ? 'page' : undefined"
+            @click="navigate(tab.id)"
+          >
+            <Icon :name="tab.icon" :size="18" />
+            <span>{{ tab.label }}</span>
+            <b v-if="tab.badge !== null && tab.badge !== undefined">{{ tab.badge }}</b>
+          </button>
+        </nav>
+        <div class="sp-drawer-foot">
+          <button
+            class="sp-btn sp-btn--solid sp-btn--wide"
+            type="button"
+            :disabled="connecting || busy"
+            @click="connected ? disconnectWallet() : connect()"
+          >
+            <Icon name="wallet" :size="16" />
+            {{ connected ? "Disconnect wallet" : "Connect wallet" }}
+          </button>
+          <div class="sp-drawer-facts">
+            <span>Cluster <b>{{ SOLANA_CLUSTER }}</b></span>
+            <span>Program <b>{{ programState }}</b></span>
+            <span>Wallet <b>{{ walletLabel }}</b></span>
+          </div>
+        </div>
+      </div>
+    </template>
+
     <div
       v-if="txState.stage !== 'idle'"
-      class="bg-toast"
+      class="sp-toast"
       :data-tone="txState.stage === 'error' ? 'error' : txState.stage === 'success' ? 'success' : 'idle'"
       :role="txState.stage === 'error' ? 'alert' : 'status'"
       aria-live="polite"
       aria-atomic="true"
     >
-      <span class="bg-toast-dot" aria-hidden="true"></span>
-      <div class="bg-toast-copy">
+      <span class="sp-toast-dot" aria-hidden="true"></span>
+      <div class="sp-toast-copy">
         <strong>{{ txState.label }}</strong>
         <p>{{ txState.message }}</p>
         <a
@@ -1857,7 +1908,7 @@ async function vote(p, support) {
       </div>
       <button
         v-if="!busy"
-        class="bg-command-icon bg-toast-close"
+        class="sp-icon-btn sp-toast-close"
         type="button"
         aria-label="Dismiss transaction status"
         @click="dismissToast"
