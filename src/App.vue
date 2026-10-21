@@ -1334,8 +1334,8 @@ async function vote(p, support) {
                       <h2 class="sp-band-title">Account statement</h2>
                       <span class="sp-slab-note">{{ ready ? "read at " + lastRead : "awaiting read" }}</span>
                     </header>
-                    <header class="sp-statement">
-        <div class="sp-statement-inner">
+                    <div class="sp-receipt">
+        <div class="sp-receipt-inner">
                       <div class="sp-statement-row">
                         <span class="sp-statement-key">On-chain token</span>
                         <span class="sp-statement-leader" aria-hidden="true"></span>
@@ -1376,7 +1376,7 @@ async function vote(p, support) {
                         <span class="sp-statement-val sp-statement-val--muted">{{ mintConfigured ? tokenDecimals : "—" }}</span>
                       </div>
                     
-        </div></header>
+        </div></div>
                   
         </div></article>
 

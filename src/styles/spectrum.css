@@ -1307,6 +1307,15 @@ textarea {
 
 /* ---------- statements (fact rows), meters, steps, checklist, faq ---------- */
 
+.sp-receipt {
+  display: block;
+}
+
+.sp-receipt-inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .sp-statement-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -1379,6 +1388,10 @@ textarea {
 }
 
 .sp-meters {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: clamp(18px, 2.4vw, 30px) var(--page-pad);
+  border-bottom: 1px solid var(--line);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 18px;
@@ -1989,6 +2002,10 @@ textarea {
   color: var(--muted);
   font-size: 13px;
   max-width: 64ch;
+}
+
+.sp-status-col .sp-status-note {
+  margin-top: 10px;
 }
 
 .sp-status-cols {
