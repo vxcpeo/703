@@ -110,7 +110,7 @@ export function useCommunityApp() {
           ? SOLANA_CLUSTER
           : 'testnet'
       metamaskClient = await createSolanaClient({
-        dapp: { name: 'Attesio', url: window.location.origin },
+        dapp: { name: 'Clepsyra', url: window.location.origin },
         api: { supportedNetworks: { [metamaskNetwork]: SOLANA_RPC_URL } },
         analytics: { enabled: false },
       })

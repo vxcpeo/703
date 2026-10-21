@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "baseline",
-  "generatedAt": "2026-10-19T18:49:19.256Z",
+  "generatedAt": "2026-10-20T15:43:23.806Z",
   "baseUrl": "http://127.0.0.1:4317/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
@@ -15,13 +15,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Attesio — Time on the record.",
+          "title": "Clepsyra — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2081,
+          "bodyTextLength": 2088,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 25
+          "focusableCount": 26
         },
         "words": [
           {
@@ -29,7 +29,7 @@
             "count": 5
           },
           {
-            "word": "2:49:20",
+            "word": "11:43:25",
             "count": 1
           },
           {
@@ -65,10 +65,6 @@
             "count": 2
           },
           {
-            "word": "AM",
-            "count": 1
-          },
-          {
             "word": "An",
             "count": 1
           },
@@ -91,18 +87,6 @@
           {
             "word": "are",
             "count": 3
-          },
-          {
-            "word": "Attes",
-            "count": 3
-          },
-          {
-            "word": "Attesio",
-            "count": 2
-          },
-          {
-            "word": "attesio.xyz",
-            "count": 1
           },
           {
             "word": "be",
@@ -134,6 +118,18 @@
           },
           {
             "word": "check",
+            "count": 1
+          },
+          {
+            "word": "Cleps",
+            "count": 3
+          },
+          {
+            "word": "Clepsyra",
+            "count": 2
+          },
+          {
+            "word": "clepsyra.xyz",
             "count": 1
           },
           {
@@ -271,10 +267,6 @@
           {
             "word": "instruction",
             "count": 1
-          },
-          {
-            "word": "io",
-            "count": 3
           },
           {
             "word": "is",
@@ -450,6 +442,10 @@
           },
           {
             "word": "Pick",
+            "count": 1
+          },
+          {
+            "word": "PM",
             "count": 1
           },
           {
@@ -795,11 +791,15 @@
           {
             "word": "Your",
             "count": 3
+          },
+          {
+            "word": "yra",
+            "count": 3
           }
         ],
         "attrs": [
           {
-            "key": "aria-label=Attesio home",
+            "key": "aria-label=Clepsyra home",
             "count": 1
           },
           {
@@ -812,6 +812,10 @@
           },
           {
             "key": "aria-label=Live readouts",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Open menu",
             "count": 1
           },
           {
@@ -829,7 +833,31 @@
         ],
         "links": [
           {
+            "href": "#governance",
+            "count": 1
+          },
+          {
+            "href": "#home",
+            "count": 2
+          },
+          {
+            "href": "#learn",
+            "count": 1
+          },
+          {
             "href": "#main",
+            "count": 1
+          },
+          {
+            "href": "#quests",
+            "count": 1
+          },
+          {
+            "href": "#stake",
+            "count": 1
+          },
+          {
+            "href": "#treasury",
             "count": 1
           }
         ],
@@ -838,111 +866,123 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "aside",
-          "blank",
-          "blank-icon",
-          "brand",
-          "brand-accent",
-          "brand-mark",
-          "brand-name",
-          "brand-sub",
-          "brand-text",
-          "btn",
-          "btn-block",
-          "btn-lg",
-          "btn-light",
-          "btn-outline",
-          "btn-primary",
-          "btn-wallet",
-          "card",
-          "card-body",
-          "card-foot",
-          "card-head",
-          "card-note",
-          "cluster-chip",
-          "col",
-          "defs",
-          "dot-live",
-          "footer-accent",
-          "footer-brand",
-          "footer-col",
-          "footer-facts",
-          "footer-fine",
-          "footer-inner",
-          "footer-links",
-          "footer-mark",
-          "footer-note",
-          "footer-tag",
-          "footer-wordmark",
-          "header-inner",
-          "header-nav",
-          "header-tools",
-          "hero",
-          "hero-actions",
-          "hero-copy",
-          "hero-facts",
-          "hero-lede",
-          "hero-title",
-          "icon-btn",
-          "is-active",
-          "is-dark",
-          "is-flush",
-          "is-muted",
-          "is-neutral",
-          "is-text",
-          "kicker",
-          "kicker-dot",
-          "link-btn",
-          "metric",
-          "metric-grid",
-          "metric-label",
-          "metric-note",
-          "metric-value",
-          "nav-pill",
-          "note",
-          "page",
-          "page-inner",
-          "panel",
-          "panel-date",
-          "panel-foot",
-          "panel-head",
-          "panel-title",
-          "pill",
-          "section-gap",
-          "site",
-          "site-footer",
-          "site-header",
-          "skip-link",
-          "split",
-          "tile",
-          "tile-foot",
-          "tile-grid",
-          "tile-icon",
-          "view",
-          "wordmark-accent"
+          "ax-actions",
+          "ax-board",
+          "ax-board-body",
+          "ax-board-head",
+          "ax-board-title",
+          "ax-btn",
+          "ax-btn--fill",
+          "ax-btn--lg",
+          "ax-btn--line",
+          "ax-btn--sm",
+          "ax-btn--wide",
+          "ax-command",
+          "ax-command-chip",
+          "ax-command-icon",
+          "ax-command-inner",
+          "ax-command-menu",
+          "ax-command-pulse",
+          "ax-command-rail",
+          "ax-command-tools",
+          "ax-desk",
+          "ax-display",
+          "ax-empty",
+          "ax-empty-glyph",
+          "ax-empty-text",
+          "ax-empty-title",
+          "ax-fact",
+          "ax-fact--muted",
+          "ax-factlist",
+          "ax-facts",
+          "ax-fork",
+          "ax-fork--ballot",
+          "ax-fork-foot",
+          "ax-fork-glyph",
+          "ax-forks",
+          "ax-inner",
+          "ax-kicker",
+          "ax-kicker-dot",
+          "ax-lede",
+          "ax-link",
+          "ax-live-dot",
+          "ax-main",
+          "ax-margin",
+          "ax-note",
+          "ax-pill",
+          "ax-rail",
+          "ax-rail-badge",
+          "ax-rail-foot",
+          "ax-rail-glyph",
+          "ax-rail-item",
+          "ax-rail-label",
+          "ax-rail-list",
+          "ax-readout",
+          "ax-readout-cell",
+          "ax-readout-date",
+          "ax-readout-foot",
+          "ax-readout-grid",
+          "ax-readout-head",
+          "ax-readout-label",
+          "ax-readout-note",
+          "ax-readout-title",
+          "ax-readout-value",
+          "ax-readout-value--text",
+          "ax-runhead",
+          "ax-sheet",
+          "ax-sheet-body",
+          "ax-sheet-body--flush",
+          "ax-sheet-foot",
+          "ax-sheet-head",
+          "ax-sheet-note",
+          "ax-sheet-title",
+          "ax-skip",
+          "ax-spine-brand",
+          "ax-spine-io",
+          "ax-spine-mark",
+          "ax-spine-tag",
+          "ax-spine-text",
+          "ax-spine-word",
+          "ax-stage",
+          "ax-status",
+          "ax-status-brand",
+          "ax-status-col",
+          "ax-status-cols",
+          "ax-status-facts",
+          "ax-status-fine",
+          "ax-status-io",
+          "ax-status-links",
+          "ax-status-mark",
+          "ax-status-note",
+          "ax-status-tag",
+          "ax-status-top",
+          "ax-status-word",
+          "ax-status-word-io",
+          "ax-view",
+          "ax-wide"
         ],
         "fingerprint": [
           "a@5:0",
-          "article@9:4+",
-          "aside@9:3",
-          "b@10:0",
-          "b@9:0",
+          "a@6:2",
+          "a@7:2",
+          "a@7:3",
+          "article@11:4+",
+          "b@11:0",
+          "b@8:0",
           "b@9:1",
-          "button@11:1",
+          "button@10:0",
+          "button@10:1",
           "button@12:1",
-          "button@7:2",
+          "button@13:1",
           "button@8:1",
           "button@8:2",
-          "button@8:3",
-          "button@9:0",
           "dd@14:0",
-          "div@10:1",
           "div@10:2",
-          "div@10:3",
-          "div@10:4+",
           "div@11:1",
           "div@11:2",
           "div@11:3",
+          "div@11:4+",
+          "div@12:1",
           "div@12:3",
           "div@13:2",
           "div@3:1",
@@ -951,259 +991,157 @@
           "div@6:2",
           "div@6:3",
           "div@6:4+",
-          "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:2",
+          "div@8:3",
           "div@8:4+",
           "div@9:2",
+          "div@9:3",
           "div@9:4+",
           "dl@12:4+",
           "dt@14:0",
-          "em@11:0",
+          "em@10:0",
           "footer@5:3",
-          "h1@10:2",
-          "h2@10:0",
-          "h2@11:0",
+          "h1@9:2",
           "h2@12:0",
           "h3@13:0",
-          "h3@8:0",
-          "header@11:2",
+          "h3@9:0",
           "header@5:1",
-          "i@9:0",
+          "i@7:0",
+          "i@8:0",
+          "img@8:0",
           "img@9:0",
-          "li@11:2",
+          "li@10:2",
           "main@5:1",
-          "nav@7:4+",
-          "nav@8:4+",
-          "p@10:0",
-          "p@10:1",
+          "nav@5:3",
+          "nav@9:4+",
           "p@12:0",
           "p@13:0",
           "p@8:0",
+          "p@9:0",
+          "p@9:1",
           "path@10:0",
           "path@12:0",
-          "path@13:0",
           "path@14:0",
           "path@15:0",
           "section@10:2",
           "section@10:3",
-          "section@7:3",
-          "section@8:2",
+          "section@7:2",
           "span@10:0",
-          "span@10:1",
           "span@11:0",
           "span@12:0",
+          "span@12:1",
+          "span@13:0",
           "span@13:1",
+          "span@6:1",
           "span@7:0",
+          "span@7:1",
+          "span@7:2",
+          "span@8:0",
           "span@8:1",
           "span@8:2",
           "span@9:0",
-          "span@9:1",
           "strong@12:0",
+          "strong@13:0",
           "svg@11:1",
-          "svg@12:1",
           "svg@13:1",
           "svg@14:1",
           "svg@9:1",
-          "ul@10:3"
+          "ul@9:3"
         ],
         "landmarks": [
           {
             "tag": "header",
             "role": "",
-            "top": 0,
-            "left": 0,
-            "width": 1440,
-            "height": 69
+            "top": 16,
+            "left": 122,
+            "width": 1284,
+            "height": 58
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 15,
-            "left": 362,
-            "width": 653,
-            "height": 38
+            "top": 0,
+            "left": 0,
+            "width": 88,
+            "height": 900
           },
           {
             "tag": "main",
             "role": "",
-            "top": 63,
-            "left": 0,
-            "width": 1440,
-            "height": 1667
-          },
-          {
-            "tag": "aside",
-            "role": "",
-            "top": 182,
-            "left": 795,
-            "width": 493,
-            "height": 353
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 1017,
-            "left": 153,
-            "width": 762,
-            "height": 67
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 1378,
-            "left": 153,
-            "width": 762,
-            "height": 67
-          },
-          {
-            "tag": "aside",
-            "role": "",
-            "top": 1016,
-            "left": 936,
-            "width": 352,
-            "height": 713
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 1017,
-            "left": 937,
-            "width": 350,
-            "height": 67
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 1351,
-            "left": 937,
-            "width": 350,
-            "height": 67
+            "top": 54,
+            "left": 88,
+            "width": 1352,
+            "height": 1725
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 1825,
-            "left": 0,
-            "width": 1440,
-            "height": 557
+            "top": 1851,
+            "left": 88,
+            "width": 1352,
+            "height": 533
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 1911,
-            "left": 531,
-            "width": 220,
-            "height": 154
+            "top": 1913,
+            "left": 679,
+            "width": 219,
+            "height": 177
           }
         ],
         "colors": [
           {
-            "hex": "#1c1710",
-            "count": 87
+            "hex": "#f4f7fa",
+            "count": 118
           },
           {
-            "hex": "#665d4e",
-            "count": 55
+            "hex": "#8fa3b5",
+            "count": 88
           },
           {
-            "hex": "#4b4235",
-            "count": 46
+            "hex": "#ff0000",
+            "count": 33
           },
           {
-            "hex": "#14503f",
-            "count": 36
+            "hex": "#000000",
+            "count": 17
           },
           {
-            "hex": "#fffdf8",
-            "count": 12
+            "hex": "#ff6b6b",
+            "count": 9
           },
           {
-            "hex": "#fdf8ee",
-            "count": 10
+            "hex": "#182533",
+            "count": 7
           },
           {
-            "hex": "#e7ddcb",
-            "count": 5
-          },
-          {
-            "hex": "#b1741a",
-            "count": 4
-          },
-          {
-            "hex": "#0d382c",
+            "hex": "#0b1119",
             "count": 3
           },
           {
-            "hex": "#f0e3c8",
+            "hex": "#111a24",
             "count": 3
           },
           {
-            "hex": "#f4ecdd",
+            "hex": "#ff8bff",
             "count": 3
           },
           {
-            "hex": "#fbf6eb",
+            "hex": "#05080c",
             "count": 2
           },
           {
-            "hex": "#e3eee7",
+            "hex": "#5ce1a0",
             "count": 1
           },
           {
-            "hex": "#f2ebdf",
-            "count": 1
-          },
-          {
-            "hex": "#f7f0e3",
-            "count": 1
-          },
-          {
-            "hex": "#f8f1e3",
-            "count": 1
-          },
-          {
-            "hex": "#f9f2e6",
-            "count": 1
-          },
-          {
-            "hex": "#fbf5e9",
+            "hex": "#ff00ff",
             "count": 1
           }
         ],
-        "contrast": [
-          {
-            "selector": "span.brand-text > span.brand-name > span.brand-accent",
-            "text": "io",
-            "ratio": 3.29,
-            "required": 4.5,
-            "fontSize": 23,
-            "weight": 500,
-            "color": "rgb(177, 116, 26)",
-            "background": "#f2ebdf"
-          },
-          {
-            "selector": "section.tile-grid > article.tile.is-dark > h2",
-            "text": "Weigh in",
-            "ratio": 1.09,
-            "required": 3,
-            "fontSize": 30,
-            "weight": 500,
-            "color": "rgb(251, 245, 233)",
-            "background": "#f2ebdf"
-          },
-          {
-            "selector": "section.tile-grid > article.tile.is-dark > p",
-            "text": "Write a proposal, set a window between one and thirty days, and let wallets answer. Results are advi",
-            "ratio": 1.01,
-            "required": 4.5,
-            "fontSize": 14.5,
-            "weight": 400,
-            "color": "rgba(244, 236, 221, 0.78)",
-            "background": "#f2ebdf"
-          }
-        ],
+        "contrast": [],
         "contrastChecked": 97,
         "headings": [
           {
@@ -1213,14 +1151,6 @@
           {
             "tag": "h2",
             "text": "On the record today"
-          },
-          {
-            "tag": "h2",
-            "text": "Take part"
-          },
-          {
-            "tag": "h2",
-            "text": "Weigh in"
           },
           {
             "tag": "h2",
@@ -1237,6 +1167,14 @@
           {
             "tag": "h3",
             "text": "The floor is open"
+          },
+          {
+            "tag": "h2",
+            "text": "Take part"
+          },
+          {
+            "tag": "h2",
+            "text": "Weigh in"
           },
           {
             "tag": "h2",
@@ -1259,7 +1197,9 @@
             "text": "SESSION"
           }
         ],
-        "navTargets": [],
+        "navTargets": [
+          ""
+        ],
         "overflow": {
           "documentOverflow": false,
           "offenders": []
@@ -1279,21 +1219,21 @@
       },
       "mobile": {
         "meta": {
-          "title": "Attesio — Time on the record.",
+          "title": "Clepsyra — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1992,
+          "bodyTextLength": 2088,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 20
+          "focusableCount": 26
         },
         "words": [
           {
             "word": "0",
-            "count": 3
+            "count": 5
           },
           {
-            "word": "2:49:20",
+            "word": "11:43:25",
             "count": 1
           },
           {
@@ -1329,10 +1269,6 @@
             "count": 2
           },
           {
-            "word": "AM",
-            "count": 1
-          },
-          {
             "word": "An",
             "count": 1
           },
@@ -1355,18 +1291,6 @@
           {
             "word": "are",
             "count": 3
-          },
-          {
-            "word": "Attes",
-            "count": 3
-          },
-          {
-            "word": "Attesio",
-            "count": 2
-          },
-          {
-            "word": "attesio.xyz",
-            "count": 1
           },
           {
             "word": "be",
@@ -1401,6 +1325,18 @@
             "count": 1
           },
           {
+            "word": "Cleps",
+            "count": 3
+          },
+          {
+            "word": "Clepsyra",
+            "count": 2
+          },
+          {
+            "word": "clepsyra.xyz",
+            "count": 1
+          },
+          {
             "word": "Cluster",
             "count": 1
           },
@@ -1418,7 +1354,7 @@
           },
           {
             "word": "Connect",
-            "count": 2
+            "count": 3
           },
           {
             "word": "connected",
@@ -1490,7 +1426,7 @@
           },
           {
             "word": "Guide",
-            "count": 1
+            "count": 2
           },
           {
             "word": "has",
@@ -1535,10 +1471,6 @@
           {
             "word": "instruction",
             "count": 1
-          },
-          {
-            "word": "io",
-            "count": 3
           },
           {
             "word": "is",
@@ -1646,7 +1578,7 @@
           },
           {
             "word": "on",
-            "count": 4
+            "count": 5
           },
           {
             "word": "On",
@@ -1686,7 +1618,7 @@
           },
           {
             "word": "Overview",
-            "count": 1
+            "count": 2
           },
           {
             "word": "part",
@@ -1714,6 +1646,10 @@
           },
           {
             "word": "Pick",
+            "count": 1
+          },
+          {
+            "word": "PM",
             "count": 1
           },
           {
@@ -1762,7 +1698,7 @@
           },
           {
             "word": "Quests",
-            "count": 3
+            "count": 4
           },
           {
             "word": "read",
@@ -1778,7 +1714,7 @@
           },
           {
             "word": "record",
-            "count": 5
+            "count": 6
           },
           {
             "word": "recorded",
@@ -1906,7 +1842,7 @@
           },
           {
             "word": "testnet",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Testnet",
@@ -1918,7 +1854,7 @@
           },
           {
             "word": "the",
-            "count": 12
+            "count": 13
           },
           {
             "word": "The",
@@ -1938,7 +1874,7 @@
           },
           {
             "word": "Time",
-            "count": 2
+            "count": 3
           },
           {
             "word": "to",
@@ -1954,7 +1890,7 @@
           },
           {
             "word": "Token",
-            "count": 6
+            "count": 7
           },
           {
             "word": "took",
@@ -1966,7 +1902,7 @@
           },
           {
             "word": "Treasury",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Tue",
@@ -1990,11 +1926,11 @@
           },
           {
             "word": "Votes",
-            "count": 3
+            "count": 4
           },
           {
             "word": "wallet",
-            "count": 7
+            "count": 8
           },
           {
             "word": "Wallet",
@@ -2059,11 +1995,15 @@
           {
             "word": "Your",
             "count": 3
+          },
+          {
+            "word": "yra",
+            "count": 3
           }
         ],
         "attrs": [
           {
-            "key": "aria-label=Attesio home",
+            "key": "aria-label=Clepsyra home",
             "count": 1
           },
           {
@@ -2083,6 +2023,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
             "key": "aria-label=Re-read testnet data",
             "count": 1
           },
@@ -2093,7 +2037,31 @@
         ],
         "links": [
           {
+            "href": "#governance",
+            "count": 1
+          },
+          {
+            "href": "#home",
+            "count": 2
+          },
+          {
+            "href": "#learn",
+            "count": 1
+          },
+          {
             "href": "#main",
+            "count": 1
+          },
+          {
+            "href": "#quests",
+            "count": 1
+          },
+          {
+            "href": "#stake",
+            "count": 1
+          },
+          {
+            "href": "#treasury",
             "count": 1
           }
         ],
@@ -2102,105 +2070,122 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "aside",
-          "blank",
-          "blank-icon",
-          "brand",
-          "brand-accent",
-          "brand-mark",
-          "brand-name",
-          "brand-text",
-          "btn",
-          "btn-block",
-          "btn-lg",
-          "btn-light",
-          "btn-outline",
-          "btn-primary",
-          "btn-wallet",
-          "burger",
-          "card",
-          "card-body",
-          "card-foot",
-          "card-head",
-          "card-note",
-          "col",
-          "defs",
-          "dot-live",
-          "footer-accent",
-          "footer-brand",
-          "footer-col",
-          "footer-facts",
-          "footer-fine",
-          "footer-inner",
-          "footer-links",
-          "footer-mark",
-          "footer-note",
-          "footer-tag",
-          "footer-wordmark",
-          "header-inner",
-          "header-tools",
-          "hero",
-          "hero-actions",
-          "hero-copy",
-          "hero-facts",
-          "hero-lede",
-          "hero-title",
-          "icon-btn",
-          "is-dark",
-          "is-flush",
-          "is-muted",
-          "is-neutral",
-          "is-text",
-          "kicker",
-          "kicker-dot",
-          "link-btn",
-          "metric",
-          "metric-grid",
-          "metric-label",
-          "metric-note",
-          "metric-value",
-          "note",
-          "page",
-          "page-inner",
-          "panel",
-          "panel-date",
-          "panel-foot",
-          "panel-head",
-          "panel-title",
-          "pill",
-          "section-gap",
-          "site",
-          "site-footer",
-          "site-header",
-          "skip-link",
-          "split",
-          "tile",
-          "tile-foot",
-          "tile-grid",
-          "tile-icon",
-          "view",
-          "wordmark-accent"
+          "ax-actions",
+          "ax-board",
+          "ax-board-body",
+          "ax-board-head",
+          "ax-board-title",
+          "ax-btn",
+          "ax-btn--fill",
+          "ax-btn--lg",
+          "ax-btn--line",
+          "ax-btn--sm",
+          "ax-btn--wide",
+          "ax-command",
+          "ax-command-chip",
+          "ax-command-icon",
+          "ax-command-inner",
+          "ax-command-menu",
+          "ax-command-pulse",
+          "ax-command-rail",
+          "ax-command-tools",
+          "ax-desk",
+          "ax-display",
+          "ax-empty",
+          "ax-empty-glyph",
+          "ax-empty-text",
+          "ax-empty-title",
+          "ax-fact",
+          "ax-fact--muted",
+          "ax-factlist",
+          "ax-facts",
+          "ax-fork",
+          "ax-fork--ballot",
+          "ax-fork-foot",
+          "ax-fork-glyph",
+          "ax-forks",
+          "ax-inner",
+          "ax-kicker",
+          "ax-kicker-dot",
+          "ax-lede",
+          "ax-link",
+          "ax-live-dot",
+          "ax-main",
+          "ax-margin",
+          "ax-note",
+          "ax-pill",
+          "ax-rail",
+          "ax-rail-badge",
+          "ax-rail-glyph",
+          "ax-rail-item",
+          "ax-rail-label",
+          "ax-rail-list",
+          "ax-readout",
+          "ax-readout-cell",
+          "ax-readout-date",
+          "ax-readout-foot",
+          "ax-readout-grid",
+          "ax-readout-head",
+          "ax-readout-label",
+          "ax-readout-note",
+          "ax-readout-title",
+          "ax-readout-value",
+          "ax-readout-value--text",
+          "ax-runhead",
+          "ax-sheet",
+          "ax-sheet-body",
+          "ax-sheet-body--flush",
+          "ax-sheet-foot",
+          "ax-sheet-head",
+          "ax-sheet-note",
+          "ax-sheet-title",
+          "ax-skip",
+          "ax-spine-brand",
+          "ax-spine-io",
+          "ax-spine-mark",
+          "ax-spine-tag",
+          "ax-spine-text",
+          "ax-spine-word",
+          "ax-stage",
+          "ax-status",
+          "ax-status-brand",
+          "ax-status-col",
+          "ax-status-cols",
+          "ax-status-facts",
+          "ax-status-fine",
+          "ax-status-io",
+          "ax-status-links",
+          "ax-status-mark",
+          "ax-status-note",
+          "ax-status-tag",
+          "ax-status-top",
+          "ax-status-word",
+          "ax-status-word-io",
+          "ax-view",
+          "ax-wide"
         ],
         "fingerprint": [
           "a@5:0",
-          "article@9:4+",
-          "aside@9:3",
-          "b@10:0",
+          "a@6:2",
+          "a@7:2",
+          "a@7:3",
+          "article@11:4+",
+          "b@11:0",
+          "b@8:0",
           "b@9:1",
-          "button@11:1",
+          "button@10:0",
+          "button@10:1",
           "button@12:1",
-          "button@7:2",
+          "button@13:1",
           "button@8:1",
           "button@8:2",
-          "button@9:0",
           "dd@14:0",
-          "div@10:1",
           "div@10:2",
-          "div@10:3",
-          "div@10:4+",
           "div@11:1",
           "div@11:2",
           "div@11:3",
+          "div@11:4+",
+          "div@12:1",
           "div@12:3",
           "div@13:2",
           "div@3:1",
@@ -2209,245 +2194,156 @@
           "div@6:2",
           "div@6:3",
           "div@6:4+",
-          "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:2",
+          "div@8:3",
           "div@8:4+",
           "div@9:2",
+          "div@9:3",
           "div@9:4+",
           "dl@12:4+",
           "dt@14:0",
-          "em@11:0",
+          "em@10:0",
           "footer@5:3",
-          "h1@10:2",
-          "h2@10:0",
-          "h2@11:0",
+          "h1@9:2",
           "h2@12:0",
           "h3@13:0",
-          "h3@8:0",
-          "header@11:2",
+          "h3@9:0",
           "header@5:1",
+          "i@8:0",
+          "img@8:0",
           "img@9:0",
-          "li@11:2",
+          "li@10:2",
           "main@5:1",
-          "nav@8:4+",
-          "p@10:0",
-          "p@10:1",
+          "nav@5:3",
+          "nav@9:4+",
           "p@12:0",
           "p@13:0",
           "p@8:0",
+          "p@9:0",
+          "p@9:1",
           "path@10:0",
           "path@12:0",
-          "path@13:0",
           "path@14:0",
           "path@15:0",
           "section@10:2",
           "section@10:3",
-          "section@7:3",
-          "section@8:2",
+          "section@7:2",
           "span@10:0",
-          "span@10:1",
           "span@11:0",
           "span@12:0",
+          "span@12:1",
+          "span@13:0",
           "span@13:1",
           "span@7:0",
+          "span@7:1",
+          "span@7:2",
+          "span@8:0",
           "span@8:1",
           "span@8:2",
-          "span@9:1",
+          "span@9:0",
           "strong@12:0",
+          "strong@13:0",
           "svg@11:1",
-          "svg@12:1",
           "svg@13:1",
           "svg@14:1",
           "svg@9:1",
-          "ul@10:3"
+          "ul@9:3"
         ],
         "landmarks": [
           {
             "tag": "header",
             "role": "",
-            "top": 0,
-            "left": 0,
-            "width": 390,
-            "height": 59
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 59,
-            "left": 0,
-            "width": 390,
-            "height": 3179
-          },
-          {
-            "tag": "aside",
-            "role": "",
-            "top": 551,
-            "left": 16,
-            "width": 358,
-            "height": 558
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 1802,
-            "left": 17,
-            "width": 356,
-            "height": 67
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 2163,
-            "left": 17,
-            "width": 356,
-            "height": 67
-          },
-          {
-            "tag": "aside",
-            "role": "",
-            "top": 2525,
-            "left": 16,
-            "width": 358,
-            "height": 713
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 2526,
-            "left": 17,
-            "width": 356,
-            "height": 67
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 2859,
-            "left": 17,
-            "width": 356,
-            "height": 67
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 3286,
-            "left": 0,
-            "width": 390,
-            "height": 974
+            "top": 74,
+            "left": 12,
+            "width": 366,
+            "height": 56
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 3536,
-            "left": 16,
-            "width": 358,
-            "height": 154
+            "top": 0,
+            "left": 0,
+            "width": 390,
+            "height": 64
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 130,
+            "left": 0,
+            "width": 390,
+            "height": 2707
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 2893,
+            "left": 0,
+            "width": 390,
+            "height": 836
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 3085,
+            "left": 14,
+            "width": 362,
+            "height": 177
           }
         ],
         "colors": [
           {
-            "hex": "#1c1710",
-            "count": 84
+            "hex": "#f4f7fa",
+            "count": 116
           },
           {
-            "hex": "#665d4e",
-            "count": 52
+            "hex": "#8fa3b5",
+            "count": 88
           },
           {
-            "hex": "#14503f",
-            "count": 31
+            "hex": "#ff0000",
+            "count": 32
           },
           {
-            "hex": "#4b4235",
-            "count": 29
+            "hex": "#000000",
+            "count": 17
           },
           {
-            "hex": "#fffdf8",
-            "count": 11
-          },
-          {
-            "hex": "#fdf8ee",
+            "hex": "#ff6b6b",
             "count": 9
           },
           {
-            "hex": "#e7ddcb",
-            "count": 5
+            "hex": "#182533",
+            "count": 7
           },
           {
-            "hex": "#b1741a",
-            "count": 4
-          },
-          {
-            "hex": "#0d382c",
+            "hex": "#0b1119",
             "count": 3
           },
           {
-            "hex": "#f0e3c8",
+            "hex": "#111a24",
             "count": 3
           },
           {
-            "hex": "#f4ecdd",
+            "hex": "#ff8bff",
             "count": 3
           },
           {
-            "hex": "#e3eee7",
+            "hex": "#05080c",
+            "count": 2
+          },
+          {
+            "hex": "#5ce1a0",
             "count": 1
           },
           {
-            "hex": "#f2ebdf",
-            "count": 1
-          },
-          {
-            "hex": "#f7f0e3",
-            "count": 1
-          },
-          {
-            "hex": "#f8f1e3",
-            "count": 1
-          },
-          {
-            "hex": "#f9f2e6",
-            "count": 1
-          },
-          {
-            "hex": "#fbf5e9",
+            "hex": "#ff00ff",
             "count": 1
           }
         ],
-        "contrast": [
-          {
-            "selector": "span.brand-text > span.brand-name > span.brand-accent",
-            "text": "io",
-            "ratio": 3.29,
-            "required": 4.5,
-            "fontSize": 21,
-            "weight": 500,
-            "color": "rgb(177, 116, 26)",
-            "background": "#f2ebdf"
-          },
-          {
-            "selector": "section.tile-grid > article.tile.is-dark > h2",
-            "text": "Weigh in",
-            "ratio": 1.09,
-            "required": 3,
-            "fontSize": 24,
-            "weight": 500,
-            "color": "rgb(251, 245, 233)",
-            "background": "#f2ebdf"
-          },
-          {
-            "selector": "section.tile-grid > article.tile.is-dark > p",
-            "text": "Write a proposal, set a window between one and thirty days, and let wallets answer. Results are advi",
-            "ratio": 1.01,
-            "required": 4.5,
-            "fontSize": 14.5,
-            "weight": 400,
-            "color": "rgba(244, 236, 221, 0.78)",
-            "background": "#f2ebdf"
-          }
-        ],
-        "contrastChecked": 86,
+        "contrast": [],
+        "contrastChecked": 97,
         "headings": [
           {
             "tag": "h1",
@@ -2456,14 +2352,6 @@
           {
             "tag": "h2",
             "text": "On the record today"
-          },
-          {
-            "tag": "h2",
-            "text": "Take part"
-          },
-          {
-            "tag": "h2",
-            "text": "Weigh in"
           },
           {
             "tag": "h2",
@@ -2480,6 +2368,14 @@
           {
             "tag": "h3",
             "text": "The floor is open"
+          },
+          {
+            "tag": "h2",
+            "text": "Take part"
+          },
+          {
+            "tag": "h2",
+            "text": "Weigh in"
           },
           {
             "tag": "h2",
@@ -2502,10 +2398,43 @@
             "text": "SESSION"
           }
         ],
-        "navTargets": [],
+        "navTargets": [
+          ""
+        ],
         "overflow": {
           "documentOverflow": false,
-          "offenders": []
+          "offenders": [
+            {
+              "selector": "nav.ax-rail > div.ax-rail-list > a.ax-rail-item",
+              "right": 403,
+              "width": 50
+            },
+            {
+              "selector": "nav.ax-rail > div.ax-rail-list > a.ax-rail-item",
+              "right": 455,
+              "width": 50
+            },
+            {
+              "selector": "div.ax-rail-list > a.ax-rail-item > span.ax-rail-glyph",
+              "right": 442,
+              "width": 24
+            },
+            {
+              "selector": "a.ax-rail-item > span.ax-rail-glyph > svg",
+              "right": 439,
+              "width": 17
+            },
+            {
+              "selector": "span.ax-rail-glyph > svg > path",
+              "right": 436,
+              "width": 11
+            },
+            {
+              "selector": "div.ax-rail-list > a.ax-rail-item > span.ax-rail-label",
+              "right": 443,
+              "width": 26
+            }
+          ]
         }
       },
       "mobileNav": {
@@ -2519,80 +2448,80 @@
         "samples": [
           {
             "tag": "a",
-            "text": "Skip to content",
+            "text": "SKIP TO CONTENT",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(20, 80, 63)",
+            "outlineColor": "rgb(244, 247, 250)",
             "boxShadow": "none",
-            "borderColor": "rgb(249, 242, 230)",
-            "backgroundColor": "rgb(28, 23, 16)"
+            "borderColor": "rgb(0, 0, 0)",
+            "backgroundColor": "rgb(255, 0, 0)"
           },
           {
             "tag": "button",
-            "text": "Attesio home",
+            "text": "Re-read testnet data",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(20, 80, 63)",
+            "outlineColor": "rgb(255, 0, 0)",
             "boxShadow": "none",
-            "borderColor": "rgb(28, 23, 16)",
+            "borderColor": "rgba(143, 163, 181, 0.2)",
+            "backgroundColor": "rgba(17, 26, 36, 0.7)"
+          },
+          {
+            "tag": "button",
+            "text": "Connect a Solana wallet",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(255, 0, 0)",
+            "boxShadow": "rgba(255, 0, 0, 0.24) 0px 14px 34px 0px",
+            "borderColor": "rgb(255, 0, 0)",
+            "backgroundColor": "rgb(255, 0, 0)"
+          },
+          {
+            "tag": "button",
+            "text": "Open menu",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(255, 0, 0)",
+            "boxShadow": "none",
+            "borderColor": "rgba(143, 163, 181, 0.2)",
+            "backgroundColor": "rgba(17, 26, 36, 0.7)"
+          },
+          {
+            "tag": "a",
+            "text": "Clepsyra home",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(255, 0, 0)",
+            "boxShadow": "none",
+            "borderColor": "rgb(244, 247, 250) rgb(244, 247, 250) rgb(30, 42, 54)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
-            "tag": "button",
-            "text": "Overview",
+            "tag": "a",
+            "text": "OVERVIEW",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(20, 80, 63)",
-            "boxShadow": "rgba(28, 23, 16, 0.05) 0px 1px 2px 0px",
-            "borderColor": "rgb(222, 209, 187)",
-            "backgroundColor": "rgb(255, 253, 248)"
-          },
-          {
-            "tag": "button",
-            "text": "Quests 0",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(20, 80, 63)",
+            "outlineColor": "rgb(255, 0, 0)",
             "boxShadow": "none",
             "borderColor": "rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
-            "tag": "button",
-            "text": "Votes 0",
+            "tag": "a",
+            "text": "QUESTS 0",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(20, 80, 63)",
+            "outlineColor": "rgb(255, 0, 0)",
             "boxShadow": "none",
             "borderColor": "rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
-            "tag": "button",
-            "text": "Treasury",
+            "tag": "a",
+            "text": "VOTES 0",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(20, 80, 63)",
-            "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "button",
-            "text": "Token",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(20, 80, 63)",
-            "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "button",
-            "text": "Guide",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(20, 80, 63)",
+            "outlineColor": "rgb(255, 0, 0)",
             "boxShadow": "none",
             "borderColor": "rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
@@ -2603,5 +2532,5 @@
       }
     }
   },
-  "inventoryHash": "b4c3e407879d7c9afa3a8e27bae2c8333c3e29c09d945bbefd35944126062eee"
+  "inventoryHash": "87df55a4fd458048fee4007ca6ab08175339b2d0c3d47b67a74e909b4ffd75f0"
 }

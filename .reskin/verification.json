@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T19:05:47.582Z",
+  "generatedAt": "2026-10-20T15:56:20.466Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/703/website",
-    "name": "attesio-web",
-    "baseUrl": "http://127.0.0.1:4319/"
+    "name": "clepsyra-web",
+    "baseUrl": "http://127.0.0.1:4317/"
   },
   "passed": true,
   "thresholds": {
@@ -19,38 +19,12 @@
     "sourceContract": {
       "passed": true,
       "issues": [],
-      "warnings": [
-        "bindings: added \"attr:'#' + tab.id\"",
-        "bindings: added \"attr:'#home'\"",
-        "bindings: added \"link:'#' + tab.id\"",
-        "bindings: added \"link:'#home'\""
-      ],
-      "hash": "652f1c8d5c371e12d65295dd7b3a060da9681f50dc5f88b001dc0ee46f312dd1"
+      "warnings": [],
+      "hash": "87df55a4fd458048fee4007ca6ab08175339b2d0c3d47b67a74e909b4ffd75f0"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "dashboard-shell",
-        "family": "shell",
-        "traits": {
-          "sidebar": true,
-          "topbar": true,
-          "cards": true,
-          "hero": true,
-          "table": false,
-          "grid": true,
-          "tabs": true,
-          "modal": true,
-          "charts": true,
-          "sticky": true,
-          "orbital": false,
-          "terminal": true,
-          "bento": false,
-          "ticker": false,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "terminal-console",
         "family": "linear",
         "traits": {
@@ -71,10 +45,31 @@
           "gallery": false
         }
       },
+      "current": {
+        "id": "sidebar-workspace",
+        "family": "shell",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": false,
+          "hero": true,
+          "table": false,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
       "accent": {
-        "original": "#b1741a",
-        "current": "#ff0000",
-        "deltaE": 64.32,
+        "original": "#ff0000",
+        "current": "#e6006f",
+        "deltaE": 61.43,
         "min": 30
       }
     },
@@ -84,18 +79,10 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute added: aria-label=Open menu",
-          "link target added: #governance",
-          "link target added: #home",
-          "link target added: #learn",
-          "link target added: #quests",
-          "link target added: #stake",
-          "link target added: #treasury"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.449,
-          "landmarkSimilarity": 0.455,
+          "fingerprintSimilarity": 0.275,
+          "landmarkSimilarity": 0.6,
           "classOverlap": 0
         },
         "content": {
@@ -129,21 +116,9 @@
     ]
   },
   "failures": [],
-  "warnings": [
-    "bindings: added \"attr:'#' + tab.id\"",
-    "bindings: added \"attr:'#home'\"",
-    "bindings: added \"link:'#' + tab.id\"",
-    "bindings: added \"link:'#home'\"",
-    "/: aria attribute added: aria-label=Open menu",
-    "/: link target added: #governance",
-    "/: link target added: #home",
-    "/: link target added: #learn",
-    "/: link target added: #quests",
-    "/: link target added: #stake",
-    "/: link target added: #treasury"
-  ],
+  "warnings": [],
   "baseline": {
-    "generatedAt": "2026-10-19T18:49:19.256Z",
+    "generatedAt": "2026-10-20T15:43:23.806Z",
     "routes": [
       "/"
     ]

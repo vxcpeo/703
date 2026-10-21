@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T18:49:04.322Z",
+  "generatedAt": "2026-10-20T15:40:00.563Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/703/website",
-    "name": "attesio-web",
+    "name": "clepsyra-web",
     "vueVersion": "latest",
     "nuxt": false,
     "dependencies": [
@@ -26,14 +26,14 @@
     "frameworks": []
   },
   "stats": {
-    "filesScanned": 11,
-    "vueFiles": 5,
+    "filesScanned": 12,
+    "vueFiles": 6,
     "routes": 1,
     "staticTextTokens": 246,
-    "bindingTokens": 148,
+    "bindingTokens": 152,
     "eventTokens": 50,
-    "classNames": 179,
-    "colors": 72
+    "classNames": 196,
+    "colors": 144
   },
   "routes": [
     {
@@ -43,12 +43,12 @@
   ],
   "unresolvedRoutes": [],
   "archetype": {
-    "id": "dashboard-shell",
-    "family": "shell",
+    "id": "terminal-console",
+    "family": "linear",
     "traits": {
-      "sidebar": true,
-      "topbar": true,
-      "cards": true,
+      "sidebar": false,
+      "topbar": false,
+      "cards": false,
       "hero": true,
       "table": false,
       "grid": true,
@@ -65,445 +65,449 @@
   },
   "palette": [
     {
-      "hex": "#fffdf8",
-      "count": 14
+      "hex": "#ff0000",
+      "count": 29
     },
     {
-      "hex": "#b1741a",
-      "count": 6
+      "hex": "#000000",
+      "count": 19
     },
     {
-      "hex": "#e7ddcb",
-      "count": 6
+      "hex": "#8fa3b5",
+      "count": 19
     },
     {
-      "hex": "#1c1710",
+      "hex": "#182533",
+      "count": 12
+    },
+    {
+      "hex": "#111a24",
+      "count": 9
+    },
+    {
+      "hex": "#05080c",
+      "count": 5
+    },
+    {
+      "hex": "#5ce1a0",
+      "count": 5
+    },
+    {
+      "hex": "#0c131c",
+      "count": 4
+    },
+    {
+      "hex": "#f2c94c",
+      "count": 4
+    },
+    {
+      "hex": "#ff00ff",
+      "count": 4
+    },
+    {
+      "hex": "#0b1119",
       "count": 3
     },
     {
-      "hex": "#0c3428",
+      "hex": "#ff6b6b",
+      "count": 3
+    },
+    {
+      "hex": "#ff7a7a",
+      "count": 3
+    },
+    {
+      "hex": "#090e14",
       "count": 2
     },
     {
-      "hex": "#0d382c",
+      "hex": "#0a0f16",
       "count": 2
     },
     {
-      "hex": "#14503f",
+      "hex": "#101a24",
       "count": 2
     },
     {
-      "hex": "#18130d",
+      "hex": "#40698c",
       "count": 2
     },
     {
-      "hex": "#2c5568",
+      "hex": "#a9bbcb",
       "count": 2
     },
     {
-      "hex": "#8b3a32",
+      "hex": "#ff2f2f",
       "count": 2
     },
     {
-      "hex": "#f2ebdf",
+      "hex": "#ff8bff",
       "count": 2
     },
     {
-      "hex": "#f4ecdd",
-      "count": 2
-    },
-    {
-      "hex": "#fbf3e4",
-      "count": 2
-    },
-    {
-      "hex": "#164b3c",
+      "hex": "#080c11",
       "count": 1
     },
     {
-      "hex": "#3f8a6a",
+      "hex": "#0a0e14",
       "count": 1
     },
     {
-      "hex": "#4b4235",
+      "hex": "#16222f",
       "count": 1
     },
     {
-      "hex": "#665d4e",
+      "hex": "#1e0c0e",
       "count": 1
     },
     {
-      "hex": "#8a5a12",
+      "hex": "#1e2a36",
       "count": 1
     },
     {
-      "hex": "#c6b294",
+      "hex": "#2a4a63",
       "count": 1
     },
     {
-      "hex": "#d9a25a",
+      "hex": "#2f4458",
       "count": 1
     },
     {
-      "hex": "#ded1bb",
+      "hex": "#300a30",
       "count": 1
     },
     {
-      "hex": "#e3eee7",
+      "hex": "#f4f7fa",
       "count": 1
     },
     {
-      "hex": "#e5edf1",
+      "hex": "#ff5f5f",
       "count": 1
     },
     {
-      "hex": "#f0e3c8",
-      "count": 1
-    },
-    {
-      "hex": "#f2f7f8",
-      "count": 1
-    },
-    {
-      "hex": "#f6efe3",
-      "count": 1
-    },
-    {
-      "hex": "#f7e9e6",
-      "count": 1
-    },
-    {
-      "hex": "#f7f0e3",
-      "count": 1
-    },
-    {
-      "hex": "#f8f1e3",
-      "count": 1
-    },
-    {
-      "hex": "#f8f1e4",
-      "count": 1
-    },
-    {
-      "hex": "#f9edd9",
-      "count": 1
-    },
-    {
-      "hex": "#f9f2e6",
+      "hex": "#ff7b7b",
       "count": 1
     }
   ],
   "fonts": [],
   "classNames": [
-    "aside",
-    "ballot",
-    "ballot-foot",
-    "ballot-head",
-    "ballot-id",
-    "ballot-title",
-    "banner",
-    "banner-copy",
-    "blank",
-    "blank-icon",
-    "brand",
-    "brand-accent",
-    "brand-mark",
-    "brand-name",
-    "brand-sub",
-    "brand-text",
-    "btn",
-    "btn-block",
-    "btn-lg",
-    "btn-light",
-    "btn-outline",
-    "btn-primary",
-    "btn-quiet",
-    "btn-sm",
-    "btn-wallet",
-    "burger",
-    "card",
-    "card-body",
-    "card-foot",
-    "card-grid",
-    "card-head",
-    "card-note",
-    "check-list",
-    "check-mark",
-    "chip",
-    "chip-row",
-    "cluster-chip",
-    "col",
-    "defs",
-    "dot-live",
-    "drawer",
-    "drawer-backdrop",
-    "drawer-facts",
-    "drawer-foot",
-    "drawer-head",
-    "drawer-nav",
-    "drawer-title",
-    "faq",
-    "faq-a",
-    "faq-item",
-    "field",
-    "footer-accent",
-    "footer-brand",
-    "footer-col",
-    "footer-facts",
-    "footer-fine",
-    "footer-inner",
-    "footer-links",
-    "footer-mark",
-    "footer-note",
-    "footer-tag",
-    "footer-wordmark",
-    "form-actions",
-    "form-grid",
-    "form-note",
-    "header-inner",
-    "header-nav",
-    "header-tools",
-    "hero",
-    "hero-actions",
-    "hero-copy",
-    "hero-facts",
-    "hero-lede",
-    "hero-title",
-    "icon-btn",
-    "is-against",
-    "is-danger",
-    "is-dark",
-    "is-flush",
-    "is-for",
-    "is-info",
-    "is-ink",
-    "is-muted",
-    "is-neutral",
-    "is-text",
-    "is-warn",
-    "key",
-    "kicker",
-    "kicker-dot",
-    "link-btn",
-    "meta-chip",
-    "meter",
-    "metric",
-    "metric-grid",
-    "metric-label",
-    "metric-note",
-    "metric-value",
-    "nav-pill",
-    "note",
-    "page",
-    "page-head",
-    "page-inner",
-    "page-lede",
-    "page-meta",
-    "page-title",
-    "panel",
-    "panel-date",
-    "panel-foot",
-    "panel-head",
-    "panel-title",
-    "pill",
-    "pillTone(proposalStatus(p))",
-    "pillTone(questStatus(q))",
-    "quest-card",
-    "quest-foot",
-    "quest-id",
-    "quest-meta",
-    "quest-meta-row",
-    "quest-text",
-    "quest-title",
-    "quest-top",
-    "reading",
-    "receipt",
-    "receipt-key",
-    "receipt-leader",
-    "receipt-row",
-    "receipt-val",
-    "result-count",
-    "row-chevron",
-    "row-copy",
-    "row-index",
-    "row-item",
-    "row-list",
-    "search",
-    "section-gap",
-    "sheet",
-    "sheet-backdrop",
-    "sheet-empty",
-    "sheet-foot",
-    "sheet-head",
-    "sheet-note",
-    "site",
-    "site-footer",
-    "site-header",
-    "skeleton",
-    "skip-link",
-    "spin:",
-    "split",
-    "sr-only",
-    "stat",
-    "stat-grid",
-    "stat-label",
-    "stat-note",
-    "stat-value",
-    "studio",
-    "studio-head",
-    "tally-bar",
-    "tally-legend",
-    "tile",
-    "tile-foot",
-    "tile-grid",
-    "tile-icon",
-    "timeline",
-    "tl-actions",
-    "tl-body",
-    "tl-item",
-    "tl-num",
-    "toast",
-    "toast-close",
-    "toast-copy",
-    "toast-dot",
-    "toolbar",
-    "two",
-    "view",
-    "wallet-fallback",
-    "wallet-grid",
-    "wallet-name",
-    "wordmark-accent",
-    "}"
+    "ax-actions",
+    "ax-alert",
+    "ax-alert-action",
+    "ax-alert-copy",
+    "ax-alert-glyph",
+    "ax-alerts",
+    "ax-ballot",
+    "ax-ballot-foot",
+    "ax-ballot-head",
+    "ax-ballot-id",
+    "ax-ballot-title",
+    "ax-board",
+    "ax-board--loading",
+    "ax-board-body",
+    "ax-board-body--flush",
+    "ax-board-head",
+    "ax-board-title",
+    "ax-btn",
+    "ax-btn--fill",
+    "ax-btn--ghost",
+    "ax-btn--lg",
+    "ax-btn--line",
+    "ax-btn--sm",
+    "ax-btn--wide",
+    "ax-check",
+    "ax-check-mark",
+    "ax-checklist",
+    "ax-chip",
+    "ax-chips",
+    "ax-command",
+    "ax-command-chip",
+    "ax-command-icon",
+    "ax-command-inner",
+    "ax-command-menu",
+    "ax-command-pulse",
+    "ax-command-rail",
+    "ax-command-tools",
+    "ax-console-line",
+    "ax-count",
+    "ax-desk",
+    "ax-display",
+    "ax-drawer",
+    "ax-drawer-facts",
+    "ax-drawer-foot",
+    "ax-drawer-head",
+    "ax-drawer-link",
+    "ax-drawer-nav",
+    "ax-drawer-title",
+    "ax-empty",
+    "ax-empty-glyph",
+    "ax-empty-text",
+    "ax-empty-title",
+    "ax-entry",
+    "ax-entry-foot",
+    "ax-entry-head",
+    "ax-entry-id",
+    "ax-entry-meter",
+    "ax-entry-meter-row",
+    "ax-entry-text",
+    "ax-entry-title",
+    "ax-fact",
+    "ax-fact--muted",
+    "ax-fact-quiet",
+    "ax-factlist",
+    "ax-facts",
+    "ax-faq",
+    "ax-faq-a",
+    "ax-faq-item",
+    "ax-faq-q",
+    "ax-field",
+    "ax-field-label",
+    "ax-fork",
+    "ax-fork--ballot",
+    "ax-fork-foot",
+    "ax-fork-glyph",
+    "ax-forks",
+    "ax-form",
+    "ax-form-actions",
+    "ax-form-foot",
+    "ax-form-note",
+    "ax-gauge",
+    "ax-gauge-fill",
+    "ax-inner",
+    "ax-input",
+    "ax-kicker",
+    "ax-kicker-dot",
+    "ax-lede",
+    "ax-ledger",
+    "ax-ledger-go",
+    "ax-ledger-index",
+    "ax-ledger-main",
+    "ax-ledger-note",
+    "ax-ledger-row",
+    "ax-ledger-title",
+    "ax-link",
+    "ax-live-dot",
+    "ax-loading",
+    "ax-main",
+    "ax-margin",
+    "ax-meter",
+    "ax-meter-label",
+    "ax-meter-note",
+    "ax-meter-value",
+    "ax-meters",
+    "ax-note",
+    "ax-note--warn",
+    "ax-pill",
+    "ax-rail",
+    "ax-rail-badge",
+    "ax-rail-foot",
+    "ax-rail-glyph",
+    "ax-rail-item",
+    "ax-rail-label",
+    "ax-rail-list",
+    "ax-readout",
+    "ax-readout-cell",
+    "ax-readout-date",
+    "ax-readout-foot",
+    "ax-readout-grid",
+    "ax-readout-head",
+    "ax-readout-label",
+    "ax-readout-note",
+    "ax-readout-title",
+    "ax-readout-value",
+    "ax-readout-value--text",
+    "ax-runhead",
+    "ax-search",
+    "ax-search-input",
+    "ax-sheet",
+    "ax-sheet-body",
+    "ax-sheet-body--flush",
+    "ax-sheet-foot",
+    "ax-sheet-head",
+    "ax-sheet-note",
+    "ax-sheet-title",
+    "ax-skip",
+    "ax-spine-brand",
+    "ax-spine-io",
+    "ax-spine-mark",
+    "ax-spine-tag",
+    "ax-spine-text",
+    "ax-spine-word",
+    "ax-stage",
+    "ax-statement",
+    "ax-statement-key",
+    "ax-statement-leader",
+    "ax-statement-row",
+    "ax-statement-val",
+    "ax-statement-val--muted",
+    "ax-status",
+    "ax-status-brand",
+    "ax-status-col",
+    "ax-status-cols",
+    "ax-status-facts",
+    "ax-status-fine",
+    "ax-status-io",
+    "ax-status-links",
+    "ax-status-mark",
+    "ax-status-note",
+    "ax-status-tag",
+    "ax-status-top",
+    "ax-status-word",
+    "ax-status-word-io",
+    "ax-step",
+    "ax-step-body",
+    "ax-step-foot",
+    "ax-step-num",
+    "ax-steps",
+    "ax-tag",
+    "ax-tag--strong",
+    "ax-tags",
+    "ax-tally",
+    "ax-tally-against",
+    "ax-tally-for",
+    "ax-tally-key",
+    "ax-tally-key--against",
+    "ax-tally-keys",
+    "ax-textarea",
+    "ax-toast",
+    "ax-toast-close",
+    "ax-toast-copy",
+    "ax-toast-dot",
+    "ax-veil",
+    "ax-view",
+    "ax-wallet-fallback",
+    "ax-wallet-list",
+    "ax-wallet-name",
+    "ax-wallet-row",
+    "ax-wallets",
+    "ax-wallets-empty",
+    "ax-wallets-foot",
+    "ax-wallets-head",
+    "ax-wallets-note",
+    "ax-wallets-title",
+    "ax-wide",
+    "visually-hidden"
   ],
   "designSignals": {
     "frameworks": [],
     "cssVars": [
-      "--card",
+      "--accent",
+      "--accent-2",
+      "--accent-safe",
+      "--against",
+      "--bare",
+      "--bg",
+      "--danger",
+      "--display-tracking",
+      "--display-weight",
+      "--edge",
+      "--edge-strong",
+      "--fill",
+      "--font-body",
       "--font-display",
-      "--font-ui",
-      "--gutter",
-      "--header-h",
-      "--info",
-      "--info-soft",
+      "--font-mono",
+      "--ghost",
+      "--glow",
       "--ink",
-      "--ink-2",
+      "--label-tracking",
       "--line",
-      "--line-strong",
-      "--marigold",
-      "--marigold-deep",
-      "--maroon",
-      "--maroon-soft",
-      "--max",
+      "--max-width",
+      "--motion-duration",
+      "--motion-ease",
       "--muted",
-      "--paper",
-      "--paper-soft",
-      "--pine",
-      "--pine-deep",
-      "--pine-soft",
-      "--r-lg",
-      "--r-md",
-      "--r-sm",
-      "--r-xl",
-      "--shadow-lg",
-      "--shadow-md",
-      "--shadow-sm",
-      "--sink"
+      "--page-pad",
+      "--radius-lg",
+      "--radius-md",
+      "--radius-sm",
+      "--rail",
+      "--shadow",
+      "--signal",
+      "--space-1",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-5",
+      "--space-6",
+      "--success",
+      "--surface",
+      "--surface-alt",
+      "--warning"
     ],
     "colorVars": [
       {
-        "name": "--card",
-        "value": "#fffdf8"
+        "name": "--accent",
+        "value": "#ff0000"
       },
       {
-        "name": "--info",
-        "value": "#2c5568"
+        "name": "--accent-2",
+        "value": "#ff00ff"
       },
       {
-        "name": "--info-soft",
-        "value": "#e5edf1"
+        "name": "--accent-safe",
+        "value": "#ff0000"
+      },
+      {
+        "name": "--bg",
+        "value": "#000000"
+      },
+      {
+        "name": "--danger",
+        "value": "#ff7a7a"
       },
       {
         "name": "--ink",
-        "value": "#1c1710"
-      },
-      {
-        "name": "--ink-2",
-        "value": "#4b4235"
+        "value": "#f4f7fa"
       },
       {
         "name": "--line",
-        "value": "#ded1bb"
-      },
-      {
-        "name": "--line-strong",
-        "value": "#c6b294"
-      },
-      {
-        "name": "--marigold",
-        "value": "#b1741a"
-      },
-      {
-        "name": "--marigold-deep",
-        "value": "#8a5a12"
-      },
-      {
-        "name": "--maroon",
-        "value": "#8b3a32"
-      },
-      {
-        "name": "--maroon-soft",
-        "value": "#f7e9e6"
+        "value": "#1e2a36"
       },
       {
         "name": "--muted",
-        "value": "#665d4e"
+        "value": "#8fa3b5"
       },
       {
-        "name": "--paper",
-        "value": "#f2ebdf"
+        "name": "--signal",
+        "value": "#ff6b6b"
       },
       {
-        "name": "--paper-soft",
-        "value": "#faf5ec"
+        "name": "--success",
+        "value": "#5ce1a0"
       },
       {
-        "name": "--pine",
-        "value": "#14503f"
+        "name": "--surface",
+        "value": "#111a24"
       },
       {
-        "name": "--pine-deep",
-        "value": "#0d382c"
+        "name": "--surface-alt",
+        "value": "#182533"
       },
       {
-        "name": "--pine-soft",
-        "value": "#e3eee7"
-      },
-      {
-        "name": "--sink",
-        "value": "#e7ddcb"
+        "name": "--warning",
+        "value": "#f2c94c"
       }
     ],
     "mediaQueries": [
-      "@media (forced-colors: active)",
-      "@media (max-width: 1080px)",
-      "@media (max-width: 1240px)",
-      "@media (max-width: 620px)",
-      "@media (max-width: 860px)",
+      "@media (max-width: 1020px)",
+      "@media (max-width: 1180px)",
+      "@media (max-width: 600px)",
+      "@media (max-width: 900px)",
+      "@media (min-width: 1021px) and (min-height: 780px)",
       "@media (prefers-reduced-motion: reduce)"
     ],
     "darkMode": false
   },
   "structure": {
     "tagCounts": {
-      "a": 5,
+      "a": 7,
       "article": 4,
-      "aside": 8,
       "b": 28,
       "br": 1,
-      "button": 45,
+      "button": 43,
+      "commandbar": 1,
       "dd": 17,
       "details": 6,
-      "div": 169,
+      "div": 197,
       "dl": 4,
       "dt": 17,
       "em": 6,
@@ -512,8 +516,8 @@
       "h1": 6,
       "h2": 20,
       "h3": 19,
-      "header": 23,
-      "i": 6,
+      "header": 3,
+      "i": 7,
       "icon": 58,
       "img": 3,
       "input": 6,
@@ -524,11 +528,11 @@
       "ol": 3,
       "p": 60,
       "path": 1,
-      "section": 20,
-      "sitefooter": 1,
-      "siteheader": 1,
+      "railnav": 1,
+      "section": 21,
       "small": 5,
-      "span": 141,
+      "span": 149,
+      "statusstrip": 1,
       "strong": 16,
       "summary": 6,
       "svg": 1,
@@ -539,20 +543,20 @@
       "walletsheet": 1
     },
     "depthHistogram": {
-      "0": 5,
-      "1": 13,
-      "2": 21,
-      "3": 35,
-      "4": 43,
-      "5": 43,
-      "6": 24,
-      "7": 43,
-      "8": 93,
-      "9": 102,
-      "10": 106,
-      "11": 94,
-      "12": 88,
-      "13": 37,
+      "0": 6,
+      "1": 17,
+      "2": 23,
+      "3": 30,
+      "4": 31,
+      "5": 39,
+      "6": 43,
+      "7": 37,
+      "8": 56,
+      "9": 83,
+      "10": 124,
+      "11": 125,
+      "12": 103,
+      "13": 41,
       "14": 5,
       "15": 3
     },
@@ -560,17 +564,19 @@
     "topLevelTags": [
       "div",
       "svg",
-      "footer",
       "header",
+      "nav",
+      "footer",
       "div"
     ],
     "skeletonSample": [
       "div",
       "  a",
-      "  siteheader",
+      "  commandbar",
+      "  railnav",
       "  template",
       "    div",
-      "    aside",
+      "    div",
       "      header",
       "        span",
       "        button",
@@ -593,105 +599,104 @@
       "  main",
       "    div",
       "      div",
-      "        icon",
       "        div",
-      "          strong",
-      "          p",
-      "        button",
-      "          icon",
-      "      div",
-      "        icon",
+      "          span",
+      "            icon",
+      "          div",
+      "            strong",
+      "            p",
+      "          button",
+      "            icon",
       "        div",
-      "          strong",
-      "          p",
-      "      div",
-      "        icon",
+      "          span",
+      "            icon",
+      "          div",
+      "            strong",
+      "            p",
       "        div",
-      "          strong",
-      "          p",
-      "        button",
-      "      div",
-      "        icon",
+      "          span",
+      "            icon",
+      "          div",
+      "            strong",
+      "            p",
+      "          button",
       "        div",
-      "          strong",
-      "          p",
-      "      div",
-      "        icon",
+      "          span",
+      "            icon",
+      "          div",
+      "            strong",
+      "            p",
       "        div",
-      "          strong",
+      "          span",
+      "            icon",
+      "          div",
+      "            strong",
       "      transition",
       "        section",
       "          template",
-      "            section",
+      "            div",
+      "              p",
+      "                span",
+      "              h1",
+      "                br",
+      "                em",
+      "              p",
       "              div",
-      "                p",
-      "                  span",
-      "                h1",
-      "                  br",
-      "                  em",
-      "                p",
-      "                div",
-      "                  button",
-      "                    icon",
-      "                  button",
-      "                    icon",
-      "                ul",
-      "                  li",
-      "                    icon",
-      "                    span",
-      "                  li",
-      "                    icon",
-      "                    span",
-      "                  li",
-      "                    icon",
-      "                    span",
-      "              aside",
-      "                div",
-      "                  h2",
-      "                  span",
-      "                div",
-      "                  div",
-      "                    span",
-      "                    strong",
-      "                    span",
-      "                  div",
-      "                    span",
-      "                    strong",
-      "                    span",
-      "                  div",
-      "                    span",
-      "                    strong",
-      "                    span",
-      "                  div",
-      "                    span",
-      "                    strong",
-      "                    span",
-      "                div",
-      "                  span",
-      "                  span",
-      "                  button",
-      "                    icon",
-      "            section",
-      "              article",
-      "                span",
+      "                button",
       "                  icon",
-      "                h2",
-      "                p",
-      "                div",
-      "                  button",
-      "                    icon",
-      "              article",
-      "                span",
+      "                button",
       "                  icon",
-      "                h2",
-      "                p"
+      "              ul",
+      "                li",
+      "                  icon",
+      "                  span",
+      "                li",
+      "                  icon",
+      "                  span",
+      "                li",
+      "                  icon",
+      "                  span",
+      "            div",
+      "              div",
+      "                section",
+      "                  div",
+      "                    h2",
+      "                    span",
+      "                  div",
+      "                    div",
+      "                    span",
+      "                    strong",
+      "                    span",
+      "                    div",
+      "                    span",
+      "                    strong",
+      "                    span",
+      "                    div",
+      "                    span",
+      "                    strong",
+      "                    span",
+      "                    div",
+      "                    span",
+      "                    strong",
+      "                    span",
+      "                  div",
+      "                    span",
+      "                    span",
+      "                    button",
+      "                    icon",
+      "                section",
+      "                  div",
+      "                    h2",
+      "                    button",
+      "                    icon",
+      "                  ul"
     ]
   },
   "contentContract": {
     "schemaVersion": 1,
     "meta": {
-      "projectName": "attesio-web",
-      "title": "attesio-web",
+      "projectName": "clepsyra-web",
+      "title": "clepsyra-web",
       "lang": "en"
     },
     "routes": [
@@ -699,7 +704,7 @@
     ],
     "visibleText": [
       {
-        "value": ". Attesio only asks it to confirm quest rows, proposals and votes.",
+        "value": ". Clepsyra only asks it to confirm quest rows, proposals and votes.",
         "count": 1
       },
       {
@@ -727,7 +732,7 @@
         "count": 1
       },
       {
-        "value": "© 2026 Attesio · attesio.xyz. Written to be reopened.",
+        "value": "© 2026 Clepsyra · clepsyra.xyz. Written to be reopened.",
         "count": 1
       },
       {
@@ -747,7 +752,7 @@
         "count": 1
       },
       {
-        "value": "A future mint defines its own name, symbol and decimals. Attesio is the application brand. Current status:",
+        "value": "A future mint defines its own name, symbol and decimals. Clepsyra is the application brand. Current status:",
         "count": 1
       },
       {
@@ -827,19 +832,7 @@
         "count": 1
       },
       {
-        "value": "Anything claiming an Attesio token right now is not from this project.",
-        "count": 1
-      },
-      {
-        "value": "Attes",
-        "count": 3
-      },
-      {
-        "value": "Attesio",
-        "count": 1
-      },
-      {
-        "value": "Attesio writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
+        "value": "Anything claiming a Clepsyra token right now is not from this project.",
         "count": 1
       },
       {
@@ -880,6 +873,18 @@
       },
       {
         "value": "Clear filters",
+        "count": 1
+      },
+      {
+        "value": "Cleps",
+        "count": 3
+      },
+      {
+        "value": "Clepsyra",
+        "count": 1
+      },
+      {
+        "value": "Clepsyra writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
         "count": 1
       },
       {
@@ -963,15 +968,11 @@
         "count": 1
       },
       {
-        "value": "io",
-        "count": 3
-      },
-      {
-        "value": "Is an Attesio token deployed?",
+        "value": "Is a Clepsyra token deployed?",
         "count": 1
       },
       {
-        "value": "Is Attesio an official Solana product?",
+        "value": "Is Clepsyra an official Solana product?",
         "count": 1
       },
       {
@@ -1031,7 +1032,7 @@
         "count": 1
       },
       {
-        "value": "No Attesio token mint is configured. The community program does not create or distribute a token.",
+        "value": "No Clepsyra token mint is configured. The community program does not create or distribute a token.",
         "count": 1
       },
       {
@@ -1059,7 +1060,7 @@
         "count": 1
       },
       {
-        "value": "No. Attesio is an independent community project currently reading",
+        "value": "No. Clepsyra is an independent community project currently reading",
         "count": 1
       },
       {
@@ -1483,7 +1484,7 @@
         "count": 1
       },
       {
-        "value": "Why is the token name separate from Attesio?",
+        "value": "Why is the token name separate from Clepsyra?",
         "count": 1
       },
       {
@@ -1529,6 +1530,10 @@
       {
         "value": "Your wallet, your decision",
         "count": 1
+      },
+      {
+        "value": "yra",
+        "count": 3
       }
     ],
     "hiddenText": [
@@ -1662,6 +1667,16 @@
       {
         "kind": "asset",
         "expr": "candidate.icon",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "'#' + tab.id",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "'#home'",
         "count": 1
       },
       {
@@ -2161,6 +2176,16 @@
       },
       {
         "kind": "link",
+        "expr": "'#' + tab.id",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "'#home'",
+        "count": 1
+      },
+      {
+        "kind": "link",
         "expr": "explorer('address', TOKEN_MINT_ADDRESS)",
         "count": 1
       },
@@ -2412,5 +2437,5 @@
     "api": [],
     "env": []
   },
-  "contentContractHash": "b4c3e407879d7c9afa3a8e27bae2c8333c3e29c09d945bbefd35944126062eee"
+  "contentContractHash": "87df55a4fd458048fee4007ca6ab08175339b2d0c3d47b67a74e909b4ffd75f0"
 }

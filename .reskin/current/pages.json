@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "label": "current",
-  "generatedAt": "2026-10-19T19:05:41.419Z",
-  "baseUrl": "http://127.0.0.1:4319/",
+  "generatedAt": "2026-10-20T15:56:13.591Z",
+  "baseUrl": "http://127.0.0.1:4317/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
     "playwrightSource": "reskin-tools",
@@ -11,14 +11,14 @@
   "pages": {
     "/": {
       "route": "/",
-      "url": "http://127.0.0.1:4319/",
+      "url": "http://127.0.0.1:4317/",
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Attesio — Time on the record.",
+          "title": "Clepsyra — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2081,
+          "bodyTextLength": 2088,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 26
@@ -29,15 +29,15 @@
             "count": 5
           },
           {
+            "word": "11:56:15",
+            "count": 1
+          },
+          {
             "word": "20",
             "count": 1
           },
           {
             "word": "2026",
-            "count": 1
-          },
-          {
-            "word": "3:05:42",
             "count": 1
           },
           {
@@ -65,10 +65,6 @@
             "count": 2
           },
           {
-            "word": "AM",
-            "count": 1
-          },
-          {
             "word": "An",
             "count": 1
           },
@@ -91,18 +87,6 @@
           {
             "word": "are",
             "count": 3
-          },
-          {
-            "word": "Attes",
-            "count": 3
-          },
-          {
-            "word": "Attesio",
-            "count": 2
-          },
-          {
-            "word": "attesio.xyz",
-            "count": 1
           },
           {
             "word": "be",
@@ -134,6 +118,18 @@
           },
           {
             "word": "check",
+            "count": 1
+          },
+          {
+            "word": "Cleps",
+            "count": 3
+          },
+          {
+            "word": "Clepsyra",
+            "count": 2
+          },
+          {
+            "word": "clepsyra.xyz",
             "count": 1
           },
           {
@@ -271,10 +267,6 @@
           {
             "word": "instruction",
             "count": 1
-          },
-          {
-            "word": "io",
-            "count": 3
           },
           {
             "word": "is",
@@ -450,6 +442,10 @@
           },
           {
             "word": "Pick",
+            "count": 1
+          },
+          {
+            "word": "PM",
             "count": 1
           },
           {
@@ -795,11 +791,15 @@
           {
             "word": "Your",
             "count": 3
+          },
+          {
+            "word": "yra",
+            "count": 3
           }
         ],
         "attrs": [
           {
-            "key": "aria-label=Attesio home",
+            "key": "aria-label=Clepsyra home",
             "count": 1
           },
           {
@@ -866,284 +866,282 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "ax-actions",
-          "ax-board",
-          "ax-board-body",
-          "ax-board-head",
-          "ax-board-title",
-          "ax-btn",
-          "ax-btn--fill",
-          "ax-btn--lg",
-          "ax-btn--line",
-          "ax-btn--sm",
-          "ax-btn--wide",
-          "ax-command",
-          "ax-command-chip",
-          "ax-command-icon",
-          "ax-command-inner",
-          "ax-command-menu",
-          "ax-command-pulse",
-          "ax-command-rail",
-          "ax-command-tools",
-          "ax-desk",
-          "ax-display",
-          "ax-empty",
-          "ax-empty-glyph",
-          "ax-empty-text",
-          "ax-empty-title",
-          "ax-fact",
-          "ax-fact--muted",
-          "ax-factlist",
-          "ax-facts",
-          "ax-fork",
-          "ax-fork--ballot",
-          "ax-fork-foot",
-          "ax-fork-glyph",
-          "ax-forks",
-          "ax-inner",
-          "ax-kicker",
-          "ax-kicker-dot",
-          "ax-lede",
-          "ax-link",
-          "ax-live-dot",
-          "ax-main",
-          "ax-margin",
-          "ax-note",
-          "ax-pill",
-          "ax-rail",
-          "ax-rail-badge",
-          "ax-rail-foot",
-          "ax-rail-glyph",
-          "ax-rail-item",
-          "ax-rail-label",
-          "ax-rail-list",
-          "ax-readout",
-          "ax-readout-cell",
-          "ax-readout-date",
-          "ax-readout-foot",
-          "ax-readout-grid",
-          "ax-readout-head",
-          "ax-readout-label",
-          "ax-readout-note",
-          "ax-readout-title",
-          "ax-readout-value",
-          "ax-readout-value--text",
-          "ax-runhead",
-          "ax-sheet",
-          "ax-sheet-body",
-          "ax-sheet-body--flush",
-          "ax-sheet-foot",
-          "ax-sheet-head",
-          "ax-sheet-note",
-          "ax-sheet-title",
-          "ax-skip",
-          "ax-spine-brand",
-          "ax-spine-io",
-          "ax-spine-mark",
-          "ax-spine-tag",
-          "ax-spine-text",
-          "ax-spine-word",
-          "ax-stage",
-          "ax-status",
-          "ax-status-brand",
-          "ax-status-col",
-          "ax-status-cols",
-          "ax-status-facts",
-          "ax-status-fine",
-          "ax-status-io",
-          "ax-status-links",
-          "ax-status-mark",
-          "ax-status-note",
-          "ax-status-tag",
-          "ax-status-top",
-          "ax-status-word",
-          "ax-status-word-io",
-          "ax-view",
-          "ax-wide"
+          "bg-actions",
+          "bg-board",
+          "bg-board-body",
+          "bg-board-head",
+          "bg-board-title",
+          "bg-brandline",
+          "bg-brandline-accent",
+          "bg-brandline-mark",
+          "bg-brandline-tag",
+          "bg-brandline-text",
+          "bg-brandline-word",
+          "bg-btn",
+          "bg-btn--fill",
+          "bg-btn--lg",
+          "bg-btn--line",
+          "bg-btn--sm",
+          "bg-btn--wide",
+          "bg-colophon",
+          "bg-colophon-accent",
+          "bg-colophon-brand",
+          "bg-colophon-col",
+          "bg-colophon-cols",
+          "bg-colophon-facts",
+          "bg-colophon-fine",
+          "bg-colophon-links",
+          "bg-colophon-mark",
+          "bg-colophon-name",
+          "bg-colophon-note",
+          "bg-colophon-tag",
+          "bg-colophon-word",
+          "bg-colophon-word-accent",
+          "bg-console",
+          "bg-console-chip",
+          "bg-console-icon",
+          "bg-console-pulse",
+          "bg-console-rule",
+          "bg-console-tools",
+          "bg-console-top",
+          "bg-current",
+          "bg-display",
+          "bg-empty",
+          "bg-empty-glyph",
+          "bg-empty-text",
+          "bg-empty-title",
+          "bg-fact",
+          "bg-fact--muted",
+          "bg-factlist",
+          "bg-facts",
+          "bg-fork",
+          "bg-fork--ballot",
+          "bg-fork-foot",
+          "bg-fork-glyph",
+          "bg-forks",
+          "bg-frame",
+          "bg-index",
+          "bg-index-badge",
+          "bg-index-glyph",
+          "bg-index-label",
+          "bg-index-link",
+          "bg-index-list",
+          "bg-index-rule",
+          "bg-kicker",
+          "bg-kicker-dot",
+          "bg-lede",
+          "bg-link",
+          "bg-live-dot",
+          "bg-margin",
+          "bg-narrative",
+          "bg-note",
+          "bg-pill",
+          "bg-readout",
+          "bg-readout-cell",
+          "bg-readout-date",
+          "bg-readout-foot",
+          "bg-readout-grid",
+          "bg-readout-head",
+          "bg-readout-label",
+          "bg-readout-note",
+          "bg-readout-title",
+          "bg-readout-value",
+          "bg-readout-value--text",
+          "bg-runhead",
+          "bg-sheet",
+          "bg-sheet-body",
+          "bg-sheet-body--flush",
+          "bg-sheet-foot",
+          "bg-sheet-head",
+          "bg-sheet-note",
+          "bg-sheet-title",
+          "bg-skip",
+          "bg-stage",
+          "bg-view",
+          "bg-wide"
         ],
         "fingerprint": [
           "a@5:0",
-          "a@6:2",
           "a@7:2",
-          "a@7:3",
-          "article@11:4+",
+          "a@9:2",
+          "a@9:3",
+          "article@10:4+",
+          "aside@5:3",
+          "b@10:0",
           "b@11:0",
-          "b@8:0",
-          "b@9:1",
           "button@10:0",
-          "button@10:1",
+          "button@11:1",
           "button@12:1",
-          "button@13:1",
-          "button@8:1",
-          "button@8:2",
-          "dd@14:0",
+          "button@9:1",
+          "button@9:2",
+          "dd@13:0",
+          "div@10:1",
           "div@10:2",
+          "div@10:3",
+          "div@10:4+",
           "div@11:1",
-          "div@11:2",
           "div@11:3",
-          "div@11:4+",
-          "div@12:1",
-          "div@12:3",
-          "div@13:2",
+          "div@12:2",
           "div@3:1",
-          "div@4:4+",
+          "div@4:3",
           "div@6:1",
-          "div@6:2",
-          "div@6:3",
-          "div@6:4+",
+          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:2",
           "div@8:3",
           "div@8:4+",
           "div@9:2",
-          "div@9:3",
           "div@9:4+",
-          "dl@12:4+",
-          "dt@14:0",
-          "em@10:0",
-          "footer@5:3",
-          "h1@9:2",
-          "h2@12:0",
-          "h3@13:0",
+          "dl@11:4+",
+          "dt@13:0",
+          "em@9:0",
+          "footer@6:4+",
+          "h1@8:2",
+          "h2@11:0",
+          "h3@12:0",
           "h3@9:0",
-          "header@5:1",
-          "i@7:0",
-          "i@8:0",
-          "img@8:0",
+          "i@9:0",
           "img@9:0",
-          "li@10:2",
-          "main@5:1",
-          "nav@5:3",
+          "li@8:1",
+          "li@9:2",
+          "main@5:2",
+          "nav@6:3",
           "nav@9:4+",
+          "ol@7:4+",
+          "p@11:0",
           "p@12:0",
-          "p@13:0",
+          "p@7:0",
           "p@8:0",
+          "p@8:1",
           "p@9:0",
-          "p@9:1",
-          "path@10:0",
+          "path@11:0",
           "path@12:0",
+          "path@13:0",
           "path@14:0",
-          "path@15:0",
-          "section@10:2",
-          "section@10:3",
-          "section@7:2",
+          "section@6:2",
+          "section@9:2",
+          "section@9:3",
           "span@10:0",
+          "span@10:1",
           "span@11:0",
+          "span@11:1",
           "span@12:0",
           "span@12:1",
-          "span@13:0",
-          "span@13:1",
-          "span@6:1",
           "span@7:0",
-          "span@7:1",
-          "span@7:2",
           "span@8:0",
           "span@8:1",
           "span@8:2",
           "span@9:0",
+          "span@9:1",
+          "strong@11:0",
           "strong@12:0",
-          "strong@13:0",
+          "svg@10:1",
           "svg@11:1",
+          "svg@12:1",
           "svg@13:1",
-          "svg@14:1",
-          "svg@9:1",
-          "ul@9:3"
+          "ul@8:3"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "aside",
             "role": "",
-            "top": 16,
-            "left": 122,
-            "width": 1284,
-            "height": 58
+            "top": 0,
+            "left": 0,
+            "width": 547,
+            "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 0,
-            "left": 0,
-            "width": 88,
-            "height": 900
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 74,
-            "left": 88,
-            "width": 1352,
-            "height": 1725
+            "top": 34,
+            "left": 34,
+            "width": 478,
+            "height": 346
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 1871,
-            "left": 88,
-            "width": 1352,
-            "height": 533
+            "top": 501,
+            "left": 34,
+            "width": 478,
+            "height": 365
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 1933,
-            "left": 679,
-            "width": 219,
-            "height": 177
+            "top": 606,
+            "left": 34,
+            "width": 231,
+            "height": 43
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": -12,
+            "left": 547,
+            "width": 893,
+            "height": 1813
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 118
+            "hex": "#0d0d0d",
+            "count": 120
           },
           {
-            "hex": "#8fa3b5",
-            "count": 88
+            "hex": "#6d6a70",
+            "count": 81
           },
           {
-            "hex": "#ff0000",
-            "count": 33
+            "hex": "#c2005d",
+            "count": 45
           },
           {
-            "hex": "#000000",
-            "count": 17
+            "hex": "#ffffff",
+            "count": 22
           },
           {
-            "hex": "#ff6b6b",
-            "count": 9
+            "hex": "#f2eef3",
+            "count": 6
           },
           {
-            "hex": "#182533",
-            "count": 7
+            "hex": "#f9f8fa",
+            "count": 6
           },
           {
-            "hex": "#0b1119",
-            "count": 3
+            "hex": "#e6006f",
+            "count": 5
           },
           {
-            "hex": "#111a24",
-            "count": 3
+            "hex": "#ff4da6",
+            "count": 4
           },
           {
-            "hex": "#ff8bff",
-            "count": 3
-          },
-          {
-            "hex": "#05080c",
-            "count": 2
-          },
-          {
-            "hex": "#5ce1a0",
+            "hex": "#0f7b4d",
             "count": 1
           },
           {
-            "hex": "#ff00ff",
+            "hex": "#e9e4eb",
             "count": 1
           }
         ],
         "contrast": [],
         "contrastChecked": 97,
         "headings": [
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
+          },
           {
             "tag": "h1",
             "text": "Time on the record."
@@ -1154,7 +1152,7 @@
           },
           {
             "tag": "h2",
-            "text": "Newest quests"
+            "text": "NEWEST QUESTS"
           },
           {
             "tag": "h3",
@@ -1162,7 +1160,7 @@
           },
           {
             "tag": "h2",
-            "text": "Votes on the floor"
+            "text": "VOTES ON THE FLOOR"
           },
           {
             "tag": "h3",
@@ -1178,23 +1176,11 @@
           },
           {
             "tag": "h2",
-            "text": "Your wallet"
+            "text": "YOUR WALLET"
           },
           {
             "tag": "h2",
-            "text": "Token"
-          },
-          {
-            "tag": "h3",
-            "text": "EXPLORE"
-          },
-          {
-            "tag": "h3",
-            "text": "NETWORK"
-          },
-          {
-            "tag": "h3",
-            "text": "SESSION"
+            "text": "TOKEN"
           }
         ],
         "navTargets": [
@@ -1219,10 +1205,10 @@
       },
       "mobile": {
         "meta": {
-          "title": "Attesio — Time on the record.",
+          "title": "Clepsyra — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2081,
+          "bodyTextLength": 2079,
           "scrollWidth": 390,
           "clientWidth": 390,
           "focusableCount": 26
@@ -1233,15 +1219,15 @@
             "count": 5
           },
           {
+            "word": "11:56:15",
+            "count": 1
+          },
+          {
             "word": "20",
             "count": 1
           },
           {
             "word": "2026",
-            "count": 1
-          },
-          {
-            "word": "3:05:42",
             "count": 1
           },
           {
@@ -1269,10 +1255,6 @@
             "count": 2
           },
           {
-            "word": "AM",
-            "count": 1
-          },
-          {
             "word": "An",
             "count": 1
           },
@@ -1295,18 +1277,6 @@
           {
             "word": "are",
             "count": 3
-          },
-          {
-            "word": "Attes",
-            "count": 3
-          },
-          {
-            "word": "Attesio",
-            "count": 2
-          },
-          {
-            "word": "attesio.xyz",
-            "count": 1
           },
           {
             "word": "be",
@@ -1338,6 +1308,18 @@
           },
           {
             "word": "check",
+            "count": 1
+          },
+          {
+            "word": "Cleps",
+            "count": 2
+          },
+          {
+            "word": "Clepsyra",
+            "count": 2
+          },
+          {
+            "word": "clepsyra.xyz",
             "count": 1
           },
           {
@@ -1475,10 +1457,6 @@
           {
             "word": "instruction",
             "count": 1
-          },
-          {
-            "word": "io",
-            "count": 3
           },
           {
             "word": "is",
@@ -1654,6 +1632,10 @@
           },
           {
             "word": "Pick",
+            "count": 1
+          },
+          {
+            "word": "PM",
             "count": 1
           },
           {
@@ -1999,11 +1981,15 @@
           {
             "word": "Your",
             "count": 3
+          },
+          {
+            "word": "yra",
+            "count": 2
           }
         ],
         "attrs": [
           {
-            "key": "aria-label=Attesio home",
+            "key": "aria-label=Clepsyra home",
             "count": 1
           },
           {
@@ -2070,281 +2056,279 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "ax-actions",
-          "ax-board",
-          "ax-board-body",
-          "ax-board-head",
-          "ax-board-title",
-          "ax-btn",
-          "ax-btn--fill",
-          "ax-btn--lg",
-          "ax-btn--line",
-          "ax-btn--sm",
-          "ax-btn--wide",
-          "ax-command",
-          "ax-command-chip",
-          "ax-command-icon",
-          "ax-command-inner",
-          "ax-command-menu",
-          "ax-command-pulse",
-          "ax-command-rail",
-          "ax-command-tools",
-          "ax-desk",
-          "ax-display",
-          "ax-empty",
-          "ax-empty-glyph",
-          "ax-empty-text",
-          "ax-empty-title",
-          "ax-fact",
-          "ax-fact--muted",
-          "ax-factlist",
-          "ax-facts",
-          "ax-fork",
-          "ax-fork--ballot",
-          "ax-fork-foot",
-          "ax-fork-glyph",
-          "ax-forks",
-          "ax-inner",
-          "ax-kicker",
-          "ax-kicker-dot",
-          "ax-lede",
-          "ax-link",
-          "ax-live-dot",
-          "ax-main",
-          "ax-margin",
-          "ax-note",
-          "ax-pill",
-          "ax-rail",
-          "ax-rail-badge",
-          "ax-rail-glyph",
-          "ax-rail-item",
-          "ax-rail-label",
-          "ax-rail-list",
-          "ax-readout",
-          "ax-readout-cell",
-          "ax-readout-date",
-          "ax-readout-foot",
-          "ax-readout-grid",
-          "ax-readout-head",
-          "ax-readout-label",
-          "ax-readout-note",
-          "ax-readout-title",
-          "ax-readout-value",
-          "ax-readout-value--text",
-          "ax-runhead",
-          "ax-sheet",
-          "ax-sheet-body",
-          "ax-sheet-body--flush",
-          "ax-sheet-foot",
-          "ax-sheet-head",
-          "ax-sheet-note",
-          "ax-sheet-title",
-          "ax-skip",
-          "ax-spine-brand",
-          "ax-spine-io",
-          "ax-spine-mark",
-          "ax-spine-tag",
-          "ax-spine-text",
-          "ax-spine-word",
-          "ax-stage",
-          "ax-status",
-          "ax-status-brand",
-          "ax-status-col",
-          "ax-status-cols",
-          "ax-status-facts",
-          "ax-status-fine",
-          "ax-status-io",
-          "ax-status-links",
-          "ax-status-mark",
-          "ax-status-note",
-          "ax-status-tag",
-          "ax-status-top",
-          "ax-status-word",
-          "ax-status-word-io",
-          "ax-view",
-          "ax-wide"
+          "bg-actions",
+          "bg-board",
+          "bg-board-body",
+          "bg-board-head",
+          "bg-board-title",
+          "bg-brandline",
+          "bg-brandline-accent",
+          "bg-brandline-mark",
+          "bg-brandline-tag",
+          "bg-brandline-text",
+          "bg-brandline-word",
+          "bg-btn",
+          "bg-btn--fill",
+          "bg-btn--lg",
+          "bg-btn--line",
+          "bg-btn--sm",
+          "bg-btn--wide",
+          "bg-colophon",
+          "bg-colophon-accent",
+          "bg-colophon-brand",
+          "bg-colophon-col",
+          "bg-colophon-cols",
+          "bg-colophon-facts",
+          "bg-colophon-fine",
+          "bg-colophon-links",
+          "bg-colophon-mark",
+          "bg-colophon-name",
+          "bg-colophon-note",
+          "bg-colophon-tag",
+          "bg-console",
+          "bg-console-chip",
+          "bg-console-icon",
+          "bg-console-pulse",
+          "bg-console-rule",
+          "bg-console-tools",
+          "bg-console-top",
+          "bg-current",
+          "bg-display",
+          "bg-empty",
+          "bg-empty-glyph",
+          "bg-empty-text",
+          "bg-empty-title",
+          "bg-fact",
+          "bg-fact--muted",
+          "bg-factlist",
+          "bg-facts",
+          "bg-fork",
+          "bg-fork--ballot",
+          "bg-fork-foot",
+          "bg-fork-glyph",
+          "bg-forks",
+          "bg-frame",
+          "bg-index",
+          "bg-index-badge",
+          "bg-index-glyph",
+          "bg-index-label",
+          "bg-index-link",
+          "bg-index-list",
+          "bg-index-rule",
+          "bg-kicker",
+          "bg-kicker-dot",
+          "bg-lede",
+          "bg-link",
+          "bg-live-dot",
+          "bg-margin",
+          "bg-narrative",
+          "bg-note",
+          "bg-pill",
+          "bg-readout",
+          "bg-readout-cell",
+          "bg-readout-date",
+          "bg-readout-foot",
+          "bg-readout-grid",
+          "bg-readout-head",
+          "bg-readout-label",
+          "bg-readout-note",
+          "bg-readout-title",
+          "bg-readout-value",
+          "bg-readout-value--text",
+          "bg-runhead",
+          "bg-sheet",
+          "bg-sheet-body",
+          "bg-sheet-body--flush",
+          "bg-sheet-foot",
+          "bg-sheet-head",
+          "bg-sheet-note",
+          "bg-sheet-title",
+          "bg-skip",
+          "bg-stage",
+          "bg-view",
+          "bg-wide"
         ],
         "fingerprint": [
           "a@5:0",
-          "a@6:2",
           "a@7:2",
-          "a@7:3",
-          "article@11:4+",
+          "a@9:2",
+          "a@9:3",
+          "article@10:4+",
+          "aside@5:3",
+          "b@10:0",
           "b@11:0",
-          "b@8:0",
-          "b@9:1",
           "button@10:0",
-          "button@10:1",
+          "button@11:1",
           "button@12:1",
-          "button@13:1",
-          "button@8:1",
-          "button@8:2",
-          "dd@14:0",
+          "button@9:1",
+          "button@9:2",
+          "dd@13:0",
+          "div@10:1",
           "div@10:2",
+          "div@10:3",
+          "div@10:4+",
           "div@11:1",
-          "div@11:2",
           "div@11:3",
-          "div@11:4+",
-          "div@12:1",
-          "div@12:3",
-          "div@13:2",
+          "div@12:2",
           "div@3:1",
-          "div@4:4+",
+          "div@4:3",
           "div@6:1",
-          "div@6:2",
-          "div@6:3",
-          "div@6:4+",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:2",
           "div@8:3",
           "div@8:4+",
           "div@9:2",
-          "div@9:3",
           "div@9:4+",
-          "dl@12:4+",
-          "dt@14:0",
-          "em@10:0",
-          "footer@5:3",
-          "h1@9:2",
-          "h2@12:0",
-          "h3@13:0",
+          "dl@11:4+",
+          "dt@13:0",
+          "em@9:0",
+          "footer@6:4+",
+          "h1@8:2",
+          "h2@11:0",
+          "h3@12:0",
           "h3@9:0",
-          "header@5:1",
-          "i@8:0",
-          "img@8:0",
+          "i@9:0",
           "img@9:0",
-          "li@10:2",
-          "main@5:1",
-          "nav@5:3",
+          "li@8:1",
+          "li@9:2",
+          "main@5:2",
+          "nav@6:3",
           "nav@9:4+",
+          "ol@7:4+",
+          "p@11:0",
           "p@12:0",
-          "p@13:0",
+          "p@7:0",
           "p@8:0",
+          "p@8:1",
           "p@9:0",
-          "p@9:1",
-          "path@10:0",
+          "path@11:0",
           "path@12:0",
+          "path@13:0",
           "path@14:0",
-          "path@15:0",
-          "section@10:2",
-          "section@10:3",
-          "section@7:2",
+          "section@6:2",
+          "section@9:2",
+          "section@9:3",
           "span@10:0",
+          "span@10:1",
           "span@11:0",
+          "span@11:1",
           "span@12:0",
           "span@12:1",
-          "span@13:0",
-          "span@13:1",
           "span@7:0",
-          "span@7:1",
-          "span@7:2",
           "span@8:0",
           "span@8:1",
           "span@8:2",
           "span@9:0",
+          "span@9:1",
+          "strong@11:0",
           "strong@12:0",
-          "strong@13:0",
+          "svg@10:1",
           "svg@11:1",
+          "svg@12:1",
           "svg@13:1",
-          "svg@14:1",
-          "svg@9:1",
-          "ul@9:3"
+          "ul@8:3"
         ],
         "landmarks": [
           {
-            "tag": "header",
-            "role": "",
-            "top": 74,
-            "left": 12,
-            "width": 366,
-            "height": 56
-          },
-          {
-            "tag": "nav",
+            "tag": "aside",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 64
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 130,
-            "left": 0,
-            "width": 390,
-            "height": 2707
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 2893,
-            "left": 0,
-            "width": 390,
-            "height": 836
+            "height": 611
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 3085,
-            "left": 14,
-            "width": 362,
-            "height": 177
+            "top": 20,
+            "left": 18,
+            "width": 354,
+            "height": 130
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 239,
+            "left": 18,
+            "width": 354,
+            "height": 351
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 361,
+            "left": 18,
+            "width": 169,
+            "height": 43
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 611,
+            "left": 0,
+            "width": 390,
+            "height": 2652
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 116
+            "hex": "#0d0d0d",
+            "count": 120
           },
           {
-            "hex": "#8fa3b5",
-            "count": 88
+            "hex": "#6d6a70",
+            "count": 81
           },
           {
-            "hex": "#ff0000",
-            "count": 32
+            "hex": "#c2005d",
+            "count": 45
           },
           {
-            "hex": "#000000",
-            "count": 17
+            "hex": "#ffffff",
+            "count": 27
           },
           {
-            "hex": "#ff6b6b",
-            "count": 9
+            "hex": "#f9f8fa",
+            "count": 6
           },
           {
-            "hex": "#182533",
-            "count": 7
+            "hex": "#f2eef3",
+            "count": 5
           },
           {
-            "hex": "#0b1119",
-            "count": 3
+            "hex": "#e6006f",
+            "count": 4
           },
           {
-            "hex": "#111a24",
-            "count": 3
+            "hex": "#ff4da6",
+            "count": 4
           },
           {
-            "hex": "#ff8bff",
-            "count": 3
-          },
-          {
-            "hex": "#05080c",
-            "count": 2
-          },
-          {
-            "hex": "#5ce1a0",
+            "hex": "#0f7b4d",
             "count": 1
           },
           {
-            "hex": "#ff00ff",
+            "hex": "#e9e4eb",
             "count": 1
           }
         ],
         "contrast": [],
         "contrastChecked": 97,
         "headings": [
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
+          },
           {
             "tag": "h1",
             "text": "Time on the record."
@@ -2355,7 +2339,7 @@
           },
           {
             "tag": "h2",
-            "text": "Newest quests"
+            "text": "NEWEST QUESTS"
           },
           {
             "tag": "h3",
@@ -2363,7 +2347,7 @@
           },
           {
             "tag": "h2",
-            "text": "Votes on the floor"
+            "text": "VOTES ON THE FLOOR"
           },
           {
             "tag": "h3",
@@ -2379,23 +2363,11 @@
           },
           {
             "tag": "h2",
-            "text": "Your wallet"
+            "text": "YOUR WALLET"
           },
           {
             "tag": "h2",
-            "text": "Token"
-          },
-          {
-            "tag": "h3",
-            "text": "EXPLORE"
-          },
-          {
-            "tag": "h3",
-            "text": "NETWORK"
-          },
-          {
-            "tag": "h3",
-            "text": "SESSION"
+            "text": "TOKEN"
           }
         ],
         "navTargets": [
@@ -2405,34 +2377,44 @@
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "nav.ax-rail > div.ax-rail-list > a.ax-rail-item",
-              "right": 403,
-              "width": 50
+              "selector": "nav.bg-index > ol.bg-index-list > li",
+              "right": 430,
+              "width": 132
             },
             {
-              "selector": "nav.ax-rail > div.ax-rail-list > a.ax-rail-item",
-              "right": 455,
-              "width": 50
+              "selector": "ol.bg-index-list > li > a.bg-index-link",
+              "right": 430,
+              "width": 132
             },
             {
-              "selector": "div.ax-rail-list > a.ax-rail-item > span.ax-rail-glyph",
-              "right": 442,
-              "width": 24
+              "selector": "li > a.bg-index-link > b.bg-index-badge",
+              "right": 421,
+              "width": 22
             },
             {
-              "selector": "a.ax-rail-item > span.ax-rail-glyph > svg",
-              "right": 439,
+              "selector": "nav.bg-index > ol.bg-index-list > li",
+              "right": 570,
+              "width": 132
+            },
+            {
+              "selector": "ol.bg-index-list > li > a.bg-index-link",
+              "right": 570,
+              "width": 132
+            },
+            {
+              "selector": "li > a.bg-index-link > span.bg-index-glyph",
+              "right": 493,
+              "width": 18
+            },
+            {
+              "selector": "a.bg-index-link > span.bg-index-glyph > svg",
+              "right": 493,
               "width": 17
             },
             {
-              "selector": "span.ax-rail-glyph > svg > path",
-              "right": 436,
+              "selector": "span.bg-index-glyph > svg > path",
+              "right": 490,
               "width": 11
-            },
-            {
-              "selector": "div.ax-rail-list > a.ax-rail-item > span.ax-rail-label",
-              "right": 443,
-              "width": 26
             }
           ]
         }
@@ -2451,77 +2433,77 @@
             "text": "SKIP TO CONTENT",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(244, 247, 250)",
+            "outlineColor": "rgb(13, 13, 13)",
             "boxShadow": "none",
-            "borderColor": "rgb(0, 0, 0)",
-            "backgroundColor": "rgb(255, 0, 0)"
-          },
-          {
-            "tag": "button",
-            "text": "Re-read testnet data",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 0, 0)",
-            "boxShadow": "none",
-            "borderColor": "rgba(143, 163, 181, 0.2)",
-            "backgroundColor": "rgba(17, 26, 36, 0.7)"
-          },
-          {
-            "tag": "button",
-            "text": "Connect a Solana wallet",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 0, 0)",
-            "boxShadow": "rgba(255, 0, 0, 0.24) 0px 14px 34px 0px",
-            "borderColor": "rgb(255, 0, 0)",
-            "backgroundColor": "rgb(255, 0, 0)"
-          },
-          {
-            "tag": "button",
-            "text": "Open menu",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 0, 0)",
-            "boxShadow": "none",
-            "borderColor": "rgba(143, 163, 181, 0.2)",
-            "backgroundColor": "rgba(17, 26, 36, 0.7)"
+            "borderColor": "rgb(255, 255, 255)",
+            "backgroundColor": "rgb(13, 13, 13)"
           },
           {
             "tag": "a",
-            "text": "Attesio home",
+            "text": "Clepsyra home",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 0, 0)",
+            "outlineColor": "rgb(194, 0, 93)",
             "boxShadow": "none",
-            "borderColor": "rgb(244, 247, 250) rgb(244, 247, 250) rgb(30, 42, 54)",
+            "borderColor": "rgb(13, 13, 13)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "OVERVIEW",
+            "text": "Overview",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 0, 0)",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "rgba(230, 0, 111, 0.1) 0px 8px 22px 0px",
+            "borderColor": "rgb(230, 0, 111)",
+            "backgroundColor": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "a",
+            "text": "Quests 0",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
             "boxShadow": "none",
             "borderColor": "rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "QUESTS 0",
+            "text": "Votes 0",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 0, 0)",
+            "outlineColor": "rgb(194, 0, 93)",
             "boxShadow": "none",
             "borderColor": "rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "VOTES 0",
+            "text": "Treasury",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 0, 0)",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "none",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "a",
+            "text": "Token",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
+            "boxShadow": "none",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "a",
+            "text": "Guide",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(194, 0, 93)",
             "boxShadow": "none",
             "borderColor": "rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"

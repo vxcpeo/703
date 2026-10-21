@@ -1,6 +1,6 @@
-# Reskin inventory — attesio-web
+# Reskin inventory — clepsyra-web
 
-Generated: 2026-10-19T18:49:04.322Z
+Generated: 2026-10-20T15:40:00.563Z
 
 ## Project
 
@@ -11,16 +11,16 @@ Generated: 2026-10-19T18:49:04.322Z
 | Package manager | npm |
 | Nuxt | no |
 | CSS frameworks | none detected |
-| Files scanned | 11 (5 SFCs) |
+| Files scanned | 12 (6 SFCs) |
 
 ## Original skeleton
 
-- Archetype: **dashboard-shell** (shell)
-- Traits: sidebar, topbar, cards, hero, grid, tabs, modal, charts, sticky, terminal
+- Archetype: **terminal-console** (linear)
+- Traits: hero, grid, tabs, modal, charts, sticky, terminal
 - Max template depth: 15
-- Top-level tags: div, svg, footer, header, div
+- Top-level tags: div, svg, header, nav, footer, div
 
-The replacement skeleton must not be `dashboard-shell` and must not be in the same family (`shell`).
+The replacement skeleton must not be `terminal-console` and must not be in the same family (`linear`).
 
 ## Routes
 
@@ -28,14 +28,14 @@ The replacement skeleton must not be `dashboard-shell` and must not be in the sa
 
 ## Palette (most used first)
 
-`#fffdf8` (14) · `#b1741a` (6) · `#e7ddcb` (6) · `#1c1710` (3) · `#0c3428` (2) · `#0d382c` (2) · `#14503f` (2) · `#18130d` (2) · `#2c5568` (2) · `#8b3a32` (2)
+`#ff0000` (29) · `#000000` (19) · `#8fa3b5` (19) · `#182533` (12) · `#111a24` (9) · `#05080c` (5) · `#5ce1a0` (5) · `#0c131c` (4) · `#f2c94c` (4) · `#ff00ff` (4)
 
 ## Content lock
 
 - Static visible text tokens: **246**
-- Binding expressions: **148**
+- Binding expressions: **152**
 - Event handlers: **50**
-- Contract hash: `b4c3e407879d7c9afa3a8e27bae2c8333c3e29c09d945bbefd35944126062eee`
+- Contract hash: `87df55a4fd458048fee4007ca6ab08175339b2d0c3d47b67a74e909b4ffd75f0`
 
 Everything in `.reskin/content-contract.json` is immutable: visible copy, placeholders, labels, routes, link targets, asset sources, bindings, handlers, API endpoints and i18n values. A reskin may move these tokens to new markup but may not rewrite, remove or hide them.
 

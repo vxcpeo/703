@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "projectName": "attesio-web",
-    "title": "attesio-web",
+    "projectName": "clepsyra-web",
+    "title": "clepsyra-web",
     "lang": "en"
   },
   "routes": [
@@ -10,7 +10,7 @@
   ],
   "visibleText": [
     {
-      "value": ". Attesio only asks it to confirm quest rows, proposals and votes.",
+      "value": ". Clepsyra only asks it to confirm quest rows, proposals and votes.",
       "count": 1
     },
     {
@@ -38,7 +38,7 @@
       "count": 1
     },
     {
-      "value": "© 2026 Attesio · attesio.xyz. Written to be reopened.",
+      "value": "© 2026 Clepsyra · clepsyra.xyz. Written to be reopened.",
       "count": 1
     },
     {
@@ -58,7 +58,7 @@
       "count": 1
     },
     {
-      "value": "A future mint defines its own name, symbol and decimals. Attesio is the application brand. Current status:",
+      "value": "A future mint defines its own name, symbol and decimals. Clepsyra is the application brand. Current status:",
       "count": 1
     },
     {
@@ -138,19 +138,7 @@
       "count": 1
     },
     {
-      "value": "Anything claiming an Attesio token right now is not from this project.",
-      "count": 1
-    },
-    {
-      "value": "Attes",
-      "count": 3
-    },
-    {
-      "value": "Attesio",
-      "count": 1
-    },
-    {
-      "value": "Attesio writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
+      "value": "Anything claiming a Clepsyra token right now is not from this project.",
       "count": 1
     },
     {
@@ -191,6 +179,18 @@
     },
     {
       "value": "Clear filters",
+      "count": 1
+    },
+    {
+      "value": "Cleps",
+      "count": 3
+    },
+    {
+      "value": "Clepsyra",
+      "count": 1
+    },
+    {
+      "value": "Clepsyra writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
       "count": 1
     },
     {
@@ -274,15 +274,11 @@
       "count": 1
     },
     {
-      "value": "io",
-      "count": 3
-    },
-    {
-      "value": "Is an Attesio token deployed?",
+      "value": "Is a Clepsyra token deployed?",
       "count": 1
     },
     {
-      "value": "Is Attesio an official Solana product?",
+      "value": "Is Clepsyra an official Solana product?",
       "count": 1
     },
     {
@@ -342,7 +338,7 @@
       "count": 1
     },
     {
-      "value": "No Attesio token mint is configured. The community program does not create or distribute a token.",
+      "value": "No Clepsyra token mint is configured. The community program does not create or distribute a token.",
       "count": 1
     },
     {
@@ -370,7 +366,7 @@
       "count": 1
     },
     {
-      "value": "No. Attesio is an independent community project currently reading",
+      "value": "No. Clepsyra is an independent community project currently reading",
       "count": 1
     },
     {
@@ -794,7 +790,7 @@
       "count": 1
     },
     {
-      "value": "Why is the token name separate from Attesio?",
+      "value": "Why is the token name separate from Clepsyra?",
       "count": 1
     },
     {
@@ -840,6 +836,10 @@
     {
       "value": "Your wallet, your decision",
       "count": 1
+    },
+    {
+      "value": "yra",
+      "count": 3
     }
   ],
   "hiddenText": [
@@ -973,6 +973,16 @@
     {
       "kind": "asset",
       "expr": "candidate.icon",
+      "count": 1
+    },
+    {
+      "kind": "attr",
+      "expr": "'#' + tab.id",
+      "count": 1
+    },
+    {
+      "kind": "attr",
+      "expr": "'#home'",
       "count": 1
     },
     {
@@ -1469,6 +1479,16 @@
       "kind": "interpolation",
       "expr": "walletLabel",
       "count": 2
+    },
+    {
+      "kind": "link",
+      "expr": "'#' + tab.id",
+      "count": 1
+    },
+    {
+      "kind": "link",
+      "expr": "'#home'",
+      "count": 1
     },
     {
       "kind": "link",

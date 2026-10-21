@@ -1,12 +1,12 @@
-ATTESIO / IDENTITY AND WEBSITE REFERENCE
+CLEPSYRA / IDENTITY AND WEBSITE REFERENCE
 
-Name: Attesio
-Meaning: "Attest" is to bear witness in writing and "-io" makes it a place; the
-product is the public attestation register.
+Name: Clepsyra
+Meaning: a clepsydra is the Greek water clock, time made visible by something
+that actually runs; the product is the public register that keeps that time.
 Tagline: Time on the record.
-Slug: attesio
-Domain: attesio.xyz (RDAP 404 at check time; not registered by this work)
-X handle: @attesio (no profile at check time; not created by this work)
+Slug: clepsyra
+Domain: clepsyra.xyz (RDAP 404 at check time; not registered by this work)
+X handle: @clepsyra (no profile at check time; not created by this work)
 Token label: none chosen and none issued
 
 Identity check: read-only CentralNic RDAP for the domain and the live X profile
@@ -15,7 +15,7 @@ was registered or acquired by this work. Evidence is in `.rebrand/availability.j
 with screenshots under `.rebrand/availability/`; availability is a snapshot.
 
 PRODUCT
-Attesio is an independent Solana community application presented as a public
+Clepsyra is an independent Solana community application presented as a public
 register. It supports an overview, quests, token status, advisory governance,
 treasury reads, and a field guide. Routes remain
 #home / #quests / #stake / #governance / #treasury / #learn.
@@ -32,31 +32,23 @@ Program address and account interface are preserved. The deployed Anchor
 module name `kivoraft` is a technical compatibility identifier.
 
 VISUAL
-Daylight paper surfaces (#f2ebdf stock, #fffdf8 cards) with warm ink text
-(#1c1710), a pine structural signal (#14503f) and a marigold signal (#b1741a);
-failures use a muted maroon (#8b3a32). Display type is a printed serif (Iowan
-Old Style / Palatino / Georgia stack) set large and tight; interface text is a
-neutral sans. Corners are soft (12-26px), elevation is a low warm shadow, and
-the page carries faint radial washes at the top.
-The Attesio mark is the Register A: a pine app tile carrying the initial A with
-one paper-white seal dot in the upper-right corner, used as favicon, masthead
-glyph, footer glyph and social avatar. The site wordmark is set in Georgia Bold
-with "io" in marigold. Mono type, acid lime, hairline rules, the Solar O ring and
-the ledger monogram are retired.
-
+The site is a light fintech surface: white ground (#ffffff), soft panel tint
+(#f9f8fa), ink text (#0d0d0d), muted #6d6a70, hairline rules (#e9e4eb) and one
+magenta signal (#e6006f, #c2005d for text-bearing fills). Display type is a
+geometric sans (Avenir Next / Segoe UI stack) with tight tracking; numerals and
+micro-labels are mono and tracked. Corners are soft (12/22/32px), elevation is a
+low cool shadow, and the ground carries faint magenta radial washes.
 INTERFACE STRUCTURE
-A single centred column under a sticky horizontal masthead: Attesio wordmark at
-the left, six icon pills for the sections in the middle, cluster chip, refresh
-and wallet on the right. Below the masthead, status appears as soft banners only
-when something needs saying. Every section opens with a serif page title, a lede
-and meta chips, then composes from rounded cards: quest grids, ballot cards with
-split tally bars, receipt-style statements, timelines and accordions. A
-deep-pine feature tile separates "take part" from "weigh in" on the overview. On
-small screens the pills leave the masthead, a right-hand drawer carries the
-sections and the wallet, and the footer stacks. The retired fixed left spine,
-numbered navigation, sticky command strip, table rows and bottom tab bar are not
-used.
-
+A two-column split: a sticky 38% narrative column (brand line with the brass mark,
+a numbered vertical index of the six sections, a console with cluster, re-read,
+wallet and menu, and the colophon footer) beside a 62% scrolling evidence stage.
+The stage opens every section with a large running head and meta chips, then
+composes from ruled ledger sections: a four-cell readout panel, quest rows,
+ballot rows with split tally bars, receipt-style statement rows, numbered steps
+and an accordion. Cards are flat records with a top rule, not floating panels.
+On small screens the narrative stacks above the stage and the index becomes a
+horizontal scroll strip. The retired fixed left spine, floating command bar, dark
+canvas and page-bottom footer are not used.
 Twitter launch material consists of five posts: one brand statement, one
 participation post, one advisory-vote post, one register read, and one guide
 note. No post carries a contract address; no token mint exists.

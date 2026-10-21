@@ -1,17 +1,17 @@
 # Reskin verification — PASS
 
-Generated: 2026-10-19T19:05:47.582Z
+Generated: 2026-10-20T15:56:20.466Z
 
-- Project: **attesio-web**
-- URL: http://127.0.0.1:4319/
-- Original skeleton: `dashboard-shell` (shell)
-- New skeleton: `terminal-console` (linear)
-- Accent: #b1741a -> #ff0000 (64.32 ΔE; min 30)
-- Source contract: intact (`652f1c8d5c37`)
+- Project: **clepsyra-web**
+- URL: http://127.0.0.1:4317/
+- Original skeleton: `terminal-console` (linear)
+- New skeleton: `sidebar-workspace` (shell)
+- Accent: #ff0000 -> #e6006f (61.43 ΔE; min 30)
+- Source contract: intact (`87df55a4fd45`)
 
 | Route | Result | DOM similarity | Landmark similarity | Axe serious | Screenshot |
 |---|---|---:|---:|---:|---|
-| `/` | PASS | 0.449 | 0.455 | 0 | [desktop](current/home-desktop.png) |
+| `/` | PASS | 0.275 | 0.6 | 0 | [desktop](current/home-desktop.png) |
 
 ## Blocking issues
 
@@ -19,17 +19,7 @@ Generated: 2026-10-19T19:05:47.582Z
 
 ## Warnings
 
-- bindings: added "attr:'#' + tab.id"
-- bindings: added "attr:'#home'"
-- bindings: added "link:'#' + tab.id"
-- bindings: added "link:'#home'"
-- /: aria attribute added: aria-label=Open menu
-- /: link target added: #governance
-- /: link target added: #home
-- /: link target added: #learn
-- /: link target added: #quests
-- /: link target added: #stake
-- /: link target added: #treasury
+- None.
 
 ## Thresholds
 

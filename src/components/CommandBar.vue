@@ -15,24 +15,24 @@ const emit = defineEmits(["sync", "wallet", "menu"]);
 </script>
 
 <template>
-  <header class="ax-command">
-    <div class="ax-command-inner">
-      <span v-if="cluster" class="ax-command-chip">
-        <i class="ax-command-pulse" aria-hidden="true"></i>{{ cluster }}
+  <div class="bg-console">
+    <div class="bg-console-top">
+      <span v-if="cluster" class="bg-console-chip">
+        <i class="bg-console-pulse" aria-hidden="true"></i>{{ cluster }}
       </span>
-      <span class="ax-command-rail" aria-hidden="true"></span>
-      <div class="ax-command-tools">
+      <span class="bg-console-rule" aria-hidden="true"></span>
+      <div class="bg-console-tools">
         <button
-          class="ax-command-icon"
+          class="bg-console-icon"
           type="button"
           :disabled="reading || busy"
           :aria-label="`Re-read ${cluster || 'network'} data`"
           @click="emit('sync')"
         >
-          <Icon name="refresh" :size="18" :class="{ 'ax-spin': reading }" />
+          <Icon name="refresh" :size="18" :class="{ 'bg-spin': reading }" />
         </button>
         <button
-          class="ax-btn ax-btn--fill ax-btn--sm"
+          class="bg-btn bg-btn--fill bg-btn--sm"
           type="button"
           :disabled="connecting || busy"
           :aria-label="connected ? 'Disconnect wallet' : 'Connect a Solana wallet'"
@@ -42,7 +42,7 @@ const emit = defineEmits(["sync", "wallet", "menu"]);
           <span>{{ connecting ? "Connecting…" : walletLabel }}</span>
         </button>
         <button
-          class="ax-command-icon ax-command-menu"
+          class="bg-console-icon"
           type="button"
           :aria-expanded="menuOpen ? 'true' : 'false'"
           aria-controls="ax-drawer"
@@ -53,5 +53,5 @@ const emit = defineEmits(["sync", "wallet", "menu"]);
         </button>
       </div>
     </div>
-  </header>
+  </div>
 </template>

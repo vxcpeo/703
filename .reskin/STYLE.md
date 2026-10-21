@@ -1,32 +1,32 @@
-# Reskin art direction — Abyss Liquidity
+# Reskin art direction — Bubblegum Exchange
 
 > Selected automatically. Do not ask the user to confirm or choose another direction.
 
-- **Style DNA:** `aave-abyss` (dark-technical)
-- **Skeleton:** `command-rail` (linear)
-- **Seed:** `639564ffe038ab729a840d9367eb22c1d858932c7d62bbbabdcaa14f3bd5f349`
-- **Source DNA:** [https://aave.com](https://aave.com)
-- **Live sampled:** yes — https://aave.com (1131 ms)
-- **Original:** dashboard-shell / light / accent #b1741a
+- **Style DNA:** `uniswap-bubblegum` (clean-fintech)
+- **Skeleton:** `split-stage` (spatial)
+- **Seed:** `bb33d9a2a378694d6d0e596cbd6731a090117474a060bde73b8c8ffe1052cf3b`
+- **Source DNA:** [https://uniswap.org](https://uniswap.org)
+- **Live sampled:** yes — https://uniswap.org (6701 ms)
+- **Original:** terminal-console / light / accent #ff0000
 
 ## Why this direction
 
-The selector sampled 9/10 blockchain references, scored every direction for perceptual distance from the original accent (#b1741a) and background (#fffdf8), added a deterministic seed jitter, and chose Abyss Liquidity because it is 64 ΔE away from the original accent and pairs with Command Rail, a linear skeleton rather than the original dashboard-shell.
+The selector sampled 9/10 blockchain references, scored every direction for perceptual distance from the original accent (#ff0000) and background (#000000), added a deterministic seed jitter, and chose Bubblegum Exchange because it is 64 ΔE away from the original accent and pairs with Split Stage, a spatial skeleton rather than the original terminal-console.
 
 ## Live reference sampling
 
 | Style | URL | Result | Accent sampled | Ground sampled |
 |---|---|---|---|---|
-| ethereum-paper | https://ethereum.org | ok (759 ms) | #0c5681 | #ffffff |
-| base-cobalt | https://www.base.org | ok (1080 ms) | #0000ff | #dde3e9 |
-| polygon-agora | https://polygon.technology | ok (1035 ms) | #670de5 | #000000 |
-| aave-abyss | https://aave.com | ok (1131 ms) | #ff0000 | #000000 |
-| optimism-poster | https://www.optimism.io | ok (1424 ms) | #ff0421 | #fafaf9 |
-| solana-spectrum | https://solana.com | ok (2340 ms) | #9945ff | #000000 |
+| polygon-agora | https://polygon.technology | ok (2996 ms) | #670de5 | #000000 |
+| base-cobalt | https://www.base.org | ok (4322 ms) | #0000ff | #dde3e9 |
+| ethereum-paper | https://ethereum.org | ok (4571 ms) | #0c5681 | #ffffff |
+| solana-spectrum | https://solana.com | ok (7231 ms) | #9945ff | #000000 |
+| aave-abyss | https://aave.com | ok (3008 ms) | #ff0000 | #000000 |
 | arbitrum-signal | https://arbitrum.io | failed: HTTP 403 | — | — |
-| uniswap-bubblegum | https://uniswap.org | ok (2407 ms) | — | #ffffff |
-| cosmos-orbit | https://cosmos.network | ok (2214 ms) | #40b3ff | #000000 |
-| sui-tidal | https://sui.io | ok (2425 ms) | #298dff | #ffffff |
+| optimism-poster | https://www.optimism.io | ok (7426 ms) | #ff0421 | #fafaf9 |
+| uniswap-bubblegum | https://uniswap.org | ok (6701 ms) | — | #ffffff |
+| cosmos-orbit | https://cosmos.network | ok (3829 ms) | #40b3ff | #000000 |
+| sui-tidal | https://sui.io | ok (4602 ms) | #298dff | #ffffff |
 
 Live sampling is evidence, not a copy target. Never download or reuse a reference site's logo, imagery, copy, or code. Use only the abstract tokens below.
 
@@ -34,68 +34,67 @@ Live sampling is evidence, not a copy target. Never download or reuse a referenc
 
 | Candidate | Score | Accent ΔE from original | Layout | Live |
 |---|---:|---:|---|---|
-| Abyss Liquidity | 0.9855 | 64.3 | command-rail | yes |
-| Spectrum Terminal | 0.936 | 143 | ticker-stage | yes |
-| Signal Navy | 0.9292 | 96.3 | bento-canvas | no |
-| Agora Violet | 0.9206 | 142.2 | documentary | yes |
-| Cosmos Orbit | 0.7939 | 105.4 | orbital | yes |
-| Tidal Sui | 0.7876 | 119.6 | gallery-scroll | yes |
-| Bubblegum Exchange | 0.7666 | 72.6 | split-stage | yes |
-| Cobalt Blueprint | 0.7453 | 175.3 | command-rail | yes |
-| Paper Protocol | 0.7122 | 89.4 | split-stage | yes |
-| Poster Optimism | 0.6467 | 57 | ticker-stage | yes |
+| Bubblegum Exchange | 0.9908 | 64.4 | split-stage | yes |
+| Cobalt Blueprint | 0.9445 | 176.3 | bento-canvas | yes |
+| Tidal Sui | 0.9362 | 146.2 | gallery-scroll | yes |
+| Paper Protocol | 0.9201 | 130.1 | split-stage | yes |
+| Agora Violet | 0.8921 | 145 | documentary | yes |
+| Cosmos Orbit | 0.87 | 144.6 | gallery-scroll | yes |
+| Spectrum Terminal | 0.8449 | 146.3 | gallery-scroll | yes |
+| Signal Navy | 0.82 | 136.8 | bento-canvas | no |
+| Poster Optimism | 0.6583 | 11.4 | gallery-scroll | yes |
+| Abyss Liquidity | 0.3029 | 0 | orbital | yes |
 
 ## Skeleton brief
 
-**Command Rail** — 72-84px icon-only rail on one edge; floating command bar detached from the top edge; content is full-bleed with an asymmetric left margin; page title is set as a large running head, not a toolbar label; rail uses glyphs and rotated micro-labels instead of text menu rows.
+**Split Stage** — asymmetric 5/7 or 4/8 split with a sticky narrative column; one side scrolls independently; no top navigation bar; a vertical index sits in the sticky column; headline and primary action share the left stage; data is presented as an annotated ledger, not a card grid.
 
-Navigation: Icon rail with accessible names and a command bar (search + primary action). The rail is visually a spine, not a sidebar: no logo block, no long labels, no 240px panel.
+Navigation: Vertical index in the sticky column; on mobile it becomes a horizontally scrollable index strip above the content.
 
 Structure:
-1. fixed 76px glyph rail
-1. floating command bar offset 24px from the top
-1. oversized running head
-1. two-column data stage with an off-center gutter
-1. bottom status strip
+1. sticky 42% narrative column with brand, route index and page thesis
+1. scrolling 58% data stage
+1. full-width proof band below the split
+1. footer set inside the narrative column
 
-Content mapping: Keep every route label as the accessible name of a rail glyph and as the running head. Put page actions in the command bar. Main data gets the wide column; secondary data gets a narrow marginal column.
+Content mapping: The sticky column carries brand, route index, page title and the primary action. The scrolling stage carries the table/list/form. Secondary metrics become annotated rows rather than cards.
 
-Recipe: `body{padding-left:76px}.rail{position:fixed;inset:0 auto 0 0;width:76px;display:flex;flex-direction:column;align-items:center;gap:12px}.command{position:sticky;top:18px;margin:18px 24px 0;display:flex;gap:12px;border:1px solid var(--line);border-radius:var(--radius-lg);backdrop-filter:blur(16px)}.stage{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.45fr);gap:clamp(24px,4vw,64px)}`
+Recipe: `.split{display:grid;grid-template-columns:minmax(300px,42fr) minmax(0,58fr);min-height:100vh}.narrative{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,4vw,64px)}.stage{min-height:100vh;padding:clamp(24px,5vw,80px) clamp(20px,5vw,90px)}`
 
-Risks: a 240px labelled sidebar is the old skeleton in disguise; rail icons need visible focus and accessible names
+Risks: sticky column must not hide content on short screens; mobile must not preserve the split
 
 ## Design tokens
 
 ```css
 :root {
-  --bg: #000000;
-  --surface: #111A24;
-  --surface-alt: #182533;
-  --ink: #F4F7FA;
-  --muted: #8FA3B5;
-  --accent: #ff0000;
-  --accent-safe: #ff0000;
-  --accent-2: #ff00ff;
-  --line: #1E2A36;
-  --success: #5CE1A0;
-  --danger: #FF7A7A;
-  --warning: #F2C94C;
+  --bg: #ffffff;
+  --surface: #F9F8FA;
+  --surface-alt: #F2EEF3;
+  --ink: #0D0D0D;
+  --muted: #6D6A70;
+  --accent: #E6006F;
+  --accent-safe: #C2005D;
+  --accent-2: #FF4DA6;
+  --line: #E9E4EB;
+  --success: #0F7B4D;
+  --danger: #C42B2B;
+  --warning: #8A5A00;
 
-  --font-display: "Trebuchet MS", "Segoe UI", sans-serif;
-  --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
-  --font-mono: "Cascadia Mono", ui-monospace, monospace;
-  --display-weight: 650;
-  --display-tracking: -0.035em;
-  --label-tracking: 0.1em;
+  --font-display: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", "Cascadia Mono", ui-monospace, monospace;
+  --display-weight: 600;
+  --display-tracking: -0.03em;
+  --label-tracking: 0.04em;
 
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --border: 1px solid rgba(143, 163, 181, 0.18);
-  --shadow: 0 26px 70px rgba(0, 0, 0, 0.5);
+  --radius-sm: 12px;
+  --radius-md: 22px;
+  --radius-lg: 32px;
+  --border: 1px solid var(--line);
+  --shadow: 0 18px 40px rgba(20, 10, 25, 0.06);
 
-  --motion-duration: 240ms;
-  --motion-ease: cubic-bezier(.22,1,.36,1);
+  --motion-duration: 200ms;
+  --motion-ease: cubic-bezier(.2,.7,.2,1);
   --space-1: clamp(4px, .35vw, 6px);
   --space-2: clamp(8px, .7vw, 12px);
   --space-3: clamp(14px, 1.2vw, 20px);
@@ -109,10 +108,10 @@ Risks: a 240px labelled sidebar is the old skeleton in disguise; rail icons need
 
 ## Component grammar
 
-- Surface: 1px solid rgba(143, 163, 181, 0.18); radius 16px; shadow 0 26px 70px rgba(0, 0, 0, 0.5).
-- Type: display **"Trebuchet MS", "Segoe UI", sans-serif** at weight 650, tracking -0.035em; body **"Segoe UI", "Helvetica Neue", sans-serif**; numerals and micro-labels **"Cascadia Mono", ui-monospace, monospace**.
-- Texture: liquid glass, teal-magenta glow, fine grid, data sparklines.
-- Motion: fluid, 240ms, cubic-bezier(.22,1,.36,1). Always wrap non-essential motion in `@media (prefers-reduced-motion: no-preference)`.
+- Surface: 1px solid var(--line); radius 22px; shadow 0 18px 40px rgba(20, 10, 25, 0.06).
+- Type: display **"Avenir Next", "Segoe UI", system-ui, sans-serif** at weight 600, tracking -0.03em; body **"Avenir Next", "Segoe UI", system-ui, sans-serif**; numerals and micro-labels **"SFMono-Regular", "Cascadia Mono", ui-monospace, monospace**.
+- Texture: soft bubbles, gradient orbs, fine dividers, compact trade widgets.
+- Motion: smooth, 200ms, cubic-bezier(.2,.7,.2,1). Always wrap non-essential motion in `@media (prefers-reduced-motion: no-preference)`.
 - Density: comfortable. Keep body text >= 14px and body contrast >= 4.5:1.
 - Use `--accent-safe` for text and icons on `--bg`; use `--accent` for fills and large shapes.
 
@@ -120,7 +119,7 @@ Risks: a 240px labelled sidebar is the old skeleton in disguise; rail icons need
 
 The replacement must satisfy all of these:
 
-1. The source inventory archetype is `dashboard-shell`; the new skeleton is `command-rail`. Do not fall back to the old shell during implementation.
+1. The source inventory archetype is `terminal-console`; the new skeleton is `split-stage`. Do not fall back to the old shell during implementation.
 2. Do not reuse any original class name, CSS selector, design token name, or original accent family.
 3. Rewrite templates, not only CSS. Every route must visibly use the new skeleton.
 4. Keep every token in `.reskin/content-contract.json`; move it, never rewrite it.
@@ -128,4 +127,4 @@ The replacement must satisfy all of these:
 
 ## Commit statement
 
-Use this sentence in the final report: "The UI was rebuilt around Abyss Liquidity / Command Rail; the original dashboard-shell shell and palette were removed while the content contract stayed byte-for-byte intact."
+Use this sentence in the final report: "The UI was rebuilt around Bubblegum Exchange / Split Stage; the original terminal-console shell and palette were removed while the content contract stayed byte-for-byte intact."
