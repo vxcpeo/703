@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T14:00:20.009Z",
+  "generatedAt": "2026-10-22T15:35:51.195Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/703/website",
-    "name": "actoria-web",
+    "name": "rationum-web",
     "baseUrl": "http://127.0.0.1:4317/"
   },
   "passed": true,
@@ -19,33 +19,14 @@
     "sourceContract": {
       "passed": true,
       "issues": [],
-      "warnings": [],
-      "hash": "2cd00ec31667df958c64f010a822864c4aa97ac816e8a9ae39910dee437f7dbb"
+      "warnings": [
+        "bindings: added \"interpolation:String(position + 1).padStart(2, \"0\")\""
+      ],
+      "hash": "053703ed8ff70b547c344634bac24299af06156c7f96bc0e0c192c67fbc61260"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "sidebar-workspace",
-        "family": "shell",
-        "traits": {
-          "sidebar": true,
-          "topbar": false,
-          "cards": false,
-          "hero": true,
-          "table": false,
-          "grid": true,
-          "tabs": true,
-          "modal": true,
-          "charts": true,
-          "sticky": true,
-          "orbital": false,
-          "terminal": true,
-          "bento": false,
-          "ticker": false,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "terminal-console",
         "family": "linear",
         "traits": {
@@ -66,9 +47,30 @@
           "gallery": false
         }
       },
+      "current": {
+        "id": "sidebar-workspace",
+        "family": "shell",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": true,
+          "hero": true,
+          "table": false,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
       "accent": {
-        "original": "#e6006f",
-        "current": "#9945ff",
+        "original": "#9945ff",
+        "current": "#e6006f",
         "deltaE": 85.01,
         "min": 30
       }
@@ -80,12 +82,11 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=Marginal notes",
-          "aria attribute added: aria-label=Record bands"
+          "numeric token count changed: 9 -> 15 (dynamic values may differ)"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.375,
-          "landmarkSimilarity": 0.3,
+          "fingerprintSimilarity": 0.229,
+          "landmarkSimilarity": 0.6,
           "classOverlap": 0
         },
         "content": {
@@ -97,8 +98,8 @@
               "total": 9
             },
             "current": {
-              "tokens": 7,
-              "total": 9
+              "tokens": 10,
+              "total": 15
             }
           }
         },
@@ -120,11 +121,11 @@
   },
   "failures": [],
   "warnings": [
-    "/: aria attribute added: aria-label=Marginal notes",
-    "/: aria attribute added: aria-label=Record bands"
+    "bindings: added \"interpolation:String(position + 1).padStart(2, \"0\")\"",
+    "/: numeric token count changed: 9 -> 15 (dynamic values may differ)"
   ],
   "baseline": {
-    "generatedAt": "2026-10-21T13:44:53.744Z",
+    "generatedAt": "2026-10-22T15:20:52.924Z",
     "routes": [
       "/"
     ]

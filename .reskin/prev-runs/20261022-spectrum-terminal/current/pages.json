@@ -1,0 +1,2834 @@
+{
+  "schemaVersion": 1,
+  "label": "current",
+  "generatedAt": "2026-10-21T14:00:13.296Z",
+  "baseUrl": "http://127.0.0.1:4317/",
+  "browser": {
+    "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
+    "playwrightSource": "reskin-tools",
+    "axe": true
+  },
+  "pages": {
+    "/": {
+      "route": "/",
+      "url": "http://127.0.0.1:4317/",
+      "status": 200,
+      "desktop": {
+        "meta": {
+          "title": "Actoria — Time on the record.",
+          "lang": "en",
+          "h1Count": 1,
+          "bodyTextLength": 2418,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "focusableCount": 30
+        },
+        "words": [
+          {
+            "word": "0",
+            "count": 2
+          },
+          {
+            "word": "01",
+            "count": 2
+          },
+          {
+            "word": "02",
+            "count": 1
+          },
+          {
+            "word": "03",
+            "count": 1
+          },
+          {
+            "word": "2026",
+            "count": 1
+          },
+          {
+            "word": "21",
+            "count": 1
+          },
+          {
+            "word": "3",
+            "count": 1
+          },
+          {
+            "word": "a",
+            "count": 13
+          },
+          {
+            "word": "A",
+            "count": 1
+          },
+          {
+            "word": "Act",
+            "count": 3
+          },
+          {
+            "word": "actions",
+            "count": 1
+          },
+          {
+            "word": "Actoria",
+            "count": 2
+          },
+          {
+            "word": "actoria.xyz",
+            "count": 1
+          },
+          {
+            "word": "Address",
+            "count": 1
+          },
+          {
+            "word": "advisory",
+            "count": 4
+          },
+          {
+            "word": "affiliated",
+            "count": 1
+          },
+          {
+            "word": "Against",
+            "count": 1
+          },
+          {
+            "word": "All",
+            "count": 2
+          },
+          {
+            "word": "An",
+            "count": 1
+          },
+          {
+            "word": "and",
+            "count": 8
+          },
+          {
+            "word": "answer",
+            "count": 1
+          },
+          {
+            "word": "anyone",
+            "count": 2
+          },
+          {
+            "word": "are",
+            "count": 4
+          },
+          {
+            "word": "be",
+            "count": 1
+          },
+          {
+            "word": "Before",
+            "count": 1
+          },
+          {
+            "word": "between",
+            "count": 1
+          },
+          {
+            "word": "bounties",
+            "count": 1
+          },
+          {
+            "word": "Browse",
+            "count": 1
+          },
+          {
+            "word": "budget",
+            "count": 1
+          },
+          {
+            "word": "buy",
+            "count": 1
+          },
+          {
+            "word": "by",
+            "count": 2
+          },
+          {
+            "word": "can",
+            "count": 2
+          },
+          {
+            "word": "charter",
+            "count": 1
+          },
+          {
+            "word": "check",
+            "count": 1
+          },
+          {
+            "word": "Cluster",
+            "count": 1
+          },
+          {
+            "word": "community",
+            "count": 5
+          },
+          {
+            "word": "configured",
+            "count": 3
+          },
+          {
+            "word": "connect",
+            "count": 1
+          },
+          {
+            "word": "Connect",
+            "count": 3
+          },
+          {
+            "word": "connected",
+            "count": 3
+          },
+          {
+            "word": "connection",
+            "count": 1
+          },
+          {
+            "word": "content",
+            "count": 1
+          },
+          {
+            "word": "days",
+            "count": 1
+          },
+          {
+            "word": "demand",
+            "count": 1
+          },
+          {
+            "word": "do",
+            "count": 1
+          },
+          {
+            "word": "down",
+            "count": 1
+          },
+          {
+            "word": "every",
+            "count": 1
+          },
+          {
+            "word": "exists",
+            "count": 1
+          },
+          {
+            "word": "Explore",
+            "count": 1
+          },
+          {
+            "word": "fix",
+            "count": 1
+          },
+          {
+            "word": "floor",
+            "count": 2
+          },
+          {
+            "word": "for",
+            "count": 1
+          },
+          {
+            "word": "For",
+            "count": 1
+          },
+          {
+            "word": "Foundation",
+            "count": 1
+          },
+          {
+            "word": "funds",
+            "count": 1
+          },
+          {
+            "word": "Guide",
+            "count": 2
+          },
+          {
+            "word": "here",
+            "count": 1
+          },
+          {
+            "word": "hold",
+            "count": 1
+          },
+          {
+            "word": "holds",
+            "count": 1
+          },
+          {
+            "word": "hour",
+            "count": 2
+          },
+          {
+            "word": "how",
+            "count": 1
+          },
+          {
+            "word": "How",
+            "count": 1
+          },
+          {
+            "word": "idle",
+            "count": 1
+          },
+          {
+            "word": "in",
+            "count": 1
+          },
+          {
+            "word": "independent",
+            "count": 1
+          },
+          {
+            "word": "Independent",
+            "count": 1
+          },
+          {
+            "word": "instruction",
+            "count": 1
+          },
+          {
+            "word": "is",
+            "count": 4
+          },
+          {
+            "word": "it",
+            "count": 1
+          },
+          {
+            "word": "It",
+            "count": 1
+          },
+          {
+            "word": "key",
+            "count": 1
+          },
+          {
+            "word": "Last",
+            "count": 1
+          },
+          {
+            "word": "later",
+            "count": 1
+          },
+          {
+            "word": "leading",
+            "count": 1
+          },
+          {
+            "word": "leave",
+            "count": 1
+          },
+          {
+            "word": "let",
+            "count": 1
+          },
+          {
+            "word": "live",
+            "count": 1
+          },
+          {
+            "word": "Map",
+            "count": 1
+          },
+          {
+            "word": "mint",
+            "count": 4
+          },
+          {
+            "word": "minted",
+            "count": 1
+          },
+          {
+            "word": "mints",
+            "count": 1
+          },
+          {
+            "word": "minutes",
+            "count": 1
+          },
+          {
+            "word": "mode",
+            "count": 1
+          },
+          {
+            "word": "money",
+            "count": 1
+          },
+          {
+            "word": "move",
+            "count": 1
+          },
+          {
+            "word": "Network",
+            "count": 2
+          },
+          {
+            "word": "never",
+            "count": 3
+          },
+          {
+            "word": "Never",
+            "count": 1
+          },
+          {
+            "word": "Newest",
+            "count": 1
+          },
+          {
+            "word": "no",
+            "count": 3
+          },
+          {
+            "word": "No",
+            "count": 4
+          },
+          {
+            "word": "none",
+            "count": 2
+          },
+          {
+            "word": "None",
+            "count": 1
+          },
+          {
+            "word": "not",
+            "count": 7
+          },
+          {
+            "word": "Not",
+            "count": 1
+          },
+          {
+            "word": "nothing",
+            "count": 3
+          },
+          {
+            "word": "Oct",
+            "count": 1
+          },
+          {
+            "word": "on",
+            "count": 6
+          },
+          {
+            "word": "On",
+            "count": 1
+          },
+          {
+            "word": "one",
+            "count": 3
+          },
+          {
+            "word": "One",
+            "count": 1
+          },
+          {
+            "word": "only",
+            "count": 4
+          },
+          {
+            "word": "open",
+            "count": 2
+          },
+          {
+            "word": "Open",
+            "count": 3
+          },
+          {
+            "word": "or",
+            "count": 4
+          },
+          {
+            "word": "oria",
+            "count": 3
+          },
+          {
+            "word": "out",
+            "count": 1
+          },
+          {
+            "word": "Overview",
+            "count": 2
+          },
+          {
+            "word": "part",
+            "count": 2
+          },
+          {
+            "word": "participation",
+            "count": 3
+          },
+          {
+            "word": "pay",
+            "count": 1
+          },
+          {
+            "word": "pays",
+            "count": 1
+          },
+          {
+            "word": "per",
+            "count": 2
+          },
+          {
+            "word": "phrase",
+            "count": 1
+          },
+          {
+            "word": "Pick",
+            "count": 1
+          },
+          {
+            "word": "preview",
+            "count": 4
+          },
+          {
+            "word": "Preview",
+            "count": 2
+          },
+          {
+            "word": "private",
+            "count": 2
+          },
+          {
+            "word": "program",
+            "count": 3
+          },
+          {
+            "word": "Program",
+            "count": 1
+          },
+          {
+            "word": "project",
+            "count": 2
+          },
+          {
+            "word": "promised",
+            "count": 1
+          },
+          {
+            "word": "proposal",
+            "count": 3
+          },
+          {
+            "word": "public",
+            "count": 2
+          },
+          {
+            "word": "quest",
+            "count": 1
+          },
+          {
+            "word": "quests",
+            "count": 5
+          },
+          {
+            "word": "Quests",
+            "count": 3
+          },
+          {
+            "word": "read",
+            "count": 2
+          },
+          {
+            "word": "Read",
+            "count": 1
+          },
+          {
+            "word": "reading",
+            "count": 1
+          },
+          {
+            "word": "Reads",
+            "count": 1
+          },
+          {
+            "word": "record",
+            "count": 6
+          },
+          {
+            "word": "recorded",
+            "count": 1
+          },
+          {
+            "word": "records",
+            "count": 1
+          },
+          {
+            "word": "refresh",
+            "count": 1
+          },
+          {
+            "word": "register",
+            "count": 1
+          },
+          {
+            "word": "reopen",
+            "count": 1
+          },
+          {
+            "word": "reopened",
+            "count": 1
+          },
+          {
+            "word": "research",
+            "count": 1
+          },
+          {
+            "word": "Reserve",
+            "count": 1
+          },
+          {
+            "word": "Results",
+            "count": 1
+          },
+          {
+            "word": "Review",
+            "count": 1
+          },
+          {
+            "word": "reviews",
+            "count": 1
+          },
+          {
+            "word": "room",
+            "count": 1
+          },
+          {
+            "word": "route",
+            "count": 1
+          },
+          {
+            "word": "row",
+            "count": 6
+          },
+          {
+            "word": "rows",
+            "count": 3
+          },
+          {
+            "word": "Rows",
+            "count": 1
+          },
+          {
+            "word": "sample",
+            "count": 1
+          },
+          {
+            "word": "Sample",
+            "count": 9
+          },
+          {
+            "word": "season",
+            "count": 1
+          },
+          {
+            "word": "See",
+            "count": 1
+          },
+          {
+            "word": "seed",
+            "count": 1
+          },
+          {
+            "word": "sends",
+            "count": 1
+          },
+          {
+            "word": "Session",
+            "count": 1
+          },
+          {
+            "word": "set",
+            "count": 2
+          },
+          {
+            "word": "share",
+            "count": 1
+          },
+          {
+            "word": "shown",
+            "count": 2
+          },
+          {
+            "word": "sign",
+            "count": 1
+          },
+          {
+            "word": "signal",
+            "count": 1
+          },
+          {
+            "word": "sits",
+            "count": 1
+          },
+          {
+            "word": "Skip",
+            "count": 1
+          },
+          {
+            "word": "SOL",
+            "count": 1
+          },
+          {
+            "word": "Solana",
+            "count": 5
+          },
+          {
+            "word": "sold",
+            "count": 1
+          },
+          {
+            "word": "spreadsheet",
+            "count": 1
+          },
+          {
+            "word": "stamped",
+            "count": 1
+          },
+          {
+            "word": "State",
+            "count": 1
+          },
+          {
+            "word": "status",
+            "count": 1
+          },
+          {
+            "word": "submit",
+            "count": 1
+          },
+          {
+            "word": "submitted",
+            "count": 1
+          },
+          {
+            "word": "Support",
+            "count": 2
+          },
+          {
+            "word": "Take",
+            "count": 1
+          },
+          {
+            "word": "testnet",
+            "count": 2
+          },
+          {
+            "word": "Testnet",
+            "count": 3
+          },
+          {
+            "word": "that",
+            "count": 1
+          },
+          {
+            "word": "the",
+            "count": 12
+          },
+          {
+            "word": "The",
+            "count": 1
+          },
+          {
+            "word": "they",
+            "count": 1
+          },
+          {
+            "word": "thirty",
+            "count": 1
+          },
+          {
+            "word": "Time",
+            "count": 3
+          },
+          {
+            "word": "to",
+            "count": 5
+          },
+          {
+            "word": "today",
+            "count": 1
+          },
+          {
+            "word": "token",
+            "count": 6
+          },
+          {
+            "word": "Token",
+            "count": 7
+          },
+          {
+            "word": "took",
+            "count": 1
+          },
+          {
+            "word": "transaction",
+            "count": 1
+          },
+          {
+            "word": "treasury",
+            "count": 1
+          },
+          {
+            "word": "Treasury",
+            "count": 2
+          },
+          {
+            "word": "unlisted",
+            "count": 1
+          },
+          {
+            "word": "useful",
+            "count": 1
+          },
+          {
+            "word": "vote",
+            "count": 1
+          },
+          {
+            "word": "voted",
+            "count": 1
+          },
+          {
+            "word": "votes",
+            "count": 5
+          },
+          {
+            "word": "Votes",
+            "count": 4
+          },
+          {
+            "word": "wallet",
+            "count": 8
+          },
+          {
+            "word": "Wallet",
+            "count": 1
+          },
+          {
+            "word": "wallets",
+            "count": 1
+          },
+          {
+            "word": "Wed",
+            "count": 1
+          },
+          {
+            "word": "Weigh",
+            "count": 1
+          },
+          {
+            "word": "where",
+            "count": 1
+          },
+          {
+            "word": "who",
+            "count": 1
+          },
+          {
+            "word": "Why",
+            "count": 1
+          },
+          {
+            "word": "window",
+            "count": 1
+          },
+          {
+            "word": "with",
+            "count": 1
+          },
+          {
+            "word": "works",
+            "count": 1
+          },
+          {
+            "word": "Write",
+            "count": 1
+          },
+          {
+            "word": "writes",
+            "count": 1
+          },
+          {
+            "word": "Written",
+            "count": 1
+          },
+          {
+            "word": "yet",
+            "count": 3
+          },
+          {
+            "word": "you",
+            "count": 1
+          },
+          {
+            "word": "your",
+            "count": 1
+          },
+          {
+            "word": "Your",
+            "count": 3
+          }
+        ],
+        "attrs": [
+          {
+            "key": "aria-label=Actoria home",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Connect a Solana wallet",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Footer",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Live readouts",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Marginal notes",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Open menu",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Re-read testnet data",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Record bands",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Ways to take part",
+            "count": 1
+          }
+        ],
+        "links": [
+          {
+            "href": "#governance",
+            "count": 1
+          },
+          {
+            "href": "#home",
+            "count": 2
+          },
+          {
+            "href": "#learn",
+            "count": 1
+          },
+          {
+            "href": "#main",
+            "count": 1
+          },
+          {
+            "href": "#quests",
+            "count": 1
+          },
+          {
+            "href": "#stake",
+            "count": 1
+          },
+          {
+            "href": "#treasury",
+            "count": 1
+          }
+        ],
+        "forms": [],
+        "fieldIssues": [],
+        "imageIssues": [],
+        "interactiveIssues": [],
+        "classTokens": [
+          "sp-actions",
+          "sp-band",
+          "sp-band-body",
+          "sp-band-head",
+          "sp-band-inner",
+          "sp-band-title",
+          "sp-bands",
+          "sp-beat",
+          "sp-beats",
+          "sp-brand",
+          "sp-brand-accent",
+          "sp-brand-link",
+          "sp-brand-mark",
+          "sp-brand-tag",
+          "sp-brand-text",
+          "sp-brand-word",
+          "sp-btn",
+          "sp-btn--ghost",
+          "sp-btn--lg",
+          "sp-btn--line",
+          "sp-btn--sm",
+          "sp-btn--solid",
+          "sp-btn--wide",
+          "sp-deck",
+          "sp-dial-date",
+          "sp-dial-foot",
+          "sp-dial-head",
+          "sp-dial-label",
+          "sp-dial-note",
+          "sp-dial-title",
+          "sp-dial-value",
+          "sp-dial-value--text",
+          "sp-dials",
+          "sp-door",
+          "sp-door--ballot",
+          "sp-door-foot",
+          "sp-door-glyph",
+          "sp-doors",
+          "sp-eyebrow",
+          "sp-eyebrow-dot",
+          "sp-fact",
+          "sp-fact--muted",
+          "sp-factlist",
+          "sp-facts",
+          "sp-flow",
+          "sp-headline",
+          "sp-icon-btn",
+          "sp-ledger",
+          "sp-ledger-go",
+          "sp-ledger-index",
+          "sp-ledger-main",
+          "sp-ledger-note",
+          "sp-ledger-row",
+          "sp-ledger-title",
+          "sp-link",
+          "sp-live-dot",
+          "sp-live-dot--idle",
+          "sp-main",
+          "sp-masthead",
+          "sp-note",
+          "sp-notice",
+          "sp-notice-action",
+          "sp-notice-copy",
+          "sp-notice-glyph",
+          "sp-notices",
+          "sp-pill",
+          "sp-route",
+          "sp-shell",
+          "sp-skip",
+          "sp-slab",
+          "sp-slab-body",
+          "sp-slab-body--flush",
+          "sp-slab-foot",
+          "sp-slab-head",
+          "sp-slab-inner",
+          "sp-slab-note",
+          "sp-slab-title",
+          "sp-spin",
+          "sp-statement",
+          "sp-statement-inner",
+          "sp-status",
+          "sp-status-accent",
+          "sp-status-brand",
+          "sp-status-col",
+          "sp-status-cols",
+          "sp-status-facts",
+          "sp-status-fine",
+          "sp-status-links",
+          "sp-status-mark",
+          "sp-status-name",
+          "sp-status-note",
+          "sp-status-tag",
+          "sp-status-top",
+          "sp-status-word",
+          "sp-status-word-accent",
+          "sp-tail",
+          "sp-tally",
+          "sp-tally-key",
+          "sp-tally-key--against",
+          "sp-tally-keys",
+          "sp-ticker",
+          "sp-ticker-glyph",
+          "sp-ticker-item",
+          "sp-ticker-label",
+          "sp-ticker-link",
+          "sp-ticker-list",
+          "sp-utility",
+          "sp-utility-chip",
+          "sp-utility-pulse"
+        ],
+        "fingerprint": [
+          "a@5:0",
+          "a@7:2",
+          "a@8:2",
+          "article@10:4+",
+          "article@9:1",
+          "b@10:0",
+          "b@14:0",
+          "b@15:0",
+          "button@10:1",
+          "button@11:1",
+          "button@12:1",
+          "button@13:4+",
+          "button@7:1",
+          "button@7:2",
+          "button@8:1",
+          "button@9:0",
+          "dd@14:0",
+          "div@10:2",
+          "div@10:3",
+          "div@10:4+",
+          "div@11:1",
+          "div@11:3",
+          "div@12:2",
+          "div@12:3",
+          "div@13:2",
+          "div@3:1",
+          "div@4:4+",
+          "div@6:1",
+          "div@6:2",
+          "div@6:3",
+          "div@6:4+",
+          "div@7:2",
+          "div@7:3",
+          "div@8:2",
+          "div@8:4+",
+          "div@9:2",
+          "dl@12:4+",
+          "dt@14:0",
+          "em@10:0",
+          "footer@5:4+",
+          "h1@9:2",
+          "h2@11:0",
+          "h2@12:0",
+          "h3@8:0",
+          "header@11:2",
+          "header@5:2",
+          "header@7:1",
+          "i@8:0",
+          "img@9:0",
+          "li@10:2",
+          "li@12:1",
+          "li@7:1",
+          "main@5:2",
+          "nav@5:1",
+          "nav@8:4+",
+          "ol@6:4+",
+          "p@11:0",
+          "p@12:0",
+          "p@7:0",
+          "p@8:0",
+          "p@9:0",
+          "p@9:1",
+          "path@10:0",
+          "path@11:0",
+          "path@12:0",
+          "path@13:0",
+          "path@14:0",
+          "path@16:0",
+          "path@9:0",
+          "section@6:2",
+          "section@7:2",
+          "section@8:3",
+          "section@9:1",
+          "section@9:2",
+          "section@9:3",
+          "small@15:0",
+          "span@10:0",
+          "span@11:0",
+          "span@11:1",
+          "span@12:0",
+          "span@13:1",
+          "span@14:0",
+          "span@14:1",
+          "span@14:2",
+          "span@7:0",
+          "span@7:1",
+          "span@8:0",
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
+          "span@9:1",
+          "strong@11:0",
+          "strong@12:0",
+          "strong@9:0",
+          "svg@10:1",
+          "svg@11:1",
+          "svg@12:1",
+          "svg@13:1",
+          "svg@15:1",
+          "svg@8:1",
+          "svg@9:1",
+          "ul@11:1",
+          "ul@11:3",
+          "ul@9:3"
+        ],
+        "landmarks": [
+          {
+            "tag": "header",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 1440,
+            "height": 81
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 81,
+            "left": 0,
+            "width": 1440,
+            "height": 48
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 129,
+            "left": 0,
+            "width": 1440,
+            "height": 2431
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 198,
+            "left": 0,
+            "width": 1440,
+            "height": 634
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1128,
+            "left": 58,
+            "width": 1325,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1484,
+            "left": 58,
+            "width": 1325,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2080,
+            "left": 58,
+            "width": 920,
+            "height": 17
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2349,
+            "left": 58,
+            "width": 920,
+            "height": 26
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 2560,
+            "left": 0,
+            "width": 1440,
+            "height": 519
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 2739,
+            "left": 58,
+            "width": 426,
+            "height": 17
+          }
+        ],
+        "colors": [
+          {
+            "hex": "#ffffff",
+            "count": 142
+          },
+          {
+            "hex": "#a6a6aa",
+            "count": 129
+          },
+          {
+            "hex": "#14f195",
+            "count": 32
+          },
+          {
+            "hex": "#9945ff",
+            "count": 9
+          },
+          {
+            "hex": "#000000",
+            "count": 8
+          },
+          {
+            "hex": "#0b0b0c",
+            "count": 2
+          },
+          {
+            "hex": "#161618",
+            "count": 1
+          },
+          {
+            "hex": "#29292d",
+            "count": 1
+          },
+          {
+            "hex": "#ff6b86",
+            "count": 1
+          }
+        ],
+        "contrast": [],
+        "contrastChecked": 114,
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Time on the record."
+          },
+          {
+            "tag": "h2",
+            "text": "ON THE RECORD TODAY"
+          },
+          {
+            "tag": "h2",
+            "text": "NEWEST QUESTS"
+          },
+          {
+            "tag": "h2",
+            "text": "VOTES ON THE FLOOR"
+          },
+          {
+            "tag": "h2",
+            "text": "Take part"
+          },
+          {
+            "tag": "h2",
+            "text": "Weigh in"
+          },
+          {
+            "tag": "h2",
+            "text": "YOUR WALLET"
+          },
+          {
+            "tag": "h2",
+            "text": "TOKEN"
+          },
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
+          }
+        ],
+        "navTargets": [
+          ""
+        ],
+        "overflow": {
+          "documentOverflow": false,
+          "offenders": []
+        }
+      },
+      "axe": {
+        "skipped": true,
+        "violations": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "failedResponses": [],
+      "screenshots": {
+        "desktop": "current/home-desktop.png",
+        "mobile": "current/home-mobile.png"
+      },
+      "mobile": {
+        "meta": {
+          "title": "Actoria — Time on the record.",
+          "lang": "en",
+          "h1Count": 1,
+          "bodyTextLength": 2394,
+          "scrollWidth": 390,
+          "clientWidth": 390,
+          "focusableCount": 30
+        },
+        "words": [
+          {
+            "word": "0",
+            "count": 2
+          },
+          {
+            "word": "01",
+            "count": 2
+          },
+          {
+            "word": "02",
+            "count": 1
+          },
+          {
+            "word": "03",
+            "count": 1
+          },
+          {
+            "word": "10:00:16",
+            "count": 1
+          },
+          {
+            "word": "2026",
+            "count": 1
+          },
+          {
+            "word": "21",
+            "count": 1
+          },
+          {
+            "word": "3",
+            "count": 1
+          },
+          {
+            "word": "a",
+            "count": 13
+          },
+          {
+            "word": "A",
+            "count": 1
+          },
+          {
+            "word": "Act",
+            "count": 3
+          },
+          {
+            "word": "actions",
+            "count": 1
+          },
+          {
+            "word": "Actoria",
+            "count": 2
+          },
+          {
+            "word": "actoria.xyz",
+            "count": 1
+          },
+          {
+            "word": "Address",
+            "count": 1
+          },
+          {
+            "word": "advisory",
+            "count": 4
+          },
+          {
+            "word": "affiliated",
+            "count": 1
+          },
+          {
+            "word": "Against",
+            "count": 1
+          },
+          {
+            "word": "All",
+            "count": 2
+          },
+          {
+            "word": "An",
+            "count": 1
+          },
+          {
+            "word": "and",
+            "count": 8
+          },
+          {
+            "word": "answer",
+            "count": 1
+          },
+          {
+            "word": "anyone",
+            "count": 2
+          },
+          {
+            "word": "are",
+            "count": 4
+          },
+          {
+            "word": "be",
+            "count": 1
+          },
+          {
+            "word": "Before",
+            "count": 1
+          },
+          {
+            "word": "between",
+            "count": 1
+          },
+          {
+            "word": "bounties",
+            "count": 1
+          },
+          {
+            "word": "Browse",
+            "count": 1
+          },
+          {
+            "word": "budget",
+            "count": 1
+          },
+          {
+            "word": "buy",
+            "count": 1
+          },
+          {
+            "word": "by",
+            "count": 2
+          },
+          {
+            "word": "can",
+            "count": 2
+          },
+          {
+            "word": "charter",
+            "count": 1
+          },
+          {
+            "word": "check",
+            "count": 1
+          },
+          {
+            "word": "Cluster",
+            "count": 1
+          },
+          {
+            "word": "community",
+            "count": 5
+          },
+          {
+            "word": "configured",
+            "count": 3
+          },
+          {
+            "word": "connect",
+            "count": 1
+          },
+          {
+            "word": "Connect",
+            "count": 3
+          },
+          {
+            "word": "connected",
+            "count": 3
+          },
+          {
+            "word": "connection",
+            "count": 1
+          },
+          {
+            "word": "content",
+            "count": 1
+          },
+          {
+            "word": "days",
+            "count": 1
+          },
+          {
+            "word": "demand",
+            "count": 1
+          },
+          {
+            "word": "do",
+            "count": 1
+          },
+          {
+            "word": "down",
+            "count": 1
+          },
+          {
+            "word": "every",
+            "count": 1
+          },
+          {
+            "word": "exists",
+            "count": 1
+          },
+          {
+            "word": "Explore",
+            "count": 1
+          },
+          {
+            "word": "fix",
+            "count": 1
+          },
+          {
+            "word": "floor",
+            "count": 2
+          },
+          {
+            "word": "for",
+            "count": 1
+          },
+          {
+            "word": "For",
+            "count": 1
+          },
+          {
+            "word": "Foundation",
+            "count": 1
+          },
+          {
+            "word": "funds",
+            "count": 1
+          },
+          {
+            "word": "Guide",
+            "count": 2
+          },
+          {
+            "word": "here",
+            "count": 1
+          },
+          {
+            "word": "hold",
+            "count": 1
+          },
+          {
+            "word": "holds",
+            "count": 1
+          },
+          {
+            "word": "hour",
+            "count": 2
+          },
+          {
+            "word": "how",
+            "count": 1
+          },
+          {
+            "word": "How",
+            "count": 1
+          },
+          {
+            "word": "idle",
+            "count": 1
+          },
+          {
+            "word": "in",
+            "count": 1
+          },
+          {
+            "word": "independent",
+            "count": 1
+          },
+          {
+            "word": "Independent",
+            "count": 1
+          },
+          {
+            "word": "instruction",
+            "count": 1
+          },
+          {
+            "word": "is",
+            "count": 4
+          },
+          {
+            "word": "it",
+            "count": 1
+          },
+          {
+            "word": "It",
+            "count": 1
+          },
+          {
+            "word": "key",
+            "count": 1
+          },
+          {
+            "word": "Last",
+            "count": 1
+          },
+          {
+            "word": "later",
+            "count": 1
+          },
+          {
+            "word": "leading",
+            "count": 1
+          },
+          {
+            "word": "leave",
+            "count": 1
+          },
+          {
+            "word": "let",
+            "count": 1
+          },
+          {
+            "word": "live",
+            "count": 1
+          },
+          {
+            "word": "Map",
+            "count": 1
+          },
+          {
+            "word": "mint",
+            "count": 4
+          },
+          {
+            "word": "minted",
+            "count": 1
+          },
+          {
+            "word": "mints",
+            "count": 1
+          },
+          {
+            "word": "minutes",
+            "count": 1
+          },
+          {
+            "word": "mode",
+            "count": 1
+          },
+          {
+            "word": "money",
+            "count": 1
+          },
+          {
+            "word": "move",
+            "count": 1
+          },
+          {
+            "word": "Network",
+            "count": 2
+          },
+          {
+            "word": "never",
+            "count": 3
+          },
+          {
+            "word": "Never",
+            "count": 1
+          },
+          {
+            "word": "Newest",
+            "count": 1
+          },
+          {
+            "word": "no",
+            "count": 3
+          },
+          {
+            "word": "No",
+            "count": 4
+          },
+          {
+            "word": "none",
+            "count": 2
+          },
+          {
+            "word": "None",
+            "count": 1
+          },
+          {
+            "word": "not",
+            "count": 7
+          },
+          {
+            "word": "nothing",
+            "count": 3
+          },
+          {
+            "word": "Oct",
+            "count": 1
+          },
+          {
+            "word": "on",
+            "count": 6
+          },
+          {
+            "word": "On",
+            "count": 1
+          },
+          {
+            "word": "one",
+            "count": 3
+          },
+          {
+            "word": "One",
+            "count": 1
+          },
+          {
+            "word": "only",
+            "count": 4
+          },
+          {
+            "word": "open",
+            "count": 2
+          },
+          {
+            "word": "Open",
+            "count": 3
+          },
+          {
+            "word": "or",
+            "count": 4
+          },
+          {
+            "word": "oria",
+            "count": 3
+          },
+          {
+            "word": "out",
+            "count": 1
+          },
+          {
+            "word": "Overview",
+            "count": 2
+          },
+          {
+            "word": "part",
+            "count": 2
+          },
+          {
+            "word": "participation",
+            "count": 3
+          },
+          {
+            "word": "pay",
+            "count": 1
+          },
+          {
+            "word": "pays",
+            "count": 1
+          },
+          {
+            "word": "per",
+            "count": 2
+          },
+          {
+            "word": "phrase",
+            "count": 1
+          },
+          {
+            "word": "Pick",
+            "count": 1
+          },
+          {
+            "word": "PM",
+            "count": 1
+          },
+          {
+            "word": "preview",
+            "count": 4
+          },
+          {
+            "word": "Preview",
+            "count": 2
+          },
+          {
+            "word": "private",
+            "count": 2
+          },
+          {
+            "word": "program",
+            "count": 3
+          },
+          {
+            "word": "Program",
+            "count": 1
+          },
+          {
+            "word": "project",
+            "count": 2
+          },
+          {
+            "word": "promised",
+            "count": 1
+          },
+          {
+            "word": "proposal",
+            "count": 3
+          },
+          {
+            "word": "public",
+            "count": 2
+          },
+          {
+            "word": "quest",
+            "count": 1
+          },
+          {
+            "word": "quests",
+            "count": 5
+          },
+          {
+            "word": "Quests",
+            "count": 3
+          },
+          {
+            "word": "read",
+            "count": 2
+          },
+          {
+            "word": "Read",
+            "count": 1
+          },
+          {
+            "word": "reading",
+            "count": 1
+          },
+          {
+            "word": "Reads",
+            "count": 1
+          },
+          {
+            "word": "record",
+            "count": 6
+          },
+          {
+            "word": "recorded",
+            "count": 1
+          },
+          {
+            "word": "records",
+            "count": 1
+          },
+          {
+            "word": "refresh",
+            "count": 1
+          },
+          {
+            "word": "register",
+            "count": 1
+          },
+          {
+            "word": "reopen",
+            "count": 1
+          },
+          {
+            "word": "reopened",
+            "count": 1
+          },
+          {
+            "word": "research",
+            "count": 1
+          },
+          {
+            "word": "Reserve",
+            "count": 1
+          },
+          {
+            "word": "Results",
+            "count": 1
+          },
+          {
+            "word": "Review",
+            "count": 1
+          },
+          {
+            "word": "reviews",
+            "count": 1
+          },
+          {
+            "word": "room",
+            "count": 1
+          },
+          {
+            "word": "route",
+            "count": 1
+          },
+          {
+            "word": "row",
+            "count": 6
+          },
+          {
+            "word": "rows",
+            "count": 3
+          },
+          {
+            "word": "Rows",
+            "count": 1
+          },
+          {
+            "word": "sample",
+            "count": 1
+          },
+          {
+            "word": "Sample",
+            "count": 5
+          },
+          {
+            "word": "season",
+            "count": 1
+          },
+          {
+            "word": "See",
+            "count": 1
+          },
+          {
+            "word": "seed",
+            "count": 1
+          },
+          {
+            "word": "sends",
+            "count": 1
+          },
+          {
+            "word": "Session",
+            "count": 1
+          },
+          {
+            "word": "set",
+            "count": 2
+          },
+          {
+            "word": "share",
+            "count": 1
+          },
+          {
+            "word": "shown",
+            "count": 2
+          },
+          {
+            "word": "sign",
+            "count": 1
+          },
+          {
+            "word": "signal",
+            "count": 1
+          },
+          {
+            "word": "sits",
+            "count": 1
+          },
+          {
+            "word": "Skip",
+            "count": 1
+          },
+          {
+            "word": "SOL",
+            "count": 1
+          },
+          {
+            "word": "Solana",
+            "count": 5
+          },
+          {
+            "word": "sold",
+            "count": 1
+          },
+          {
+            "word": "spreadsheet",
+            "count": 1
+          },
+          {
+            "word": "stamped",
+            "count": 1
+          },
+          {
+            "word": "State",
+            "count": 1
+          },
+          {
+            "word": "status",
+            "count": 1
+          },
+          {
+            "word": "submit",
+            "count": 1
+          },
+          {
+            "word": "submitted",
+            "count": 1
+          },
+          {
+            "word": "Support",
+            "count": 2
+          },
+          {
+            "word": "Take",
+            "count": 1
+          },
+          {
+            "word": "testnet",
+            "count": 2
+          },
+          {
+            "word": "Testnet",
+            "count": 3
+          },
+          {
+            "word": "that",
+            "count": 1
+          },
+          {
+            "word": "the",
+            "count": 12
+          },
+          {
+            "word": "The",
+            "count": 1
+          },
+          {
+            "word": "they",
+            "count": 1
+          },
+          {
+            "word": "thirty",
+            "count": 1
+          },
+          {
+            "word": "Time",
+            "count": 3
+          },
+          {
+            "word": "to",
+            "count": 5
+          },
+          {
+            "word": "today",
+            "count": 1
+          },
+          {
+            "word": "token",
+            "count": 6
+          },
+          {
+            "word": "Token",
+            "count": 7
+          },
+          {
+            "word": "took",
+            "count": 1
+          },
+          {
+            "word": "transaction",
+            "count": 1
+          },
+          {
+            "word": "treasury",
+            "count": 1
+          },
+          {
+            "word": "Treasury",
+            "count": 2
+          },
+          {
+            "word": "unlisted",
+            "count": 1
+          },
+          {
+            "word": "useful",
+            "count": 1
+          },
+          {
+            "word": "vote",
+            "count": 1
+          },
+          {
+            "word": "voted",
+            "count": 1
+          },
+          {
+            "word": "votes",
+            "count": 5
+          },
+          {
+            "word": "Votes",
+            "count": 4
+          },
+          {
+            "word": "wallet",
+            "count": 8
+          },
+          {
+            "word": "Wallet",
+            "count": 1
+          },
+          {
+            "word": "wallets",
+            "count": 1
+          },
+          {
+            "word": "Wed",
+            "count": 1
+          },
+          {
+            "word": "Weigh",
+            "count": 1
+          },
+          {
+            "word": "where",
+            "count": 1
+          },
+          {
+            "word": "who",
+            "count": 1
+          },
+          {
+            "word": "Why",
+            "count": 1
+          },
+          {
+            "word": "window",
+            "count": 1
+          },
+          {
+            "word": "with",
+            "count": 1
+          },
+          {
+            "word": "works",
+            "count": 1
+          },
+          {
+            "word": "Write",
+            "count": 1
+          },
+          {
+            "word": "writes",
+            "count": 1
+          },
+          {
+            "word": "Written",
+            "count": 1
+          },
+          {
+            "word": "yet",
+            "count": 2
+          },
+          {
+            "word": "you",
+            "count": 1
+          },
+          {
+            "word": "your",
+            "count": 1
+          },
+          {
+            "word": "Your",
+            "count": 3
+          }
+        ],
+        "attrs": [
+          {
+            "key": "aria-label=Actoria home",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Connect a Solana wallet",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Footer",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Live readouts",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Marginal notes",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Open menu",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Re-read testnet data",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Record bands",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Ways to take part",
+            "count": 1
+          }
+        ],
+        "links": [
+          {
+            "href": "#governance",
+            "count": 1
+          },
+          {
+            "href": "#home",
+            "count": 2
+          },
+          {
+            "href": "#learn",
+            "count": 1
+          },
+          {
+            "href": "#main",
+            "count": 1
+          },
+          {
+            "href": "#quests",
+            "count": 1
+          },
+          {
+            "href": "#stake",
+            "count": 1
+          },
+          {
+            "href": "#treasury",
+            "count": 1
+          }
+        ],
+        "forms": [],
+        "fieldIssues": [],
+        "imageIssues": [],
+        "interactiveIssues": [],
+        "classTokens": [
+          "sp-actions",
+          "sp-band",
+          "sp-band-body",
+          "sp-band-head",
+          "sp-band-inner",
+          "sp-band-title",
+          "sp-bands",
+          "sp-beat",
+          "sp-beats",
+          "sp-brand",
+          "sp-brand-accent",
+          "sp-brand-link",
+          "sp-brand-mark",
+          "sp-brand-tag",
+          "sp-brand-text",
+          "sp-brand-word",
+          "sp-btn",
+          "sp-btn--ghost",
+          "sp-btn--lg",
+          "sp-btn--line",
+          "sp-btn--sm",
+          "sp-btn--solid",
+          "sp-btn--wide",
+          "sp-deck",
+          "sp-dial-date",
+          "sp-dial-foot",
+          "sp-dial-head",
+          "sp-dial-label",
+          "sp-dial-note",
+          "sp-dial-title",
+          "sp-dial-value",
+          "sp-dial-value--text",
+          "sp-dials",
+          "sp-door",
+          "sp-door--ballot",
+          "sp-door-foot",
+          "sp-door-glyph",
+          "sp-doors",
+          "sp-eyebrow",
+          "sp-eyebrow-dot",
+          "sp-fact",
+          "sp-fact--muted",
+          "sp-factlist",
+          "sp-facts",
+          "sp-flow",
+          "sp-headline",
+          "sp-icon-btn",
+          "sp-ledger",
+          "sp-ledger-go",
+          "sp-ledger-index",
+          "sp-ledger-main",
+          "sp-ledger-note",
+          "sp-ledger-row",
+          "sp-ledger-title",
+          "sp-link",
+          "sp-live-dot",
+          "sp-live-dot--idle",
+          "sp-main",
+          "sp-masthead",
+          "sp-note",
+          "sp-notice",
+          "sp-notice-action",
+          "sp-notice-copy",
+          "sp-notice-glyph",
+          "sp-notices",
+          "sp-pill",
+          "sp-route",
+          "sp-shell",
+          "sp-skip",
+          "sp-slab",
+          "sp-slab-body",
+          "sp-slab-body--flush",
+          "sp-slab-foot",
+          "sp-slab-head",
+          "sp-slab-inner",
+          "sp-slab-note",
+          "sp-slab-title",
+          "sp-spin",
+          "sp-statement",
+          "sp-statement-inner",
+          "sp-status",
+          "sp-status-accent",
+          "sp-status-brand",
+          "sp-status-col",
+          "sp-status-cols",
+          "sp-status-facts",
+          "sp-status-fine",
+          "sp-status-links",
+          "sp-status-mark",
+          "sp-status-name",
+          "sp-status-note",
+          "sp-status-tag",
+          "sp-status-top",
+          "sp-status-word",
+          "sp-status-word-accent",
+          "sp-tail",
+          "sp-tally",
+          "sp-tally-key",
+          "sp-tally-key--against",
+          "sp-tally-keys",
+          "sp-ticker",
+          "sp-ticker-glyph",
+          "sp-ticker-item",
+          "sp-ticker-label",
+          "sp-ticker-link",
+          "sp-ticker-list",
+          "sp-utility",
+          "sp-utility-chip",
+          "sp-utility-pulse"
+        ],
+        "fingerprint": [
+          "a@5:0",
+          "a@7:2",
+          "a@8:2",
+          "article@10:4+",
+          "article@9:1",
+          "b@10:0",
+          "b@14:0",
+          "b@15:0",
+          "button@10:1",
+          "button@11:1",
+          "button@12:1",
+          "button@13:4+",
+          "button@7:1",
+          "button@7:2",
+          "button@8:1",
+          "button@9:0",
+          "dd@14:0",
+          "div@10:2",
+          "div@10:3",
+          "div@10:4+",
+          "div@11:1",
+          "div@11:3",
+          "div@12:2",
+          "div@12:3",
+          "div@13:2",
+          "div@3:1",
+          "div@4:4+",
+          "div@6:1",
+          "div@6:2",
+          "div@6:3",
+          "div@6:4+",
+          "div@7:2",
+          "div@7:3",
+          "div@8:2",
+          "div@8:4+",
+          "div@9:2",
+          "dl@12:4+",
+          "dt@14:0",
+          "em@10:0",
+          "footer@5:4+",
+          "h1@9:2",
+          "h2@11:0",
+          "h2@12:0",
+          "h3@8:0",
+          "header@11:2",
+          "header@5:2",
+          "header@7:1",
+          "i@8:0",
+          "img@9:0",
+          "li@10:2",
+          "li@12:1",
+          "li@7:1",
+          "main@5:2",
+          "nav@5:1",
+          "nav@8:4+",
+          "ol@6:4+",
+          "p@11:0",
+          "p@12:0",
+          "p@7:0",
+          "p@8:0",
+          "p@9:0",
+          "p@9:1",
+          "path@10:0",
+          "path@11:0",
+          "path@12:0",
+          "path@13:0",
+          "path@14:0",
+          "path@16:0",
+          "path@9:0",
+          "section@6:2",
+          "section@7:2",
+          "section@8:3",
+          "section@9:1",
+          "section@9:2",
+          "section@9:3",
+          "small@15:0",
+          "span@10:0",
+          "span@11:0",
+          "span@11:1",
+          "span@12:0",
+          "span@13:1",
+          "span@14:0",
+          "span@14:1",
+          "span@14:2",
+          "span@7:0",
+          "span@7:1",
+          "span@8:0",
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
+          "span@9:1",
+          "strong@11:0",
+          "strong@12:0",
+          "strong@9:0",
+          "svg@10:1",
+          "svg@11:1",
+          "svg@12:1",
+          "svg@13:1",
+          "svg@15:1",
+          "svg@8:1",
+          "svg@9:1",
+          "ul@11:1",
+          "ul@11:3",
+          "ul@9:3"
+        ],
+        "landmarks": [
+          {
+            "tag": "header",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 390,
+            "height": 123
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 123,
+            "left": 0,
+            "width": 390,
+            "height": 48
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 171,
+            "left": 0,
+            "width": 390,
+            "height": 2868
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 330,
+            "left": 0,
+            "width": 390,
+            "height": 466
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1375,
+            "left": 18,
+            "width": 354,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1691,
+            "left": 18,
+            "width": 354,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2500,
+            "left": 18,
+            "width": 354,
+            "height": 17
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2756,
+            "left": 18,
+            "width": 354,
+            "height": 26
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 3038,
+            "left": 0,
+            "width": 390,
+            "height": 677
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 3250,
+            "left": 18,
+            "width": 354,
+            "height": 17
+          }
+        ],
+        "colors": [
+          {
+            "hex": "#ffffff",
+            "count": 142
+          },
+          {
+            "hex": "#a6a6aa",
+            "count": 125
+          },
+          {
+            "hex": "#14f195",
+            "count": 32
+          },
+          {
+            "hex": "#9945ff",
+            "count": 9
+          },
+          {
+            "hex": "#000000",
+            "count": 8
+          },
+          {
+            "hex": "#0b0b0c",
+            "count": 2
+          },
+          {
+            "hex": "#161618",
+            "count": 1
+          },
+          {
+            "hex": "#29292d",
+            "count": 1
+          },
+          {
+            "hex": "#ff6b86",
+            "count": 1
+          }
+        ],
+        "contrast": [],
+        "contrastChecked": 110,
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Time on the record."
+          },
+          {
+            "tag": "h2",
+            "text": "ON THE RECORD TODAY"
+          },
+          {
+            "tag": "h2",
+            "text": "NEWEST QUESTS"
+          },
+          {
+            "tag": "h2",
+            "text": "VOTES ON THE FLOOR"
+          },
+          {
+            "tag": "h2",
+            "text": "Take part"
+          },
+          {
+            "tag": "h2",
+            "text": "Weigh in"
+          },
+          {
+            "tag": "h2",
+            "text": "YOUR WALLET"
+          },
+          {
+            "tag": "h2",
+            "text": "TOKEN"
+          },
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
+          }
+        ],
+        "navTargets": [
+          ""
+        ],
+        "overflow": {
+          "documentOverflow": false,
+          "offenders": [
+            {
+              "selector": "div.sp-shell > nav.sp-ticker > ol.sp-ticker-list",
+              "right": 806,
+              "width": 806
+            },
+            {
+              "selector": "nav.sp-ticker > ol.sp-ticker-list > li.sp-ticker-item",
+              "right": 407,
+              "width": 125
+            },
+            {
+              "selector": "ol.sp-ticker-list > li.sp-ticker-item > a.sp-ticker-link",
+              "right": 407,
+              "width": 125
+            },
+            {
+              "selector": "nav.sp-ticker > ol.sp-ticker-list > li.sp-ticker-item",
+              "right": 556,
+              "width": 149
+            },
+            {
+              "selector": "ol.sp-ticker-list > li.sp-ticker-item > a.sp-ticker-link",
+              "right": 556,
+              "width": 149
+            },
+            {
+              "selector": "li.sp-ticker-item > a.sp-ticker-link > span.sp-ticker-glyph",
+              "right": 463,
+              "width": 15
+            },
+            {
+              "selector": "a.sp-ticker-link > span.sp-ticker-glyph > svg",
+              "right": 463,
+              "width": 15
+            },
+            {
+              "selector": "span.sp-ticker-glyph > svg > path",
+              "right": 461,
+              "width": 10
+            }
+          ]
+        }
+      },
+      "mobileNav": {
+        "opened": false,
+        "targets": [
+          ""
+        ],
+        "reachable": true
+      },
+      "focus": {
+        "samples": [
+          {
+            "tag": "a",
+            "text": "SKIP TO CONTENT",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(0, 0, 0)",
+            "backgroundColor": "rgb(20, 241, 149)"
+          },
+          {
+            "tag": "a",
+            "text": "Actoria home",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "button",
+            "text": "Connect a Solana wallet",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(153, 69, 255)",
+            "backgroundColor": "rgb(153, 69, 255)"
+          },
+          {
+            "tag": "button",
+            "text": "Open menu",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(41, 41, 45)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "a",
+            "text": "OVERVIEW",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(255, 255, 255) rgb(41, 41, 45) rgb(255, 255, 255) rgb(255, 255, 255)",
+            "backgroundColor": "rgba(11, 11, 12, 0.93)"
+          },
+          {
+            "tag": "a",
+            "text": "QUESTS 0",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(250, 250, 250) rgb(41, 41, 45) rgb(250, 250, 250) rgb(250, 250, 250)",
+            "backgroundColor": "rgba(11, 11, 12, 0.94)"
+          },
+          {
+            "tag": "a",
+            "text": "VOTES 0",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(244, 244, 245) rgb(41, 41, 45) rgb(244, 244, 245) rgb(244, 244, 245)",
+            "backgroundColor": "rgba(11, 11, 12, 0.88)"
+          },
+          {
+            "tag": "a",
+            "text": "TREASURY",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(248, 248, 248) rgb(41, 41, 45) rgb(248, 248, 248) rgb(248, 248, 248)",
+            "backgroundColor": "rgba(11, 11, 12, 0.918)"
+          }
+        ],
+        "visibleCount": 8,
+        "passed": true
+      }
+    }
+  }
+}

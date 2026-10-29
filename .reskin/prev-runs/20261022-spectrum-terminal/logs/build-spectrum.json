@@ -1,0 +1,180 @@
+{
+  "steps": [
+    {
+      "name": "rename",
+      "detail": "555 bg- tokens renamed to sp-"
+    },
+    {
+      "name": "family",
+      "detail": "sp-tags -> sp-filterstrip (5)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-tag--strong -> sp-filtertab--strong (5)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-tag -> sp-filtertab (8)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-board -> sp-band (43)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-sheet -> sp-slab (50)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-readout -> sp-dial (24)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-fork -> sp-door (8)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-wide -> sp-flow (6)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-margin -> sp-tail (6)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-stage -> sp-bands (6)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-runhead -> sp-statement (6)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-btn--fill -> sp-btn--solid (12)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-command-icon -> sp-icon-btn (2)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-frame -> sp-shell (1)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-current -> sp-main (1)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-view -> sp-route (1)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-alerts -> sp-notices (1)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-alert -> sp-notice (17)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-display -> sp-headline (6)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-lede -> sp-deck (6)"
+    },
+    {
+      "name": "family",
+      "detail": "sp-kicker -> sp-eyebrow (12)"
+    },
+    {
+      "name": "shell",
+      "detail": "split-stage aside replaced by masthead + ticker"
+    },
+    {
+      "name": "shell",
+      "detail": "drawer lifted out of the frame"
+    },
+    {
+      "name": "shell",
+      "detail": "status footer and drawer placed after main"
+    },
+    {
+      "name": "tag",
+      "detail": "statement header (7)"
+    },
+    {
+      "name": "wrap",
+      "detail": "statement inner (7)"
+    },
+    {
+      "name": "tag",
+      "detail": "bands section (6)"
+    },
+    {
+      "name": "tag",
+      "detail": "flow (6)"
+    },
+    {
+      "name": "tag",
+      "detail": "tail section (6)"
+    },
+    {
+      "name": "tag",
+      "detail": "board -> article band (9)"
+    },
+    {
+      "name": "wrap",
+      "detail": "band inner (9)"
+    },
+    {
+      "name": "tag",
+      "detail": "band head header (8)"
+    },
+    {
+      "name": "tag",
+      "detail": "slab section (0)"
+    },
+    {
+      "name": "wrap",
+      "detail": "slab inner (7)"
+    },
+    {
+      "name": "tag",
+      "detail": "slab head header (8)"
+    },
+    {
+      "name": "tag",
+      "detail": "sp-ledger list -> ordered list (0)"
+    },
+    {
+      "name": "tag",
+      "detail": "sp-checklist list -> ordered list (1)"
+    },
+    {
+      "name": "tag",
+      "detail": "sp-steps list -> ordered list (0)"
+    },
+    {
+      "name": "tag",
+      "detail": "dials section (1)"
+    },
+    {
+      "name": "tag",
+      "detail": "beats row (1)"
+    },
+    {
+      "name": "tag",
+      "detail": "beat cells (4)"
+    },
+    {
+      "name": "tag",
+      "detail": "doors section (1)"
+    },
+    {
+      "name": "script",
+      "detail": "TickerNav import inserted"
+    }
+  ]
+}

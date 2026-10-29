@@ -1,73 +1,60 @@
-# Wireframe — Ticker Stage (as built)
+# Split Stage wireframe — Rationum
 
-Selected direction: **Spectrum Terminal** (`solana-spectrum`) / **Ticker Stage**
-(`.reskin/style.json`). Original: `sidebar-workspace` — a fixed 88 px icon rail,
-a floating command bar and a two-column split stage on a light canvas.
+Selected direction: **Bubblegum Exchange** (`uniswap-bubblegum`) / **Split Stage**
+(`split-stage`). Original shell: `terminal-console` (linear broadcast with masthead,
+sticky ticker strip and full-width bands).
 
 ## Shell
 
-`src/App.vue` renders one linear frame:
+`src/App.vue` renders one shell for all six hash routes:
 
 ```
-div.sp-shell
-├─ a.sp-skip                        (skip link → #main)
-├─ header.sp-masthead               (banner landmark)
-│  ├─ RailNav.vue   → div.sp-brand   (mark, Act+oria wordmark, tagline)
-│  └─ CommandBar.vue → div.sp-utility (cluster chip, re-read, wallet, menu)
-├─ TickerNav.vue    → nav.sp-ticker  (aria-label="Primary", numbered items)
-├─ main#main.sp-main
-│  ├─ div.sp-notices                (all conditional banners, unchanged)
-│  └─ Transition > section.sp-route
-│     ├─ header.sp-statement        (eyebrow, h1, deck, actions, proof)
-│     └─ section.sp-bands
-│        ├─ section.sp-dials        (four beats of huge figures + foot)
-│        ├─ div.sp-flow             (article.sp-band ledger bands)
-│        └─ section.sp-tail         (wallet / token slabs, notes)
-├─ StatusStrip.vue → footer.sp-status (network + session facts, outlined wordmark)
-├─ template v-if="menuOpen"         (veil + drawer, id stays `ax-drawer`)
-└─ WalletSheet.vue                  (dialog, class-only rewrite)
+div.bz-app
+├── a.bz-skip                      (skip link → #main)
+├── div.bz-frame                   (grid: minmax(330px,42fr) / minmax(0,58fr))
+│   ├── aside.bz-rail              (sticky, 100vh, own scroll)
+│   │   ├── RailNav                brand mark + Ratio/num + tagline
+│   │   ├── TickerNav              vertical numbered index (01–06)
+│   │   ├── div.bz-rail-thesis     per-route kicker, h1, lede, stats, actions, proof
+│   │   ├── CommandBar             cluster chip, re-read, menu, wallet
+│   │   └── StatusStrip            colophon: brand, note, explore, network, session, wordmark, fine print
+│   └── main#main.bz-stage         (scrolling 58% stage)
+│       ├── div.bz-alerts          preview / paused / error / reading notices
+│       └── Transition(page)
+│           └── section.bz-view
+│               └── div.bz-sheet   (per-route body)
+├── drawer (menuOpen)
+├── toast (txState)
+└── WalletSheet (walletPickerOpen)
 ```
 
-## Composition per route
+## Route mapping
 
-| Route | Statement band | Bands (in order) |
-|---|---|---|
-| `/` (home) | eyebrow, "Time on the record.", deck, two actions, three proof items | readout beats, quests ledger, votes ledger with tally, two doors, wallet + token tail, notes |
-| `#quests` | running head + deck | filter strip, quest ledger rows, steward publish form |
-| `#governance` | running head + deck | filter strip, ballot ledger with split tallies, compose form |
-| `#treasury` | running head + deck | meter beats, receipt statement, activity ledger, address tail |
-| `#stake` | running head + deck | status definitions, numbered dependency steps, warning note |
-| `#learn` | running head + deck | numbered route, checklist, question list |
+| Route | Narrative column (sticky) | Scrolling stage |
+| --- | --- | --- |
+| `#home` | Kicker `SOLANA_NETWORK_NAME · open record`, h1 *Time on the record.*, deck, two primary buttons, three proof facts | Four-figure readout, newest-quest ledger, votes-on-the-floor ledger with leading-proposal tally, two doors, wallet + token note cards |
+| `#quests` | Kicker *Participation*, h1 *Find your part in it.*, deck, row/preview stats | Search + filter toolbar, quest entry panels, steward publish form, wallet hint |
+| `#governance` | Kicker *Advisory votes*, h1 *Put it to the room.*, deck, proposal stats | Ballot panels with split tallies, compose form, wallet hint |
+| `#treasury` | Kicker *Public reads*, h1 *Nothing hidden in the books.*, deck, network stat | Four meter tiles, receipt rows, activity ledger, address note card |
+| `#stake` | Kicker *Token details*, h1 *No token is wired up.*, deck, "not configured" stat | Token status facts, dependency steps, wallet hint |
+| `#learn` | Kicker *The field guide*, h1 *A way in. A way to check.*, deck, network stat | Numbered steps, FAQ accordion (+/− markers), checklist, connect CTA |
 
-Every band is full width with a hairline rule and a ghost section index; nothing
-keeps the old card surface or the old two-column stage.
+## Components
 
-## Navigation
+| Old | New | Notes |
+| --- | --- | --- |
+| `RailNav.vue` (masthead brand) | brand plate (`bz-mast`) | mark + split wordmark + tagline |
+| `TickerNav.vue` (horizontal ticker) | vertical index (`bz-index`, `bz-index-link`) | numbered 01–06, `aria-current="page"` |
+| `CommandBar.vue` (floating command bar) | wallet dock (`bz-dock`) | same props/emits, cluster chip + icon buttons + wallet |
+| `StatusStrip.vue` (status footer) | colophon (`bz-colophon`) | same content moved into the narrative column |
+| `WalletSheet.vue` (modal sheet) | wallet picker (`bz-picker`) | same dialog semantics and handlers |
 
-A sticky horizontal ticker under the masthead. Each item carries a CSS-counter
-index (no new text node), a glyph and the existing route label; the active route
-gets a mint underline and `aria-current="page"`. On mobile the ticker scrolls
-horizontally and remains keyboard reachable; the drawer keeps the full list.
+## Tokens and breakpoints
 
-## CSS
-
-- `src/styles/spectrum.css` — the only imported stylesheet (tokens, base,
-  component grammar, responsive rules). `src/styles/bubblegum.css` is retired to
-  `.reskin/retired/bubblegum.css` and is no longer in `src/` or imported.
-- Namespace `sp-` everywhere; zero shared class tokens with the old `bg-` skin.
-- Tokens: black ground `#000`, ink `#fff`, muted `#a6a6aa`, violet `#9945ff`,
-  mint `#14f195`, hairline `#29292d`; display "Arial Narrow" stack at 800 with
-  -0.055em tracking; mono labels at 0.2em tracking; radii 0–4px.
-- Breakpoints: 1080px (beats 2-up), 820px (single column doors/forms, ticker
-  scroll), 560px (one beat per row, stacked notice action).
-
-## Kept / removed
-
-- Removed from the render path: the aside narrative column, the icon rail
-  (RailNav tab list), the floating command bar, the two-column split stage, the
-  light bubblegum token skin and every `bg-` class.
-- Kept as content-only children: every route block, conditional branch, drawer,
-  wallet sheet, toast, alerts and every binding/handler.
-- New: `TickerNav.vue`; `RailNav.vue`, `CommandBar.vue`, `StatusStrip.vue` and
-  `WalletSheet.vue` rewritten as presentational pieces with the same props and
-  emitted events.
+- New global stylesheet: `src/styles/split-stage.css`, imported from `src/main.js`.
+- Token namespace `--bz-*` (bg, surface, ink, muted, signal, signal-safe, bubble, line,
+  radii, shadow, motion, spacing). Old `spectrum.css` removed from `src/` to
+  `.reskin/retired/spectrum.css` and no longer imported.
+- Breakpoints: `1180px` (figures 2-up, notes 1-up), `900px` (single column; rail becomes a
+  static header block, index becomes a horizontal scroll strip), `520px` (single-column
+  figures, compact ledger rows, stacked alert action, full-width wallet dock).

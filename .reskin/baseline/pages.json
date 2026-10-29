@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "baseline",
-  "generatedAt": "2026-10-21T13:44:53.744Z",
+  "generatedAt": "2026-10-22T15:20:52.924Z",
   "baseUrl": "http://127.0.0.1:4317/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
@@ -15,10 +15,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Actoria — Time on the record.",
+          "title": "Rationum — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2418,
+          "bodyTextLength": 2424,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 30
@@ -45,7 +45,7 @@
             "count": 1
           },
           {
-            "word": "21",
+            "word": "22",
             "count": 1
           },
           {
@@ -61,19 +61,7 @@
             "count": 1
           },
           {
-            "word": "Act",
-            "count": 3
-          },
-          {
             "word": "actions",
-            "count": 1
-          },
-          {
-            "word": "Actoria",
-            "count": 2
-          },
-          {
-            "word": "actoria.xyz",
             "count": 1
           },
           {
@@ -409,6 +397,10 @@
             "count": 3
           },
           {
+            "word": "num",
+            "count": 3
+          },
+          {
             "word": "Oct",
             "count": 1
           },
@@ -443,10 +435,6 @@
           {
             "word": "or",
             "count": 4
-          },
-          {
-            "word": "oria",
-            "count": 3
           },
           {
             "word": "out",
@@ -531,6 +519,18 @@
           {
             "word": "Quests",
             "count": 3
+          },
+          {
+            "word": "Ratio",
+            "count": 3
+          },
+          {
+            "word": "Rationum",
+            "count": 2
+          },
+          {
+            "word": "rationum.xyz",
+            "count": 1
           },
           {
             "word": "read",
@@ -745,6 +745,10 @@
             "count": 1
           },
           {
+            "word": "Thu",
+            "count": 1
+          },
+          {
             "word": "Time",
             "count": 3
           },
@@ -817,10 +821,6 @@
             "count": 1
           },
           {
-            "word": "Wed",
-            "count": 1
-          },
-          {
             "word": "Weigh",
             "count": 1
           },
@@ -879,10 +879,6 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Actoria home",
-            "count": 1
-          },
-          {
             "key": "aria-label=Connect a Solana wallet",
             "count": 1
           },
@@ -895,6 +891,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Marginal notes",
+            "count": 1
+          },
+          {
             "key": "aria-label=Open menu",
             "count": 1
           },
@@ -903,7 +903,15 @@
             "count": 1
           },
           {
+            "key": "aria-label=Rationum home",
+            "count": 1
+          },
+          {
             "key": "aria-label=Re-read testnet data",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Record bands",
             "count": 1
           },
           {
@@ -946,192 +954,203 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "bg-actions",
-          "bg-alert",
-          "bg-alert-action",
-          "bg-alert-copy",
-          "bg-alert-glyph",
-          "bg-alerts",
-          "bg-board",
-          "bg-board-body",
-          "bg-board-head",
-          "bg-board-title",
-          "bg-brandline",
-          "bg-brandline-accent",
-          "bg-brandline-mark",
-          "bg-brandline-tag",
-          "bg-brandline-text",
-          "bg-brandline-word",
-          "bg-btn",
-          "bg-btn--fill",
-          "bg-btn--ghost",
-          "bg-btn--lg",
-          "bg-btn--line",
-          "bg-btn--sm",
-          "bg-btn--wide",
-          "bg-colophon",
-          "bg-colophon-accent",
-          "bg-colophon-brand",
-          "bg-colophon-col",
-          "bg-colophon-cols",
-          "bg-colophon-facts",
-          "bg-colophon-fine",
-          "bg-colophon-links",
-          "bg-colophon-mark",
-          "bg-colophon-name",
-          "bg-colophon-note",
-          "bg-colophon-tag",
-          "bg-colophon-word",
-          "bg-colophon-word-accent",
-          "bg-console",
-          "bg-console-chip",
-          "bg-console-icon",
-          "bg-console-pulse",
-          "bg-console-rule",
-          "bg-console-tools",
-          "bg-console-top",
-          "bg-current",
-          "bg-display",
-          "bg-fact",
-          "bg-fact--muted",
-          "bg-factlist",
-          "bg-facts",
-          "bg-fork",
-          "bg-fork--ballot",
-          "bg-fork-foot",
-          "bg-fork-glyph",
-          "bg-forks",
-          "bg-frame",
-          "bg-index",
-          "bg-index-glyph",
-          "bg-index-label",
-          "bg-index-link",
-          "bg-index-list",
-          "bg-index-rule",
-          "bg-kicker",
-          "bg-kicker-dot",
-          "bg-lede",
-          "bg-ledger",
-          "bg-ledger-go",
-          "bg-ledger-index",
-          "bg-ledger-main",
-          "bg-ledger-note",
-          "bg-ledger-row",
-          "bg-ledger-title",
-          "bg-link",
-          "bg-live-dot",
-          "bg-live-dot--idle",
-          "bg-margin",
-          "bg-narrative",
-          "bg-note",
-          "bg-pill",
-          "bg-readout",
-          "bg-readout-cell",
-          "bg-readout-date",
-          "bg-readout-foot",
-          "bg-readout-grid",
-          "bg-readout-head",
-          "bg-readout-label",
-          "bg-readout-note",
-          "bg-readout-title",
-          "bg-readout-value",
-          "bg-readout-value--text",
-          "bg-runhead",
-          "bg-sheet",
-          "bg-sheet-body",
-          "bg-sheet-body--flush",
-          "bg-sheet-foot",
-          "bg-sheet-head",
-          "bg-sheet-note",
-          "bg-sheet-title",
-          "bg-skip",
-          "bg-spin",
-          "bg-stage",
-          "bg-tally",
-          "bg-tally-key",
-          "bg-tally-key--against",
-          "bg-tally-keys",
-          "bg-view",
-          "bg-wide"
+          "sp-actions",
+          "sp-band",
+          "sp-band-body",
+          "sp-band-head",
+          "sp-band-inner",
+          "sp-band-title",
+          "sp-bands",
+          "sp-beat",
+          "sp-beats",
+          "sp-brand",
+          "sp-brand-accent",
+          "sp-brand-link",
+          "sp-brand-mark",
+          "sp-brand-tag",
+          "sp-brand-text",
+          "sp-brand-word",
+          "sp-btn",
+          "sp-btn--ghost",
+          "sp-btn--lg",
+          "sp-btn--line",
+          "sp-btn--sm",
+          "sp-btn--solid",
+          "sp-btn--wide",
+          "sp-deck",
+          "sp-dial-date",
+          "sp-dial-foot",
+          "sp-dial-head",
+          "sp-dial-label",
+          "sp-dial-note",
+          "sp-dial-title",
+          "sp-dial-value",
+          "sp-dial-value--text",
+          "sp-dials",
+          "sp-door",
+          "sp-door--ballot",
+          "sp-door-foot",
+          "sp-door-glyph",
+          "sp-doors",
+          "sp-eyebrow",
+          "sp-eyebrow-dot",
+          "sp-fact",
+          "sp-fact--muted",
+          "sp-factlist",
+          "sp-facts",
+          "sp-flow",
+          "sp-headline",
+          "sp-icon-btn",
+          "sp-ledger",
+          "sp-ledger-go",
+          "sp-ledger-index",
+          "sp-ledger-main",
+          "sp-ledger-note",
+          "sp-ledger-row",
+          "sp-ledger-title",
+          "sp-link",
+          "sp-live-dot",
+          "sp-live-dot--idle",
+          "sp-main",
+          "sp-masthead",
+          "sp-note",
+          "sp-notice",
+          "sp-notice-action",
+          "sp-notice-copy",
+          "sp-notice-glyph",
+          "sp-notices",
+          "sp-pill",
+          "sp-route",
+          "sp-shell",
+          "sp-skip",
+          "sp-slab",
+          "sp-slab-body",
+          "sp-slab-body--flush",
+          "sp-slab-foot",
+          "sp-slab-head",
+          "sp-slab-inner",
+          "sp-slab-note",
+          "sp-slab-title",
+          "sp-spin",
+          "sp-statement",
+          "sp-statement-inner",
+          "sp-status",
+          "sp-status-accent",
+          "sp-status-brand",
+          "sp-status-col",
+          "sp-status-cols",
+          "sp-status-facts",
+          "sp-status-fine",
+          "sp-status-links",
+          "sp-status-mark",
+          "sp-status-name",
+          "sp-status-note",
+          "sp-status-tag",
+          "sp-status-top",
+          "sp-status-word",
+          "sp-status-word-accent",
+          "sp-tail",
+          "sp-tally",
+          "sp-tally-key",
+          "sp-tally-key--against",
+          "sp-tally-keys",
+          "sp-ticker",
+          "sp-ticker-glyph",
+          "sp-ticker-item",
+          "sp-ticker-label",
+          "sp-ticker-link",
+          "sp-ticker-list",
+          "sp-utility",
+          "sp-utility-chip",
+          "sp-utility-pulse"
         ],
         "fingerprint": [
           "a@5:0",
           "a@7:2",
-          "a@9:2",
+          "a@8:2",
           "article@10:4+",
-          "aside@5:3",
-          "b@11:0",
-          "b@13:0",
+          "article@9:1",
+          "b@10:0",
           "b@14:0",
-          "button@10:0",
+          "b@15:0",
+          "button@10:1",
           "button@11:1",
           "button@12:1",
-          "button@12:4+",
+          "button@13:4+",
+          "button@7:1",
+          "button@7:2",
           "button@8:1",
-          "button@9:1",
-          "button@9:2",
-          "dd@13:0",
-          "div@10:1",
+          "button@9:0",
+          "dd@14:0",
           "div@10:2",
           "div@10:3",
           "div@10:4+",
           "div@11:1",
-          "div@11:2",
           "div@11:3",
           "div@12:2",
+          "div@12:3",
+          "div@13:2",
           "div@3:1",
-          "div@4:3",
+          "div@4:4+",
           "div@6:1",
-          "div@7:1",
+          "div@6:2",
+          "div@6:3",
+          "div@6:4+",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:2",
-          "div@8:3",
           "div@8:4+",
           "div@9:2",
-          "div@9:4+",
-          "dl@11:4+",
-          "dt@13:0",
-          "em@9:0",
-          "footer@6:4+",
-          "h1@8:2",
+          "dl@12:4+",
+          "dt@14:0",
+          "em@10:0",
+          "footer@5:4+",
+          "h1@9:2",
           "h2@11:0",
-          "h3@9:0",
-          "i@9:0",
+          "h2@12:0",
+          "h3@8:0",
+          "header@11:2",
+          "header@5:2",
+          "header@7:1",
+          "i@8:0",
           "img@9:0",
-          "li@11:1",
-          "li@8:1",
-          "li@9:2",
+          "li@10:2",
+          "li@12:1",
+          "li@7:1",
           "main@5:2",
-          "nav@6:3",
-          "nav@9:4+",
-          "ol@7:4+",
+          "nav@5:1",
+          "nav@8:4+",
+          "ol@6:4+",
           "p@11:0",
+          "p@12:0",
           "p@7:0",
           "p@8:0",
-          "p@8:1",
           "p@9:0",
+          "p@9:1",
           "path@10:0",
           "path@11:0",
           "path@12:0",
           "path@13:0",
           "path@14:0",
-          "path@15:0",
+          "path@16:0",
+          "path@9:0",
           "section@6:2",
+          "section@7:2",
+          "section@8:3",
+          "section@9:1",
           "section@9:2",
           "section@9:3",
-          "small@14:0",
+          "small@15:0",
           "span@10:0",
-          "span@10:1",
           "span@11:0",
           "span@11:1",
           "span@12:0",
-          "span@12:1",
-          "span@13:0",
           "span@13:1",
-          "span@13:2",
+          "span@14:0",
+          "span@14:1",
+          "span@14:2",
           "span@7:0",
+          "span@7:1",
           "span@8:0",
           "span@8:1",
           "span@8:2",
@@ -1144,159 +1163,143 @@
           "svg@11:1",
           "svg@12:1",
           "svg@13:1",
-          "svg@14:1",
+          "svg@15:1",
+          "svg@8:1",
           "svg@9:1",
-          "ul@10:1",
-          "ul@10:3",
-          "ul@8:3"
+          "ul@11:1",
+          "ul@11:3",
+          "ul@9:3"
         ],
         "landmarks": [
           {
-            "tag": "aside",
+            "tag": "header",
             "role": "",
-            "top": 0,
+            "top": -21,
             "left": 0,
-            "width": 547,
-            "height": 900
+            "width": 1440,
+            "height": 81
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 34,
-            "left": 34,
-            "width": 478,
-            "height": 346
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 501,
-            "left": 34,
-            "width": 478,
-            "height": 365
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 606,
-            "left": 34,
-            "width": 231,
-            "height": 43
+            "top": 60,
+            "left": 0,
+            "width": 1440,
+            "height": 48
           },
           {
             "tag": "main",
             "role": "",
-            "top": -2,
-            "left": 547,
-            "width": 893,
-            "height": 1826
+            "top": 108,
+            "left": 0,
+            "width": 1440,
+            "height": 2431
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 177,
+            "left": 0,
+            "width": 1440,
+            "height": 634
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1107,
+            "left": 58,
+            "width": 1325,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1463,
+            "left": 58,
+            "width": 1325,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2059,
+            "left": 58,
+            "width": 920,
+            "height": 17
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2328,
+            "left": 58,
+            "width": 920,
+            "height": 26
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 2539,
+            "left": 0,
+            "width": 1440,
+            "height": 519
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 2718,
+            "left": 58,
+            "width": 426,
+            "height": 17
           }
         ],
         "colors": [
           {
-            "hex": "#0d0d0d",
-            "count": 139
-          },
-          {
-            "hex": "#6d6a70",
-            "count": 99
-          },
-          {
-            "hex": "#c2005d",
-            "count": 49
-          },
-          {
             "hex": "#ffffff",
-            "count": 20
+            "count": 142
           },
           {
-            "hex": "#ff4da6",
-            "count": 12
+            "hex": "#a6a6aa",
+            "count": 129
           },
           {
-            "hex": "#f9f8fa",
-            "count": 6
+            "hex": "#14f195",
+            "count": 32
           },
           {
-            "hex": "#e6006f",
-            "count": 5
+            "hex": "#9945ff",
+            "count": 9
           },
           {
-            "hex": "#7a4e00",
-            "count": 4
+            "hex": "#000000",
+            "count": 8
           },
           {
-            "hex": "#f2eef3",
+            "hex": "#0b0b0c",
             "count": 2
           },
           {
-            "hex": "#e9e4eb",
+            "hex": "#161618",
+            "count": 1
+          },
+          {
+            "hex": "#29292d",
+            "count": 1
+          },
+          {
+            "hex": "#ff6b86",
             "count": 1
           }
         ],
-        "contrast": [
-          {
-            "selector": "li > button.bg-ledger-row > span.bg-pill",
-            "text": "Sample",
-            "ratio": 2.73,
-            "required": 4.5,
-            "fontSize": 9.5,
-            "weight": 400,
-            "color": "rgb(255, 77, 166)",
-            "background": "#ffedf6"
-          },
-          {
-            "selector": "li > button.bg-ledger-row > span.bg-pill",
-            "text": "Sample",
-            "ratio": 2.73,
-            "required": 4.5,
-            "fontSize": 9.5,
-            "weight": 400,
-            "color": "rgb(255, 77, 166)",
-            "background": "#ffedf6"
-          },
-          {
-            "selector": "li > button.bg-ledger-row > span.bg-pill",
-            "text": "Sample",
-            "ratio": 2.73,
-            "required": 4.5,
-            "fontSize": 9.5,
-            "weight": 400,
-            "color": "rgb(255, 77, 166)",
-            "background": "#ffedf6"
-          },
-          {
-            "selector": "li > button.bg-ledger-row > span.bg-pill",
-            "text": "Sample",
-            "ratio": 2.73,
-            "required": 4.5,
-            "fontSize": 9.5,
-            "weight": 400,
-            "color": "rgb(255, 77, 166)",
-            "background": "#ffedf6"
-          }
-        ],
+        "contrast": [],
         "contrastChecked": 114,
         "headings": [
-          {
-            "tag": "h3",
-            "text": "EXPLORE"
-          },
-          {
-            "tag": "h3",
-            "text": "NETWORK"
-          },
-          {
-            "tag": "h3",
-            "text": "SESSION"
-          },
           {
             "tag": "h1",
             "text": "Time on the record."
           },
           {
             "tag": "h2",
-            "text": "On the record today"
+            "text": "ON THE RECORD TODAY"
           },
           {
             "tag": "h2",
@@ -1321,6 +1324,18 @@
           {
             "tag": "h2",
             "text": "TOKEN"
+          },
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
           }
         ],
         "navTargets": [
@@ -1345,10 +1360,10 @@
       },
       "mobile": {
         "meta": {
-          "title": "Actoria — Time on the record.",
+          "title": "Rationum — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2413,
+          "bodyTextLength": 2400,
           "scrollWidth": 390,
           "clientWidth": 390,
           "focusableCount": 30
@@ -1371,19 +1386,19 @@
             "count": 1
           },
           {
+            "word": "11:20:56",
+            "count": 1
+          },
+          {
             "word": "2026",
             "count": 1
           },
           {
-            "word": "21",
+            "word": "22",
             "count": 1
           },
           {
             "word": "3",
-            "count": 1
-          },
-          {
-            "word": "9:44:57",
             "count": 1
           },
           {
@@ -1395,19 +1410,7 @@
             "count": 1
           },
           {
-            "word": "Act",
-            "count": 2
-          },
-          {
             "word": "actions",
-            "count": 1
-          },
-          {
-            "word": "Actoria",
-            "count": 2
-          },
-          {
-            "word": "actoria.xyz",
             "count": 1
           },
           {
@@ -1739,6 +1742,10 @@
             "count": 3
           },
           {
+            "word": "num",
+            "count": 3
+          },
+          {
             "word": "Oct",
             "count": 1
           },
@@ -1773,10 +1780,6 @@
           {
             "word": "or",
             "count": 4
-          },
-          {
-            "word": "oria",
-            "count": 2
           },
           {
             "word": "out",
@@ -1865,6 +1868,18 @@
           {
             "word": "Quests",
             "count": 3
+          },
+          {
+            "word": "Ratio",
+            "count": 3
+          },
+          {
+            "word": "Rationum",
+            "count": 2
+          },
+          {
+            "word": "rationum.xyz",
+            "count": 1
           },
           {
             "word": "read",
@@ -1956,7 +1971,7 @@
           },
           {
             "word": "Sample",
-            "count": 9
+            "count": 5
           },
           {
             "word": "season",
@@ -2079,6 +2094,10 @@
             "count": 1
           },
           {
+            "word": "Thu",
+            "count": 1
+          },
+          {
             "word": "Time",
             "count": 3
           },
@@ -2151,10 +2170,6 @@
             "count": 1
           },
           {
-            "word": "Wed",
-            "count": 1
-          },
-          {
             "word": "Weigh",
             "count": 1
           },
@@ -2213,10 +2228,6 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Actoria home",
-            "count": 1
-          },
-          {
             "key": "aria-label=Connect a Solana wallet",
             "count": 1
           },
@@ -2229,6 +2240,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Marginal notes",
+            "count": 1
+          },
+          {
             "key": "aria-label=Open menu",
             "count": 1
           },
@@ -2237,7 +2252,15 @@
             "count": 1
           },
           {
+            "key": "aria-label=Rationum home",
+            "count": 1
+          },
+          {
             "key": "aria-label=Re-read testnet data",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Record bands",
             "count": 1
           },
           {
@@ -2280,186 +2303,203 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "bg-actions",
-          "bg-alert",
-          "bg-alert-action",
-          "bg-alert-copy",
-          "bg-alert-glyph",
-          "bg-alerts",
-          "bg-board",
-          "bg-board-body",
-          "bg-board-head",
-          "bg-board-title",
-          "bg-brandline",
-          "bg-brandline-accent",
-          "bg-brandline-mark",
-          "bg-brandline-tag",
-          "bg-brandline-text",
-          "bg-brandline-word",
-          "bg-btn",
-          "bg-btn--fill",
-          "bg-btn--ghost",
-          "bg-btn--lg",
-          "bg-btn--line",
-          "bg-btn--sm",
-          "bg-btn--wide",
-          "bg-colophon",
-          "bg-colophon-accent",
-          "bg-colophon-brand",
-          "bg-colophon-col",
-          "bg-colophon-cols",
-          "bg-colophon-facts",
-          "bg-colophon-fine",
-          "bg-colophon-links",
-          "bg-colophon-mark",
-          "bg-colophon-name",
-          "bg-colophon-note",
-          "bg-colophon-tag",
-          "bg-console",
-          "bg-console-chip",
-          "bg-console-icon",
-          "bg-console-pulse",
-          "bg-console-rule",
-          "bg-console-tools",
-          "bg-console-top",
-          "bg-current",
-          "bg-display",
-          "bg-fact",
-          "bg-fact--muted",
-          "bg-factlist",
-          "bg-facts",
-          "bg-fork",
-          "bg-fork--ballot",
-          "bg-fork-foot",
-          "bg-fork-glyph",
-          "bg-forks",
-          "bg-frame",
-          "bg-index",
-          "bg-index-glyph",
-          "bg-index-label",
-          "bg-index-link",
-          "bg-index-list",
-          "bg-index-rule",
-          "bg-kicker",
-          "bg-kicker-dot",
-          "bg-lede",
-          "bg-ledger",
-          "bg-ledger-index",
-          "bg-ledger-main",
-          "bg-ledger-note",
-          "bg-ledger-row",
-          "bg-ledger-title",
-          "bg-link",
-          "bg-live-dot",
-          "bg-live-dot--idle",
-          "bg-margin",
-          "bg-narrative",
-          "bg-note",
-          "bg-pill",
-          "bg-readout",
-          "bg-readout-cell",
-          "bg-readout-date",
-          "bg-readout-foot",
-          "bg-readout-grid",
-          "bg-readout-head",
-          "bg-readout-label",
-          "bg-readout-note",
-          "bg-readout-title",
-          "bg-readout-value",
-          "bg-readout-value--text",
-          "bg-runhead",
-          "bg-sheet",
-          "bg-sheet-body",
-          "bg-sheet-body--flush",
-          "bg-sheet-foot",
-          "bg-sheet-head",
-          "bg-sheet-note",
-          "bg-sheet-title",
-          "bg-skip",
-          "bg-spin",
-          "bg-stage",
-          "bg-tally",
-          "bg-tally-key",
-          "bg-tally-key--against",
-          "bg-tally-keys",
-          "bg-view",
-          "bg-wide"
+          "sp-actions",
+          "sp-band",
+          "sp-band-body",
+          "sp-band-head",
+          "sp-band-inner",
+          "sp-band-title",
+          "sp-bands",
+          "sp-beat",
+          "sp-beats",
+          "sp-brand",
+          "sp-brand-accent",
+          "sp-brand-link",
+          "sp-brand-mark",
+          "sp-brand-tag",
+          "sp-brand-text",
+          "sp-brand-word",
+          "sp-btn",
+          "sp-btn--ghost",
+          "sp-btn--lg",
+          "sp-btn--line",
+          "sp-btn--sm",
+          "sp-btn--solid",
+          "sp-btn--wide",
+          "sp-deck",
+          "sp-dial-date",
+          "sp-dial-foot",
+          "sp-dial-head",
+          "sp-dial-label",
+          "sp-dial-note",
+          "sp-dial-title",
+          "sp-dial-value",
+          "sp-dial-value--text",
+          "sp-dials",
+          "sp-door",
+          "sp-door--ballot",
+          "sp-door-foot",
+          "sp-door-glyph",
+          "sp-doors",
+          "sp-eyebrow",
+          "sp-eyebrow-dot",
+          "sp-fact",
+          "sp-fact--muted",
+          "sp-factlist",
+          "sp-facts",
+          "sp-flow",
+          "sp-headline",
+          "sp-icon-btn",
+          "sp-ledger",
+          "sp-ledger-go",
+          "sp-ledger-index",
+          "sp-ledger-main",
+          "sp-ledger-note",
+          "sp-ledger-row",
+          "sp-ledger-title",
+          "sp-link",
+          "sp-live-dot",
+          "sp-live-dot--idle",
+          "sp-main",
+          "sp-masthead",
+          "sp-note",
+          "sp-notice",
+          "sp-notice-action",
+          "sp-notice-copy",
+          "sp-notice-glyph",
+          "sp-notices",
+          "sp-pill",
+          "sp-route",
+          "sp-shell",
+          "sp-skip",
+          "sp-slab",
+          "sp-slab-body",
+          "sp-slab-body--flush",
+          "sp-slab-foot",
+          "sp-slab-head",
+          "sp-slab-inner",
+          "sp-slab-note",
+          "sp-slab-title",
+          "sp-spin",
+          "sp-statement",
+          "sp-statement-inner",
+          "sp-status",
+          "sp-status-accent",
+          "sp-status-brand",
+          "sp-status-col",
+          "sp-status-cols",
+          "sp-status-facts",
+          "sp-status-fine",
+          "sp-status-links",
+          "sp-status-mark",
+          "sp-status-name",
+          "sp-status-note",
+          "sp-status-tag",
+          "sp-status-top",
+          "sp-status-word",
+          "sp-status-word-accent",
+          "sp-tail",
+          "sp-tally",
+          "sp-tally-key",
+          "sp-tally-key--against",
+          "sp-tally-keys",
+          "sp-ticker",
+          "sp-ticker-glyph",
+          "sp-ticker-item",
+          "sp-ticker-label",
+          "sp-ticker-link",
+          "sp-ticker-list",
+          "sp-utility",
+          "sp-utility-chip",
+          "sp-utility-pulse"
         ],
         "fingerprint": [
           "a@5:0",
           "a@7:2",
-          "a@9:2",
+          "a@8:2",
           "article@10:4+",
-          "aside@5:3",
-          "b@11:0",
-          "b@13:0",
+          "article@9:1",
+          "b@10:0",
           "b@14:0",
-          "button@10:0",
+          "b@15:0",
+          "button@10:1",
           "button@11:1",
           "button@12:1",
-          "button@12:4+",
+          "button@13:4+",
+          "button@7:1",
+          "button@7:2",
           "button@8:1",
-          "button@9:1",
-          "button@9:2",
-          "dd@13:0",
-          "div@10:1",
+          "button@9:0",
+          "dd@14:0",
           "div@10:2",
           "div@10:3",
           "div@10:4+",
           "div@11:1",
-          "div@11:2",
           "div@11:3",
           "div@12:2",
+          "div@12:3",
+          "div@13:2",
           "div@3:1",
-          "div@4:3",
+          "div@4:4+",
           "div@6:1",
+          "div@6:2",
+          "div@6:3",
+          "div@6:4+",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:2",
-          "div@8:3",
           "div@8:4+",
           "div@9:2",
-          "div@9:4+",
-          "dl@11:4+",
-          "dt@13:0",
-          "em@9:0",
-          "footer@6:4+",
-          "h1@8:2",
+          "dl@12:4+",
+          "dt@14:0",
+          "em@10:0",
+          "footer@5:4+",
+          "h1@9:2",
           "h2@11:0",
-          "h3@9:0",
-          "i@9:0",
+          "h2@12:0",
+          "h3@8:0",
+          "header@11:2",
+          "header@5:2",
+          "header@7:1",
+          "i@8:0",
           "img@9:0",
-          "li@11:1",
-          "li@8:1",
-          "li@9:2",
+          "li@10:2",
+          "li@12:1",
+          "li@7:1",
           "main@5:2",
-          "nav@6:3",
-          "nav@9:4+",
-          "ol@7:4+",
+          "nav@5:1",
+          "nav@8:4+",
+          "ol@6:4+",
           "p@11:0",
+          "p@12:0",
           "p@7:0",
           "p@8:0",
-          "p@8:1",
           "p@9:0",
+          "p@9:1",
           "path@10:0",
           "path@11:0",
           "path@12:0",
           "path@13:0",
           "path@14:0",
+          "path@16:0",
+          "path@9:0",
           "section@6:2",
+          "section@7:2",
+          "section@8:3",
+          "section@9:1",
           "section@9:2",
           "section@9:3",
-          "small@14:0",
+          "small@15:0",
           "span@10:0",
-          "span@10:1",
           "span@11:0",
           "span@11:1",
           "span@12:0",
-          "span@12:1",
-          "span@13:0",
-          "span@13:2",
+          "span@13:1",
+          "span@14:0",
+          "span@14:1",
+          "span@14:2",
           "span@7:0",
+          "span@7:1",
           "span@8:0",
           "span@8:1",
           "span@8:2",
@@ -2472,158 +2512,143 @@
           "svg@11:1",
           "svg@12:1",
           "svg@13:1",
+          "svg@15:1",
+          "svg@8:1",
           "svg@9:1",
-          "ul@10:1",
-          "ul@10:3",
-          "ul@8:3"
+          "ul@11:1",
+          "ul@11:3",
+          "ul@9:3"
         ],
         "landmarks": [
           {
-            "tag": "aside",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 611
+            "height": 123
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 20,
-            "left": 18,
-            "width": 354,
-            "height": 130
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 239,
-            "left": 18,
-            "width": 354,
-            "height": 351
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 361,
-            "left": 18,
-            "width": 169,
-            "height": 43
+            "top": 123,
+            "left": 0,
+            "width": 390,
+            "height": 48
           },
           {
             "tag": "main",
             "role": "",
-            "top": 611,
+            "top": 171,
             "left": 0,
             "width": 390,
-            "height": 2840
+            "height": 2868
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 330,
+            "left": 0,
+            "width": 390,
+            "height": 466
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1375,
+            "left": 18,
+            "width": 354,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 1691,
+            "left": 18,
+            "width": 354,
+            "height": 30
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2500,
+            "left": 18,
+            "width": 354,
+            "height": 17
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 2756,
+            "left": 18,
+            "width": 354,
+            "height": 26
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 3038,
+            "left": 0,
+            "width": 390,
+            "height": 693
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 3250,
+            "left": 18,
+            "width": 354,
+            "height": 17
           }
         ],
         "colors": [
           {
-            "hex": "#0d0d0d",
-            "count": 139
-          },
-          {
-            "hex": "#6d6a70",
-            "count": 87
-          },
-          {
-            "hex": "#c2005d",
-            "count": 49
-          },
-          {
             "hex": "#ffffff",
-            "count": 25
+            "count": 142
           },
           {
-            "hex": "#ff4da6",
-            "count": 12
+            "hex": "#a6a6aa",
+            "count": 125
           },
           {
-            "hex": "#f9f8fa",
-            "count": 6
+            "hex": "#14f195",
+            "count": 32
           },
           {
-            "hex": "#7a4e00",
-            "count": 4
+            "hex": "#9945ff",
+            "count": 9
           },
           {
-            "hex": "#e6006f",
-            "count": 4
+            "hex": "#000000",
+            "count": 8
           },
           {
-            "hex": "#e9e4eb",
+            "hex": "#0b0b0c",
+            "count": 2
+          },
+          {
+            "hex": "#161618",
             "count": 1
           },
           {
-            "hex": "#f2eef3",
+            "hex": "#29292d",
+            "count": 1
+          },
+          {
+            "hex": "#ff6b86",
             "count": 1
           }
         ],
-        "contrast": [
-          {
-            "selector": "li > button.bg-ledger-row > span.bg-pill",
-            "text": "Sample",
-            "ratio": 2.73,
-            "required": 4.5,
-            "fontSize": 9.5,
-            "weight": 400,
-            "color": "rgb(255, 77, 166)",
-            "background": "#ffedf6"
-          },
-          {
-            "selector": "li > button.bg-ledger-row > span.bg-pill",
-            "text": "Sample",
-            "ratio": 2.73,
-            "required": 4.5,
-            "fontSize": 9.5,
-            "weight": 400,
-            "color": "rgb(255, 77, 166)",
-            "background": "#ffedf6"
-          },
-          {
-            "selector": "li > button.bg-ledger-row > span.bg-pill",
-            "text": "Sample",
-            "ratio": 2.73,
-            "required": 4.5,
-            "fontSize": 9.5,
-            "weight": 400,
-            "color": "rgb(255, 77, 166)",
-            "background": "#ffedf6"
-          },
-          {
-            "selector": "li > button.bg-ledger-row > span.bg-pill",
-            "text": "Sample",
-            "ratio": 2.73,
-            "required": 4.5,
-            "fontSize": 9.5,
-            "weight": 400,
-            "color": "rgb(255, 77, 166)",
-            "background": "#ffedf6"
-          }
-        ],
-        "contrastChecked": 114,
+        "contrast": [],
+        "contrastChecked": 110,
         "headings": [
-          {
-            "tag": "h3",
-            "text": "EXPLORE"
-          },
-          {
-            "tag": "h3",
-            "text": "NETWORK"
-          },
-          {
-            "tag": "h3",
-            "text": "SESSION"
-          },
           {
             "tag": "h1",
             "text": "Time on the record."
           },
           {
             "tag": "h2",
-            "text": "On the record today"
+            "text": "ON THE RECORD TODAY"
           },
           {
             "tag": "h2",
@@ -2648,6 +2673,18 @@
           {
             "tag": "h2",
             "text": "TOKEN"
+          },
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
           }
         ],
         "navTargets": [
@@ -2657,44 +2694,44 @@
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "nav.bg-index > ol.bg-index-list > li",
-              "right": 430,
-              "width": 132
+              "selector": "div.sp-shell > nav.sp-ticker > ol.sp-ticker-list",
+              "right": 806,
+              "width": 806
             },
             {
-              "selector": "ol.bg-index-list > li > a.bg-index-link",
-              "right": 430,
-              "width": 132
+              "selector": "nav.sp-ticker > ol.sp-ticker-list > li.sp-ticker-item",
+              "right": 407,
+              "width": 125
             },
             {
-              "selector": "li > a.bg-index-link > span.bg-index-label",
-              "right": 411,
-              "width": 48
+              "selector": "ol.sp-ticker-list > li.sp-ticker-item > a.sp-ticker-link",
+              "right": 407,
+              "width": 125
             },
             {
-              "selector": "nav.bg-index > ol.bg-index-list > li",
-              "right": 570,
-              "width": 132
+              "selector": "nav.sp-ticker > ol.sp-ticker-list > li.sp-ticker-item",
+              "right": 556,
+              "width": 149
             },
             {
-              "selector": "ol.bg-index-list > li > a.bg-index-link",
-              "right": 570,
-              "width": 132
+              "selector": "ol.sp-ticker-list > li.sp-ticker-item > a.sp-ticker-link",
+              "right": 556,
+              "width": 149
             },
             {
-              "selector": "li > a.bg-index-link > span.bg-index-glyph",
-              "right": 493,
-              "width": 18
+              "selector": "li.sp-ticker-item > a.sp-ticker-link > span.sp-ticker-glyph",
+              "right": 463,
+              "width": 15
             },
             {
-              "selector": "a.bg-index-link > span.bg-index-glyph > svg",
-              "right": 493,
-              "width": 17
+              "selector": "a.sp-ticker-link > span.sp-ticker-glyph > svg",
+              "right": 463,
+              "width": 15
             },
             {
-              "selector": "span.bg-index-glyph > svg > path",
-              "right": 490,
-              "width": 11
+              "selector": "span.sp-ticker-glyph > svg > path",
+              "right": 461,
+              "width": 10
             }
           ]
         }
@@ -2713,80 +2750,80 @@
             "text": "SKIP TO CONTENT",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 13, 13)",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(0, 0, 0)",
+            "backgroundColor": "rgb(20, 241, 149)"
+          },
+          {
+            "tag": "a",
+            "text": "Rationum home",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
             "boxShadow": "none",
             "borderColor": "rgb(255, 255, 255)",
-            "backgroundColor": "rgb(13, 13, 13)"
+            "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
-            "tag": "a",
-            "text": "Actoria home",
+            "tag": "button",
+            "text": "Re-read testnet data",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(20, 241, 149)",
             "boxShadow": "none",
-            "borderColor": "rgb(13, 13, 13)",
+            "borderColor": "rgb(41, 41, 45)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "button",
+            "text": "Connect a Solana wallet",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(153, 69, 255)",
+            "backgroundColor": "rgb(153, 69, 255)"
+          },
+          {
+            "tag": "button",
+            "text": "Open menu",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(41, 41, 45)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "Overview",
+            "text": "OVERVIEW",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "rgba(230, 0, 111, 0.1) 0px 8px 22px 0px",
-            "borderColor": "rgb(230, 0, 111)",
-            "backgroundColor": "rgb(255, 255, 255)"
+            "outlineColor": "rgb(20, 241, 149)",
+            "boxShadow": "none",
+            "borderColor": "rgb(255, 255, 255) rgb(41, 41, 45) rgb(255, 255, 255) rgb(255, 255, 255)",
+            "backgroundColor": "rgba(11, 11, 12, 0.937)"
           },
           {
             "tag": "a",
-            "text": "Quests 0",
+            "text": "QUESTS 0",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(20, 241, 149)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgb(251, 251, 251) rgb(41, 41, 45) rgb(251, 251, 251) rgb(251, 251, 251)",
+            "backgroundColor": "rgba(11, 11, 12, 0.957)"
           },
           {
             "tag": "a",
-            "text": "Votes 0",
+            "text": "VOTES 0",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(20, 241, 149)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Treasury",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Token",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Guide",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgb(251, 251, 251) rgb(41, 41, 45) rgb(251, 251, 251) rgb(251, 251, 251)",
+            "backgroundColor": "rgba(11, 11, 12, 0.957)"
           }
         ],
         "visibleCount": 8,
@@ -2794,5 +2831,5 @@
       }
     }
   },
-  "inventoryHash": "2cd00ec31667df958c64f010a822864c4aa97ac816e8a9ae39910dee437f7dbb"
+  "inventoryHash": "12761c50ee087292510e1c948499eb0f8beb36a25712d9d0e44868ae35ec88da"
 }

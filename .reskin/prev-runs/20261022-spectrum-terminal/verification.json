@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-21T14:00:20.009Z",
+  "project": {
+    "root": "E:/workspace/chuangye/solana/703/website",
+    "name": "actoria-web",
+    "baseUrl": "http://127.0.0.1:4317/"
+  },
+  "passed": true,
+  "thresholds": {
+    "maxStructureSimilarity": 0.5,
+    "maxLandmarkSimilarity": 0.68,
+    "maxClassOverlap": 0.1,
+    "minAccentDistance": 30,
+    "maxContrastFailures": 0,
+    "maxAxeSerious": 0
+  },
+  "gates": {
+    "sourceContract": {
+      "passed": true,
+      "issues": [],
+      "warnings": [],
+      "hash": "2cd00ec31667df958c64f010a822864c4aa97ac816e8a9ae39910dee437f7dbb"
+    },
+    "skeleton": {
+      "passed": true,
+      "original": {
+        "id": "sidebar-workspace",
+        "family": "shell",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": false,
+          "hero": true,
+          "table": false,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
+      "current": {
+        "id": "terminal-console",
+        "family": "linear",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": false,
+          "hero": true,
+          "table": false,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": true,
+          "gallery": false
+        }
+      },
+      "accent": {
+        "original": "#e6006f",
+        "current": "#9945ff",
+        "deltaE": 85.01,
+        "min": 30
+      }
+    },
+    "pages": [
+      {
+        "route": "/",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=Marginal notes",
+          "aria attribute added: aria-label=Record bands"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.375,
+          "landmarkSimilarity": 0.3,
+          "classOverlap": 0
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 7,
+              "total": 9
+            },
+            "current": {
+              "tokens": 7,
+              "total": 9
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/home-desktop.png",
+          "mobile": "current/home-mobile.png"
+        }
+      }
+    ]
+  },
+  "failures": [],
+  "warnings": [
+    "/: aria attribute added: aria-label=Marginal notes",
+    "/: aria attribute added: aria-label=Record bands"
+  ],
+  "baseline": {
+    "generatedAt": "2026-10-21T13:44:53.744Z",
+    "routes": [
+      "/"
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "projectName": "actoria-web",
-    "title": "actoria-web",
+    "projectName": "rationum-web",
+    "title": "rationum-web",
     "lang": "en"
   },
   "routes": [
@@ -10,15 +10,15 @@
   ],
   "visibleText": [
     {
-      "value": ". Actoria only asks it to confirm quest rows, proposals and votes.",
-      "count": 1
-    },
-    {
       "value": ". It is not affiliated with the Solana Foundation.",
       "count": 1
     },
     {
       "value": ". Quests and advisory votes are recorded by a public Solana program; no token is minted, sold or promised here.",
+      "count": 1
+    },
+    {
+      "value": ". Rationum only asks it to confirm quest rows, proposals and votes.",
       "count": 1
     },
     {
@@ -38,7 +38,7 @@
       "count": 1
     },
     {
-      "value": "© 2026 Actoria · actoria.xyz. Written to be reopened.",
+      "value": "© 2026 Rationum · rationum.xyz. Written to be reopened.",
       "count": 1
     },
     {
@@ -58,7 +58,7 @@
       "count": 1
     },
     {
-      "value": "A future mint defines its own name, symbol and decimals. Actoria is the application brand. Current status:",
+      "value": "A future mint defines its own name, symbol and decimals. Rationum is the application brand. Current status:",
       "count": 1
     },
     {
@@ -82,23 +82,11 @@
       "count": 1
     },
     {
-      "value": "Act",
-      "count": 3
-    },
-    {
       "value": "Activity",
       "count": 1
     },
     {
       "value": "Activity index",
-      "count": 1
-    },
-    {
-      "value": "Actoria",
-      "count": 1
-    },
-    {
-      "value": "Actoria writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
       "count": 1
     },
     {
@@ -150,7 +138,7 @@
       "count": 1
     },
     {
-      "value": "Anything claiming a Actoria token right now is not from this project.",
+      "value": "Anything claiming a Rationum token right now is not from this project.",
       "count": 1
     },
     {
@@ -274,11 +262,11 @@
       "count": 1
     },
     {
-      "value": "Is a Actoria token deployed?",
+      "value": "Is a Rationum token deployed?",
       "count": 1
     },
     {
-      "value": "Is Actoria an official Solana product?",
+      "value": "Is Rationum an official Solana product?",
       "count": 1
     },
     {
@@ -338,10 +326,6 @@
       "count": 1
     },
     {
-      "value": "No Actoria token mint is configured. The community program does not create or distribute a token.",
-      "count": 1
-    },
-    {
       "value": "No compatible wallet was detected in this browser. Install a Solana wallet extension, reload, then try again.",
       "count": 1
     },
@@ -351,6 +335,10 @@
     },
     {
       "value": "No mint has been issued",
+      "count": 1
+    },
+    {
+      "value": "No Rationum token mint is configured. The community program does not create or distribute a token.",
       "count": 1
     },
     {
@@ -366,7 +354,7 @@
       "count": 1
     },
     {
-      "value": "No. Actoria is an independent community project currently reading",
+      "value": "No. Rationum is an independent community project currently reading",
       "count": 1
     },
     {
@@ -396,6 +384,10 @@
     {
       "value": "Nothing is signed until you approve it inside the wallet.",
       "count": 1
+    },
+    {
+      "value": "num",
+      "count": 3
     },
     {
       "value": "On the record today",
@@ -428,10 +420,6 @@
     {
       "value": "Open votes",
       "count": 2
-    },
-    {
-      "value": "oria",
-      "count": 3
     },
     {
       "value": "part in it.",
@@ -503,6 +491,18 @@
     },
     {
       "value": "Quests carry an expiry and a row cap. Each wallet records once. Rows do not verify off-chain work, prove a unique person, or pay a token.",
+      "count": 1
+    },
+    {
+      "value": "Ratio",
+      "count": 3
+    },
+    {
+      "value": "Rationum",
+      "count": 1
+    },
+    {
+      "value": "Rationum writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
       "count": 1
     },
     {
@@ -794,7 +794,7 @@
       "count": 1
     },
     {
-      "value": "Why is the token name separate from Actoria?",
+      "value": "Why is the token name separate from Rationum?",
       "count": 1
     },
     {

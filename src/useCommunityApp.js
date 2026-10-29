@@ -110,7 +110,7 @@ export function useCommunityApp() {
           ? SOLANA_CLUSTER
           : 'testnet'
       metamaskClient = await createSolanaClient({
-        dapp: { name: 'Actoria', url: window.location.origin },
+        dapp: { name: 'Rationum', url: window.location.origin },
         api: { supportedNetworks: { [metamaskNetwork]: SOLANA_RPC_URL } },
         analytics: { enabled: false },
       })

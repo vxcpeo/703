@@ -1,29 +1,20 @@
 <script setup>
-import brandMark from "../assets/actoria-mark.svg";
-
-defineProps({
-  tabs: { type: Array, default: () => [] },
-  active: { type: String, default: "home" },
-});
+import brandMark from "../assets/rationum-mark.svg";
 
 const emit = defineEmits(["navigate"]);
 </script>
 
 <template>
-  <div class="sp-brand">
-    <a
-      class="sp-brand-link"
-      :href="'#home'"
-      aria-label="Actoria home"
-      @click="emit('navigate', 'home')"
-    >
-      <span class="sp-brand-mark" aria-hidden="true">
-        <img :src="brandMark" width="34" height="34" alt="" />
-      </span>
-      <span class="sp-brand-text">
-        <span class="sp-brand-word">Act<span class="sp-brand-accent">oria</span></span>
-        <span class="sp-brand-tag">Time on the record</span>
-      </span>
-    </a>
-  </div>
+  <a
+    class="bz-mast"
+    :href="'#home'"
+    aria-label="Rationum home"
+    @click="emit('navigate', 'home')"
+  >
+    <img class="bz-mast-mark" :src="brandMark" width="42" height="42" alt="" />
+    <span class="bz-mast-copy">
+      <span class="bz-mast-word"><span class="bz-mast-signal">Ratio</span>num</span>
+      <span class="bz-mast-tag">Time on the record</span>
+    </span>
+  </a>
 </template>

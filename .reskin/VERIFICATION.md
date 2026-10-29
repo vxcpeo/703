@@ -1,17 +1,17 @@
 # Reskin verification — PASS
 
-Generated: 2026-10-21T14:00:20.009Z
+Generated: 2026-10-22T15:35:51.195Z
 
-- Project: **actoria-web**
+- Project: **rationum-web**
 - URL: http://127.0.0.1:4317/
-- Original skeleton: `sidebar-workspace` (shell)
-- New skeleton: `terminal-console` (linear)
-- Accent: #e6006f -> #9945ff (85.01 ΔE; min 30)
-- Source contract: intact (`2cd00ec31667`)
+- Original skeleton: `terminal-console` (linear)
+- New skeleton: `sidebar-workspace` (shell)
+- Accent: #9945ff -> #e6006f (85.01 ΔE; min 30)
+- Source contract: intact (`053703ed8ff7`)
 
 | Route | Result | DOM similarity | Landmark similarity | Axe serious | Screenshot |
 |---|---|---:|---:|---:|---|
-| `/` | PASS | 0.375 | 0.3 | 0 | [desktop](current/home-desktop.png) |
+| `/` | PASS | 0.229 | 0.6 | 0 | [desktop](current/home-desktop.png) |
 
 ## Blocking issues
 
@@ -19,8 +19,8 @@ Generated: 2026-10-21T14:00:20.009Z
 
 ## Warnings
 
-- /: aria attribute added: aria-label=Marginal notes
-- /: aria attribute added: aria-label=Record bands
+- bindings: added "interpolation:String(position + 1).padStart(2, "0")"
+- /: numeric token count changed: 9 -> 15 (dynamic values may differ)
 
 ## Thresholds
 

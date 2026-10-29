@@ -15,21 +15,33 @@ const emit = defineEmits(["sync", "wallet", "menu"]);
 </script>
 
 <template>
-  <div class="sp-utility">
-    <span v-if="cluster" class="sp-utility-chip">
-      <i class="sp-utility-pulse" aria-hidden="true"></i>{{ cluster }}
+  <div class="bz-dock">
+    <span v-if="cluster" class="bz-dock-chip">
+      <i class="bz-dock-pulse" aria-hidden="true"></i>{{ cluster }}
     </span>
+    <div class="bz-dock-tools">
+      <button
+        class="bz-icon-btn"
+        type="button"
+        :disabled="reading || busy"
+        :aria-label="`Re-read ${cluster || 'network'} data`"
+        @click="emit('sync')"
+      >
+        <Icon name="refresh" :size="18" :class="{ 'bz-spin': reading }" />
+      </button>
+      <button
+        class="bz-icon-btn"
+        type="button"
+        :aria-expanded="menuOpen ? 'true' : 'false'"
+        aria-controls="ax-drawer"
+        :aria-label="menuOpen ? 'Close menu' : 'Open menu'"
+        @click="emit('menu')"
+      >
+        <Icon :name="menuOpen ? 'close' : 'menu'" :size="20" />
+      </button>
+    </div>
     <button
-      class="sp-icon-btn"
-      type="button"
-      :disabled="reading || busy"
-      :aria-label="`Re-read ${cluster || 'network'} data`"
-      @click="emit('sync')"
-    >
-      <Icon name="refresh" :size="18" :class="{ 'sp-spin': reading }" />
-    </button>
-    <button
-      class="sp-btn sp-btn--solid sp-btn--sm"
+      class="bz-btn bz-btn--fill bz-btn--sm bz-dock-wallet"
       type="button"
       :disabled="connecting || busy"
       :aria-label="connected ? 'Disconnect wallet' : 'Connect a Solana wallet'"
@@ -37,16 +49,6 @@ const emit = defineEmits(["sync", "wallet", "menu"]);
     >
       <Icon name="wallet" :size="16" />
       <span>{{ connecting ? "Connecting…" : walletLabel }}</span>
-    </button>
-    <button
-      class="sp-icon-btn"
-      type="button"
-      :aria-expanded="menuOpen ? 'true' : 'false'"
-      aria-controls="ax-drawer"
-      :aria-label="menuOpen ? 'Close menu' : 'Open menu'"
-      @click="emit('menu')"
-    >
-      <Icon :name="menuOpen ? 'close' : 'menu'" :size="20" />
     </button>
   </div>
 </template>

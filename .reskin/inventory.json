@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T13:44:48.944Z",
+  "generatedAt": "2026-10-22T15:10:15.999Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/703/website",
-    "name": "actoria-web",
+    "name": "rationum-web",
     "vueVersion": "latest",
     "nuxt": false,
     "dependencies": [
@@ -26,14 +26,14 @@
     "frameworks": []
   },
   "stats": {
-    "filesScanned": 12,
-    "vueFiles": 6,
+    "filesScanned": 13,
+    "vueFiles": 7,
     "routes": 1,
     "staticTextTokens": 246,
     "bindingTokens": 152,
     "eventTokens": 50,
-    "classNames": 196,
-    "colors": 128
+    "classNames": 198,
+    "colors": 31
   },
   "routes": [
     {
@@ -43,10 +43,10 @@
   ],
   "unresolvedRoutes": [],
   "archetype": {
-    "id": "sidebar-workspace",
-    "family": "shell",
+    "id": "terminal-console",
+    "family": "linear",
     "traits": {
-      "sidebar": true,
+      "sidebar": false,
       "topbar": false,
       "cards": false,
       "hero": true,
@@ -59,293 +59,263 @@
       "orbital": false,
       "terminal": true,
       "bento": false,
-      "ticker": false,
+      "ticker": true,
       "gallery": false
     }
   },
   "palette": [
     {
-      "hex": "#e6006f",
-      "count": 27
+      "hex": "#000000",
+      "count": 8
     },
     {
-      "hex": "#f9f8fa",
-      "count": 25
+      "hex": "#14f195",
+      "count": 5
     },
     {
-      "hex": "#6d6a70",
-      "count": 18
+      "hex": "#9945ff",
+      "count": 4
     },
     {
       "hex": "#ffffff",
-      "count": 16
-    },
-    {
-      "hex": "#f2eef3",
-      "count": 12
-    },
-    {
-      "hex": "#5ce1a0",
-      "count": 4
-    },
-    {
-      "hex": "#ff4da6",
-      "count": 4
-    },
-    {
-      "hex": "#140a19",
       "count": 3
     },
     {
-      "hex": "#8a5a00",
-      "count": 3
-    },
-    {
-      "hex": "#000000",
+      "hex": "#050506",
       "count": 2
     },
     {
-      "hex": "#c2005d",
+      "hex": "#0b0b0c",
       "count": 2
     },
     {
-      "hex": "#ff6b6b",
-      "count": 2
-    },
-    {
-      "hex": "#ff7a7a",
-      "count": 2
-    },
-    {
-      "hex": "#0d0d0d",
+      "hex": "#161618",
       "count": 1
     },
     {
-      "hex": "#0f7b4d",
+      "hex": "#1b1b1e",
       "count": 1
     },
     {
-      "hex": "#7a4e00",
+      "hex": "#29292d",
       "count": 1
     },
     {
-      "hex": "#b02323",
+      "hex": "#a6a6aa",
       "count": 1
     },
     {
-      "hex": "#e9e4eb",
+      "hex": "#b57bff",
       "count": 1
     },
     {
-      "hex": "#ff5f5f",
+      "hex": "#ff6b86",
       "count": 1
     },
     {
-      "hex": "#ff7b7b",
-      "count": 1
-    },
-    {
-      "hex": "#fff0f8",
+      "hex": "#ffd166",
       "count": 1
     }
   ],
   "fonts": [],
   "classNames": [
-    "bg-actions",
-    "bg-alert",
-    "bg-alert-action",
-    "bg-alert-copy",
-    "bg-alert-glyph",
-    "bg-alerts",
-    "bg-ballot",
-    "bg-ballot-foot",
-    "bg-ballot-head",
-    "bg-ballot-id",
-    "bg-ballot-title",
-    "bg-board",
-    "bg-board--loading",
-    "bg-board-body",
-    "bg-board-body--flush",
-    "bg-board-head",
-    "bg-board-title",
-    "bg-brandline",
-    "bg-brandline-accent",
-    "bg-brandline-mark",
-    "bg-brandline-tag",
-    "bg-brandline-text",
-    "bg-brandline-word",
-    "bg-btn",
-    "bg-btn--fill",
-    "bg-btn--ghost",
-    "bg-btn--lg",
-    "bg-btn--line",
-    "bg-btn--sm",
-    "bg-btn--wide",
-    "bg-check",
-    "bg-check-mark",
-    "bg-checklist",
-    "bg-chip",
-    "bg-chips",
-    "bg-colophon",
-    "bg-colophon-accent",
-    "bg-colophon-brand",
-    "bg-colophon-col",
-    "bg-colophon-cols",
-    "bg-colophon-facts",
-    "bg-colophon-fine",
-    "bg-colophon-links",
-    "bg-colophon-mark",
-    "bg-colophon-name",
-    "bg-colophon-note",
-    "bg-colophon-tag",
-    "bg-colophon-word",
-    "bg-colophon-word-accent",
-    "bg-command-icon",
-    "bg-console",
-    "bg-console-chip",
-    "bg-console-icon",
-    "bg-console-line",
-    "bg-console-pulse",
-    "bg-console-rule",
-    "bg-console-tools",
-    "bg-console-top",
-    "bg-count",
-    "bg-current",
-    "bg-display",
-    "bg-drawer",
-    "bg-drawer-facts",
-    "bg-drawer-foot",
-    "bg-drawer-head",
-    "bg-drawer-link",
-    "bg-drawer-nav",
-    "bg-drawer-title",
-    "bg-empty",
-    "bg-empty-glyph",
-    "bg-empty-text",
-    "bg-empty-title",
-    "bg-entry",
-    "bg-entry-foot",
-    "bg-entry-head",
-    "bg-entry-id",
-    "bg-entry-meter",
-    "bg-entry-meter-row",
-    "bg-entry-text",
-    "bg-entry-title",
-    "bg-fact",
-    "bg-fact--muted",
-    "bg-fact-quiet",
-    "bg-factlist",
-    "bg-facts",
-    "bg-faq",
-    "bg-faq-a",
-    "bg-faq-item",
-    "bg-faq-q",
-    "bg-field",
-    "bg-field-label",
-    "bg-fork",
-    "bg-fork--ballot",
-    "bg-fork-foot",
-    "bg-fork-glyph",
-    "bg-forks",
-    "bg-form",
-    "bg-form-actions",
-    "bg-form-foot",
-    "bg-form-note",
-    "bg-frame",
-    "bg-gauge",
-    "bg-gauge-fill",
-    "bg-index",
-    "bg-index-badge",
-    "bg-index-glyph",
-    "bg-index-label",
-    "bg-index-link",
-    "bg-index-list",
-    "bg-index-rule",
-    "bg-input",
-    "bg-kicker",
-    "bg-kicker-dot",
-    "bg-lede",
-    "bg-ledger",
-    "bg-ledger-go",
-    "bg-ledger-index",
-    "bg-ledger-main",
-    "bg-ledger-note",
-    "bg-ledger-row",
-    "bg-ledger-title",
-    "bg-link",
-    "bg-live-dot",
-    "bg-loading",
-    "bg-margin",
-    "bg-meter",
-    "bg-meter-label",
-    "bg-meter-note",
-    "bg-meter-value",
-    "bg-meters",
-    "bg-narrative",
-    "bg-note",
-    "bg-note--warn",
-    "bg-pill",
-    "bg-readout",
-    "bg-readout-cell",
-    "bg-readout-date",
-    "bg-readout-foot",
-    "bg-readout-grid",
-    "bg-readout-head",
-    "bg-readout-label",
-    "bg-readout-note",
-    "bg-readout-title",
-    "bg-readout-value",
-    "bg-readout-value--text",
-    "bg-runhead",
-    "bg-search",
-    "bg-search-input",
-    "bg-sheet",
-    "bg-sheet-body",
-    "bg-sheet-body--flush",
-    "bg-sheet-foot",
-    "bg-sheet-head",
-    "bg-sheet-note",
-    "bg-sheet-title",
-    "bg-skip",
-    "bg-stage",
-    "bg-statement",
-    "bg-statement-key",
-    "bg-statement-leader",
-    "bg-statement-row",
-    "bg-statement-val",
-    "bg-statement-val--muted",
-    "bg-step",
-    "bg-step-body",
-    "bg-step-foot",
-    "bg-step-num",
-    "bg-steps",
-    "bg-tag",
-    "bg-tag--strong",
-    "bg-tags",
-    "bg-tally",
-    "bg-tally-against",
-    "bg-tally-for",
-    "bg-tally-key",
-    "bg-tally-key--against",
-    "bg-tally-keys",
-    "bg-textarea",
-    "bg-toast",
-    "bg-toast-close",
-    "bg-toast-copy",
-    "bg-toast-dot",
-    "bg-veil",
-    "bg-view",
-    "bg-wallet-fallback",
-    "bg-wallet-list",
-    "bg-wallet-name",
-    "bg-wallet-row",
-    "bg-wallets",
-    "bg-wallets-empty",
-    "bg-wallets-foot",
-    "bg-wallets-head",
-    "bg-wallets-note",
-    "bg-wallets-title",
-    "bg-wide",
+    "sp-actions",
+    "sp-ballot",
+    "sp-ballot-foot",
+    "sp-ballot-head",
+    "sp-ballot-id",
+    "sp-ballot-title",
+    "sp-band",
+    "sp-band--loading",
+    "sp-band-body",
+    "sp-band-body--flush",
+    "sp-band-head",
+    "sp-band-inner",
+    "sp-band-title",
+    "sp-bands",
+    "sp-beat",
+    "sp-beats",
+    "sp-brand",
+    "sp-brand-accent",
+    "sp-brand-link",
+    "sp-brand-mark",
+    "sp-brand-tag",
+    "sp-brand-text",
+    "sp-brand-word",
+    "sp-btn",
+    "sp-btn--ghost",
+    "sp-btn--lg",
+    "sp-btn--line",
+    "sp-btn--sm",
+    "sp-btn--solid",
+    "sp-btn--wide",
+    "sp-check",
+    "sp-check-mark",
+    "sp-checklist",
+    "sp-chip",
+    "sp-chips",
+    "sp-console-line",
+    "sp-count",
+    "sp-deck",
+    "sp-dial-date",
+    "sp-dial-foot",
+    "sp-dial-head",
+    "sp-dial-label",
+    "sp-dial-note",
+    "sp-dial-title",
+    "sp-dial-value",
+    "sp-dial-value--text",
+    "sp-dials",
+    "sp-door",
+    "sp-door--ballot",
+    "sp-door-foot",
+    "sp-door-glyph",
+    "sp-doors",
+    "sp-drawer",
+    "sp-drawer-facts",
+    "sp-drawer-foot",
+    "sp-drawer-head",
+    "sp-drawer-link",
+    "sp-drawer-nav",
+    "sp-drawer-title",
+    "sp-empty",
+    "sp-empty-glyph",
+    "sp-empty-text",
+    "sp-empty-title",
+    "sp-entry",
+    "sp-entry-foot",
+    "sp-entry-head",
+    "sp-entry-id",
+    "sp-entry-meter",
+    "sp-entry-meter-row",
+    "sp-entry-text",
+    "sp-entry-title",
+    "sp-eyebrow",
+    "sp-eyebrow-dot",
+    "sp-fact",
+    "sp-fact--muted",
+    "sp-fact-quiet",
+    "sp-factlist",
+    "sp-facts",
+    "sp-faq",
+    "sp-faq-a",
+    "sp-faq-item",
+    "sp-faq-q",
+    "sp-field",
+    "sp-field-label",
+    "sp-filterstrip",
+    "sp-filtertab",
+    "sp-filtertab--strong",
+    "sp-flow",
+    "sp-form",
+    "sp-form-actions",
+    "sp-form-foot",
+    "sp-form-note",
+    "sp-gauge",
+    "sp-gauge-fill",
+    "sp-headline",
+    "sp-icon-btn",
+    "sp-input",
+    "sp-ledger",
+    "sp-ledger-go",
+    "sp-ledger-index",
+    "sp-ledger-main",
+    "sp-ledger-note",
+    "sp-ledger-row",
+    "sp-ledger-title",
+    "sp-link",
+    "sp-live-dot",
+    "sp-loading",
+    "sp-main",
+    "sp-masthead",
+    "sp-meter",
+    "sp-meter-label",
+    "sp-meter-note",
+    "sp-meter-value",
+    "sp-meters",
+    "sp-note",
+    "sp-note--warn",
+    "sp-notice",
+    "sp-notice-action",
+    "sp-notice-copy",
+    "sp-notice-glyph",
+    "sp-notices",
+    "sp-pill",
+    "sp-receipt",
+    "sp-receipt-inner",
+    "sp-route",
+    "sp-search",
+    "sp-search-input",
+    "sp-shell",
+    "sp-skip",
+    "sp-slab",
+    "sp-slab-body",
+    "sp-slab-body--flush",
+    "sp-slab-foot",
+    "sp-slab-head",
+    "sp-slab-inner",
+    "sp-slab-note",
+    "sp-slab-title",
+    "sp-statement",
+    "sp-statement-inner",
+    "sp-statement-key",
+    "sp-statement-leader",
+    "sp-statement-row",
+    "sp-statement-val",
+    "sp-statement-val--muted",
+    "sp-status",
+    "sp-status-accent",
+    "sp-status-brand",
+    "sp-status-col",
+    "sp-status-cols",
+    "sp-status-facts",
+    "sp-status-fine",
+    "sp-status-links",
+    "sp-status-mark",
+    "sp-status-name",
+    "sp-status-note",
+    "sp-status-tag",
+    "sp-status-top",
+    "sp-status-word",
+    "sp-status-word-accent",
+    "sp-step",
+    "sp-step-body",
+    "sp-step-foot",
+    "sp-step-num",
+    "sp-steps",
+    "sp-tail",
+    "sp-tally",
+    "sp-tally-against",
+    "sp-tally-for",
+    "sp-tally-key",
+    "sp-tally-key--against",
+    "sp-tally-keys",
+    "sp-textarea",
+    "sp-ticker",
+    "sp-ticker-badge",
+    "sp-ticker-glyph",
+    "sp-ticker-item",
+    "sp-ticker-label",
+    "sp-ticker-link",
+    "sp-ticker-list",
+    "sp-toast",
+    "sp-toast-close",
+    "sp-toast-copy",
+    "sp-toast-dot",
+    "sp-utility",
+    "sp-utility-chip",
+    "sp-utility-pulse",
+    "sp-veil",
+    "sp-wallet",
+    "sp-wallet-empty",
+    "sp-wallet-fallback",
+    "sp-wallet-foot",
+    "sp-wallet-head",
+    "sp-wallet-list",
+    "sp-wallet-name",
+    "sp-wallet-note",
+    "sp-wallet-row",
+    "sp-wallet-title",
     "visually-hidden"
   ],
   "designSignals": {
@@ -354,22 +324,19 @@
       "--accent",
       "--accent-2",
       "--accent-safe",
-      "--against",
-      "--bare",
       "--bg",
       "--border",
       "--danger",
       "--display-tracking",
       "--display-weight",
-      "--fill",
       "--font-body",
       "--font-display",
       "--font-mono",
       "--ghost",
-      "--glow",
       "--ink",
       "--label-tracking",
       "--line",
+      "--line-soft",
       "--max-width",
       "--motion-duration",
       "--motion-ease",
@@ -378,9 +345,8 @@
       "--radius-lg",
       "--radius-md",
       "--radius-sm",
-      "--rail",
       "--shadow",
-      "--signal",
+      "--solid",
       "--space-1",
       "--space-2",
       "--space-3",
@@ -395,64 +361,61 @@
     "colorVars": [
       {
         "name": "--accent",
-        "value": "#e6006f"
+        "value": "#9945ff"
       },
       {
         "name": "--accent-2",
-        "value": "#ff4da6"
+        "value": "#14f195"
       },
       {
         "name": "--accent-safe",
-        "value": "#c2005d"
+        "value": "#b57bff"
       },
       {
         "name": "--bg",
-        "value": "#ffffff"
+        "value": "#000000"
       },
       {
         "name": "--danger",
-        "value": "#b02323"
+        "value": "#ff6b86"
       },
       {
         "name": "--ink",
-        "value": "#0d0d0d"
+        "value": "#ffffff"
       },
       {
         "name": "--line",
-        "value": "#e9e4eb"
+        "value": "#29292d"
+      },
+      {
+        "name": "--line-soft",
+        "value": "#1b1b1e"
       },
       {
         "name": "--muted",
-        "value": "#6d6a70"
-      },
-      {
-        "name": "--signal",
-        "value": "#c2005d"
+        "value": "#a6a6aa"
       },
       {
         "name": "--success",
-        "value": "#0f7b4d"
+        "value": "#14f195"
       },
       {
         "name": "--surface",
-        "value": "#f9f8fa"
+        "value": "#0b0b0c"
       },
       {
         "name": "--surface-alt",
-        "value": "#f2eef3"
+        "value": "#161618"
       },
       {
         "name": "--warning",
-        "value": "#7a4e00"
+        "value": "#ffd166"
       }
     ],
     "mediaQueries": [
-      "@media (max-width: 1020px)",
-      "@media (max-width: 1023px)",
-      "@media (max-width: 1180px)",
-      "@media (max-width: 600px)",
-      "@media (max-width: 900px)",
-      "@media (min-width: 1021px) and (min-height: 780px)",
+      "@media (max-width: 1080px)",
+      "@media (max-width: 560px)",
+      "@media (max-width: 820px)",
       "@media (prefers-reduced-motion: reduce)"
     ],
     "darkMode": false
@@ -460,15 +423,14 @@
   "structure": {
     "tagCounts": {
       "a": 7,
-      "article": 4,
-      "aside": 1,
+      "article": 13,
       "b": 27,
       "br": 1,
       "button": 43,
       "commandbar": 1,
       "dd": 17,
       "details": 6,
-      "div": 195,
+      "div": 184,
       "dl": 4,
       "dt": 17,
       "em": 6,
@@ -477,7 +439,7 @@
       "h1": 6,
       "h2": 20,
       "h3": 19,
-      "header": 2,
+      "header": 25,
       "i": 6,
       "icon": 58,
       "img": 3,
@@ -486,78 +448,59 @@
       "li": 19,
       "main": 1,
       "nav": 3,
-      "ol": 4,
+      "ol": 5,
       "p": 59,
       "path": 1,
       "railnav": 1,
-      "section": 21,
+      "section": 24,
       "small": 5,
-      "span": 151,
+      "span": 149,
       "statusstrip": 1,
       "strong": 16,
       "summary": 6,
       "svg": 1,
       "template": 8,
       "textarea": 1,
+      "tickernav": 1,
       "transition": 1,
-      "ul": 5,
+      "ul": 4,
       "walletsheet": 1
     },
     "depthHistogram": {
-      "0": 6,
-      "1": 17,
+      "0": 7,
+      "1": 20,
       "2": 30,
-      "3": 35,
-      "4": 43,
+      "3": 32,
+      "4": 41,
       "5": 53,
-      "6": 41,
+      "6": 22,
       "7": 56,
-      "8": 83,
-      "9": 124,
-      "10": 125,
-      "11": 103,
-      "12": 41,
-      "13": 5,
-      "14": 3
+      "8": 74,
+      "9": 109,
+      "10": 94,
+      "11": 89,
+      "12": 111,
+      "13": 41,
+      "14": 5,
+      "15": 3
     },
-    "maxDepth": 14,
+    "maxDepth": 15,
     "topLevelTags": [
       "div",
       "svg",
       "div",
-      "nav",
+      "div",
       "footer",
+      "nav",
       "div"
     ],
     "skeletonSample": [
       "div",
       "  a",
-      "  aside",
+      "  header",
       "    railnav",
       "    commandbar",
-      "    statusstrip",
-      "  template",
-      "    div",
-      "    div",
-      "      header",
-      "        span",
-      "        button",
-      "          icon",
-      "      nav",
-      "        button",
-      "          icon",
-      "          span",
-      "          b",
-      "      div",
-      "        button",
-      "          icon",
-      "        div",
-      "          span",
-      "            b",
-      "          span",
-      "            b",
-      "          span",
-      "            b",
+      "  tickernav",
       "  main",
       "    div",
       "      div",
@@ -595,29 +538,30 @@
       "    transition",
       "      section",
       "        template",
-      "          div",
-      "            p",
-      "              span",
-      "            h1",
-      "              br",
-      "              em",
-      "            p",
+      "          header",
       "            div",
-      "              button",
-      "                icon",
-      "              button",
-      "                icon",
-      "            ul",
-      "              li",
-      "                icon",
+      "              p",
       "                span",
-      "              li",
-      "                icon",
-      "                span",
-      "              li",
-      "                icon",
-      "                span",
-      "          div",
+      "              h1",
+      "                br",
+      "                em",
+      "              p",
+      "              div",
+      "                button",
+      "                  icon",
+      "                button",
+      "                  icon",
+      "              ul",
+      "                li",
+      "                  icon",
+      "                  span",
+      "                li",
+      "                  icon",
+      "                  span",
+      "                li",
+      "                  icon",
+      "                  span",
+      "          section",
       "            div",
       "              section",
       "                div",
@@ -645,18 +589,39 @@
       "                  span",
       "                  button",
       "                    icon",
-      "              section",
+      "              article",
       "                div",
-      "                  h2",
-      "                  button",
-      "                    icon"
+      "                  header",
+      "                    h2",
+      "                    button",
+      "                    icon",
+      "                  ul",
+      "                    li",
+      "                    button",
+      "                    span",
+      "                    span",
+      "                    b",
+      "                    small",
+      "                    span",
+      "                    span",
+      "                    icon",
+      "                  div",
+      "                    div",
+      "                    span",
+      "                    icon",
+      "                    h3",
+      "                    p",
+      "              article",
+      "                div",
+      "                  header",
+      "                    h2"
     ]
   },
   "contentContract": {
     "schemaVersion": 1,
     "meta": {
-      "projectName": "actoria-web",
-      "title": "actoria-web",
+      "projectName": "rationum-web",
+      "title": "rationum-web",
       "lang": "en"
     },
     "routes": [
@@ -664,15 +629,15 @@
     ],
     "visibleText": [
       {
-        "value": ". Actoria only asks it to confirm quest rows, proposals and votes.",
-        "count": 1
-      },
-      {
         "value": ". It is not affiliated with the Solana Foundation.",
         "count": 1
       },
       {
         "value": ". Quests and advisory votes are recorded by a public Solana program; no token is minted, sold or promised here.",
+        "count": 1
+      },
+      {
+        "value": ". Rationum only asks it to confirm quest rows, proposals and votes.",
         "count": 1
       },
       {
@@ -692,7 +657,7 @@
         "count": 1
       },
       {
-        "value": "© 2026 Actoria · actoria.xyz. Written to be reopened.",
+        "value": "© 2026 Rationum · rationum.xyz. Written to be reopened.",
         "count": 1
       },
       {
@@ -712,7 +677,7 @@
         "count": 1
       },
       {
-        "value": "A future mint defines its own name, symbol and decimals. Actoria is the application brand. Current status:",
+        "value": "A future mint defines its own name, symbol and decimals. Rationum is the application brand. Current status:",
         "count": 1
       },
       {
@@ -736,23 +701,11 @@
         "count": 1
       },
       {
-        "value": "Act",
-        "count": 3
-      },
-      {
         "value": "Activity",
         "count": 1
       },
       {
         "value": "Activity index",
-        "count": 1
-      },
-      {
-        "value": "Actoria",
-        "count": 1
-      },
-      {
-        "value": "Actoria writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
         "count": 1
       },
       {
@@ -804,7 +757,7 @@
         "count": 1
       },
       {
-        "value": "Anything claiming a Actoria token right now is not from this project.",
+        "value": "Anything claiming a Rationum token right now is not from this project.",
         "count": 1
       },
       {
@@ -928,11 +881,11 @@
         "count": 1
       },
       {
-        "value": "Is a Actoria token deployed?",
+        "value": "Is a Rationum token deployed?",
         "count": 1
       },
       {
-        "value": "Is Actoria an official Solana product?",
+        "value": "Is Rationum an official Solana product?",
         "count": 1
       },
       {
@@ -992,10 +945,6 @@
         "count": 1
       },
       {
-        "value": "No Actoria token mint is configured. The community program does not create or distribute a token.",
-        "count": 1
-      },
-      {
         "value": "No compatible wallet was detected in this browser. Install a Solana wallet extension, reload, then try again.",
         "count": 1
       },
@@ -1005,6 +954,10 @@
       },
       {
         "value": "No mint has been issued",
+        "count": 1
+      },
+      {
+        "value": "No Rationum token mint is configured. The community program does not create or distribute a token.",
         "count": 1
       },
       {
@@ -1020,7 +973,7 @@
         "count": 1
       },
       {
-        "value": "No. Actoria is an independent community project currently reading",
+        "value": "No. Rationum is an independent community project currently reading",
         "count": 1
       },
       {
@@ -1050,6 +1003,10 @@
       {
         "value": "Nothing is signed until you approve it inside the wallet.",
         "count": 1
+      },
+      {
+        "value": "num",
+        "count": 3
       },
       {
         "value": "On the record today",
@@ -1082,10 +1039,6 @@
       {
         "value": "Open votes",
         "count": 2
-      },
-      {
-        "value": "oria",
-        "count": 3
       },
       {
         "value": "part in it.",
@@ -1157,6 +1110,18 @@
       },
       {
         "value": "Quests carry an expiry and a row cap. Each wallet records once. Rows do not verify off-chain work, prove a unique person, or pay a token.",
+        "count": 1
+      },
+      {
+        "value": "Ratio",
+        "count": 3
+      },
+      {
+        "value": "Rationum",
+        "count": 1
+      },
+      {
+        "value": "Rationum writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
         "count": 1
       },
       {
@@ -1448,7 +1413,7 @@
         "count": 1
       },
       {
-        "value": "Why is the token name separate from Actoria?",
+        "value": "Why is the token name separate from Rationum?",
         "count": 1
       },
       {
@@ -2397,5 +2362,5 @@
     "api": [],
     "env": []
   },
-  "contentContractHash": "2cd00ec31667df958c64f010a822864c4aa97ac816e8a9ae39910dee437f7dbb"
+  "contentContractHash": "12761c50ee087292510e1c948499eb0f8beb36a25712d9d0e44868ae35ec88da"
 }
