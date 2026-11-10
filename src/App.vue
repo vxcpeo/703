@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted, nextTick, watch } from "vue";
-import TickerNav from "./components/TickerNav.vue";
+import OrbitIndex from "./components/OrbitIndex.vue";
 import { useCommunityApp } from "./useCommunityApp";
 import {
   SOLANA_CLUSTER,
@@ -8,10 +8,10 @@ import {
   TOKEN_MINT_ADDRESS,
 } from "./solana.js";
 import Icon from "./Icon.vue";
-import RailNav from "./components/RailNav.vue";
-import CommandBar from "./components/CommandBar.vue";
-import StatusStrip from "./components/StatusStrip.vue";
-import WalletSheet from "./components/WalletSheet.vue";
+import BrandSeal from "./components/BrandSeal.vue";
+import StageDock from "./components/StageDock.vue";
+import RingColophon from "./components/RingColophon.vue";
+import WalletPicker from "./components/WalletPicker.vue";
 
 const communityApp = useCommunityApp();
 const {
@@ -386,7 +386,7 @@ watch(proposalText, (text) => {
   if (text) clearedDraft.value = null;
 });
 
-const draftKey = "rationum-proposal-draft";
+const draftKey = "docketa-proposal-draft";
 const legacyDraftKeys = [
   "tabulora-proposal-draft",
   "konvoxa-proposal-draft",
@@ -493,128 +493,169 @@ async function vote(p, support) {
 </script>
 
 <template>
-  <div class="bz-app">
-    <a class="bz-skip" href="#main" @click.prevent="focusMain">Skip to content</a>
+  <div class="orb-field">
+    <a class="orb-skip" href="#main" @click.prevent="focusMain">Skip to content</a>
 
-    <div class="bz-frame">
-      <aside class="bz-rail">
-        <RailNav />
+    <div class="orb-frame">
+      <header class="orb-hero">
+        <BrandSeal />
 
-        <TickerNav :tabs="navTabs" :active="route" @navigate="navigate" />
+        <div class="orb-system">
+          <div class="orb-rings" aria-hidden="true">
+            <span class="orb-ring orb-ring--outer"></span>
+            <span class="orb-ring orb-ring--mid"></span>
+            <span class="orb-ring orb-ring--inner"></span>
+            <span class="orb-ring orb-ring--gate"></span>
+            <span class="orb-sweep"></span>
+          </div>
 
-        <div class="bz-rail-thesis">
-        <template v-if="route === 'home'">
-          <div class="bz-thesis">
-            <p class="bz-kicker">
-                              <span class="bz-kicker-dot" aria-hidden="true"></span>
-                              {{ SOLANA_NETWORK_NAME }} · open record
-                            </p>
-            <h1 id="hero-title" class="bz-title">
-                              Time on the<br /><em>record.</em>
-                            </h1>
-            <p class="bz-lede">
-                              Rationum writes down who took part, how the room voted and where
-                              the money sits — a public register, stamped hour by hour, that
-                              anyone can reopen. No private minutes, no unlisted spreadsheet.
-                            </p>
-            <div class="bz-actions">
-                              <button class="bz-btn bz-btn--fill bz-btn--lg" type="button" @click="go('quests')">
-                                Browse quests <Icon name="arrow-right" :size="16" />
-                              </button>
-                              <button class="bz-btn bz-btn--outline bz-btn--lg" type="button" @click="go('governance')">
-                                <Icon name="ballot" :size="16" /> Open votes
-                              </button>
-                            </div>
-            <ul class="bz-proof">
-                              <li><Icon name="shield" :size="15" /><span>No token mint exists</span></li>
-                              <li><Icon name="users" :size="15" /><span>One row per wallet</span></li>
-                              <li><Icon name="clock" :size="15" /><span>Reads refresh on demand</span></li>
-                            </ul>
+          <OrbitIndex :tabs="navTabs" :active="route" @navigate="navigate" />
+
+          <div class="orb-core">
+            <div class="orb-thesis">
+
+              <template v-if="route === 'home'">
+                <div class="orb-thesis-body">
+                  <p class="orb-kicker">
+                  <span class="orb-kicker-dot" aria-hidden="true"></span>
+                  {{ SOLANA_NETWORK_NAME }} · open record
+                  </p>
+                  <h1 id="hero-title" class="orb-title">
+                  Time on the<br /><em>record.</em>
+                  </h1>
+                </div>
+              </template>
+              <template v-if="route === 'quests'">
+                <div class="orb-thesis-body">
+                  <p class="orb-kicker">
+                  <span class="orb-kicker-dot" aria-hidden="true"></span>Participation
+                  </p>
+                  <h1 class="orb-title">Find your <em>part in it.</em></h1>
+                </div>
+              </template>
+              <template v-if="route === 'governance'">
+                <div class="orb-thesis-body">
+                  <p class="orb-kicker">
+                  <span class="orb-kicker-dot" aria-hidden="true"></span>Advisory votes
+                  </p>
+                  <h1 class="orb-title">Put it <em>to the room.</em></h1>
+                </div>
+              </template>
+              <template v-if="route === 'treasury'">
+                <div class="orb-thesis-body">
+                  <p class="orb-kicker">
+                  <span class="orb-kicker-dot" aria-hidden="true"></span>Public reads
+                  </p>
+                  <h1 class="orb-title">Nothing hidden <em>in the books.</em></h1>
+                </div>
+              </template>
+              <template v-if="route === 'stake'">
+                <div class="orb-thesis-body">
+                  <p class="orb-kicker">
+                  <span class="orb-kicker-dot" aria-hidden="true"></span>Token details
+                  </p>
+                  <h1 class="orb-title">No token is <em>wired up.</em></h1>
+                </div>
+              </template>
+              <template v-if="route === 'learn'">
+                <div class="orb-thesis-body">
+                  <p class="orb-kicker">
+                  <span class="orb-kicker-dot" aria-hidden="true"></span>The field guide
+                  </p>
+                  <h1 class="orb-title">A way in. <em>A way to check.</em></h1>
+                </div>
+              </template>
+            </div>
           </div>
-        </template>
-        <template v-if="route === 'quests'">
-          <div class="bz-thesis">
-            <p class="bz-kicker">
-                              <span class="bz-kicker-dot" aria-hidden="true"></span>Participation
-                            </p>
-            <h1 class="bz-title">Find your <em>part in it.</em></h1>
-            <p class="bz-lede">
-                              Each quest is an open invitation to take part. Recording one writes a
-                              single row for your wallet — it does not verify off-chain work, prove
-                              a unique person or pay a token.
-                            </p>
-            <div class="bz-stats">
-                              <span class="bz-stat bz-stat--lead">{{ allQuests.length }} rows</span>
-                              <span class="bz-stat">{{ programReady ? "program live" : "preview" }}</span>
-                            </div>
-          </div>
-        </template>
-        <template v-if="route === 'governance'">
-          <div class="bz-thesis">
-            <p class="bz-kicker">
-                              <span class="bz-kicker-dot" aria-hidden="true"></span>Advisory votes
-                            </p>
-            <h1 class="bz-title">Put it <em>to the room.</em></h1>
-            <p class="bz-lede">
-                              Write a proposal, choose a window of one to thirty days, and let
-                              wallets answer. One vote per wallet; results are advisory and never
-                              move funds.
-                            </p>
-            <div class="bz-stats">
-                              <span class="bz-stat bz-stat--lead">{{ visibleProposals.length }} proposals</span>
-                              <span class="bz-stat">{{ programReady ? "on chain" : "sample rows" }}</span>
-                            </div>
-          </div>
-        </template>
-        <template v-if="route === 'treasury'">
-          <div class="bz-thesis">
-            <p class="bz-kicker">
-                              <span class="bz-kicker-dot" aria-hidden="true"></span>Public reads
-                            </p>
-            <h1 class="bz-title">Nothing hidden <em>in the books.</em></h1>
-            <p class="bz-lede">
-                              Treasury balances and account rows are read straight from Solana.
-                              When a read is unavailable, this page says so instead of guessing.
-                            </p>
-            <div class="bz-stats">
-                              <span class="bz-stat bz-stat--lead">{{ SOLANA_NETWORK_NAME }}</span>
-                            </div>
-          </div>
-        </template>
-        <template v-if="route === 'stake'">
-          <div class="bz-thesis">
-            <p class="bz-kicker">
-                              <span class="bz-kicker-dot" aria-hidden="true"></span>Token details
-                            </p>
-            <h1 class="bz-title">No token is <em>wired up.</em></h1>
-            <p class="bz-lede">
-                              Quests and advisory votes run through the Solana program. Staking,
-                              locking and rewards stay switched off until a mint and its custody
-                              rules exist.
-                            </p>
-            <div class="bz-stats">
-                              <span class="bz-stat bz-stat--lead">not configured</span>
-                            </div>
-          </div>
-        </template>
-        <template v-if="route === 'learn'">
-          <div class="bz-thesis">
-            <p class="bz-kicker">
-                              <span class="bz-kicker-dot" aria-hidden="true"></span>The field guide
-                            </p>
-            <h1 class="bz-title">A way in. <em>A way to check.</em></h1>
-            <p class="bz-lede">
-                              What each row means, what your wallet will ask you to confirm, and
-                              what this project deliberately does not do yet.
-                            </p>
-            <div class="bz-stats">
-                              <span class="bz-stat bz-stat--lead">{{ SOLANA_NETWORK_NAME }}</span>
-                            </div>
-          </div>
-        </template>
         </div>
 
-        <CommandBar
+        <div class="orb-dispatch">
+          <template v-if="route === 'home'">
+            <div class="orb-dispatch-body">
+              <p class="orb-lede">
+              Docketa writes down who took part, how the room voted and where
+              the money sits — a public register, stamped hour by hour, that
+              anyone can reopen. No private minutes, no unlisted spreadsheet.
+              </p>
+              <div class="orb-actions">
+              <button class="orb-btn orb-btn--signal orb-btn--lg" type="button" @click="go('quests')">
+              Browse quests <Icon name="arrow-right" :size="16" />
+              </button>
+              <button class="orb-btn orb-btn--wire orb-btn--lg" type="button" @click="go('governance')">
+              <Icon name="ballot" :size="16" /> Open votes
+              </button>
+              </div>
+              <ul class="orb-proof">
+              <li><Icon name="shield" :size="15" /><span>No token mint exists</span></li>
+              <li><Icon name="users" :size="15" /><span>One row per wallet</span></li>
+              <li><Icon name="clock" :size="15" /><span>Reads refresh on demand</span></li>
+              </ul>
+            </div>
+          </template>
+          <template v-if="route === 'quests'">
+            <div class="orb-dispatch-body">
+              <p class="orb-lede">
+              Each quest is an open invitation to take part. Recording one writes a
+              single row for your wallet — it does not verify off-chain work, prove
+              a unique person or pay a token.
+              </p>
+              <div class="orb-stats">
+              <span class="orb-stat orb-stat--lead">{{ allQuests.length }} rows</span>
+              <span class="orb-stat">{{ programReady ? "program live" : "preview" }}</span>
+              </div>
+            </div>
+          </template>
+          <template v-if="route === 'governance'">
+            <div class="orb-dispatch-body">
+              <p class="orb-lede">
+              Write a proposal, choose a window of one to thirty days, and let
+              wallets answer. One vote per wallet; results are advisory and never
+              move funds.
+              </p>
+              <div class="orb-stats">
+              <span class="orb-stat orb-stat--lead">{{ visibleProposals.length }} proposals</span>
+              <span class="orb-stat">{{ programReady ? "on chain" : "sample rows" }}</span>
+              </div>
+            </div>
+          </template>
+          <template v-if="route === 'treasury'">
+            <div class="orb-dispatch-body">
+              <p class="orb-lede">
+              Treasury balances and account rows are read straight from Solana.
+              When a read is unavailable, this page says so instead of guessing.
+              </p>
+              <div class="orb-stats">
+              <span class="orb-stat orb-stat--lead">{{ SOLANA_NETWORK_NAME }}</span>
+              </div>
+            </div>
+          </template>
+          <template v-if="route === 'stake'">
+            <div class="orb-dispatch-body">
+              <p class="orb-lede">
+              Quests and advisory votes run through the Solana program. Staking,
+              locking and rewards stay switched off until a mint and its custody
+              rules exist.
+              </p>
+              <div class="orb-stats">
+              <span class="orb-stat orb-stat--lead">not configured</span>
+              </div>
+            </div>
+          </template>
+          <template v-if="route === 'learn'">
+            <div class="orb-dispatch-body">
+              <p class="orb-lede">
+              What each row means, what your wallet will ask you to confirm, and
+              what this project deliberately does not do yet.
+              </p>
+              <div class="orb-stats">
+              <span class="orb-stat orb-stat--lead">{{ SOLANA_NETWORK_NAME }}</span>
+              </div>
+            </div>
+          </template>
+        </div>
+        
+
+        <StageDock
           :cluster="SOLANA_CLUSTER"
           :wallet-label="walletLabel"
           :connected="connected"
@@ -626,99 +667,88 @@ async function vote(p, support) {
           @wallet="connected ? disconnectWallet() : connect()"
           @menu="toggleMenu"
         />
+      </header>
 
-        <StatusStrip
-          :tabs="navTabs"
-          :network-name="SOLANA_NETWORK_NAME"
-          :cluster="SOLANA_CLUSTER"
-          :program-state="programState"
-          :mint-state="mintState"
-          :wallet-label="walletLabel"
-          :last-read="lastRead || 'Not yet'"
-          @navigate="navigate"
-        />
-      </aside>
-
-      <main id="main" class="bz-stage" tabindex="-1">
-        <div class="bz-alerts">
-                  <div v-if="!programReady" class="bz-alert">
-                    <span class="bz-alert-icon"><Icon name="info" :size="18" /></span>
-                    <div class="bz-alert-copy">
+      <main id="main" class="orb-stage" tabindex="-1">
+        <div class="orb-alerts">
+                  <div v-if="!programReady" class="orb-alert">
+                    <span class="orb-alert-icon"><Icon name="info" :size="18" /></span>
+                    <div class="orb-alert-copy">
                       <strong>Preview rows</strong>
                       <p>{{ previewNote }}</p>
                     </div>
-                    <button class="bz-btn bz-btn--quiet bz-btn--sm bz-alert-action" type="button" @click="go('learn')">
+                    <button class="orb-btn orb-btn--quiet orb-btn--sm orb-alert-action" type="button" @click="go('learn')">
                       How it works <Icon name="arrow-right" :size="14" />
                     </button>
                   </div>
 
-                  <div v-if="paused" class="bz-alert" role="status">
-                    <span class="bz-alert-icon"><Icon name="alert" :size="18" /></span>
-                    <div class="bz-alert-copy">
+                  <div v-if="paused" class="orb-alert" role="status">
+                    <span class="orb-alert-icon"><Icon name="alert" :size="18" /></span>
+                    <div class="orb-alert-copy">
                       <strong>Writes are paused</strong>
                       <p>The program is paused. Reads continue; transactions are unavailable.</p>
                     </div>
                   </div>
 
-                  <div v-if="readError" class="bz-alert" data-tone="danger" role="alert">
-                    <span class="bz-alert-icon"><Icon name="alert" :size="18" /></span>
-                    <div class="bz-alert-copy">
+                  <div v-if="readError" class="orb-alert" data-tone="danger" role="alert">
+                    <span class="orb-alert-icon"><Icon name="alert" :size="18" /></span>
+                    <div class="orb-alert-copy">
                       <strong>Sync failed</strong>
                       <p>{{ readError }}</p>
                     </div>
-                    <button class="bz-btn bz-btn--quiet bz-btn--sm bz-alert-action" type="button" :disabled="reading || busy" @click="refresh">
+                    <button class="orb-btn orb-btn--quiet orb-btn--sm orb-alert-action" type="button" :disabled="reading || busy" @click="refresh">
                       Try again
                     </button>
                   </div>
 
-                  <div v-if="accountError" class="bz-alert" data-tone="danger" role="alert">
-                    <span class="bz-alert-icon"><Icon name="alert" :size="18" /></span>
-                    <div class="bz-alert-copy">
+                  <div v-if="accountError" class="orb-alert" data-tone="danger" role="alert">
+                    <span class="orb-alert-icon"><Icon name="alert" :size="18" /></span>
+                    <div class="orb-alert-copy">
                       <strong>Wallet read failed</strong>
                       <p>{{ accountError }}</p>
                     </div>
                   </div>
 
-                  <div v-if="accountReading" class="bz-alert" data-tone="info" role="status">
-                    <span class="bz-alert-icon"><Icon name="clock" :size="18" /></span>
-                    <div class="bz-alert-copy">
+                  <div v-if="accountReading" class="orb-alert" data-tone="info" role="status">
+                    <span class="orb-alert-icon"><Icon name="clock" :size="18" /></span>
+                    <div class="orb-alert-copy">
                       <strong>Reading wallet balances…</strong>
                     </div>
                   </div>
                 </div>
 
         <Transition name="page" mode="out-in">
-          <section :key="route" class="bz-view">
+          <section :key="route" class="orb-view">
             <template v-if="route === 'home'">
-              <div class="bz-sheet">
+              <div class="orb-canvas orb-canvas--home">
               
 
-                              <section class="bz-stage-body" aria-label="Record bands">
-                                <div class="bz-flow">
-                                  <section class="bz-readout" aria-label="Live readouts">
-                                    <div class="bz-readout-head">
-                                      <h2 class="bz-readout-title">On the record today</h2>
-                                      <span class="bz-readout-date">{{ todayLabel }}</span>
+                              <section class="orb-band" aria-label="Record bands">
+
+                                  <section class="orb-ledger-band" aria-label="Live readouts">
+                                    <div class="orb-band-head">
+                                      <h2 class="orb-band-title">On the record today</h2>
+                                      <span class="orb-band-date">{{ todayLabel }}</span>
                                     </div>
-                                    <div class="bz-figures">
-                                      <div class="bz-figure">
-                                        <span class="bz-figure-label">Open quests</span>
-                                        <strong class="bz-figure-value">{{ metricsAvailable ? openQuests : "—" }}</strong>
-                                        <span class="bz-figure-note">
+                                    <div class="orb-figures">
+                                      <div class="orb-figure">
+                                        <span class="orb-figure-label">Open quests</span>
+                                        <strong class="orb-figure-value">{{ metricsAvailable ? openQuests : "—" }}</strong>
+                                        <span class="orb-figure-note">
                                           {{ metricsAvailable ? "read from the program" : "sample rows shown" }}
                                         </span>
                                       </div>
-                                      <div class="bz-figure">
-                                        <span class="bz-figure-label">Votes open</span>
-                                        <strong class="bz-figure-value">{{ metricsAvailable ? openProposals : "—" }}</strong>
-                                        <span class="bz-figure-note">advisory · one vote per wallet</span>
+                                      <div class="orb-figure">
+                                        <span class="orb-figure-label">Votes open</span>
+                                        <strong class="orb-figure-value">{{ metricsAvailable ? openProposals : "—" }}</strong>
+                                        <span class="orb-figure-note">advisory · one vote per wallet</span>
                                       </div>
-                                      <div class="bz-figure">
-                                        <span class="bz-figure-label">Your wallet</span>
-                                        <strong class="bz-figure-value bz-figure-value--text">
+                                      <div class="orb-figure">
+                                        <span class="orb-figure-label">Your wallet</span>
+                                        <strong class="orb-figure-value orb-figure-value--text">
                                           {{ connected ? short(wallet) : "—" }}
                                         </strong>
-                                        <span class="bz-figure-note">
+                                        <span class="orb-figure-note">
                                           {{
                                             connected && accountReady
                                               ? solUnits(native, 4) + " SOL"
@@ -728,40 +758,42 @@ async function vote(p, support) {
                                           }}
                                         </span>
                                       </div>
-                                      <div class="bz-figure">
-                                        <span class="bz-figure-label">Token</span>
-                                        <strong class="bz-figure-value bz-figure-value--text">
+                                      <div class="orb-figure">
+                                        <span class="orb-figure-label">Token</span>
+                                        <strong class="orb-figure-value orb-figure-value--text">
                                           {{ mintConfigured ? tokenSymbol || "mint set" : "None yet" }}
                                         </strong>
-                                        <span class="bz-figure-note">
+                                        <span class="orb-figure-note">
                                           {{ mintConfigured ? short(TOKEN_MINT_ADDRESS) : "nothing to buy or hold" }}
                                         </span>
                                       </div>
                                     </div>
-                                    <div class="bz-readout-foot">
-                                      <span class="bz-pulse" :class="{ 'bz-pulse--idle': !programReady }" aria-hidden="true"></span>
+                                    <div class="orb-band-foot">
+                                      <span class="orb-pulse" :class="{ 'orb-pulse--idle': !programReady }" aria-hidden="true"></span>
                                       <span>{{ programReady ? "Program reports live" : "Preview mode · nothing is submitted" }}</span>
-                                      <button class="bz-textbtn" type="button" @click="go('learn')">
+                                      <button class="orb-linkbtn" type="button" @click="go('learn')">
                                         Why? <Icon name="arrow-right" :size="14" />
                                       </button>
                                     </div>
                                   </section>
 
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
-                                    <header class="bz-panel-head">
-                                      <h2 class="bz-panel-title">Newest quests</h2>
-                                      <button class="bz-textbtn" type="button" @click="go('quests')">
+                                  <div class="orb-colonnade">
+
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
+                                    <div class="orb-sheet-head">
+                                      <h2 class="orb-sheet-title">Newest quests</h2>
+                                      <button class="orb-linkbtn" type="button" @click="go('quests')">
                                         All quests <Icon name="arrow-right" :size="14" />
                                       </button>
-                                    </header>
-                                    <ul v-if="registerQuests.length" class="bz-ledger">
+                                    </div>
+                                    <ul v-if="registerQuests.length" class="orb-rows">
                                       <li v-for="(q, index) in registerQuests" :key="q.id">
-                                        <button class="bz-ledger-row" type="button" @click="openQuest(q)">
-                                          <span class="bz-ledger-index">{{ String(index + 1).padStart(2, "0") }}</span>
-                                          <span class="bz-ledger-main">
-                                            <b class="bz-ledger-title">{{ q.title }}</b>
-                                            <small class="bz-ledger-note">
+                                        <button class="orb-row" type="button" @click="openQuest(q)">
+                                          <span class="orb-row-index">{{ String(index + 1).padStart(2, "0") }}</span>
+                                          <span class="orb-row-main">
+                                            <b class="orb-row-title">{{ q.title }}</b>
+                                            <small class="orb-row-note">
                                               {{
                                                 q.sample
                                                   ? "Sample row · preview only"
@@ -769,62 +801,62 @@ async function vote(p, support) {
                                               }}
                                             </small>
                                           </span>
-                                          <span class="bz-tag" :data-tone="pillTone(questStatus(q))">{{ questStatus(q) }}</span>
-                                          <span class="bz-ledger-go" aria-hidden="true"><Icon name="arrow-right" :size="16" /></span>
+                                          <span class="orb-tag" :data-tone="pillTone(questStatus(q))">{{ questStatus(q) }}</span>
+                                          <span class="orb-row-go" aria-hidden="true"><Icon name="arrow-right" :size="16" /></span>
                                         </button>
                                       </li>
                                     </ul>
-                                    <div v-else class="bz-panel-main">
-                                      <div class="bz-empty">
-                                        <span class="bz-empty-icon"><Icon name="flag" :size="20" /></span>
-                                        <h3 class="bz-empty-title">No rows yet</h3>
-                                        <p class="bz-empty-text">Quests appear here once the community publishes them.</p>
+                                    <div v-else class="orb-sheet-main">
+                                      <div class="orb-empty">
+                                        <span class="orb-empty-icon"><Icon name="flag" :size="20" /></span>
+                                        <h3 class="orb-empty-title">No rows yet</h3>
+                                        <p class="orb-empty-text">Quests appear here once the community publishes them.</p>
                                       </div>
                                     </div>
                   
                         </div></article>
 
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
-                                    <header class="bz-panel-head">
-                                      <h2 class="bz-panel-title">Votes on the floor</h2>
-                                      <button class="bz-textbtn" type="button" @click="go('governance')">
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
+                                    <div class="orb-sheet-head">
+                                      <h2 class="orb-sheet-title">Votes on the floor</h2>
+                                      <button class="orb-linkbtn" type="button" @click="go('governance')">
                                         All votes <Icon name="arrow-right" :size="14" />
                                       </button>
-                                    </header>
-                                    <ul v-if="registerProposals.length" class="bz-ledger">
+                                    </div>
+                                    <ul v-if="registerProposals.length" class="orb-rows">
                                       <li v-for="(p, index) in registerProposals" :key="p.id">
-                                        <button class="bz-ledger-row" type="button" @click="go('governance')">
-                                          <span class="bz-ledger-index">{{ String(index + 1).padStart(2, "0") }}</span>
-                                          <span class="bz-ledger-main">
-                                            <b class="bz-ledger-title">{{ p.description }}</b>
-                                            <small class="bz-ledger-note">
+                                        <button class="orb-row" type="button" @click="go('governance')">
+                                          <span class="orb-row-index">{{ String(index + 1).padStart(2, "0") }}</span>
+                                          <span class="orb-row-main">
+                                            <b class="orb-row-title">{{ p.description }}</b>
+                                            <small class="orb-row-note">
                                               {{ p.sample ? "Sample proposal · no live votes" : "Closes " + date(p.endsAt) }}
                                             </small>
                                           </span>
-                                          <span class="bz-tag" :data-tone="pillTone(proposalStatus(p))">{{ proposalStatus(p) }}</span>
-                                          <span class="bz-ledger-go" aria-hidden="true"><Icon name="arrow-right" :size="16" /></span>
+                                          <span class="orb-tag" :data-tone="pillTone(proposalStatus(p))">{{ proposalStatus(p) }}</span>
+                                          <span class="orb-row-go" aria-hidden="true"><Icon name="arrow-right" :size="16" /></span>
                                         </button>
                                       </li>
                                     </ul>
-                                    <div v-else class="bz-panel-main">
-                                      <div class="bz-empty">
-                                        <span class="bz-empty-icon"><Icon name="ballot" :size="20" /></span>
-                                        <h3 class="bz-empty-title">The floor is open</h3>
-                                        <p class="bz-empty-text">Start the first proposal when the community has a decision to make.</p>
+                                    <div v-else class="orb-sheet-main">
+                                      <div class="orb-empty">
+                                        <span class="orb-empty-icon"><Icon name="ballot" :size="20" /></span>
+                                        <h3 class="orb-empty-title">The floor is open</h3>
+                                        <p class="orb-empty-text">Start the first proposal when the community has a decision to make.</p>
                                       </div>
                                     </div>
-                                    <div v-if="registerProposals.length" class="bz-panel-main">
-                                      <span class="bz-note-card-note">Support on the leading proposal</span>
-                                      <div class="bz-tally">
-                                        <i class="bz-tally-for" :style="{ width: leadBreakdown.forPct + '%' }"></i>
-                                        <i class="bz-tally-against" :style="{ width: leadBreakdown.againstPct + '%' }"></i>
+                                    <div v-if="registerProposals.length" class="orb-sheet-main">
+                                      <span class="orb-note-meta">Support on the leading proposal</span>
+                                      <div class="orb-tally">
+                                        <i class="orb-tally-for" :style="{ width: leadBreakdown.forPct + '%' }"></i>
+                                        <i class="orb-tally-against" :style="{ width: leadBreakdown.againstPct + '%' }"></i>
                                       </div>
-                                      <div class="bz-tally-keys">
-                                        <span class="bz-tally-key">
+                                      <div class="orb-tally-keys">
+                                        <span class="orb-tally-key">
                                           For <b>{{ units(leadProposal?.forVotes || 0n) }}</b>
                                         </span>
-                                        <span class="bz-tally-key bz-tally-key--against">
+                                        <span class="orb-tally-key orb-tally-key--against">
                                           Against <b>{{ units(leadProposal?.againstVotes || 0n) }}</b>
                                         </span>
                                         <span>
@@ -835,60 +867,62 @@ async function vote(p, support) {
                   
                         </div></article>
 
-                                  <section class="bz-doors" aria-label="Ways to take part">
-                                    <article class="bz-door">
-                                      <span class="bz-door-icon"><Icon name="flag" :size="22" /></span>
+                                  </div>
+
+                                  <section class="orb-doors" aria-label="Ways to take part">
+                                    <article class="orb-door">
+                                      <span class="orb-door-icon"><Icon name="flag" :size="22" /></span>
                                       <h2>Take part</h2>
                                       <p>
                                         Pick a quest, record your participation and leave a row anyone can
                                         check later. Rows are participation only — they do not pay a token.
                                       </p>
-                                      <div class="bz-door-foot">
-                                        <button class="bz-btn bz-btn--outline" type="button" @click="go('quests')">
+                                      <div class="orb-door-foot">
+                                        <button class="orb-btn orb-btn--wire" type="button" @click="go('quests')">
                                           See {{ allQuests.length }} quests <Icon name="arrow-right" :size="15" />
                                         </button>
                                       </div>
                                     </article>
-                                    <article class="bz-door bz-door--ballot">
-                                      <span class="bz-door-icon"><Icon name="ballot" :size="22" /></span>
+                                    <article class="orb-door orb-door--ballot">
+                                      <span class="orb-door-icon"><Icon name="ballot" :size="22" /></span>
                                       <h2>Weigh in</h2>
                                       <p>
                                         Write a proposal, set a window between one and thirty days, and let
                                         wallets answer. Results are advisory and never move funds.
                                       </p>
-                                      <div class="bz-door-foot">
-                                        <button class="bz-btn bz-btn--fill" type="button" @click="go('governance')">
+                                      <div class="orb-door-foot">
+                                        <button class="orb-btn orb-btn--signal" type="button" @click="go('governance')">
                                           Open the floor <Icon name="arrow-right" :size="15" />
                                         </button>
                                       </div>
                                     </article>
                                   </section>
-                                </div>
+                              </section>
 
-                                <section class="bz-notes" aria-label="Marginal notes">
-                                  <section class="bz-note-card">
-                        <div class="bz-note-card-body">
-                                    <header class="bz-note-card-head">
-                                      <h2 class="bz-note-card-title">Your wallet</h2>
-                                      <span class="bz-note-card-note">{{ connected ? "connected" : "idle" }}</span>
-                                    </header>
-                                    <div class="bz-note-card-main bz-note-card-main--flush">
-                                      <dl class="bz-facts">
-                                        <div class="bz-fact">
+                              <section class="orb-margin" aria-label="Marginal notes">
+                                  <section class="orb-note">
+                        <div class="orb-note-body">
+                                    <div class="orb-note-head">
+                                      <h2 class="orb-note-title">Your wallet</h2>
+                                      <span class="orb-note-meta">{{ connected ? "connected" : "idle" }}</span>
+                                    </div>
+                                    <div class="orb-note-main orb-note-main--flush">
+                                      <dl class="orb-facts">
+                                        <div class="orb-fact">
                                           <dt>Address</dt>
                                           <dd>{{ connected ? short(wallet) : "not connected" }}</dd>
                                         </div>
-                                        <div class="bz-fact">
+                                        <div class="orb-fact">
                                           <dt>SOL</dt>
                                           <dd>{{ connected && accountReady ? solUnits(native, 4) : "—" }}</dd>
                                         </div>
-                                        <div class="bz-fact bz-fact--dim">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>{{ mintConfigured ? tokenSymbol : "Token" }}</dt>
                                           <dd>
                                             {{ mintConfigured && connected && accountReady ? units(token) : "not configured" }}
                                           </dd>
                                         </div>
-                                        <div class="bz-fact">
+                                        <div class="orb-fact">
                                           <dt>State</dt>
                                           <dd>
                                             {{ connected ? (accountReady ? "synced" : "reading") : "connect to read" }}
@@ -896,9 +930,9 @@ async function vote(p, support) {
                                         </div>
                                       </dl>
                                     </div>
-                                    <div class="bz-note-card-foot">
+                                    <div class="orb-note-foot">
                                       <button
-                                        class="bz-btn bz-btn--fill bz-btn--wide"
+                                        class="orb-btn orb-btn--signal orb-btn--wide"
                                         type="button"
                                         :disabled="connecting || busy"
                                         @click="connected ? disconnectWallet() : connect()"
@@ -910,26 +944,26 @@ async function vote(p, support) {
                   
                         </div></section>
 
-                                  <section class="bz-note-card">
-                        <div class="bz-note-card-body">
-                                    <header class="bz-note-card-head">
-                                      <h2 class="bz-note-card-title">Token</h2>
-                                      <span class="bz-tag" data-tone="is-neutral">{{ mintConfigured ? "configured" : "none yet" }}</span>
-                                    </header>
-                                    <div class="bz-note-card-main">
+                                  <section class="orb-note">
+                        <div class="orb-note-body">
+                                    <div class="orb-note-head">
+                                      <h2 class="orb-note-title">Token</h2>
+                                      <span class="orb-tag" data-tone="is-neutral">{{ mintConfigured ? "configured" : "none yet" }}</span>
+                                    </div>
+                                    <div class="orb-note-main">
                                       <p>{{ tokenIdentity }}</p>
                                       <p>
                                         The community program records participation and advisory votes.
                                         It never mints, holds or pays out a token.
                                       </p>
-                                      <button class="bz-btn bz-btn--outline bz-btn--wide" type="button" @click="go('stake')">
+                                      <button class="orb-btn orb-btn--wire orb-btn--wide" type="button" @click="go('stake')">
                                         Token status <Icon name="arrow-right" :size="14" />
                                       </button>
                                     </div>
                   
                         </div></section>
 
-                                  <div class="bz-hint">
+                                  <div class="orb-hint">
                                     <Icon name="shield" :size="18" />
                                     <div>
                                       <strong>Before you sign</strong>
@@ -937,27 +971,27 @@ async function vote(p, support) {
                                     </div>
                                   </div>
                                 </section>
-                              </section>
+                              
             
               </div>
             </template>
             <template v-if="route === 'quests'">
-              <div class="bz-sheet">
+              <div class="orb-canvas orb-canvas--quests">
               
 
-                              <section class="bz-stage-body" aria-label="Record bands">
-                                <div class="bz-flow">
-                                  <div class="bz-toolbar">
-                                    <label class="bz-search">
+                              <section class="orb-band" aria-label="Record bands">
+
+                                  <div class="orb-toolbar">
+                                    <label class="orb-search">
                                       <Icon name="search" :size="17" />
-                                      <span class="visually-hidden">Search quests</span>
-                                      <input class="bz-search-input" v-model="search" type="search" placeholder="Search quests…" autocomplete="off" />
+                                      <span class="sr-only">Search quests</span>
+                                      <input class="orb-search-field" v-model="search" type="search" placeholder="Search quests…" autocomplete="off" />
                                     </label>
-                                    <div class="bz-chips" role="group" aria-label="Filter quests">
+                                    <div class="orb-chips" role="group" aria-label="Filter quests">
                                       <button
                                         v-for="f in questFilters"
                                         :key="f"
-                                        class="bz-chip"
+                                        class="orb-chip"
                                         :aria-pressed="questFilter === f"
                                         type="button"
                                         @click="questFilter = f"
@@ -965,23 +999,23 @@ async function vote(p, support) {
                                         {{ f }}
                                       </button>
                                     </div>
-                                    <span class="bz-count" role="status">
+                                    <span class="orb-count" role="status">
                                       {{ visibleQuests.length }} {{ visibleQuests.length === 1 ? "quest" : "quests" }}
                                     </span>
                                   </div>
 
                                   <div
                                     v-if="reading && !allQuests.length"
-                                    class="bz-panel bz-panel--loading"
+                                    class="orb-sheet orb-sheet--loading"
                                     role="status"
                                     aria-label="Loading quests"
                                   >
-                                    <div v-for="i in 3" :key="i" class="bz-loading"></div>
+                                    <div v-for="i in 3" :key="i" class="orb-loading"></div>
                                   </div>
 
-                                  <div v-else-if="!visibleQuests.length" class="bz-empty">
-                                    <span class="bz-empty-icon"><Icon name="flag" :size="20" /></span>
-                                    <h3 class="bz-empty-title">
+                                  <div v-else-if="!visibleQuests.length" class="orb-empty">
+                                    <span class="orb-empty-icon"><Icon name="flag" :size="20" /></span>
+                                    <h3 class="orb-empty-title">
                                       {{
                                         readError
                                           ? "Rows unavailable"
@@ -990,7 +1024,7 @@ async function vote(p, support) {
                                             : "Room for the first row"
                                       }}
                                     </h3>
-                                    <p class="bz-empty-text">
+                                    <p class="orb-empty-text">
                                       {{
                                         readError
                                           ? "Refresh the connection to read the latest quests."
@@ -1001,7 +1035,7 @@ async function vote(p, support) {
                                     </p>
                                     <button
                                       v-if="search || questFilter !== 'all'"
-                                      class="bz-btn bz-btn--outline"
+                                      class="orb-btn orb-btn--wire"
                                       type="button"
                                       @click="resetFilters"
                                     >
@@ -1009,7 +1043,7 @@ async function vote(p, support) {
                                     </button>
                                     <button
                                       v-else-if="readError"
-                                      class="bz-btn bz-btn--fill"
+                                      class="orb-btn orb-btn--signal"
                                       type="button"
                                       :disabled="reading"
                                       @click="refresh"
@@ -1018,36 +1052,36 @@ async function vote(p, support) {
                                     </button>
                                   </div>
 
-                                  <div v-else class="bz-panel">
+                                  <div v-else class="orb-sheet">
                                     <article
                                       v-for="(q, index) in visibleQuests"
                                       :id="'quest-row-' + q.id"
                                       :key="q.id"
-                                      class="bz-entry"
+                                      class="orb-entry"
                                       tabindex="-1"
                                     >
-                                      <div class="bz-entry-head">
-                                        <span class="bz-tag" :data-tone="pillTone(questStatus(q))">{{ questStatus(q) }}</span>
-                                        <span class="bz-entry-id">
+                                      <div class="orb-entry-head">
+                                        <span class="orb-tag" :data-tone="pillTone(questStatus(q))">{{ questStatus(q) }}</span>
+                                        <span class="orb-entry-id">
                                           {{ q.sample ? "sample" : "quest " + String(index + 1).padStart(2, "0") }}
                                         </span>
                                       </div>
-                                      <h3 class="bz-entry-title">{{ q.title }}</h3>
-                                      <p class="bz-entry-text">{{ q.detail || "Community participation record." }}</p>
-                                      <div class="bz-entry-meter">
-                                        <div class="bz-entry-meter-row">
+                                      <h3 class="orb-entry-title">{{ q.title }}</h3>
+                                      <p class="orb-entry-text">{{ q.detail || "Community participation record." }}</p>
+                                      <div class="orb-entry-meter">
+                                        <div class="orb-entry-row">
                                           <span>Capacity</span>
                                           <b>{{ q.sample ? "preview only" : q.claims + " / " + q.maxClaims }}</b>
                                         </div>
-                                        <div class="bz-gauge"><i class="bz-gauge-fill" :style="{ width: questProgress(q) + '%' }"></i></div>
-                                        <div class="bz-entry-meter-row">
+                                        <div class="orb-gauge"><i class="orb-gauge-fill" :style="{ width: questProgress(q) + '%' }"></i></div>
+                                        <div class="orb-entry-row">
                                           <span>Expires</span>
                                           <b>{{ q.sample ? "—" : date(q.expiresAt) }}</b>
                                         </div>
                                       </div>
-                                      <div class="bz-entry-foot">
+                                      <div class="orb-entry-foot">
                                         <button
-                                          class="bz-btn bz-btn--fill bz-btn--sm"
+                                          class="orb-btn orb-btn--signal orb-btn--sm"
                                           type="button"
                                           :disabled="actionDisabled || (!q.sample && questStatus(q) !== 'Open')"
                                           @click="claim(q)"
@@ -1066,7 +1100,7 @@ async function vote(p, support) {
                                         </button>
                                         <button
                                           v-if="isOwner && !q.sample"
-                                          class="bz-btn bz-btn--outline bz-btn--sm"
+                                          class="orb-btn orb-btn--wire orb-btn--sm"
                                           type="button"
                                           :disabled="busy"
                                           @click="setQuest(q)"
@@ -1076,39 +1110,39 @@ async function vote(p, support) {
                                       </div>
                                     </article>
                                   </div>
-                                </div>
+                              </section>
 
-                                <section class="bz-notes" aria-label="Marginal notes">
-                                  <form v-if="isOwner" class="bz-note-card bz-form" @submit.prevent="createQuest">
-                                    <header class="bz-note-card-head">
-                                      <h2 class="bz-note-card-title">Publish a quest</h2>
-                                      <span class="bz-stat">authority wallet</span>
-                                    </header>
-                                    <div class="bz-note-card-main">
-                                      <label class="bz-field">
-                                        <span class="bz-field-label">Quest title</span>
-                                        <input class="bz-input" v-model="adminTitle" maxlength="80" required placeholder="Welcome to the community" />
+                              <section class="orb-margin" aria-label="Marginal notes">
+                                  <form v-if="isOwner" class="orb-note orb-form" @submit.prevent="createQuest">
+                                    <div class="orb-note-head">
+                                      <h2 class="orb-note-title">Publish a quest</h2>
+                                      <span class="orb-stat">authority wallet</span>
+                                    </div>
+                                    <div class="orb-note-main">
+                                      <label class="orb-fieldset">
+                                        <span class="orb-label">Quest title</span>
+                                        <input class="orb-input" v-model="adminTitle" maxlength="80" required placeholder="Welcome to the community" />
                                       </label>
-                                      <label class="bz-field">
-                                        <span class="bz-field-label">Details</span>
-                                        <input class="bz-input" v-model="adminDetails" maxlength="240" placeholder="What should participants review?" />
+                                      <label class="orb-fieldset">
+                                        <span class="orb-label">Details</span>
+                                        <input class="orb-input" v-model="adminDetails" maxlength="240" placeholder="What should participants review?" />
                                       </label>
-                                      <label class="bz-field">
-                                        <span class="bz-field-label">Maximum rows</span>
-                                        <input class="bz-input" v-model="adminMax" type="number" min="1" max="1000000" required />
+                                      <label class="orb-fieldset">
+                                        <span class="orb-label">Maximum rows</span>
+                                        <input class="orb-input" v-model="adminMax" type="number" min="1" max="1000000" required />
                                       </label>
-                                      <label class="bz-field">
-                                        <span class="bz-field-label">Open for (days)</span>
-                                        <input class="bz-input" v-model="adminDays" type="number" min="1" max="365" required />
+                                      <label class="orb-fieldset">
+                                        <span class="orb-label">Open for (days)</span>
+                                        <input class="orb-input" v-model="adminDays" type="number" min="1" max="365" required />
                                       </label>
-                                      <p class="bz-form-note">Rows record participation only. No token reward is attached.</p>
-                                      <button class="bz-btn bz-btn--fill" type="submit" :disabled="actionDisabled">
+                                      <p class="orb-form-note">Rows record participation only. No token reward is attached.</p>
+                                      <button class="orb-btn orb-btn--signal" type="submit" :disabled="actionDisabled">
                                         <Icon name="plus" :size="15" /> Publish quest
                                       </button>
                                     </div>
                                   </form>
 
-                                  <div class="bz-hint">
+                                  <div class="orb-hint">
                                     <Icon name="shield" :size="18" />
                                     <div>
                                       <strong>Your wallet, your decision</strong>
@@ -1116,40 +1150,40 @@ async function vote(p, support) {
                                     </div>
                                   </div>
                                 </section>
-                              </section>
+                              
             
               </div>
             </template>
             <template v-if="route === 'governance'">
-              <div class="bz-sheet">
+              <div class="orb-canvas orb-canvas--governance">
               
 
-                              <section class="bz-stage-body" aria-label="Record bands">
-                                <div class="bz-flow">
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
+                              <section class="orb-band" aria-label="Record bands">
+
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
                                     <template v-if="visibleProposals.length">
-                                      <article v-for="p in visibleProposals" :key="p.id" class="bz-ballot">
-                                        <div class="bz-ballot-head">
-                                          <span class="bz-ballot-id">
+                                      <article v-for="p in visibleProposals" :key="p.id" class="orb-ballot">
+                                        <div class="orb-ballot-head">
+                                          <span class="orb-ballot-id">
                                             {{ p.sample ? "sample proposal" : "proposal " + String(p.id).padStart(3, "0") }}
                                           </span>
-                                          <span class="bz-tag" :data-tone="pillTone(proposalStatus(p))">{{ proposalStatus(p) }}</span>
+                                          <span class="orb-tag" :data-tone="pillTone(proposalStatus(p))">{{ proposalStatus(p) }}</span>
                                         </div>
-                                        <h3 class="bz-ballot-title">{{ p.description }}</h3>
-                                        <div class="bz-tally">
-                                          <i class="bz-tally-for" :style="{ width: voteBreakdown(p).forPct + '%' }"></i>
-                                          <i class="bz-tally-against" :style="{ width: voteBreakdown(p).againstPct + '%' }"></i>
+                                        <h3 class="orb-ballot-title">{{ p.description }}</h3>
+                                        <div class="orb-tally">
+                                          <i class="orb-tally-for" :style="{ width: voteBreakdown(p).forPct + '%' }"></i>
+                                          <i class="orb-tally-against" :style="{ width: voteBreakdown(p).againstPct + '%' }"></i>
                                         </div>
-                                        <div class="bz-tally-keys">
-                                          <span class="bz-tally-key">For <b>{{ units(p.forVotes) }}</b></span>
-                                          <span class="bz-tally-key bz-tally-key--against">Against <b>{{ units(p.againstVotes) }}</b></span>
+                                        <div class="orb-tally-keys">
+                                          <span class="orb-tally-key">For <b>{{ units(p.forVotes) }}</b></span>
+                                          <span class="orb-tally-key orb-tally-key--against">Against <b>{{ units(p.againstVotes) }}</b></span>
                                           <span>
                                             {{ voteBreakdown(p).empty ? "No votes yet" : votePercent(p) + "% support" }}
                                           </span>
                                           <span v-if="!p.sample">Closes {{ date(p.endsAt) }}</span>
                                         </div>
-                                        <div class="bz-ballot-foot">
+                                        <div class="orb-ballot-foot">
                                           <p>
                                             {{
                                               p.voted
@@ -1160,7 +1194,7 @@ async function vote(p, support) {
                                             }}
                                           </p>
                                           <button
-                                            class="bz-btn bz-btn--fill bz-btn--sm"
+                                            class="orb-btn orb-btn--signal orb-btn--sm"
                                             type="button"
                                             :disabled="actionDisabled || (!p.sample && proposalStatus(p) !== 'Open')"
                                             @click="vote(p, true)"
@@ -1168,7 +1202,7 @@ async function vote(p, support) {
                                             <Icon name="check" :size="14" /> Vote for
                                           </button>
                                           <button
-                                            class="bz-btn bz-btn--outline bz-btn--sm"
+                                            class="orb-btn orb-btn--wire orb-btn--sm"
                                             type="button"
                                             :disabled="actionDisabled || (!p.sample && proposalStatus(p) !== 'Open')"
                                             @click="vote(p, false)"
@@ -1179,15 +1213,15 @@ async function vote(p, support) {
                                       </article>
                                     </template>
 
-                                    <div v-else-if="programReady && reading" class="bz-panel-main" role="status">
-                                      <span class="visually-hidden">Loading proposals</span>
+                                    <div v-else-if="programReady && reading" class="orb-sheet-main" role="status">
+                                      <span class="sr-only">Loading proposals</span>
                                     </div>
 
-                                    <div v-else class="bz-panel-main">
-                                      <div class="bz-empty">
-                                        <span class="bz-empty-icon"><Icon name="ballot" :size="20" /></span>
-                                        <h3 class="bz-empty-title">{{ readError ? "Proposals unavailable" : "The floor is open" }}</h3>
-                                        <p class="bz-empty-text">
+                                    <div v-else class="orb-sheet-main">
+                                      <div class="orb-empty">
+                                        <span class="orb-empty-icon"><Icon name="ballot" :size="20" /></span>
+                                        <h3 class="orb-empty-title">{{ readError ? "Proposals unavailable" : "The floor is open" }}</h3>
+                                        <p class="orb-empty-text">
                                           {{
                                             readError
                                               ? "Refresh the connection to reconnect."
@@ -1196,7 +1230,7 @@ async function vote(p, support) {
                                         </p>
                                         <button
                                           v-if="!readError && !composeOpen"
-                                          class="bz-btn bz-btn--fill"
+                                          class="orb-btn orb-btn--signal"
                                           type="button"
                                           @click="toggleCompose"
                                         >
@@ -1207,28 +1241,28 @@ async function vote(p, support) {
                   
                         </div></article>
 
-                                  <div class="bz-hint">
+                                  <div class="orb-hint">
                                     <Icon name="info" :size="18" />
                                     <div>
                                       <strong>Advisory, not binding</strong>
                                       <p>Votes do not execute treasury spending. Weight follows the program's own rules.</p>
                                     </div>
                                   </div>
-                                </div>
+                              </section>
 
-                                <section class="bz-notes" aria-label="Marginal notes">
-                                  <section class="bz-note-card">
-                        <div class="bz-note-card-body">
-                                    <header class="bz-note-card-head">
-                                      <h2 class="bz-note-card-title">Start a proposal</h2>
-                                      <span class="bz-note-card-note">
+                              <section class="orb-margin" aria-label="Marginal notes">
+                                  <section class="orb-note">
+                        <div class="orb-note-body">
+                                    <div class="orb-note-head">
+                                      <h2 class="orb-note-title">Start a proposal</h2>
+                                      <span class="orb-note-meta">
                                         {{ draftSaved && !composeOpen ? "draft saved" : "10–2,000 chars" }}
                                       </span>
-                                    </header>
-                                    <div class="bz-note-card-main">
+                                    </div>
+                                    <div class="orb-note-main">
                                       <button
                                         id="compose-toggle"
-                                        class="bz-btn bz-btn--outline bz-btn--wide"
+                                        class="orb-btn orb-btn--wire orb-btn--wide"
                                         type="button"
                                         :aria-expanded="composeOpen"
                                         aria-controls="compose-editor"
@@ -1247,15 +1281,15 @@ async function vote(p, support) {
                                     <form
                                       v-if="composeOpen"
                                       id="compose-editor"
-                                      class="bz-note-card-main bz-form"
+                                      class="orb-note-main orb-form"
                                       @submit.prevent="createProposal"
                                       @keydown.esc.prevent="toggleCompose"
                                     >
-                                      <label class="bz-field">
-                                        <span class="bz-field-label">Proposal</span>
+                                      <label class="orb-fieldset">
+                                        <span class="orb-label">Proposal</span>
                                         <textarea
                                           id="proposal-description"
-                                          class="bz-textarea"
+                                          class="orb-textarea"
                                           v-model="proposalText"
                                           minlength="10"
                                           maxlength="2000"
@@ -1263,27 +1297,27 @@ async function vote(p, support) {
                                           placeholder="One decision, its purpose, any budget, and the outcome you expect."
                                         ></textarea>
                                       </label>
-                                      <label class="bz-field">
-                                        <span class="bz-field-label">Voting window (days)</span>
-                                        <input class="bz-input" v-model="proposalDays" type="number" min="1" max="30" required />
+                                      <label class="orb-fieldset">
+                                        <span class="orb-label">Voting window (days)</span>
+                                        <input class="orb-input" v-model="proposalDays" type="number" min="1" max="30" required />
                                       </label>
-                                      <div class="bz-form-foot">
-                                        <span class="bz-form-note">{{ proposalText.length }} / 2,000</span>
+                                      <div class="orb-form-foot">
+                                        <span class="orb-form-note">{{ proposalText.length }} / 2,000</span>
                                         <button
-                                          class="bz-btn bz-btn--fill"
+                                          class="orb-btn orb-btn--signal"
                                           type="submit"
                                           :disabled="actionDisabled || proposalText.trim().length < 10"
                                         >
                                           {{ programReady ? "Publish" : "Preview" }}
                                         </button>
                                       </div>
-                                      <div class="bz-form-actions">
-                                        <button class="bz-btn bz-btn--quiet bz-btn--sm" type="button" @click="toggleCompose">
+                                      <div class="orb-form-actions">
+                                        <button class="orb-btn orb-btn--quiet orb-btn--sm" type="button" @click="toggleCompose">
                                           Keep draft
                                         </button>
                                         <button
                                           v-if="proposalText"
-                                          class="bz-btn bz-btn--quiet bz-btn--sm"
+                                          class="orb-btn orb-btn--quiet orb-btn--sm"
                                           type="button"
                                           @click="clearDraft"
                                         >
@@ -1291,7 +1325,7 @@ async function vote(p, support) {
                                         </button>
                                         <button
                                           v-else-if="clearedDraft"
-                                          class="bz-btn bz-btn--quiet bz-btn--sm"
+                                          class="orb-btn orb-btn--quiet orb-btn--sm"
                                           type="button"
                                           @click="undoClearDraft"
                                         >
@@ -1302,31 +1336,31 @@ async function vote(p, support) {
                   
                         </div></section>
 
-                                  <section class="bz-note-card">
-                        <div class="bz-note-card-body">
-                                    <header class="bz-note-card-head">
-                                      <h2 class="bz-note-card-title">What lands</h2>
-                                      <span class="bz-note-card-note">three moves</span>
-                                    </header>
-                                    <div class="bz-note-card-main bz-note-card-main--flush">
-                                      <ol class="bz-steps">
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">1</span>
-                                          <div class="bz-step-body">
+                                  <section class="orb-note">
+                        <div class="orb-note-body">
+                                    <div class="orb-note-head">
+                                      <h2 class="orb-note-title">What lands</h2>
+                                      <span class="orb-note-meta">three moves</span>
+                                    </div>
+                                    <div class="orb-note-main orb-note-main--flush">
+                                      <ol class="orb-steps">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">1</span>
+                                          <div class="orb-step-body">
                                             <h3>One decision</h3>
                                             <p>State a single decision and why it matters now.</p>
                                           </div>
                                         </li>
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">2</span>
-                                          <div class="bz-step-body">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">2</span>
+                                          <div class="orb-step-body">
                                             <h3>Context and cost</h3>
                                             <p>Name the outcome and any budget the room should expect.</p>
                                           </div>
                                         </li>
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">3</span>
-                                          <div class="bz-step-body">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">3</span>
+                                          <div class="orb-step-body">
                                             <h3>Time to answer</h3>
                                             <p>Give wallets 1–30 days so the vote is not a reflex.</p>
                                           </div>
@@ -1336,82 +1370,82 @@ async function vote(p, support) {
                   
                         </div></section>
                                 </section>
-                              </section>
+                              
             
               </div>
             </template>
             <template v-if="route === 'treasury'">
-              <div class="bz-sheet">
+              <div class="orb-canvas orb-canvas--treasury">
               
 
-                              <section class="bz-stage-body" aria-label="Record bands">
-                                <div class="bz-flow">
-                                  <section class="bz-meters" aria-label="Treasury reads">
-                                    <div class="bz-meter">
-                                      <span class="bz-meter-label">Treasury token</span>
-                                      <b class="bz-meter-value">{{ ready && treasuryTokenKnown ? units(treasuryBalance) : "—" }}</b>
-                                      <span class="bz-meter-note">{{ tokenIdentity }}</span>
+                              <section class="orb-band" aria-label="Record bands">
+
+                                  <section class="orb-dials" aria-label="Treasury reads">
+                                    <div class="orb-dial">
+                                      <span class="orb-dial-label">Treasury token</span>
+                                      <b class="orb-dial-value">{{ ready && treasuryTokenKnown ? units(treasuryBalance) : "—" }}</b>
+                                      <span class="orb-dial-note">{{ tokenIdentity }}</span>
                                     </div>
-                                    <div class="bz-meter">
-                                      <span class="bz-meter-label">Treasury SOL</span>
-                                      <b class="bz-meter-value">
+                                    <div class="orb-dial">
+                                      <span class="orb-dial-label">Treasury SOL</span>
+                                      <b class="orb-dial-value">
                                         {{ ready && treasuryNativeKnown ? solUnits(treasuryNative, 4) : "—" }}
                                       </b>
-                                      <span class="bz-meter-note">native balance for fees</span>
+                                      <span class="orb-dial-note">native balance for fees</span>
                                     </div>
-                                    <div class="bz-meter">
-                                      <span class="bz-meter-label">Issued supply</span>
-                                      <b class="bz-meter-value">{{ mintConfigured && ready ? units(totalSupply) : "—" }}</b>
-                                      <span class="bz-meter-note">read from the mint</span>
+                                    <div class="orb-dial">
+                                      <span class="orb-dial-label">Issued supply</span>
+                                      <b class="orb-dial-value">{{ mintConfigured && ready ? units(totalSupply) : "—" }}</b>
+                                      <span class="orb-dial-note">read from the mint</span>
                                     </div>
-                                    <div class="bz-meter">
-                                      <span class="bz-meter-label">Activity index</span>
-                                      <b class="bz-meter-value">None</b>
-                                      <span class="bz-meter-note">no indexer connected yet</span>
+                                    <div class="orb-dial">
+                                      <span class="orb-dial-label">Activity index</span>
+                                      <b class="orb-dial-value">None</b>
+                                      <span class="orb-dial-note">no indexer connected yet</span>
                                     </div>
                                   </section>
 
                                   <p
                                     v-if="treasuryError || (mintConfigured && ready && (!treasuryKnown || !treasuryTokenKnown))"
-                                    class="bz-form-note"
+                                    class="orb-form-note"
                                     role="status"
                                   >
                                     {{ treasuryError || "Treasury token or SOL balances are not fully available yet." }}
                                   </p>
 
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
-                                    <header class="bz-panel-head">
-                                      <h2 class="bz-panel-title">Account statement</h2>
-                                      <span class="bz-note-card-note">{{ ready ? "read at " + lastRead : "awaiting read" }}</span>
-                                    </header>
-                                    <div class="bz-receipt">
-                        <div class="bz-receipt-inner">
-                                      <div class="bz-receipt-row">
-                                        <span class="bz-receipt-key">On-chain token</span>
-                                        <span class="bz-receipt-leader" aria-hidden="true"></span>
-                                        <span class="bz-receipt-value bz-receipt-value--muted">{{ tokenIdentity }}</span>
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
+                                    <div class="orb-sheet-head">
+                                      <h2 class="orb-sheet-title">Account statement</h2>
+                                      <span class="orb-note-meta">{{ ready ? "read at " + lastRead : "awaiting read" }}</span>
+                                    </div>
+                                    <div class="orb-statement">
+                        <div class="orb-statement-inner">
+                                      <div class="orb-statement-row">
+                                        <span class="orb-statement-key">On-chain token</span>
+                                        <span class="orb-statement-leader" aria-hidden="true"></span>
+                                        <span class="orb-statement-value orb-statement-value--dim">{{ tokenIdentity }}</span>
                                       </div>
-                                      <div class="bz-receipt-row">
-                                        <span class="bz-receipt-key">
+                                      <div class="orb-statement-row">
+                                        <span class="orb-statement-key">
                                           {{ mintConfigured ? "Total issued " + tokenSymbol : "Issued supply" }}
                                         </span>
-                                        <span class="bz-receipt-leader" aria-hidden="true"></span>
-                                        <span class="bz-receipt-value">
+                                        <span class="orb-statement-leader" aria-hidden="true"></span>
+                                        <span class="orb-statement-value">
                                           {{ mintConfigured && ready ? units(totalSupply) : "—" }}
                                         </span>
                                       </div>
-                                      <div class="bz-receipt-row">
-                                        <span class="bz-receipt-key">Token staking</span>
-                                        <span class="bz-receipt-leader" aria-hidden="true"></span>
-                                        <span class="bz-receipt-value bz-receipt-value--muted">not implemented</span>
+                                      <div class="orb-statement-row">
+                                        <span class="orb-statement-key">Token staking</span>
+                                        <span class="orb-statement-leader" aria-hidden="true"></span>
+                                        <span class="orb-statement-value orb-statement-value--dim">not implemented</span>
                                       </div>
-                                      <div class="bz-receipt-row">
-                                        <span class="bz-receipt-key">
+                                      <div class="orb-statement-row">
+                                        <span class="orb-statement-key">
                                           {{ mintConfigured ? "Your " + tokenSymbol : "Your token balance" }}
                                         </span>
-                                        <span class="bz-receipt-leader" aria-hidden="true"></span>
-                                        <span class="bz-receipt-value">
+                                        <span class="orb-statement-leader" aria-hidden="true"></span>
+                                        <span class="orb-statement-value">
                                           {{
                                             connected && accountReady
                                               ? units(token)
@@ -1421,26 +1455,26 @@ async function vote(p, support) {
                                           }}
                                         </span>
                                       </div>
-                                      <div class="bz-receipt-row">
-                                        <span class="bz-receipt-key">Decimals</span>
-                                        <span class="bz-receipt-leader" aria-hidden="true"></span>
-                                        <span class="bz-receipt-value bz-receipt-value--muted">{{ mintConfigured ? tokenDecimals : "—" }}</span>
+                                      <div class="orb-statement-row">
+                                        <span class="orb-statement-key">Decimals</span>
+                                        <span class="orb-statement-leader" aria-hidden="true"></span>
+                                        <span class="orb-statement-value orb-statement-value--dim">{{ mintConfigured ? tokenDecimals : "—" }}</span>
                                       </div>
                     
                         </div></div>
                   
                         </div></article>
 
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
-                                    <header class="bz-panel-head">
-                                      <h2 class="bz-panel-title">Activity</h2>
-                                      <span class="bz-note-card-note">not connected</span>
-                                    </header>
-                                    <div class="bz-panel-main">
-                                      <div class="bz-empty">
-                                        <span class="bz-empty-icon"><Icon name="clock" :size="20" /></span>
-                                        <h3 class="bz-empty-title">
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
+                                    <div class="orb-sheet-head">
+                                      <h2 class="orb-sheet-title">Activity</h2>
+                                      <span class="orb-note-meta">not connected</span>
+                                    </div>
+                                    <div class="orb-sheet-main">
+                                      <div class="orb-empty">
+                                        <span class="orb-empty-icon"><Icon name="clock" :size="20" /></span>
+                                        <h3 class="orb-empty-title">
                                           {{
                                             reading
                                               ? "Reading the chain…"
@@ -1449,7 +1483,7 @@ async function vote(p, support) {
                                                 : "No indexer yet"
                                           }}
                                         </h3>
-                                        <p class="bz-empty-text">
+                                        <p class="orb-empty-text">
                                           A Solana activity index will be connected after the program is
                                           deployed for production use.
                                         </p>
@@ -1457,17 +1491,17 @@ async function vote(p, support) {
                                     </div>
                   
                         </div></article>
-                                </div>
+                              </section>
 
-                                <section class="bz-notes" aria-label="Marginal notes">
-                                  <section class="bz-note-card">
-                        <div class="bz-note-card-body">
-                                    <header class="bz-note-card-head">
-                                      <h2 class="bz-note-card-title">Addresses</h2>
-                                    </header>
-                                    <div class="bz-note-card-main bz-note-card-main--flush">
-                                      <dl class="bz-facts">
-                                        <div class="bz-fact">
+                              <section class="orb-margin" aria-label="Marginal notes">
+                                  <section class="orb-note">
+                        <div class="orb-note-body">
+                                    <div class="orb-note-head">
+                                      <h2 class="orb-note-title">Addresses</h2>
+                                    </div>
+                                    <div class="orb-note-main orb-note-main--flush">
+                                      <dl class="orb-facts">
+                                        <div class="orb-fact">
                                           <dt>Treasury wallet</dt>
                                           <dd>
                                             <a
@@ -1476,10 +1510,10 @@ async function vote(p, support) {
                                               target="_blank"
                                               rel="noopener noreferrer"
                                             >{{ short(treasury) }} <Icon name="arrow-up-right" :size="13" /></a>
-                                            <span v-else class="bz-fact-quiet">not available</span>
+                                            <span v-else class="orb-fact-quiet">not available</span>
                                           </dd>
                                         </div>
-                                        <div class="bz-fact">
+                                        <div class="orb-fact">
                                           <dt>Token mint</dt>
                                           <dd>
                                             <a
@@ -1488,20 +1522,20 @@ async function vote(p, support) {
                                               target="_blank"
                                               rel="noopener noreferrer"
                                             >{{ short(TOKEN_MINT_ADDRESS) }} <Icon name="arrow-up-right" :size="13" /></a>
-                                            <span v-else class="bz-fact-quiet">not configured</span>
+                                            <span v-else class="orb-fact-quiet">not configured</span>
                                           </dd>
                                         </div>
-                                        <div class="bz-fact">
+                                        <div class="orb-fact">
                                           <dt>Cluster</dt>
                                           <dd>{{ SOLANA_CLUSTER }}</dd>
                                         </div>
-                                        <div class="bz-fact bz-fact--dim">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>Network</dt>
                                           <dd>{{ SOLANA_NETWORK_NAME }}</dd>
                                         </div>
                                       </dl>
                                     </div>
-                                    <div class="bz-note-card-main">
+                                    <div class="orb-note-main">
                                       <p>
                                         {{
                                           mintConfigured
@@ -1513,7 +1547,7 @@ async function vote(p, support) {
                   
                         </div></section>
 
-                                  <div class="bz-hint bz-hint--warn">
+                                  <div class="orb-hint orb-hint--warn">
                                     <Icon name="alert" :size="18" />
                                     <div>
                                       <strong>An open record cuts both ways</strong>
@@ -1521,47 +1555,47 @@ async function vote(p, support) {
                                     </div>
                                   </div>
                                 </section>
-                              </section>
+                              
             
               </div>
             </template>
             <template v-if="route === 'stake'">
-              <div class="bz-sheet">
+              <div class="orb-canvas orb-canvas--stake">
               
 
-                              <section class="bz-stage-body" aria-label="Record bands">
-                                <div class="bz-flow">
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
-                                    <header class="bz-panel-head">
-                                      <h2 class="bz-panel-title">Token status</h2>
-                                      <span class="bz-tag" data-tone="is-neutral">not configured</span>
-                                    </header>
-                                    <div class="bz-panel-main bz-panel-main--flush">
-                                      <dl class="bz-facts">
-                                        <div class="bz-fact bz-fact--dim">
+                              <section class="orb-band" aria-label="Record bands">
+
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
+                                    <div class="orb-sheet-head">
+                                      <h2 class="orb-sheet-title">Token status</h2>
+                                      <span class="orb-tag" data-tone="is-neutral">not configured</span>
+                                    </div>
+                                    <div class="orb-sheet-main orb-sheet-main--flush">
+                                      <dl class="orb-facts">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>On-chain token</dt>
                                           <dd>{{ tokenIdentity }}</dd>
                                         </div>
-                                        <div class="bz-fact bz-fact--dim">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>Token staking</dt>
                                           <dd>not implemented</dd>
                                         </div>
-                                        <div class="bz-fact bz-fact--dim">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>Locking</dt>
                                           <dd>not implemented</dd>
                                         </div>
-                                        <div class="bz-fact bz-fact--dim">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>Reward source</dt>
                                           <dd>undefined</dd>
                                         </div>
-                                        <div class="bz-fact bz-fact--dim">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>Decimals</dt>
                                           <dd>{{ mintConfigured ? tokenDecimals : "—" }}</dd>
                                         </div>
                                       </dl>
                                     </div>
-                                    <div class="bz-panel-main">
+                                    <div class="orb-sheet-main">
                                       <p>
                                         The program records participation rows and advisory votes. It does
                                         not custody tokens, mint rewards or track staking positions.
@@ -1570,17 +1604,17 @@ async function vote(p, support) {
                   
                         </div></article>
 
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
-                                    <header class="bz-panel-head">
-                                      <h2 class="bz-panel-title">What has to exist first</h2>
-                                      <span class="bz-note-card-note">in order</span>
-                                    </header>
-                                    <div class="bz-panel-main bz-panel-main--flush">
-                                      <ol class="bz-steps">
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">1</span>
-                                          <div class="bz-step-body">
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
+                                    <div class="orb-sheet-head">
+                                      <h2 class="orb-sheet-title">What has to exist first</h2>
+                                      <span class="orb-note-meta">in order</span>
+                                    </div>
+                                    <div class="orb-sheet-main orb-sheet-main--flush">
+                                      <ol class="orb-steps">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">1</span>
+                                          <div class="orb-step-body">
                                             <h3>A verified SPL mint</h3>
                                             <p>
                                               The mint address, decimals and metadata would be read from
@@ -1588,9 +1622,9 @@ async function vote(p, support) {
                                             </p>
                                           </div>
                                         </li>
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">2</span>
-                                          <div class="bz-step-body">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">2</span>
+                                          <div class="orb-step-body">
                                             <h3>Written custody rules</h3>
                                             <p>
                                               Who can move locked balances, how a holder exits, and what
@@ -1598,9 +1632,9 @@ async function vote(p, support) {
                                             </p>
                                           </div>
                                         </li>
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">3</span>
-                                          <div class="bz-step-body">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">3</span>
+                                          <div class="orb-step-body">
                                             <h3>A funded reward source</h3>
                                             <p>
                                               Rewards need money behind them. Until that exists, no reward
@@ -1612,110 +1646,110 @@ async function vote(p, support) {
                                     </div>
                   
                         </div></article>
-                                </div>
+                              </section>
 
-                                <section class="bz-notes" aria-label="Marginal notes">
-                                  <section class="bz-note-card">
-                        <div class="bz-note-card-body">
-                                    <header class="bz-note-card-head">
-                                      <h2 class="bz-note-card-title">Wiring</h2>
-                                    </header>
-                                    <div class="bz-note-card-main bz-note-card-main--flush">
-                                      <dl class="bz-facts">
-                                        <div class="bz-fact">
+                              <section class="orb-margin" aria-label="Marginal notes">
+                                  <section class="orb-note">
+                        <div class="orb-note-body">
+                                    <div class="orb-note-head">
+                                      <h2 class="orb-note-title">Wiring</h2>
+                                    </div>
+                                    <div class="orb-note-main orb-note-main--flush">
+                                      <dl class="orb-facts">
+                                        <div class="orb-fact">
                                           <dt>Cluster</dt>
                                           <dd>{{ SOLANA_CLUSTER }}</dd>
                                         </div>
-                                        <div class="bz-fact bz-fact--dim">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>Network</dt>
                                           <dd>{{ SOLANA_NETWORK_NAME }}</dd>
                                         </div>
-                                        <div class="bz-fact">
+                                        <div class="orb-fact">
                                           <dt>Program</dt>
                                           <dd>{{ programState }}</dd>
                                         </div>
-                                        <div class="bz-fact bz-fact--dim">
+                                        <div class="orb-fact orb-fact--dim">
                                           <dt>Mint</dt>
                                           <dd>{{ mintState }}</dd>
                                         </div>
                                       </dl>
                                     </div>
-                                    <div class="bz-note-card-foot">
-                                      <button class="bz-btn bz-btn--outline bz-btn--wide" type="button" @click="go('learn')">
+                                    <div class="orb-note-foot">
+                                      <button class="orb-btn orb-btn--wire orb-btn--wide" type="button" @click="go('learn')">
                                         Read the guide <Icon name="arrow-right" :size="14" />
                                       </button>
                                     </div>
                   
                         </div></section>
 
-                                  <div class="bz-hint bz-hint--warn">
+                                  <div class="orb-hint orb-hint--warn">
                                     <Icon name="alert" :size="18" />
                                     <div>
                                       <strong>No mint has been issued</strong>
-                                      <p>Anything claiming a Rationum token right now is not from this project.</p>
+                                      <p>Anything claiming a Docketa token right now is not from this project.</p>
                                     </div>
                                   </div>
                                 </section>
-                              </section>
+                              
             
               </div>
             </template>
             <template v-if="route === 'learn'">
-              <div class="bz-sheet">
+              <div class="orb-canvas orb-canvas--learn">
               
 
-                              <section class="bz-stage-body" aria-label="Record bands">
-                                <div class="bz-flow">
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
-                                    <header class="bz-panel-head">
-                                      <h2 class="bz-panel-title">Three ways through</h2>
-                                      <span class="bz-note-card-note">start anywhere</span>
-                                    </header>
-                                    <div class="bz-panel-main bz-panel-main--flush">
-                                      <ol class="bz-steps">
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">1</span>
-                                          <div class="bz-step-body">
+                              <section class="orb-band" aria-label="Record bands">
+
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
+                                    <div class="orb-sheet-head">
+                                      <h2 class="orb-sheet-title">Three ways through</h2>
+                                      <span class="orb-note-meta">start anywhere</span>
+                                    </div>
+                                    <div class="orb-sheet-main orb-sheet-main--flush">
+                                      <ol class="orb-steps">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">1</span>
+                                          <div class="orb-step-body">
                                             <h3>Record a participation row</h3>
                                             <p>
                                               Quests carry an expiry and a row cap. Each wallet records
                                               once. Rows do not verify off-chain work, prove a unique
                                               person, or pay a token.
                                             </p>
-                                            <div class="bz-step-foot">
-                                              <button class="bz-btn bz-btn--outline bz-btn--sm" type="button" @click="go('quests')">
+                                            <div class="orb-step-foot">
+                                              <button class="orb-btn orb-btn--wire orb-btn--sm" type="button" @click="go('quests')">
                                                 See quests <Icon name="arrow-right" :size="14" />
                                               </button>
                                             </div>
                                           </div>
                                         </li>
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">2</span>
-                                          <div class="bz-step-body">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">2</span>
+                                          <div class="orb-step-body">
                                             <h3>Wait for real token details</h3>
                                             <p>
                                               Locking and rewards need a verified mint, custody rules and a
                                               funded reward source. None are enabled by the community
                                               program.
                                             </p>
-                                            <div class="bz-step-foot">
-                                              <button class="bz-btn bz-btn--outline bz-btn--sm" type="button" @click="go('stake')">
+                                            <div class="orb-step-foot">
+                                              <button class="orb-btn orb-btn--wire orb-btn--sm" type="button" @click="go('stake')">
                                                 Token status <Icon name="arrow-right" :size="14" />
                                               </button>
                                             </div>
                                           </div>
                                         </li>
-                                        <li class="bz-step">
-                                          <span class="bz-step-num" aria-hidden="true">3</span>
-                                          <div class="bz-step-body">
+                                        <li class="orb-step">
+                                          <span class="orb-step-num" aria-hidden="true">3</span>
+                                          <div class="orb-step-body">
                                             <h3>Answer the next question</h3>
                                             <p>
                                               Create a proposal with a 1–30 day window, or vote on an open
                                               one. One vote per wallet. Results are advisory.
                                             </p>
-                                            <div class="bz-step-foot">
-                                              <button class="bz-btn bz-btn--outline bz-btn--sm" type="button" @click="go('governance')">
+                                            <div class="orb-step-foot">
+                                              <button class="orb-btn orb-btn--wire orb-btn--sm" type="button" @click="go('governance')">
                                                 Open votes <Icon name="arrow-right" :size="14" />
                                               </button>
                                             </div>
@@ -1726,54 +1760,54 @@ async function vote(p, support) {
                   
                         </div></article>
 
-                                  <article class="bz-panel">
-                        <div class="bz-panel-body">
-                                    <header class="bz-panel-head">
-                                      <h2 class="bz-panel-title">Good to know</h2>
-                                    </header>
-                                    <div class="bz-panel-main bz-panel-main--flush">
-                                      <div class="bz-faq">
-                                        <details class="bz-faq-item" open>
-                                          <summary class="bz-faq-q">What does a wallet confirmation do?</summary>
-                                          <p class="bz-faq-a">
+                                  <article class="orb-sheet">
+                        <div class="orb-sheet-body">
+                                    <div class="orb-sheet-head">
+                                      <h2 class="orb-sheet-title">Good to know</h2>
+                                    </div>
+                                    <div class="orb-sheet-main orb-sheet-main--flush">
+                                      <div class="orb-faq">
+                                        <details class="orb-faq-item" open>
+                                          <summary class="orb-faq-q">What does a wallet confirmation do?</summary>
+                                          <p class="orb-faq-a">
                                             Recording a quest row, publishing a proposal and casting a vote
                                             use the initialised program on {{ SOLANA_NETWORK_NAME }}. Your
                                             wallet shows every instruction before you sign.
                                           </p>
                                         </details>
-                                        <details class="bz-faq-item">
-                                          <summary class="bz-faq-q">Who controls the protocol?</summary>
-                                          <p class="bz-faq-a">
+                                        <details class="orb-faq-item">
+                                          <summary class="orb-faq-q">Who controls the protocol?</summary>
+                                          <p class="orb-faq-a">
                                             The program authority can publish quests and pause community
                                             actions. Advisory votes do not execute treasury spending.
                                           </p>
                                         </details>
-                                        <details class="bz-faq-item">
-                                          <summary class="bz-faq-q">Why is the token name separate from Rationum?</summary>
-                                          <p class="bz-faq-a">
+                                        <details class="orb-faq-item">
+                                          <summary class="orb-faq-q">Why is the token name separate from Docketa?</summary>
+                                          <p class="orb-faq-a">
                                             A future mint defines its own name, symbol and decimals.
-                                            Rationum is the application brand. Current status:
+                                            Docketa is the application brand. Current status:
                                             {{ tokenIdentity }}.
                                           </p>
                                         </details>
-                                        <details class="bz-faq-item">
-                                          <summary class="bz-faq-q">Is a Rationum token deployed?</summary>
-                                          <p class="bz-faq-a">
-                                            No Rationum token mint is configured. The community program
+                                        <details class="orb-faq-item">
+                                          <summary class="orb-faq-q">Is a Docketa token deployed?</summary>
+                                          <p class="orb-faq-a">
+                                            No Docketa token mint is configured. The community program
                                             does not create or distribute a token.
                                           </p>
                                         </details>
-                                        <details class="bz-faq-item">
-                                          <summary class="bz-faq-q">Is Rationum an official Solana product?</summary>
-                                          <p class="bz-faq-a">
-                                            No. Rationum is an independent community project currently
+                                        <details class="orb-faq-item">
+                                          <summary class="orb-faq-q">Is Docketa an official Solana product?</summary>
+                                          <p class="orb-faq-a">
+                                            No. Docketa is an independent community project currently
                                             reading {{ SOLANA_NETWORK_NAME }}. It is not affiliated with the
                                             Solana Foundation.
                                           </p>
                                         </details>
-                                        <details class="bz-faq-item">
-                                          <summary class="bz-faq-q">Why do I see preview rows or a connection error?</summary>
-                                          <p class="bz-faq-a">
+                                        <details class="orb-faq-item">
+                                          <summary class="orb-faq-q">Why do I see preview rows or a connection error?</summary>
+                                          <p class="orb-faq-a">
                                             Preview means sample rows are shown and nothing is submitted. A
                                             connection error means configured Solana data could not be read
                                             — use the refresh button to retry. Never share a seed phrase or
@@ -1784,32 +1818,32 @@ async function vote(p, support) {
                                     </div>
                   
                         </div></article>
-                                </div>
+                              </section>
 
-                                <section class="bz-notes" aria-label="Marginal notes">
-                                  <section class="bz-note-card">
-                        <div class="bz-note-card-body">
-                                    <header class="bz-note-card-head">
-                                      <h2 class="bz-note-card-title">Checklist</h2>
-                                    </header>
-                                    <div class="bz-note-card-main bz-note-card-main--flush">
-                                      <ol class="bz-checklist">
-                                        <li class="bz-check" :class="{ 'bz-check--done': connected }">
-                                          <span class="bz-check-mark">{{ connected ? "✓" : "1" }}</span>
+                              <section class="orb-margin" aria-label="Marginal notes">
+                                  <section class="orb-note">
+                        <div class="orb-note-body">
+                                    <div class="orb-note-head">
+                                      <h2 class="orb-note-title">Checklist</h2>
+                                    </div>
+                                    <div class="orb-note-main orb-note-main--flush">
+                                      <ol class="orb-checks">
+                                        <li class="orb-check" :class="{ 'orb-check--done': connected }">
+                                          <span class="orb-check-mark">{{ connected ? "✓" : "1" }}</span>
                                           <div>
                                             <b>Bring a Solana wallet</b>
                                             <small>{{ connected ? "connected" : "connect to read balances" }}</small>
                                           </div>
                                         </li>
-                                        <li class="bz-check">
-                                          <span class="bz-check-mark">2</span>
+                                        <li class="orb-check">
+                                          <span class="orb-check-mark">2</span>
                                           <div>
                                             <b>Match the cluster</b>
                                             <small>set your wallet to {{ SOLANA_NETWORK_NAME }}</small>
                                           </div>
                                         </li>
-                                        <li class="bz-check">
-                                          <span class="bz-check-mark">3</span>
+                                        <li class="orb-check">
+                                          <span class="orb-check-mark">3</span>
                                           <div>
                                             <b>Keep a little SOL</b>
                                             <small>{{ SOLANA_CLUSTER }} fees are paid in SOL</small>
@@ -1817,10 +1851,10 @@ async function vote(p, support) {
                                         </li>
                                       </ol>
                                     </div>
-                                    <div class="bz-note-card-foot">
+                                    <div class="orb-note-foot">
                                       <a
                                         v-if="SOLANA_CLUSTER === 'devnet'"
-                                        class="bz-btn bz-btn--fill bz-btn--wide"
+                                        class="orb-btn orb-btn--signal orb-btn--wide"
                                         href="https://faucet.solana.com/"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -1829,7 +1863,7 @@ async function vote(p, support) {
                                       </a>
                                       <button
                                         v-else
-                                        class="bz-btn bz-btn--fill bz-btn--wide"
+                                        class="orb-btn orb-btn--signal orb-btn--wide"
                                         type="button"
                                         :disabled="connecting || busy"
                                         @click="connected ? disconnectWallet() : connect()"
@@ -1841,7 +1875,7 @@ async function vote(p, support) {
                   
                         </div></section>
 
-                                  <div class="bz-hint">
+                                  <div class="orb-hint">
                                     <Icon name="info" :size="18" />
                                     <div>
                                       <strong>Sample rows</strong>
@@ -1852,29 +1886,40 @@ async function vote(p, support) {
                                     </div>
                                   </div>
                                 </section>
-                              </section>
+                              
             
               </div>
             </template>
           </section>
         </Transition>
       </main>
+
+      <RingColophon
+        :tabs="navTabs"
+        :network-name="SOLANA_NETWORK_NAME"
+        :cluster="SOLANA_CLUSTER"
+        :program-state="programState"
+        :mint-state="mintState"
+        :wallet-label="walletLabel"
+        :last-read="lastRead || 'Not yet'"
+        @navigate="navigate"
+      />
     </div>
 
     <template v-if="menuOpen">
-      <div class="bz-veil" @click="menuOpen = false"></div>
-      <div id="ax-drawer" class="bz-drawer" aria-label="Sections and wallet" role="complementary">
-        <header class="bz-drawer-head">
-          <span class="bz-drawer-title">Rationum</span>
-          <button class="bz-icon-btn" type="button" aria-label="Close menu" @click="menuOpen = false">
+      <div class="orb-veil" @click="menuOpen = false"></div>
+      <div id="ax-drawer" class="orb-drawer" aria-label="Sections and wallet" role="complementary">
+        <header class="orb-drawer-head">
+          <span class="orb-drawer-title">Docketa</span>
+          <button class="orb-iconbtn" type="button" aria-label="Close menu" @click="menuOpen = false">
             <Icon name="close" :size="18" />
           </button>
         </header>
-        <nav class="bz-drawer-nav" aria-label="Sections">
+        <nav class="orb-drawer-nav" aria-label="Sections">
           <button
             v-for="tab in navTabs"
             :key="tab.id"
-            class="bz-drawer-link"
+            class="orb-drawer-link"
             type="button"
             :aria-current="route === tab.id ? 'page' : undefined"
             @click="navigate(tab.id)"
@@ -1884,9 +1929,9 @@ async function vote(p, support) {
             <b v-if="tab.badge !== null && tab.badge !== undefined">{{ tab.badge }}</b>
           </button>
         </nav>
-        <div class="bz-drawer-foot">
+        <div class="orb-drawer-foot">
           <button
-            class="bz-btn bz-btn--fill bz-btn--wide"
+            class="orb-btn orb-btn--signal orb-btn--wide"
             type="button"
             :disabled="connecting || busy"
             @click="connected ? disconnectWallet() : connect()"
@@ -1894,7 +1939,7 @@ async function vote(p, support) {
             <Icon name="wallet" :size="16" />
             {{ connected ? "Disconnect wallet" : "Connect wallet" }}
           </button>
-          <div class="bz-drawer-facts">
+          <div class="orb-drawer-facts">
             <span>Cluster <b>{{ SOLANA_CLUSTER }}</b></span>
             <span>Program <b>{{ programState }}</b></span>
             <span>Wallet <b>{{ walletLabel }}</b></span>
@@ -1905,14 +1950,14 @@ async function vote(p, support) {
 
     <div
       v-if="txState.stage !== 'idle'"
-      class="bz-toast"
+      class="orb-toast"
       :data-tone="txState.stage === 'error' ? 'error' : txState.stage === 'success' ? 'success' : 'idle'"
       :role="txState.stage === 'error' ? 'alert' : 'status'"
       aria-live="polite"
       aria-atomic="true"
     >
-      <span class="bz-toast-dot" aria-hidden="true"></span>
-      <div class="bz-toast-copy">
+      <span class="orb-toast-dot" aria-hidden="true"></span>
+      <div class="orb-toast-copy">
         <strong>{{ txState.label }}</strong>
         <p>{{ txState.message }}</p>
         <a
@@ -1924,7 +1969,7 @@ async function vote(p, support) {
       </div>
       <button
         v-if="!busy"
-        class="bz-icon-btn bz-toast-close"
+        class="orb-iconbtn orb-toast-close"
         type="button"
         aria-label="Dismiss transaction status"
         @click="dismissToast"
@@ -1933,7 +1978,7 @@ async function vote(p, support) {
       </button>
     </div>
 
-    <WalletSheet
+    <WalletPicker
       v-if="walletPickerOpen"
       :options="walletOptions"
       :network-name="SOLANA_NETWORK_NAME"

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "projectName": "rationum-web",
-    "title": "rationum-web",
+    "projectName": "docketa-web",
+    "title": "docketa-web",
     "lang": "en"
   },
   "routes": [
@@ -10,15 +10,15 @@
   ],
   "visibleText": [
     {
+      "value": ". Docketa only asks it to confirm quest rows, proposals and votes.",
+      "count": 1
+    },
+    {
       "value": ". It is not affiliated with the Solana Foundation.",
       "count": 1
     },
     {
       "value": ". Quests and advisory votes are recorded by a public Solana program; no token is minted, sold or promised here.",
-      "count": 1
-    },
-    {
-      "value": ". Rationum only asks it to confirm quest rows, proposals and votes.",
       "count": 1
     },
     {
@@ -38,7 +38,7 @@
       "count": 1
     },
     {
-      "value": "© 2026 Rationum · rationum.xyz. Written to be reopened.",
+      "value": "© 2026 Docketa · docketa.xyz. Written to be reopened.",
       "count": 1
     },
     {
@@ -58,7 +58,7 @@
       "count": 1
     },
     {
-      "value": "A future mint defines its own name, symbol and decimals. Rationum is the application brand. Current status:",
+      "value": "A future mint defines its own name, symbol and decimals. Docketa is the application brand. Current status:",
       "count": 1
     },
     {
@@ -138,7 +138,7 @@
       "count": 1
     },
     {
-      "value": "Anything claiming a Rationum token right now is not from this project.",
+      "value": "Anything claiming a Docketa token right now is not from this project.",
       "count": 1
     },
     {
@@ -210,8 +210,24 @@
       "count": 1
     },
     {
+      "value": "Dock",
+      "count": 3
+    },
+    {
+      "value": "Docketa",
+      "count": 1
+    },
+    {
+      "value": "Docketa writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
+      "count": 1
+    },
+    {
       "value": "Each quest is an open invitation to take part. Recording one writes a single row for your wallet — it does not verify off-chain work, prove a unique person or pay a token.",
       "count": 1
+    },
+    {
+      "value": "eta",
+      "count": 3
     },
     {
       "value": "Expires",
@@ -262,11 +278,11 @@
       "count": 1
     },
     {
-      "value": "Is a Rationum token deployed?",
+      "value": "Is a Docketa token deployed?",
       "count": 1
     },
     {
-      "value": "Is Rationum an official Solana product?",
+      "value": "Is Docketa an official Solana product?",
       "count": 1
     },
     {
@@ -330,15 +346,15 @@
       "count": 1
     },
     {
+      "value": "No Docketa token mint is configured. The community program does not create or distribute a token.",
+      "count": 1
+    },
+    {
       "value": "no indexer connected yet",
       "count": 1
     },
     {
       "value": "No mint has been issued",
-      "count": 1
-    },
-    {
-      "value": "No Rationum token mint is configured. The community program does not create or distribute a token.",
       "count": 1
     },
     {
@@ -354,7 +370,7 @@
       "count": 1
     },
     {
-      "value": "No. Rationum is an independent community project currently reading",
+      "value": "No. Docketa is an independent community project currently reading",
       "count": 1
     },
     {
@@ -384,10 +400,6 @@
     {
       "value": "Nothing is signed until you approve it inside the wallet.",
       "count": 1
-    },
-    {
-      "value": "num",
-      "count": 3
     },
     {
       "value": "On the record today",
@@ -491,18 +503,6 @@
     },
     {
       "value": "Quests carry an expiry and a row cap. Each wallet records once. Rows do not verify off-chain work, prove a unique person, or pay a token.",
-      "count": 1
-    },
-    {
-      "value": "Ratio",
-      "count": 3
-    },
-    {
-      "value": "Rationum",
-      "count": 1
-    },
-    {
-      "value": "Rationum writes down who took part, how the room voted and where the money sits — a public register, stamped hour by hour, that anyone can reopen. No private minutes, no unlisted spreadsheet.",
       "count": 1
     },
     {
@@ -794,7 +794,7 @@
       "count": 1
     },
     {
-      "value": "Why is the token name separate from Rationum?",
+      "value": "Why is the token name separate from Docketa?",
       "count": 1
     },
     {
@@ -1399,6 +1399,11 @@
       "kind": "interpolation",
       "expr": "String(index + 1).padStart(2, \"0\")",
       "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "String(position + 1).padStart(2, \"0\")",
+      "count": 1
     },
     {
       "kind": "interpolation",

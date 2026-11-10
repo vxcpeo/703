@@ -1,6 +1,6 @@
-# Reskin inventory — rationum-web
+# Reskin inventory — docketa-web
 
-Generated: 2026-10-22T15:10:15.999Z
+Generated: 2026-11-09T16:47:51.650Z
 
 ## Project
 
@@ -15,12 +15,12 @@ Generated: 2026-10-22T15:10:15.999Z
 
 ## Original skeleton
 
-- Archetype: **terminal-console** (linear)
-- Traits: hero, grid, tabs, modal, charts, sticky, terminal, ticker
-- Max template depth: 15
-- Top-level tags: div, svg, div, div, footer, nav, div
+- Archetype: **sidebar-workspace** (shell)
+- Traits: sidebar, cards, hero, grid, tabs, modal, charts, sticky, terminal
+- Max template depth: 17
+- Top-level tags: div, svg, div, a, footer, nav, div
 
-The replacement skeleton must not be `terminal-console` and must not be in the same family (`linear`).
+The replacement skeleton must not be `sidebar-workspace` and must not be in the same family (`shell`).
 
 ## Routes
 
@@ -28,14 +28,14 @@ The replacement skeleton must not be `terminal-console` and must not be in the s
 
 ## Palette (most used first)
 
-`#000000` (8) · `#14f195` (5) · `#9945ff` (4) · `#ffffff` (3) · `#050506` (2) · `#0b0b0c` (2) · `#161618` (1) · `#1b1b1e` (1) · `#29292d` (1) · `#a6a6aa` (1)
+`#ffffff` (30) · `#e6006f` (5) · `#c42b2b` (4) · `#0d0d0d` (3) · `#0f7b4d` (3) · `#8a5a00` (3) · `#ff4da6` (3) · `#fff8e8` (2) · `#35313a` (1) · `#6d6a70` (1)
 
 ## Content lock
 
 - Static visible text tokens: **246**
-- Binding expressions: **152**
+- Binding expressions: **153**
 - Event handlers: **50**
-- Contract hash: `12761c50ee087292510e1c948499eb0f8beb36a25712d9d0e44868ae35ec88da`
+- Contract hash: `ce9228ec8b2851c6eacdc6f26e46e01f1d393be78a181d8bd649dc47035c8a48`
 
 Everything in `.reskin/content-contract.json` is immutable: visible copy, placeholders, labels, routes, link targets, asset sources, bindings, handlers, API endpoints and i18n values. A reskin may move these tokens to new markup but may not rewrite, remove or hide them.
 

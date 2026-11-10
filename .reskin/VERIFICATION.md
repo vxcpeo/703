@@ -1,17 +1,17 @@
 # Reskin verification — PASS
 
-Generated: 2026-10-22T15:35:51.195Z
+Generated: 2026-11-09T18:14:25.016Z
 
-- Project: **rationum-web**
-- URL: http://127.0.0.1:4317/
-- Original skeleton: `terminal-console` (linear)
-- New skeleton: `sidebar-workspace` (shell)
-- Accent: #9945ff -> #e6006f (85.01 ΔE; min 30)
-- Source contract: intact (`053703ed8ff7`)
+- Project: **docketa-web**
+- URL: http://127.0.0.1:4318/
+- Original skeleton: `sidebar-workspace` (shell)
+- New skeleton: `orbital` (spatial)
+- Accent: #e6006f -> #ff0000 (61.43 ΔE; min 30)
+- Source contract: intact (`ce9228ec8b28`)
 
 | Route | Result | DOM similarity | Landmark similarity | Axe serious | Screenshot |
 |---|---|---:|---:|---:|---|
-| `/` | PASS | 0.229 | 0.6 | 0 | [desktop](current/home-desktop.png) |
+| `/` | PASS | 0.455 | 0.333 | 0 | [desktop](current/home-desktop.png) |
 
 ## Blocking issues
 
@@ -19,8 +19,7 @@ Generated: 2026-10-22T15:35:51.195Z
 
 ## Warnings
 
-- bindings: added "interpolation:String(position + 1).padStart(2, "0")"
-- /: numeric token count changed: 9 -> 15 (dynamic values may differ)
+- /: numeric token count changed: 14 -> 12 (dynamic values may differ)
 
 ## Thresholds
 

@@ -1,13 +1,13 @@
-RATIONUM / IDENTITY AND WEBSITE REFERENCE
+DOCKETA / IDENTITY AND WEBSITE REFERENCE
 
-Name: Rationum
-Meaning: ratio is the Latin word for a reckoning or an account and rationum is
-its genitive plural, "of the accounts"; the product is the book where community
-work is written down.
+Name: Docketa
+Meaning: docket is the list of matters to be heard or acted on; Docketa is the
+public docket where community work is entered, stamped and kept.
 Tagline: Time on the record.
-Slug: rationum
-Domain: rationum.xyz (RDAP 404 and registrar price at check time; not registered by this work)
-X handle: @rationum (no profile at check time; not created by this work)
+Slug: docketa
+Domain: docketa.xyz (RDAP 404 at check time; a registrar page showed a first-year
+price behind a challenge; not registered by this work)
+X handle: @docketa (no profile at check time; not created by this work)
 Token label: none chosen and none issued
 
 Identity check: read-only CentralNic RDAP plus the registrar result page for the
@@ -17,7 +17,7 @@ in `.rebrand/availability.json` with screenshots under `.rebrand/availability/`;
 availability is a snapshot.
 
 PRODUCT
-Rationum is an independent Solana community application presented as a public
+Docketa is an independent Solana community application presented as a public
 register. It supports an overview, quests, token status, advisory governance,
 treasury reads, and a field guide. Routes remain
 #home / #quests / #stake / #governance / #treasury / #learn.
@@ -34,22 +34,27 @@ Program address and account interface are preserved. The deployed Anchor
 module name `kivoraft` is a technical compatibility identifier.
 
 VISUAL
-Split Stage / Bubblegum Exchange: white ground (#ffffff), white panels with
-22-32px radii, ink text (#0d0d0d), muted #6d6a70, one magenta signal (#e6006f),
-a bubble-pink second signal (#ff4da6), deep magenta #c2005d for text on white
-and hairline rules (#e9e4eb). Display type is Segoe UI at weight 600 with -0.03em
-tracking; numerals and micro-labels are mono and tracked. Panels float on a soft
-pink orb light with a blurred shadow, and every corner is rounded.
+Mark: a red rounded tile carrying a white D with one white dot in its upper right
+corner, set inside two thin orbit rings; the wordmark sets Dock in the signal
+colour and eta in ink.
+Orbit Ledger / Abyss Liquidity: black ground (#000000), surface #111a24, ink
+#f4f7fa, muted #8fa3b5, one signal red (#ff0000), one teal current (#2ebac6) and
+hairline rules (#1e2a36). Display type is Trebuchet at weight 700 with -0.03em
+tracking; numerals and micro-labels are mono and tracked. The palette is the
+selected "Abyss Liquidity" DNA on the "Orbital" skeleton; the accent sits 61 ΔE
+from the removed magenta.
 INTERFACE STRUCTURE
-A split stage: a sticky 42% narrative column carries the brand, a vertical
-numbered index of the six sections, the route thesis (kicker, headline, deck,
-stats, primary actions), the wallet dock and the colophon. The scrolling 58%
-stage carries the route body: readout figures, ledger panels, ballot panels,
-meter tiles, receipt rows, steps, checklist and FAQ. On small screens the split
-becomes a single column with a horizontally scrollable index strip above the
-stage.
-Twitter launch material consists of five posts: one brand statement, one
-participation post, one advisory-vote post, one register read, and one guide
-note, drawn in the same Split Stage / Bubblegum Exchange direction (white ground,
-floating white panels, soft pink orbs, Segoe UI semibold). No post carries a
-contract address; no token mint exists.
+An orbit: a header stage carries the brand seal, six route nodes placed on a
+circle, the route title inside a circular core, and the deck (lede, primary
+actions, stats or proof) hanging in the ring's lower aperture, with a floating
+command dock pinned to the viewport corner. A focused panel overlaps the orbit's
+bottom edge and holds the route body: a readout band, a colonnade of ledgers,
+ballot panels, meter dials, statement rows, steps, checklist and FAQ, with the
+marginal notes as a second column. The colophon is a page footer with a rim arc
+and an oversized wordmark. On small screens the nodes leave the ring and become a
+staggered two-column arc under the seal, and the panel collapses to one column.
+The X series is eight standalone posts (problem, stakes, intro, mechanism, trust,
+proof, usage, close) drawn in the same Orbit Ledger direction (black ground, one
+signal red, teal current, Trebuchet display, tracked mono). Three posts carry a
+1600x900 card; five stay text. No post carries a contract address, because no
+token mint exists.

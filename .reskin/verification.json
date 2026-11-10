@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T15:35:51.195Z",
+  "generatedAt": "2026-11-09T18:14:25.016Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/703/website",
-    "name": "rationum-web",
-    "baseUrl": "http://127.0.0.1:4317/"
+    "name": "docketa-web",
+    "baseUrl": "http://127.0.0.1:4318/"
   },
   "passed": true,
   "thresholds": {
@@ -19,35 +19,12 @@
     "sourceContract": {
       "passed": true,
       "issues": [],
-      "warnings": [
-        "bindings: added \"interpolation:String(position + 1).padStart(2, \"0\")\""
-      ],
-      "hash": "053703ed8ff70b547c344634bac24299af06156c7f96bc0e0c192c67fbc61260"
+      "warnings": [],
+      "hash": "ce9228ec8b2851c6eacdc6f26e46e01f1d393be78a181d8bd649dc47035c8a48"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "terminal-console",
-        "family": "linear",
-        "traits": {
-          "sidebar": false,
-          "topbar": false,
-          "cards": false,
-          "hero": true,
-          "table": false,
-          "grid": true,
-          "tabs": true,
-          "modal": true,
-          "charts": true,
-          "sticky": true,
-          "orbital": false,
-          "terminal": true,
-          "bento": false,
-          "ticker": true,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "sidebar-workspace",
         "family": "shell",
         "traits": {
@@ -68,10 +45,31 @@
           "gallery": false
         }
       },
+      "current": {
+        "id": "orbital",
+        "family": "spatial",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": true,
+          "hero": true,
+          "table": false,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": true,
+          "terminal": false,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
       "accent": {
-        "original": "#9945ff",
-        "current": "#e6006f",
-        "deltaE": 85.01,
+        "original": "#e6006f",
+        "current": "#ff0000",
+        "deltaE": 61.43,
         "min": 30
       }
     },
@@ -82,11 +80,11 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "numeric token count changed: 9 -> 15 (dynamic values may differ)"
+          "numeric token count changed: 14 -> 12 (dynamic values may differ)"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.229,
-          "landmarkSimilarity": 0.6,
+          "fingerprintSimilarity": 0.455,
+          "landmarkSimilarity": 0.333,
           "classOverlap": 0
         },
         "content": {
@@ -94,12 +92,12 @@
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 7,
-              "total": 9
+              "tokens": 10,
+              "total": 14
             },
             "current": {
               "tokens": 10,
-              "total": 15
+              "total": 12
             }
           }
         },
@@ -121,11 +119,10 @@
   },
   "failures": [],
   "warnings": [
-    "bindings: added \"interpolation:String(position + 1).padStart(2, \"0\")\"",
-    "/: numeric token count changed: 9 -> 15 (dynamic values may differ)"
+    "/: numeric token count changed: 14 -> 12 (dynamic values may differ)"
   ],
   "baseline": {
-    "generatedAt": "2026-10-22T15:20:52.924Z",
+    "generatedAt": "2026-11-09T16:49:56.878Z",
     "routes": [
       "/"
     ]

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "label": "current",
-  "generatedAt": "2026-10-22T15:35:44.694Z",
-  "baseUrl": "http://127.0.0.1:4317/",
+  "generatedAt": "2026-11-09T18:14:18.460Z",
+  "baseUrl": "http://127.0.0.1:4318/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
     "playwrightSource": "reskin-tools",
@@ -11,34 +11,34 @@
   "pages": {
     "/": {
       "route": "/",
-      "url": "http://127.0.0.1:4317/",
+      "url": "http://127.0.0.1:4318/",
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Rationum — Time on the record.",
+          "title": "Docketa — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2442,
+          "bodyTextLength": 2095,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 30
+          "focusableCount": 26
         },
         "words": [
           {
             "word": "0",
-            "count": 2
-          },
-          {
-            "word": "01",
             "count": 3
           },
           {
+            "word": "01",
+            "count": 1
+          },
+          {
             "word": "02",
-            "count": 2
+            "count": 1
           },
           {
             "word": "03",
-            "count": 2
+            "count": 1
           },
           {
             "word": "04",
@@ -53,27 +53,23 @@
             "count": 1
           },
           {
+            "word": "10",
+            "count": 1
+          },
+          {
+            "word": "2:14:19",
+            "count": 1
+          },
+          {
             "word": "2026",
             "count": 1
           },
           {
-            "word": "22",
-            "count": 1
-          },
-          {
-            "word": "3",
-            "count": 1
-          },
-          {
             "word": "a",
-            "count": 13
+            "count": 12
           },
           {
             "word": "A",
-            "count": 1
-          },
-          {
-            "word": "actions",
             "count": 1
           },
           {
@@ -89,12 +85,12 @@
             "count": 1
           },
           {
-            "word": "Against",
-            "count": 1
-          },
-          {
             "word": "All",
             "count": 2
+          },
+          {
+            "word": "AM",
+            "count": 1
           },
           {
             "word": "An",
@@ -102,7 +98,7 @@
           },
           {
             "word": "and",
-            "count": 8
+            "count": 7
           },
           {
             "word": "answer",
@@ -113,8 +109,12 @@
             "count": 2
           },
           {
+            "word": "appear",
+            "count": 1
+          },
+          {
             "word": "are",
-            "count": 4
+            "count": 3
           },
           {
             "word": "be",
@@ -129,15 +129,7 @@
             "count": 1
           },
           {
-            "word": "bounties",
-            "count": 1
-          },
-          {
             "word": "Browse",
-            "count": 1
-          },
-          {
-            "word": "budget",
             "count": 1
           },
           {
@@ -153,10 +145,6 @@
             "count": 2
           },
           {
-            "word": "charter",
-            "count": 1
-          },
-          {
             "word": "check",
             "count": 1
           },
@@ -166,11 +154,11 @@
           },
           {
             "word": "community",
-            "count": 5
+            "count": 4
           },
           {
             "word": "configured",
-            "count": 3
+            "count": 2
           },
           {
             "word": "connect",
@@ -182,7 +170,7 @@
           },
           {
             "word": "connected",
-            "count": 3
+            "count": 2
           },
           {
             "word": "connection",
@@ -197,6 +185,10 @@
             "count": 1
           },
           {
+            "word": "decision",
+            "count": 1
+          },
+          {
             "word": "demand",
             "count": 1
           },
@@ -205,8 +197,24 @@
             "count": 1
           },
           {
+            "word": "Dock",
+            "count": 3
+          },
+          {
+            "word": "Docketa",
+            "count": 2
+          },
+          {
+            "word": "docketa.xyz",
+            "count": 1
+          },
+          {
             "word": "down",
             "count": 1
+          },
+          {
+            "word": "eta",
+            "count": 3
           },
           {
             "word": "every",
@@ -221,23 +229,23 @@
             "count": 1
           },
           {
+            "word": "first",
+            "count": 1
+          },
+          {
             "word": "fix",
             "count": 1
           },
           {
             "word": "floor",
-            "count": 2
-          },
-          {
-            "word": "for",
-            "count": 1
-          },
-          {
-            "word": "For",
-            "count": 1
+            "count": 3
           },
           {
             "word": "Foundation",
+            "count": 1
+          },
+          {
+            "word": "from",
             "count": 1
           },
           {
@@ -249,8 +257,12 @@
             "count": 2
           },
           {
-            "word": "here",
+            "word": "has",
             "count": 1
+          },
+          {
+            "word": "here",
+            "count": 2
           },
           {
             "word": "hold",
@@ -266,10 +278,6 @@
           },
           {
             "word": "how",
-            "count": 1
-          },
-          {
-            "word": "How",
             "count": 1
           },
           {
@@ -294,11 +302,7 @@
           },
           {
             "word": "is",
-            "count": 4
-          },
-          {
-            "word": "it",
-            "count": 1
+            "count": 2
           },
           {
             "word": "It",
@@ -317,10 +321,6 @@
             "count": 1
           },
           {
-            "word": "leading",
-            "count": 1
-          },
-          {
             "word": "leave",
             "count": 1
           },
@@ -330,15 +330,15 @@
           },
           {
             "word": "live",
-            "count": 1
+            "count": 2
           },
           {
-            "word": "Map",
+            "word": "make",
             "count": 1
           },
           {
             "word": "mint",
-            "count": 4
+            "count": 3
           },
           {
             "word": "minted",
@@ -350,10 +350,6 @@
           },
           {
             "word": "minutes",
-            "count": 1
-          },
-          {
-            "word": "mode",
             "count": 1
           },
           {
@@ -382,7 +378,7 @@
           },
           {
             "word": "no",
-            "count": 3
+            "count": 2
           },
           {
             "word": "No",
@@ -398,35 +394,31 @@
           },
           {
             "word": "not",
-            "count": 7
-          },
-          {
-            "word": "Not",
-            "count": 1
+            "count": 5
           },
           {
             "word": "nothing",
-            "count": 3
+            "count": 1
           },
           {
-            "word": "num",
-            "count": 3
-          },
-          {
-            "word": "Oct",
+            "word": "Nov",
             "count": 1
           },
           {
             "word": "on",
-            "count": 6
+            "count": 5
           },
           {
             "word": "On",
             "count": 1
           },
           {
+            "word": "once",
+            "count": 1
+          },
+          {
             "word": "one",
-            "count": 3
+            "count": 2
           },
           {
             "word": "One",
@@ -434,11 +426,11 @@
           },
           {
             "word": "only",
-            "count": 4
+            "count": 1
           },
           {
             "word": "open",
-            "count": 2
+            "count": 3
           },
           {
             "word": "Open",
@@ -486,11 +478,7 @@
           },
           {
             "word": "preview",
-            "count": 4
-          },
-          {
-            "word": "Preview",
-            "count": 2
+            "count": 1
           },
           {
             "word": "private",
@@ -502,7 +490,7 @@
           },
           {
             "word": "Program",
-            "count": 1
+            "count": 2
           },
           {
             "word": "project",
@@ -514,11 +502,15 @@
           },
           {
             "word": "proposal",
-            "count": 3
+            "count": 2
           },
           {
             "word": "public",
             "count": 2
+          },
+          {
+            "word": "publishes",
+            "count": 1
           },
           {
             "word": "quest",
@@ -530,27 +522,11 @@
           },
           {
             "word": "Quests",
-            "count": 3
-          },
-          {
-            "word": "Ratio",
-            "count": 3
-          },
-          {
-            "word": "Rationum",
-            "count": 2
-          },
-          {
-            "word": "rationum.xyz",
-            "count": 1
+            "count": 4
           },
           {
             "word": "read",
-            "count": 2
-          },
-          {
-            "word": "Read",
-            "count": 1
+            "count": 3
           },
           {
             "word": "reading",
@@ -589,19 +565,11 @@
             "count": 1
           },
           {
-            "word": "research",
-            "count": 1
-          },
-          {
-            "word": "Reserve",
+            "word": "reports",
             "count": 1
           },
           {
             "word": "Results",
-            "count": 1
-          },
-          {
-            "word": "Review",
             "count": 1
           },
           {
@@ -613,31 +581,15 @@
             "count": 1
           },
           {
-            "word": "route",
-            "count": 1
-          },
-          {
             "word": "row",
-            "count": 6
-          },
-          {
-            "word": "rows",
             "count": 3
           },
           {
+            "word": "rows",
+            "count": 1
+          },
+          {
             "word": "Rows",
-            "count": 1
-          },
-          {
-            "word": "sample",
-            "count": 1
-          },
-          {
-            "word": "Sample",
-            "count": 9
-          },
-          {
-            "word": "season",
             "count": 1
           },
           {
@@ -658,22 +610,14 @@
           },
           {
             "word": "set",
-            "count": 2
+            "count": 1
           },
           {
             "word": "share",
             "count": 1
           },
           {
-            "word": "shown",
-            "count": 2
-          },
-          {
             "word": "sign",
-            "count": 1
-          },
-          {
-            "word": "signal",
             "count": 1
           },
           {
@@ -705,24 +649,16 @@
             "count": 1
           },
           {
+            "word": "Start",
+            "count": 1
+          },
+          {
             "word": "State",
             "count": 1
           },
           {
             "word": "status",
             "count": 1
-          },
-          {
-            "word": "submit",
-            "count": 1
-          },
-          {
-            "word": "submitted",
-            "count": 1
-          },
-          {
-            "word": "Support",
-            "count": 2
           },
           {
             "word": "Take",
@@ -742,10 +678,14 @@
           },
           {
             "word": "the",
-            "count": 12
+            "count": 13
           },
           {
             "word": "The",
+            "count": 2
+          },
+          {
+            "word": "them",
             "count": 1
           },
           {
@@ -757,16 +697,12 @@
             "count": 1
           },
           {
-            "word": "Thu",
-            "count": 1
-          },
-          {
             "word": "Time",
             "count": 3
           },
           {
             "word": "to",
-            "count": 5
+            "count": 6
           },
           {
             "word": "today",
@@ -774,7 +710,7 @@
           },
           {
             "word": "token",
-            "count": 6
+            "count": 5
           },
           {
             "word": "Token",
@@ -789,19 +725,15 @@
             "count": 1
           },
           {
-            "word": "treasury",
-            "count": 1
-          },
-          {
             "word": "Treasury",
             "count": 2
           },
           {
-            "word": "unlisted",
+            "word": "Tue",
             "count": 1
           },
           {
-            "word": "useful",
+            "word": "unlisted",
             "count": 1
           },
           {
@@ -814,7 +746,7 @@
           },
           {
             "word": "votes",
-            "count": 5
+            "count": 4
           },
           {
             "word": "Votes",
@@ -837,6 +769,10 @@
             "count": 1
           },
           {
+            "word": "when",
+            "count": 1
+          },
+          {
             "word": "where",
             "count": 1
           },
@@ -854,10 +790,6 @@
           },
           {
             "word": "with",
-            "count": 1
-          },
-          {
-            "word": "works",
             "count": 1
           },
           {
@@ -895,6 +827,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Docketa home",
+            "count": 1
+          },
+          {
             "key": "aria-label=Footer",
             "count": 1
           },
@@ -912,10 +848,6 @@
           },
           {
             "key": "aria-label=Primary",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Rationum home",
             "count": 1
           },
           {
@@ -966,360 +898,308 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "bz-actions",
-          "bz-alert",
-          "bz-alert-action",
-          "bz-alert-copy",
-          "bz-alert-icon",
-          "bz-alerts",
-          "bz-app",
-          "bz-btn",
-          "bz-btn--fill",
-          "bz-btn--lg",
-          "bz-btn--outline",
-          "bz-btn--quiet",
-          "bz-btn--sm",
-          "bz-btn--wide",
-          "bz-colophon",
-          "bz-colophon-block",
-          "bz-colophon-brand",
-          "bz-colophon-facts",
-          "bz-colophon-fine",
-          "bz-colophon-links",
-          "bz-colophon-mark",
-          "bz-colophon-name",
-          "bz-colophon-note",
-          "bz-colophon-signal",
-          "bz-colophon-tag",
-          "bz-colophon-title",
-          "bz-colophon-word",
-          "bz-colophon-word-signal",
-          "bz-dock",
-          "bz-dock-chip",
-          "bz-dock-pulse",
-          "bz-dock-tools",
-          "bz-dock-wallet",
-          "bz-door",
-          "bz-door--ballot",
-          "bz-door-foot",
-          "bz-door-icon",
-          "bz-doors",
-          "bz-fact",
-          "bz-fact--dim",
-          "bz-facts",
-          "bz-figure",
-          "bz-figure-label",
-          "bz-figure-note",
-          "bz-figure-value",
-          "bz-figure-value--text",
-          "bz-figures",
-          "bz-flow",
-          "bz-frame",
-          "bz-hint",
-          "bz-icon-btn",
-          "bz-index",
-          "bz-index-glyph",
-          "bz-index-item",
-          "bz-index-label",
-          "bz-index-link",
-          "bz-index-list",
-          "bz-index-num",
-          "bz-kicker",
-          "bz-kicker-dot",
-          "bz-lede",
-          "bz-ledger",
-          "bz-ledger-go",
-          "bz-ledger-index",
-          "bz-ledger-main",
-          "bz-ledger-note",
-          "bz-ledger-row",
-          "bz-ledger-title",
-          "bz-mast",
-          "bz-mast-copy",
-          "bz-mast-mark",
-          "bz-mast-signal",
-          "bz-mast-tag",
-          "bz-mast-word",
-          "bz-note-card",
-          "bz-note-card-body",
-          "bz-note-card-foot",
-          "bz-note-card-head",
-          "bz-note-card-main",
-          "bz-note-card-main--flush",
-          "bz-note-card-note",
-          "bz-note-card-title",
-          "bz-notes",
-          "bz-panel",
-          "bz-panel-body",
-          "bz-panel-head",
-          "bz-panel-main",
-          "bz-panel-title",
-          "bz-proof",
-          "bz-pulse",
-          "bz-pulse--idle",
-          "bz-rail",
-          "bz-rail-thesis",
-          "bz-readout",
-          "bz-readout-date",
-          "bz-readout-foot",
-          "bz-readout-head",
-          "bz-readout-title",
-          "bz-sheet",
-          "bz-skip",
-          "bz-spin",
-          "bz-stage",
-          "bz-stage-body",
-          "bz-tag",
-          "bz-tally",
-          "bz-tally-key",
-          "bz-tally-key--against",
-          "bz-tally-keys",
-          "bz-textbtn",
-          "bz-thesis",
-          "bz-title",
-          "bz-view"
+          "orb-actions",
+          "orb-band",
+          "orb-band-date",
+          "orb-band-foot",
+          "orb-band-head",
+          "orb-band-title",
+          "orb-btn",
+          "orb-btn--lg",
+          "orb-btn--signal",
+          "orb-btn--sm",
+          "orb-btn--wide",
+          "orb-btn--wire",
+          "orb-canvas",
+          "orb-canvas--home",
+          "orb-colonnade",
+          "orb-colophon",
+          "orb-colophon-block",
+          "orb-colophon-brand",
+          "orb-colophon-facts",
+          "orb-colophon-fine",
+          "orb-colophon-grid",
+          "orb-colophon-links",
+          "orb-colophon-mark",
+          "orb-colophon-name",
+          "orb-colophon-note",
+          "orb-colophon-rim",
+          "orb-colophon-signal",
+          "orb-colophon-tag",
+          "orb-colophon-title",
+          "orb-colophon-word",
+          "orb-colophon-word-signal",
+          "orb-core",
+          "orb-dispatch",
+          "orb-dispatch-body",
+          "orb-dock",
+          "orb-dock-chip",
+          "orb-dock-orbit",
+          "orb-dock-pulse",
+          "orb-dock-tools",
+          "orb-dock-wallet",
+          "orb-door",
+          "orb-door--ballot",
+          "orb-door-foot",
+          "orb-door-icon",
+          "orb-doors",
+          "orb-empty",
+          "orb-empty-icon",
+          "orb-empty-text",
+          "orb-empty-title",
+          "orb-fact",
+          "orb-fact--dim",
+          "orb-facts",
+          "orb-field",
+          "orb-figure",
+          "orb-figure-label",
+          "orb-figure-note",
+          "orb-figure-value",
+          "orb-figure-value--text",
+          "orb-figures",
+          "orb-frame",
+          "orb-hero",
+          "orb-hint",
+          "orb-iconbtn",
+          "orb-index",
+          "orb-index-list",
+          "orb-kicker",
+          "orb-kicker-dot",
+          "orb-lede",
+          "orb-ledger-band",
+          "orb-linkbtn",
+          "orb-margin",
+          "orb-node",
+          "orb-node-glyph",
+          "orb-node-label",
+          "orb-node-link",
+          "orb-node-num",
+          "orb-note",
+          "orb-note-body",
+          "orb-note-foot",
+          "orb-note-head",
+          "orb-note-main",
+          "orb-note-main--flush",
+          "orb-note-meta",
+          "orb-note-title",
+          "orb-proof",
+          "orb-pulse",
+          "orb-ring",
+          "orb-ring--gate",
+          "orb-ring--inner",
+          "orb-ring--mid",
+          "orb-ring--outer",
+          "orb-rings",
+          "orb-seal",
+          "orb-seal-copy",
+          "orb-seal-mark",
+          "orb-seal-ring",
+          "orb-seal-signal",
+          "orb-seal-tag",
+          "orb-seal-word",
+          "orb-sheet",
+          "orb-sheet-body",
+          "orb-sheet-head",
+          "orb-sheet-main",
+          "orb-sheet-title",
+          "orb-skip",
+          "orb-stage",
+          "orb-sweep",
+          "orb-system",
+          "orb-tag",
+          "orb-thesis",
+          "orb-thesis-body",
+          "orb-title",
+          "orb-view"
         ],
         "fingerprint": [
-          "a@10:3",
+          "a@11:3",
+          "a@11:4+",
           "a@5:0",
-          "a@7:2",
+          "a@7:3",
           "article@11:1",
-          "article@12:4+",
-          "aside@6:4+",
+          "article@11:4+",
           "b@11:0",
-          "b@16:0",
-          "b@17:0",
           "button@10:0",
           "button@10:1",
+          "button@12:1",
           "button@13:1",
           "button@14:1",
-          "button@15:4+",
           "button@8:2",
           "button@9:1",
-          "dd@16:0",
+          "dd@15:0",
           "div@10:2",
-          "div@10:4+",
           "div@11:2",
+          "div@11:3",
+          "div@11:4+",
+          "div@12:1",
           "div@12:2",
           "div@12:3",
-          "div@12:4+",
           "div@13:1",
-          "div@13:3",
+          "div@13:2",
           "div@14:2",
           "div@14:3",
-          "div@15:2",
           "div@3:1",
           "div@4:2",
-          "div@5:2",
+          "div@5:3",
           "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:1",
           "div@8:2",
           "div@8:3",
           "div@8:4+",
+          "div@9:1",
           "div@9:2",
           "div@9:4+",
-          "dl@14:4+",
-          "dt@16:0",
-          "em@10:0",
-          "footer@7:4+",
-          "h1@9:2",
+          "dl@13:4+",
+          "dt@15:0",
+          "em@12:0",
+          "footer@6:4+",
+          "h1@11:2",
+          "h2@12:0",
           "h2@13:0",
           "h2@14:0",
+          "h3@15:0",
           "h3@9:0",
-          "header@13:2",
+          "header@6:4+",
           "i@9:0",
-          "img@10:0",
           "img@8:0",
+          "img@9:0",
+          "li@10:1",
           "li@10:2",
-          "li@14:1",
-          "li@9:1",
           "main@6:2",
-          "nav@7:1",
+          "nav@8:2",
           "nav@9:4+",
-          "ol@8:4+",
-          "p@10:0",
+          "ol@9:4+",
+          "p@11:1",
+          "p@12:0",
           "p@13:0",
-          "p@14:0",
-          "p@8:0",
+          "p@15:0",
+          "p@7:0",
           "p@9:0",
-          "p@9:1",
           "path@10:0",
           "path@11:0",
           "path@12:0",
-          "path@13:0",
+          "path@14:0",
           "path@15:0",
           "path@16:0",
-          "path@18:0",
+          "path@17:0",
+          "section@10:1",
+          "section@10:2",
           "section@10:3",
-          "section@11:1",
-          "section@11:2",
-          "section@11:3",
           "section@7:1",
-          "section@9:2",
-          "small@17:0",
+          "section@9:3",
           "span@10:0",
           "span@11:0",
-          "span@11:1",
+          "span@12:0",
+          "span@12:1",
           "span@13:0",
-          "span@13:1",
-          "span@14:0",
           "span@15:1",
-          "span@16:0",
-          "span@16:1",
-          "span@16:2",
+          "span@7:0",
+          "span@8:0",
           "span@8:1",
           "span@8:2",
           "span@9:0",
           "span@9:1",
-          "strong@10:0",
+          "strong@12:0",
           "strong@13:0",
-          "strong@14:0",
           "svg@10:1",
           "svg@11:1",
-          "svg@12:1",
+          "svg@13:1",
           "svg@14:1",
           "svg@15:1",
-          "svg@17:1",
+          "svg@16:1",
           "svg@9:1",
-          "ul@13:1",
-          "ul@13:3",
           "ul@9:3"
         ],
         "landmarks": [
           {
-            "tag": "aside",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
-            "width": 605,
-            "height": 900
+            "width": 1440,
+            "height": 805
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 109,
-            "left": 40,
-            "width": 525,
-            "height": 295
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 905,
-            "left": 40,
-            "width": 525,
-            "height": 501
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 1038,
-            "left": 40,
-            "width": 525,
-            "height": 19
+            "top": 102,
+            "left": 468,
+            "width": 504,
+            "height": 504
           },
           {
             "tag": "main",
             "role": "",
-            "top": 0,
-            "left": 605,
-            "width": 835,
-            "height": 1943
+            "top": 756,
+            "left": 0,
+            "width": 1440,
+            "height": 1018
           },
           {
-            "tag": "header",
+            "tag": "footer",
             "role": "",
-            "top": 551,
-            "left": 700,
-            "width": 645,
-            "height": 38
+            "top": 1774,
+            "left": 104,
+            "width": 1233,
+            "height": 718
           },
           {
-            "tag": "header",
+            "tag": "nav",
             "role": "",
-            "top": 906,
-            "left": 700,
-            "width": 645,
-            "height": 38
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 1500,
-            "left": 692,
-            "width": 298,
-            "height": 27
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 1500,
-            "left": 1056,
-            "width": 298,
-            "height": 27
+            "top": 1994,
+            "left": 153,
+            "width": 357,
+            "height": 175
           }
         ],
         "colors": [
           {
-            "hex": "#0d0d0d",
-            "count": 136
+            "hex": "#f4f7fa",
+            "count": 140
           },
           {
-            "hex": "#6d6a70",
-            "count": 67
+            "hex": "#8fa3b5",
+            "count": 71
           },
           {
-            "hex": "#c2005d",
-            "count": 58
+            "hex": "#ff0000",
+            "count": 43
           },
           {
-            "hex": "#35313a",
-            "count": 34
+            "hex": "#2ebac6",
+            "count": 17
           },
           {
-            "hex": "#ffffff",
-            "count": 31
+            "hex": "#08090b",
+            "count": 14
           },
           {
-            "hex": "#f9f8fa",
-            "count": 11
+            "hex": "#05090d",
+            "count": 13
           },
           {
-            "hex": "#e6006f",
-            "count": 5
+            "hex": "#ff5c5c",
+            "count": 9
           },
           {
-            "hex": "#f3eef4",
-            "count": 4
+            "hex": "#060a0f",
+            "count": 1
           },
           {
-            "hex": "#ff4da6",
-            "count": 4
-          },
-          {
-            "hex": "#ffb3d6",
+            "hex": "#5ce1a0",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 114,
+        "contrastChecked": 95,
         "headings": [
           {
             "tag": "h1",
             "text": "Time on the record."
-          },
-          {
-            "tag": "h3",
-            "text": "EXPLORE"
-          },
-          {
-            "tag": "h3",
-            "text": "NETWORK"
-          },
-          {
-            "tag": "h3",
-            "text": "SESSION"
           },
           {
             "tag": "h2",
@@ -1330,8 +1210,16 @@
             "text": "Newest quests"
           },
           {
+            "tag": "h3",
+            "text": "No rows yet"
+          },
+          {
             "tag": "h2",
             "text": "Votes on the floor"
+          },
+          {
+            "tag": "h3",
+            "text": "The floor is open"
           },
           {
             "tag": "h2",
@@ -1348,6 +1236,18 @@
           {
             "tag": "h2",
             "text": "Token"
+          },
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
           }
         ],
         "navTargets": [
@@ -1372,22 +1272,22 @@
       },
       "mobile": {
         "meta": {
-          "title": "Rationum — Time on the record.",
+          "title": "Docketa — Time on the record.",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2424,
+          "bodyTextLength": 2095,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 30
+          "focusableCount": 26
         },
         "words": [
           {
             "word": "0",
-            "count": 2
+            "count": 3
           },
           {
             "word": "01",
-            "count": 2
+            "count": 1
           },
           {
             "word": "02",
@@ -1398,27 +1298,35 @@
             "count": 1
           },
           {
+            "word": "04",
+            "count": 1
+          },
+          {
+            "word": "05",
+            "count": 1
+          },
+          {
+            "word": "06",
+            "count": 1
+          },
+          {
+            "word": "10",
+            "count": 1
+          },
+          {
+            "word": "2:14:19",
+            "count": 1
+          },
+          {
             "word": "2026",
             "count": 1
           },
           {
-            "word": "22",
-            "count": 1
-          },
-          {
-            "word": "3",
-            "count": 1
-          },
-          {
             "word": "a",
-            "count": 13
+            "count": 12
           },
           {
             "word": "A",
-            "count": 1
-          },
-          {
-            "word": "actions",
             "count": 1
           },
           {
@@ -1434,12 +1342,12 @@
             "count": 1
           },
           {
-            "word": "Against",
-            "count": 1
-          },
-          {
             "word": "All",
             "count": 2
+          },
+          {
+            "word": "AM",
+            "count": 1
           },
           {
             "word": "An",
@@ -1447,7 +1355,7 @@
           },
           {
             "word": "and",
-            "count": 8
+            "count": 7
           },
           {
             "word": "answer",
@@ -1458,8 +1366,12 @@
             "count": 2
           },
           {
+            "word": "appear",
+            "count": 1
+          },
+          {
             "word": "are",
-            "count": 4
+            "count": 3
           },
           {
             "word": "be",
@@ -1474,15 +1386,7 @@
             "count": 1
           },
           {
-            "word": "bounties",
-            "count": 1
-          },
-          {
             "word": "Browse",
-            "count": 1
-          },
-          {
-            "word": "budget",
             "count": 1
           },
           {
@@ -1498,10 +1402,6 @@
             "count": 2
           },
           {
-            "word": "charter",
-            "count": 1
-          },
-          {
             "word": "check",
             "count": 1
           },
@@ -1511,11 +1411,11 @@
           },
           {
             "word": "community",
-            "count": 5
+            "count": 4
           },
           {
             "word": "configured",
-            "count": 3
+            "count": 2
           },
           {
             "word": "connect",
@@ -1527,7 +1427,7 @@
           },
           {
             "word": "connected",
-            "count": 3
+            "count": 2
           },
           {
             "word": "connection",
@@ -1542,6 +1442,10 @@
             "count": 1
           },
           {
+            "word": "decision",
+            "count": 1
+          },
+          {
             "word": "demand",
             "count": 1
           },
@@ -1550,8 +1454,24 @@
             "count": 1
           },
           {
+            "word": "Dock",
+            "count": 3
+          },
+          {
+            "word": "Docketa",
+            "count": 2
+          },
+          {
+            "word": "docketa.xyz",
+            "count": 1
+          },
+          {
             "word": "down",
             "count": 1
+          },
+          {
+            "word": "eta",
+            "count": 3
           },
           {
             "word": "every",
@@ -1566,23 +1486,23 @@
             "count": 1
           },
           {
+            "word": "first",
+            "count": 1
+          },
+          {
             "word": "fix",
             "count": 1
           },
           {
             "word": "floor",
-            "count": 2
-          },
-          {
-            "word": "for",
-            "count": 1
-          },
-          {
-            "word": "For",
-            "count": 1
+            "count": 3
           },
           {
             "word": "Foundation",
+            "count": 1
+          },
+          {
+            "word": "from",
             "count": 1
           },
           {
@@ -1594,8 +1514,12 @@
             "count": 2
           },
           {
-            "word": "here",
+            "word": "has",
             "count": 1
+          },
+          {
+            "word": "here",
+            "count": 2
           },
           {
             "word": "hold",
@@ -1611,10 +1535,6 @@
           },
           {
             "word": "how",
-            "count": 1
-          },
-          {
-            "word": "How",
             "count": 1
           },
           {
@@ -1639,11 +1559,7 @@
           },
           {
             "word": "is",
-            "count": 4
-          },
-          {
-            "word": "it",
-            "count": 1
+            "count": 2
           },
           {
             "word": "It",
@@ -1662,10 +1578,6 @@
             "count": 1
           },
           {
-            "word": "leading",
-            "count": 1
-          },
-          {
             "word": "leave",
             "count": 1
           },
@@ -1675,15 +1587,15 @@
           },
           {
             "word": "live",
-            "count": 1
+            "count": 2
           },
           {
-            "word": "Map",
+            "word": "make",
             "count": 1
           },
           {
             "word": "mint",
-            "count": 4
+            "count": 3
           },
           {
             "word": "minted",
@@ -1695,10 +1607,6 @@
           },
           {
             "word": "minutes",
-            "count": 1
-          },
-          {
-            "word": "mode",
             "count": 1
           },
           {
@@ -1727,7 +1635,7 @@
           },
           {
             "word": "no",
-            "count": 3
+            "count": 2
           },
           {
             "word": "No",
@@ -1743,35 +1651,31 @@
           },
           {
             "word": "not",
-            "count": 7
-          },
-          {
-            "word": "Not",
-            "count": 1
+            "count": 5
           },
           {
             "word": "nothing",
-            "count": 3
+            "count": 1
           },
           {
-            "word": "num",
-            "count": 3
-          },
-          {
-            "word": "Oct",
+            "word": "Nov",
             "count": 1
           },
           {
             "word": "on",
-            "count": 6
+            "count": 5
           },
           {
             "word": "On",
             "count": 1
           },
           {
+            "word": "once",
+            "count": 1
+          },
+          {
             "word": "one",
-            "count": 3
+            "count": 2
           },
           {
             "word": "One",
@@ -1779,11 +1683,11 @@
           },
           {
             "word": "only",
-            "count": 4
+            "count": 1
           },
           {
             "word": "open",
-            "count": 2
+            "count": 3
           },
           {
             "word": "Open",
@@ -1831,11 +1735,7 @@
           },
           {
             "word": "preview",
-            "count": 4
-          },
-          {
-            "word": "Preview",
-            "count": 2
+            "count": 1
           },
           {
             "word": "private",
@@ -1847,7 +1747,7 @@
           },
           {
             "word": "Program",
-            "count": 1
+            "count": 2
           },
           {
             "word": "project",
@@ -1859,11 +1759,15 @@
           },
           {
             "word": "proposal",
-            "count": 3
+            "count": 2
           },
           {
             "word": "public",
             "count": 2
+          },
+          {
+            "word": "publishes",
+            "count": 1
           },
           {
             "word": "quest",
@@ -1875,27 +1779,11 @@
           },
           {
             "word": "Quests",
-            "count": 3
-          },
-          {
-            "word": "Ratio",
-            "count": 3
-          },
-          {
-            "word": "Rationum",
-            "count": 2
-          },
-          {
-            "word": "rationum.xyz",
-            "count": 1
+            "count": 4
           },
           {
             "word": "read",
-            "count": 2
-          },
-          {
-            "word": "Read",
-            "count": 1
+            "count": 3
           },
           {
             "word": "reading",
@@ -1934,19 +1822,11 @@
             "count": 1
           },
           {
-            "word": "research",
-            "count": 1
-          },
-          {
-            "word": "Reserve",
+            "word": "reports",
             "count": 1
           },
           {
             "word": "Results",
-            "count": 1
-          },
-          {
-            "word": "Review",
             "count": 1
           },
           {
@@ -1958,31 +1838,15 @@
             "count": 1
           },
           {
-            "word": "route",
-            "count": 1
-          },
-          {
             "word": "row",
-            "count": 6
-          },
-          {
-            "word": "rows",
             "count": 3
           },
           {
+            "word": "rows",
+            "count": 1
+          },
+          {
             "word": "Rows",
-            "count": 1
-          },
-          {
-            "word": "sample",
-            "count": 1
-          },
-          {
-            "word": "Sample",
-            "count": 9
-          },
-          {
-            "word": "season",
             "count": 1
           },
           {
@@ -2003,22 +1867,14 @@
           },
           {
             "word": "set",
-            "count": 2
+            "count": 1
           },
           {
             "word": "share",
             "count": 1
           },
           {
-            "word": "shown",
-            "count": 2
-          },
-          {
             "word": "sign",
-            "count": 1
-          },
-          {
-            "word": "signal",
             "count": 1
           },
           {
@@ -2050,24 +1906,16 @@
             "count": 1
           },
           {
+            "word": "Start",
+            "count": 1
+          },
+          {
             "word": "State",
             "count": 1
           },
           {
             "word": "status",
             "count": 1
-          },
-          {
-            "word": "submit",
-            "count": 1
-          },
-          {
-            "word": "submitted",
-            "count": 1
-          },
-          {
-            "word": "Support",
-            "count": 2
           },
           {
             "word": "Take",
@@ -2087,10 +1935,14 @@
           },
           {
             "word": "the",
-            "count": 12
+            "count": 13
           },
           {
             "word": "The",
+            "count": 2
+          },
+          {
+            "word": "them",
             "count": 1
           },
           {
@@ -2102,16 +1954,12 @@
             "count": 1
           },
           {
-            "word": "Thu",
-            "count": 1
-          },
-          {
             "word": "Time",
             "count": 3
           },
           {
             "word": "to",
-            "count": 5
+            "count": 6
           },
           {
             "word": "today",
@@ -2119,7 +1967,7 @@
           },
           {
             "word": "token",
-            "count": 6
+            "count": 5
           },
           {
             "word": "Token",
@@ -2134,19 +1982,15 @@
             "count": 1
           },
           {
-            "word": "treasury",
-            "count": 1
-          },
-          {
             "word": "Treasury",
             "count": 2
           },
           {
-            "word": "unlisted",
+            "word": "Tue",
             "count": 1
           },
           {
-            "word": "useful",
+            "word": "unlisted",
             "count": 1
           },
           {
@@ -2159,7 +2003,7 @@
           },
           {
             "word": "votes",
-            "count": 5
+            "count": 4
           },
           {
             "word": "Votes",
@@ -2182,6 +2026,10 @@
             "count": 1
           },
           {
+            "word": "when",
+            "count": 1
+          },
+          {
             "word": "where",
             "count": 1
           },
@@ -2199,10 +2047,6 @@
           },
           {
             "word": "with",
-            "count": 1
-          },
-          {
-            "word": "works",
             "count": 1
           },
           {
@@ -2240,6 +2084,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Docketa home",
+            "count": 1
+          },
+          {
             "key": "aria-label=Footer",
             "count": 1
           },
@@ -2257,10 +2105,6 @@
           },
           {
             "key": "aria-label=Primary",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Rationum home",
             "count": 1
           },
           {
@@ -2311,351 +2155,300 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "bz-actions",
-          "bz-alert",
-          "bz-alert-action",
-          "bz-alert-copy",
-          "bz-alert-icon",
-          "bz-alerts",
-          "bz-app",
-          "bz-btn",
-          "bz-btn--fill",
-          "bz-btn--lg",
-          "bz-btn--outline",
-          "bz-btn--quiet",
-          "bz-btn--sm",
-          "bz-btn--wide",
-          "bz-colophon",
-          "bz-colophon-block",
-          "bz-colophon-brand",
-          "bz-colophon-facts",
-          "bz-colophon-fine",
-          "bz-colophon-links",
-          "bz-colophon-mark",
-          "bz-colophon-name",
-          "bz-colophon-note",
-          "bz-colophon-signal",
-          "bz-colophon-tag",
-          "bz-colophon-title",
-          "bz-colophon-word",
-          "bz-colophon-word-signal",
-          "bz-dock",
-          "bz-dock-chip",
-          "bz-dock-pulse",
-          "bz-dock-tools",
-          "bz-dock-wallet",
-          "bz-door",
-          "bz-door--ballot",
-          "bz-door-foot",
-          "bz-door-icon",
-          "bz-doors",
-          "bz-fact",
-          "bz-fact--dim",
-          "bz-facts",
-          "bz-figure",
-          "bz-figure-label",
-          "bz-figure-note",
-          "bz-figure-value",
-          "bz-figure-value--text",
-          "bz-figures",
-          "bz-flow",
-          "bz-frame",
-          "bz-hint",
-          "bz-icon-btn",
-          "bz-index",
-          "bz-index-glyph",
-          "bz-index-item",
-          "bz-index-label",
-          "bz-index-link",
-          "bz-index-list",
-          "bz-kicker",
-          "bz-kicker-dot",
-          "bz-lede",
-          "bz-ledger",
-          "bz-ledger-index",
-          "bz-ledger-main",
-          "bz-ledger-note",
-          "bz-ledger-row",
-          "bz-ledger-title",
-          "bz-mast",
-          "bz-mast-copy",
-          "bz-mast-mark",
-          "bz-mast-signal",
-          "bz-mast-tag",
-          "bz-mast-word",
-          "bz-note-card",
-          "bz-note-card-body",
-          "bz-note-card-foot",
-          "bz-note-card-head",
-          "bz-note-card-main",
-          "bz-note-card-main--flush",
-          "bz-note-card-note",
-          "bz-note-card-title",
-          "bz-notes",
-          "bz-panel",
-          "bz-panel-body",
-          "bz-panel-head",
-          "bz-panel-main",
-          "bz-panel-title",
-          "bz-proof",
-          "bz-pulse",
-          "bz-pulse--idle",
-          "bz-rail",
-          "bz-rail-thesis",
-          "bz-readout",
-          "bz-readout-date",
-          "bz-readout-foot",
-          "bz-readout-head",
-          "bz-readout-title",
-          "bz-sheet",
-          "bz-skip",
-          "bz-spin",
-          "bz-stage",
-          "bz-stage-body",
-          "bz-tag",
-          "bz-tally",
-          "bz-tally-key",
-          "bz-tally-key--against",
-          "bz-tally-keys",
-          "bz-textbtn",
-          "bz-thesis",
-          "bz-title",
-          "bz-view"
+          "orb-actions",
+          "orb-band",
+          "orb-band-date",
+          "orb-band-foot",
+          "orb-band-head",
+          "orb-band-title",
+          "orb-btn",
+          "orb-btn--lg",
+          "orb-btn--signal",
+          "orb-btn--sm",
+          "orb-btn--wide",
+          "orb-btn--wire",
+          "orb-canvas",
+          "orb-canvas--home",
+          "orb-colonnade",
+          "orb-colophon",
+          "orb-colophon-block",
+          "orb-colophon-brand",
+          "orb-colophon-facts",
+          "orb-colophon-fine",
+          "orb-colophon-grid",
+          "orb-colophon-links",
+          "orb-colophon-mark",
+          "orb-colophon-name",
+          "orb-colophon-note",
+          "orb-colophon-rim",
+          "orb-colophon-signal",
+          "orb-colophon-tag",
+          "orb-colophon-title",
+          "orb-colophon-word",
+          "orb-colophon-word-signal",
+          "orb-core",
+          "orb-dispatch",
+          "orb-dispatch-body",
+          "orb-dock",
+          "orb-dock-chip",
+          "orb-dock-orbit",
+          "orb-dock-pulse",
+          "orb-dock-tools",
+          "orb-dock-wallet",
+          "orb-door",
+          "orb-door--ballot",
+          "orb-door-foot",
+          "orb-door-icon",
+          "orb-doors",
+          "orb-empty",
+          "orb-empty-icon",
+          "orb-empty-text",
+          "orb-empty-title",
+          "orb-fact",
+          "orb-fact--dim",
+          "orb-facts",
+          "orb-field",
+          "orb-figure",
+          "orb-figure-label",
+          "orb-figure-note",
+          "orb-figure-value",
+          "orb-figure-value--text",
+          "orb-figures",
+          "orb-frame",
+          "orb-hero",
+          "orb-hint",
+          "orb-iconbtn",
+          "orb-index",
+          "orb-index-list",
+          "orb-kicker",
+          "orb-kicker-dot",
+          "orb-lede",
+          "orb-ledger-band",
+          "orb-linkbtn",
+          "orb-margin",
+          "orb-node",
+          "orb-node-glyph",
+          "orb-node-label",
+          "orb-node-link",
+          "orb-node-num",
+          "orb-note",
+          "orb-note-body",
+          "orb-note-foot",
+          "orb-note-head",
+          "orb-note-main",
+          "orb-note-main--flush",
+          "orb-note-meta",
+          "orb-note-title",
+          "orb-proof",
+          "orb-pulse",
+          "orb-seal",
+          "orb-seal-copy",
+          "orb-seal-mark",
+          "orb-seal-ring",
+          "orb-seal-signal",
+          "orb-seal-tag",
+          "orb-seal-word",
+          "orb-sheet",
+          "orb-sheet-body",
+          "orb-sheet-head",
+          "orb-sheet-main",
+          "orb-sheet-title",
+          "orb-skip",
+          "orb-stage",
+          "orb-system",
+          "orb-tag",
+          "orb-thesis",
+          "orb-thesis-body",
+          "orb-title",
+          "orb-view"
         ],
         "fingerprint": [
-          "a@10:3",
+          "a@11:3",
+          "a@11:4+",
           "a@5:0",
-          "a@7:2",
+          "a@7:3",
           "article@11:1",
-          "article@12:4+",
-          "aside@6:4+",
+          "article@11:4+",
           "b@11:0",
-          "b@16:0",
-          "b@17:0",
           "button@10:0",
           "button@10:1",
+          "button@12:1",
           "button@13:1",
           "button@14:1",
-          "button@15:4+",
           "button@8:2",
           "button@9:1",
-          "dd@16:0",
+          "dd@15:0",
           "div@10:2",
-          "div@10:4+",
           "div@11:2",
+          "div@11:3",
+          "div@11:4+",
+          "div@12:1",
           "div@12:2",
           "div@12:3",
-          "div@12:4+",
           "div@13:1",
-          "div@13:3",
+          "div@13:2",
           "div@14:2",
           "div@14:3",
-          "div@15:2",
           "div@3:1",
           "div@4:2",
-          "div@5:2",
+          "div@5:3",
           "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:1",
           "div@8:2",
           "div@8:3",
-          "div@8:4+",
+          "div@9:1",
           "div@9:2",
           "div@9:4+",
-          "dl@14:4+",
-          "dt@16:0",
-          "em@10:0",
-          "footer@7:4+",
-          "h1@9:2",
+          "dl@13:4+",
+          "dt@15:0",
+          "em@12:0",
+          "footer@6:4+",
+          "h1@11:2",
+          "h2@12:0",
           "h2@13:0",
           "h2@14:0",
+          "h3@15:0",
           "h3@9:0",
-          "header@13:2",
+          "header@6:4+",
           "i@9:0",
-          "img@10:0",
           "img@8:0",
+          "img@9:0",
+          "li@10:1",
           "li@10:2",
-          "li@14:1",
-          "li@9:1",
           "main@6:2",
-          "nav@7:1",
+          "nav@8:2",
           "nav@9:4+",
-          "ol@8:4+",
-          "p@10:0",
+          "ol@9:4+",
+          "p@11:1",
+          "p@12:0",
           "p@13:0",
-          "p@14:0",
-          "p@8:0",
+          "p@15:0",
+          "p@7:0",
           "p@9:0",
-          "p@9:1",
           "path@10:0",
           "path@11:0",
           "path@12:0",
-          "path@13:0",
+          "path@14:0",
           "path@15:0",
           "path@16:0",
+          "path@17:0",
+          "section@10:1",
+          "section@10:2",
           "section@10:3",
-          "section@11:1",
-          "section@11:2",
-          "section@11:3",
           "section@7:1",
-          "section@9:2",
-          "small@17:0",
+          "section@9:3",
           "span@10:0",
           "span@11:0",
-          "span@11:1",
+          "span@12:0",
+          "span@12:1",
           "span@13:0",
-          "span@13:1",
-          "span@14:0",
           "span@15:1",
-          "span@16:0",
-          "span@16:2",
+          "span@7:0",
+          "span@8:0",
           "span@8:1",
           "span@8:2",
           "span@9:0",
           "span@9:1",
-          "strong@10:0",
+          "strong@12:0",
           "strong@13:0",
-          "strong@14:0",
           "svg@10:1",
           "svg@11:1",
-          "svg@12:1",
+          "svg@13:1",
           "svg@14:1",
           "svg@15:1",
+          "svg@16:1",
           "svg@9:1",
-          "ul@13:1",
-          "ul@13:3",
           "ul@9:3"
         ],
         "landmarks": [
           {
-            "tag": "aside",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 1208
+            "height": 881
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 81,
-            "left": 20,
-            "width": 350,
-            "height": 60
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 668,
-            "left": 20,
-            "width": 350,
-            "height": 518
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 821,
-            "left": 20,
-            "width": 350,
-            "height": 19
+            "top": 99,
+            "left": 14,
+            "width": 362,
+            "height": 187
           },
           {
             "tag": "main",
             "role": "",
-            "top": 1208,
+            "top": 861,
             "left": 0,
             "width": 390,
-            "height": 2707
+            "height": 2252
           },
           {
-            "tag": "header",
+            "tag": "footer",
             "role": "",
-            "top": 2073,
-            "left": 42,
-            "width": 307,
-            "height": 30
+            "top": 3113,
+            "left": 0,
+            "width": 390,
+            "height": 904
           },
           {
-            "tag": "header",
+            "tag": "nav",
             "role": "",
-            "top": 2411,
-            "left": 42,
-            "width": 307,
-            "height": 30
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 3268,
-            "left": 40,
-            "width": 311,
-            "height": 27
-          },
-          {
-            "tag": "header",
-            "role": "",
-            "top": 3562,
-            "left": 40,
-            "width": 311,
-            "height": 27
+            "top": 3311,
+            "left": 16,
+            "width": 358,
+            "height": 175
           }
         ],
         "colors": [
           {
-            "hex": "#0d0d0d",
-            "count": 136
+            "hex": "#f4f7fa",
+            "count": 134
           },
           {
-            "hex": "#6d6a70",
-            "count": 62
+            "hex": "#8fa3b5",
+            "count": 71
           },
           {
-            "hex": "#c2005d",
-            "count": 46
+            "hex": "#ff0000",
+            "count": 43
           },
           {
-            "hex": "#35313a",
-            "count": 34
+            "hex": "#2ebac6",
+            "count": 17
           },
           {
-            "hex": "#ffffff",
-            "count": 31
+            "hex": "#08090b",
+            "count": 14
           },
           {
-            "hex": "#f9f8fa",
-            "count": 11
+            "hex": "#05090d",
+            "count": 13
           },
           {
-            "hex": "#e6006f",
-            "count": 5
+            "hex": "#ff5c5c",
+            "count": 9
           },
           {
-            "hex": "#f3eef4",
-            "count": 4
+            "hex": "#060a0f",
+            "count": 1
           },
           {
-            "hex": "#ff4da6",
-            "count": 4
+            "hex": "#5ce1a0",
+            "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 114,
+        "contrastChecked": 95,
         "headings": [
           {
             "tag": "h1",
             "text": "Time on the record."
-          },
-          {
-            "tag": "h3",
-            "text": "EXPLORE"
-          },
-          {
-            "tag": "h3",
-            "text": "NETWORK"
-          },
-          {
-            "tag": "h3",
-            "text": "SESSION"
           },
           {
             "tag": "h2",
@@ -2666,8 +2459,16 @@
             "text": "Newest quests"
           },
           {
+            "tag": "h3",
+            "text": "No rows yet"
+          },
+          {
             "tag": "h2",
             "text": "Votes on the floor"
+          },
+          {
+            "tag": "h3",
+            "text": "The floor is open"
           },
           {
             "tag": "h2",
@@ -2684,6 +2485,18 @@
           {
             "tag": "h2",
             "text": "Token"
+          },
+          {
+            "tag": "h3",
+            "text": "EXPLORE"
+          },
+          {
+            "tag": "h3",
+            "text": "NETWORK"
+          },
+          {
+            "tag": "h3",
+            "text": "SESSION"
           }
         ],
         "navTargets": [
@@ -2691,48 +2504,7 @@
         ],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "nav.bz-index > ol.bz-index-list > li.bz-index-item",
-              "right": 495,
-              "width": 120
-            },
-            {
-              "selector": "ol.bz-index-list > li.bz-index-item > a.bz-index-link",
-              "right": 495,
-              "width": 120
-            },
-            {
-              "selector": "li.bz-index-item > a.bz-index-link > span.bz-index-glyph",
-              "right": 405,
-              "width": 17
-            },
-            {
-              "selector": "a.bz-index-link > span.bz-index-glyph > svg",
-              "right": 405,
-              "width": 17
-            },
-            {
-              "selector": "span.bz-index-glyph > svg > path",
-              "right": 402,
-              "width": 11
-            },
-            {
-              "selector": "li.bz-index-item > a.bz-index-link > span.bz-index-label",
-              "right": 472,
-              "width": 57
-            },
-            {
-              "selector": "nav.bz-index > ol.bz-index-list > li.bz-index-item",
-              "right": 604,
-              "width": 103
-            },
-            {
-              "selector": "ol.bz-index-list > li.bz-index-item > a.bz-index-link",
-              "right": 604,
-              "width": 103
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
@@ -2749,80 +2521,80 @@
             "text": "Skip to content",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(46, 186, 198)",
             "boxShadow": "none",
-            "borderColor": "rgb(255, 255, 255)",
-            "backgroundColor": "rgb(13, 13, 13)"
+            "borderColor": "rgb(8, 9, 11)",
+            "backgroundColor": "rgb(255, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "Rationum home",
+            "text": "Docketa home",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(46, 186, 198)",
             "boxShadow": "none",
-            "borderColor": "rgb(13, 13, 13)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgba(143, 163, 181, 0.18)",
+            "backgroundColor": "rgba(5, 9, 13, 0.72)"
           },
           {
             "tag": "a",
             "text": "01 Overview",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
-            "boxShadow": "none",
-            "borderColor": "rgb(13, 13, 13)",
-            "backgroundColor": "rgb(13, 13, 13)"
+            "outlineColor": "rgb(46, 186, 198)",
+            "boxShadow": "rgba(255, 0, 0, 0.22) 0px 0px 26px 0px",
+            "borderColor": "rgb(255, 0, 0)",
+            "backgroundColor": "rgba(255, 0, 0, 0.12)"
           },
           {
             "tag": "a",
             "text": "02 Quests",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(46, 186, 198)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgba(143, 163, 181, 0.2)",
+            "backgroundColor": "rgba(5, 9, 13, 0.82)"
           },
           {
             "tag": "a",
             "text": "03 Votes",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(46, 186, 198)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgba(143, 163, 181, 0.2)",
+            "backgroundColor": "rgba(5, 9, 13, 0.82)"
           },
           {
             "tag": "a",
             "text": "04 Treasury",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(46, 186, 198)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgba(143, 163, 181, 0.2)",
+            "backgroundColor": "rgba(5, 9, 13, 0.82)"
           },
           {
             "tag": "a",
             "text": "05 Token",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(46, 186, 198)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgba(143, 163, 181, 0.2)",
+            "backgroundColor": "rgba(5, 9, 13, 0.82)"
           },
           {
             "tag": "a",
             "text": "06 Guide",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(194, 0, 93)",
+            "outlineColor": "rgb(46, 186, 198)",
             "boxShadow": "none",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgba(143, 163, 181, 0.2)",
+            "backgroundColor": "rgba(5, 9, 13, 0.82)"
           }
         ],
         "visibleCount": 8,
