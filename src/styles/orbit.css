@@ -2423,6 +2423,50 @@ a {
   color: var(--muted);
 }
 
+/* The outbound X link: the one place the site points away from itself. */
+.orb-colophon-handle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: auto;
+  padding: 5px 12px 5px 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 0, 0, 0.34);
+  background: rgba(255, 0, 0, 0.06);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color var(--motion-duration) var(--motion-ease),
+    background var(--motion-duration) var(--motion-ease),
+    box-shadow var(--motion-duration) var(--motion-ease);
+}
+
+.orb-colophon-handle:hover,
+.orb-colophon-handle:focus-visible {
+  border-color: rgba(255, 0, 0, 0.62);
+  background: rgba(255, 0, 0, 0.11);
+  box-shadow: 0 0 26px rgba(255, 0, 0, 0.2);
+}
+
+.orb-colophon-handle-net {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #05090d;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.orb-colophon-handle-name {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
 .orb-colophon-note {
   max-width: 62ch;
   color: var(--muted);
@@ -2432,7 +2476,7 @@ a {
 
 .orb-colophon-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(16px, 2.4vw, 32px);
 }
 
@@ -2497,6 +2541,21 @@ a {
   font-weight: 500;
   overflow-wrap: anywhere;
   text-align: right;
+}
+
+.orb-colophon-facts b a {
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.32);
+  color: var(--ink);
+  text-decoration: none;
+  transition: color var(--motion-duration) var(--motion-ease),
+    border-color var(--motion-duration) var(--motion-ease);
+}
+
+.orb-colophon-facts b a:hover,
+.orb-colophon-facts b a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .orb-colophon-word {
@@ -2710,6 +2769,12 @@ a {
 
   .orb-colophon-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .orb-colophon-handle {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
   }
 
   .orb-toast {

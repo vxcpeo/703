@@ -5,16 +5,17 @@ Meaning: docket is the list of matters to be heard or acted on; Docketa is the
 public docket where community work is entered, stamped and kept.
 Tagline: Time on the record.
 Slug: docketa
-Domain: docketa.xyz (RDAP 404 at check time; a registrar page showed a first-year
-price behind a challenge; not registered by this work)
-X handle: @docketa (no profile at check time; not created by this work)
+Domain: Docketa.top (resolves; apex 308 → https://www.docketa.top/, which serves
+this site)
+X handle: @Docketa_top (live profile; its bio and website field name Docketa.top)
 Token label: none chosen and none issued
 
-Identity check: read-only CentralNic RDAP plus the registrar result page for the
-domain, and the live X profile page for the handle, driven through the installed
-Chrome. No account or domain was registered or acquired by this work. Evidence is
-in `.rebrand/availability.json` with screenshots under `.rebrand/availability/`;
-availability is a snapshot.
+Link check: `Docketa.top` answers on both apex (308 to www) and www (200, this
+build); the X profile answers 200 on the oEmbed endpoint and its website field is
+https://www.docketa.top/. The site links back to https://x.com/Docketa_top from
+the colophon footer on every route, and index.html declares `twitter:site`
+`twitter:creator` and the canonical URL. Evidence for the older availability
+probe is in `.rebrand/availability.json`; availability is a snapshot.
 
 PRODUCT
 Docketa is an independent Solana community application presented as a public
